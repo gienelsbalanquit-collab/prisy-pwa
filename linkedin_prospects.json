@@ -1,0 +1,311 @@
+{
+  "source": "POTENTIAL CLIENTS LIST/prisy_bahrain_trend_prospect_watchlist_2026.xlsx",
+  "updated": "2026-05-06",
+  "window": {
+    "start": "Sat · May 16",
+    "end": "Wed · May 20",
+    "logic": "Day 1 = warm-up (no pitch). Day 2 = insight DM tied to their pain point. Day 3 = direct ASK with teardown or offer."
+  },
+  "prospects": [
+    {
+      "rank": 1,
+      "company": "Newton Properties",
+      "sector": "Real Estate",
+      "region": "Bahrain",
+      "contact": "Ehab Faraj — Founder & CEO",
+      "role": "Founder & CEO",
+      "linkedin": "https://bh.linkedin.com/in/ehab-faraj",
+      "priority_score": 85,
+      "critical_issue": "Real estate firms need sharper investor-facing content and brand trust.",
+      "why_now": "Investor-led real estate, property advisory",
+      "prisy_offer": "Brand authority refresh + investor pitch + content engine.",
+      "outreach_hook": "Your expertise should look as strong online as it is in the room.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent Newton Properties post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Ehab — Your expertise should look as strong online as it is in the room. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Sales-heavy messaging can miss premium positioning and buyer confidence. Brand authority refresh + investor pitch + content engine. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 11,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    },
+    {
+      "rank": 2,
+      "company": "Middle East Hospital",
+      "sector": "Healthcare / Hospital",
+      "region": "Bahrain",
+      "contact": "Nissam Mohammed — Asst. Manager Marketing & Corporate Sales",
+      "role": "Asst. Manager Marketing & Corporate Sales",
+      "linkedin": "https://bh.linkedin.com/in/nissam-mohammed-6979a365",
+      "priority_score": 84,
+      "critical_issue": "Healthcare brands need human-first clarity and patient acquisition systems.",
+      "why_now": "Healthcare competition, patient acquisition, trust marketing",
+      "prisy_offer": "Patient journey audit + content strategy + healthcare campaign materials.",
+      "outreach_hook": "Patients choose confidence before they choose a clinic.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent Middle East Hospital post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Nissam — Patients choose confidence before they choose a clinic. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Medical services can feel generic without trust-led brand communication. Patient journey audit + content strategy + healthcare campaign materials. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 12,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    },
+    {
+      "rank": 3,
+      "company": "MKJ Skin Co.",
+      "sector": "Skincare / Beauty",
+      "region": "Bahrain",
+      "contact": "Mohamed AlBahraini — MKJ Skin Co.",
+      "role": "MKJ Skin Co.",
+      "linkedin": "https://bh.linkedin.com/in/mohdalbahraini/ar",
+      "priority_score": 83,
+      "critical_issue": "Beauty brands need strong identity, proof, product ritual, and UGC strategy.",
+      "why_now": "Beauty, skin confidence, premium self-care",
+      "prisy_offer": "Beauty brand refresh + content direction + product launch campaign.",
+      "outreach_hook": "Skincare sells confidence, but the brand has to make that confidence visible.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent MKJ Skin Co. post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Mohamed — Skincare sells confidence, but the brand has to make that confidence visible. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Can become visually generic unless the brand story and product proof are clear. Beauty brand refresh + content direction + product launch campaign. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 13,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    },
+    {
+      "rank": 4,
+      "company": "LuLu Hypermarket Bahrain / LuLu Group",
+      "sector": "Retail / Grocery / Hypermarket",
+      "region": "Bahrain",
+      "contact": "Nimish TK — Marketing Media Manager, LuLu Group",
+      "role": "Marketing Media Manager, LuLu Group",
+      "linkedin": "https://bh.linkedin.com/in/nimishtk",
+      "priority_score": 82,
+      "critical_issue": "Retailers need seasonal campaigns, loyalty, and digital content that moves shoppers.",
+      "why_now": "Grocery convenience, online retail, family shopping",
+      "prisy_offer": "Retail campaign system + seasonal creative + shopper journey content.",
+      "outreach_hook": "Promotions bring footfall; brand memory brings repeat families.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent LuLu Hypermarket Bahrain / LuLu Group post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Nimish — Promotions bring footfall; brand memory brings repeat families. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Large retail brands can become promotional but not emotionally sticky. Retail campaign system + seasonal creative + shopper journey content. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 14,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    },
+    {
+      "rank": 5,
+      "company": "Alosra Supermarket",
+      "sector": "Premium Grocery / Retail",
+      "region": "Bahrain",
+      "contact": "Decision maker to verify via LinkedIn company search",
+      "role": "",
+      "linkedin": "https://www.linkedin.com/search/results/people/?keywords=Alosra%20Bahrain%20marketing",
+      "priority_score": 81,
+      "critical_issue": "Premium grocers can own trust, quality, and community experience.",
+      "why_now": "Premium grocery, convenience, ethical retail, family buyers",
+      "prisy_offer": "Campaigns + in-store storytelling + content pillars.",
+      "outreach_hook": "Premium grocery can become a lifestyle brand, not just a basket.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent Alosra Supermarket post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Decision — Premium grocery can become a lifestyle brand, not just a basket. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Need sharper lifestyle storytelling and loyalty beyond price/promo. Campaigns + in-store storytelling + content pillars. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 15,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    },
+    {
+      "rank": 6,
+      "company": "Marassi Galleria",
+      "sector": "Luxury Mall / Destination Retail",
+      "region": "Bahrain",
+      "contact": "Julian Smith — GM Property / Mall Leasing",
+      "role": "GM Property / Mall Leasing",
+      "linkedin": "https://bh.linkedin.com/in/juliansmith/ar",
+      "priority_score": 79,
+      "critical_issue": "Luxury retail destinations need continuous activation and tenant-led campaigns.",
+      "why_now": "Luxury shopping, Saudi/Bahrain affluent shoppers, destination retail",
+      "prisy_offer": "Destination campaign + tenant content kits + seasonal activation identity.",
+      "outreach_hook": "A luxury destination must feel like a reason to go, not just a place to shop.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent Marassi Galleria post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Julian — A luxury destination must feel like a reason to go, not just a place to shop. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Malls need more than footfall; they need cultural relevance and tenant conversion. Destination campaign + tenant content kits + seasonal activation identity. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 16,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    },
+    {
+      "rank": 7,
+      "company": "Bahrain Marina Development",
+      "sector": "Real Estate / Tourism Lifestyle",
+      "region": "Bahrain",
+      "contact": "Decision maker to verify",
+      "role": "",
+      "linkedin": "https://www.linkedin.com/search/results/people/?keywords=Bahrain%20Marina%20marketing%20development",
+      "priority_score": 78,
+      "critical_issue": "Major destinations need brand storytelling, investor confidence, and launch systems.",
+      "why_now": "Waterfront leisure, hospitality, destination development",
+      "prisy_offer": "Launch narrative + investor deck + experiential campaign.",
+      "outreach_hook": "Waterfront projects win when they become symbols, not addresses.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent Bahrain Marina Development post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Decision — Waterfront projects win when they become symbols, not addresses. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Development stories can become too technical without emotional pull. Launch narrative + investor deck + experiential campaign. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 17,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    },
+    {
+      "rank": 8,
+      "company": "Edamah",
+      "sector": "Real Estate / Investment / Destination Projects",
+      "region": "Bahrain",
+      "contact": "Fahad AlSaad — Real Estate & Investment Leader / Edamah",
+      "role": "Real Estate & Investment Leader / Edamah",
+      "linkedin": "https://bh.linkedin.com/in/fahad-alsaad-b980b349",
+      "priority_score": 77,
+      "critical_issue": "Government-linked developers need public-facing polish, stakeholder decks, and destination branding.",
+      "why_now": "Destination assets, real estate, tourism experiences",
+      "prisy_offer": "Stakeholder deck + campaign positioning + destination content.",
+      "outreach_hook": "Public assets need public imagination — clear story, not just infrastructure.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent Edamah post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Fahad — Public assets need public imagination — clear story, not just infrastructure. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Institutional projects need clearer market-facing emotion and investor communication. Stakeholder deck + campaign positioning + destination content. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 18,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    },
+    {
+      "rank": 9,
+      "company": "Fintech Revolution Summit Bahrain / TraiCon Events",
+      "sector": "Events / Fintech",
+      "region": "Bahrain",
+      "contact": "Organizer/decision maker to verify",
+      "role": "",
+      "linkedin": "https://www.linkedin.com/search/results/people/?keywords=TraiCon%20Events%20Bahrain%20Fintech%20Revolution%20Summit",
+      "priority_score": 76,
+      "critical_issue": "Events need sponsors, delegate conversion, and post-event content monetization.",
+      "why_now": "Bahrain fintech hub, AI banking, open finance",
+      "prisy_offer": "Event campaign + sponsor decks + LinkedIn content engine.",
+      "outreach_hook": "Fintech events should not end at attendance — they should become authority engines.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent Fintech Revolution Summit Bahrain / TraiCon Events post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Organizer/decision — Fintech events should not end at attendance — they should become authority engines. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Summits often underuse thought-leadership content and sponsor value storytelling. Event campaign + sponsor decks + LinkedIn content engine. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 19,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    },
+    {
+      "rank": 10,
+      "company": "Explore Bahrain / Connections Luxury",
+      "sector": "Luxury Travel / Tourism Events",
+      "region": "Bahrain",
+      "contact": "Decision maker to verify",
+      "role": "",
+      "linkedin": "https://www.linkedin.com/search/results/people/?keywords=Connections%20Luxury%20Explore%20Bahrain",
+      "priority_score": 75,
+      "critical_issue": "Luxury tourism partners need refined B2B storytelling and premium visual assets.",
+      "why_now": "Luxury travel designers, high-end hotels, experiences",
+      "prisy_offer": "Luxury B2B presentation + partner campaign + experience storytelling.",
+      "outreach_hook": "Luxury travel is sold through imagination before itinerary.",
+      "plan": {
+        "day_1": {
+          "date": "Sat · May 16",
+          "action": "Engage on LinkedIn — comment thoughtfully on a recent Explore Bahrain / Connections Luxury post or update. No pitch."
+        },
+        "day_2": {
+          "date": "Mon · May 18",
+          "action": "DM: 'Decision — Luxury travel is sold through imagination before itinerary. I spotted one fixable thing — mind if I share it?'"
+        },
+        "day_3": {
+          "date": "Wed · May 20",
+          "action": "Send 1-page teardown (attached) + ASK: 'Luxury experiences need high-trust, high-taste marketing materials. Luxury B2B presentation + partner campaign + experience storytelling. BHD 750/mo covers it. 20-min call this week?'"
+        }
+      },
+      "_source_rank": 20,
+      "_source_file": "prisy_bahrain_trend_prospect_watchlist_2026.xlsx"
+    }
+  ]
+}

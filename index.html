@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Prisynchracy">
+<meta name="theme-color" id="themeColorMeta" content="#0a0a0f">
+<link rel="manifest" href="manifest.json">
+<title>Prisynchracy Command Center</title>
+<style>
+/* ══════════════════════════════════════════
+   THEME VARIABLES
+══════════════════════════════════════════ */
+:root {
+  --gold: #c8a96e;
+  --gold-light: #e8c98e;
+  --gold-dim: rgba(200,169,110,0.15);
+  --radius: 16px;
+  --radius-sm: 10px;
+  --green: #4ade80;
+  --green-dim: rgba(74,222,128,0.12);
+  --amber: #fbbf24;
+  --amber-dim: rgba(251,191,36,0.12);
+  --red: #f87171;
+  --red-dim: rgba(248,113,113,0.12);
+  --blue: #60a5fa;
+}
+
+/* NIGHT MODE (default) */
+body.night {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --surface2: #1a1a26;
+  --border: rgba(200,169,110,0.2);
+  --text: #f0ede8;
+  --muted: #8a8a9a;
+  --header-bg: rgba(10,10,15,0.95);
+  --card-hover: rgba(200,169,110,0.04);
+}
+
+/* DAY MODE */
+body.day {
+  --bg: #f5f3ef;
+  --surface: #ffffff;
+  --surface2: #f0ede8;
+  --border: rgba(180,140,80,0.25);
+  --text: #1a1207;
+  --muted: #7a6f5e;
+  --header-bg: rgba(245,243,239,0.96);
+  --card-hover: rgba(180,140,80,0.05);
+  --gold: #9a6f2e;
+  --gold-light: #b88a40;
+  --gold-dim: rgba(154,111,46,0.12);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* ── HEADER ── */
+.header {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--header-bg);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: env(safe-area-inset-top, 14px) 18px 12px;
+}
+.header-row1 { display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; }
+.logo { font-size:11px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); }
+.header-controls { display:flex; align-items:center; gap:8px; }
+.theme-toggle {
+  width:44px; height:26px; border-radius:13px;
+  background: var(--surface2); border:1px solid var(--border);
+  position:relative; cursor:pointer; transition:background 0.3s;
+  flex-shrink:0;
+}
+.theme-knob {
+  position:absolute; top:3px; left:3px;
+  width:18px; height:18px; border-radius:50%;
+  background: var(--gold); transition:transform 0.3s;
+  display:flex; align-items:center; justify-content:center;
+  font-size:10px;
+}
+body.day .theme-knob { transform:translateX(18px); }
+.sync-dot {
+  width:8px; height:8px; border-radius:50%; background:#6b7280;
+  transition:background 0.3s;
+}
+.sync-dot.synced { background:var(--green); box-shadow:0 0 6px var(--green); }
+.sync-dot.syncing { background:var(--amber); animation:pulse 1s infinite; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+.header-row2 { display:flex; align-items:center; justify-content:space-between; }
+.header-title { font-size:18px; font-weight:800; color:var(--text); }
+.date-badge {
+  font-size:11px; color:var(--muted);
+  background:var(--surface2); padding:4px 10px;
+  border-radius:20px; border:1px solid var(--border);
+}
+
+/* ── REVENUE BAR ── */
+.revenue-strip {
+  margin:12px 14px 0;
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--radius); padding:14px;
+}
+.rev-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.rev-label { font-size:10px; color:var(--muted); letter-spacing:0.5px; text-transform:uppercase; }
+.rev-value { font-size:20px; font-weight:800; color:var(--gold); }
+.progress-bar { height:5px; background:rgba(128,128,128,0.15); border-radius:3px; overflow:hidden; margin-bottom:8px; }
+.progress-fill { height:100%; background:linear-gradient(90deg,var(--gold),var(--gold-light)); border-radius:3px; transition:width 1s ease; }
+.rev-stats { display:flex; gap:8px; }
+.rev-stat { flex:1; background:var(--surface2); border-radius:8px; padding:8px 6px; text-align:center; }
+.rev-stat-n { font-size:14px; font-weight:800; color:var(--gold); }
+.rev-stat-l { font-size:9px; color:var(--muted); margin-top:2px; line-height:1.2; }
+
+/* ── NAV ── */
+.nav {
+  display:flex; gap:6px; padding:10px 14px 0;
+  overflow-x:auto; scrollbar-width:none;
+}
+.nav::-webkit-scrollbar { display:none; }
+.nav-btn {
+  flex-shrink:0; padding:7px 14px; border-radius:20px;
+  font-size:12px; font-weight:600;
+  border:1px solid var(--border); background:transparent;
+  color:var(--muted); cursor:pointer; transition:all 0.2s;
+}
+.nav-btn.active {
+  background:var(--gold-dim); border-color:var(--gold); color:var(--gold);
+}
+
+/* ── NOTIFICATION BANNER ── */
+.notif-banner {
+  margin:10px 14px 0;
+  border-radius:var(--radius); overflow:hidden;
+  border:1px solid var(--border);
+  display:none;
+}
+.notif-banner.visible { display:block; }
+.notif-item {
+  display:flex; align-items:center; gap:10px;
+  padding:10px 12px; background:var(--surface);
+  border-bottom:1px solid var(--border); cursor:pointer;
+}
+.notif-item:last-child { border-bottom:none; }
+.notif-blinker {
+  width:10px; height:10px; border-radius:50%; flex-shrink:0;
+  animation:blink 1.2s ease-in-out infinite;
+}
+.notif-blinker.reply { background:var(--green); box-shadow:0 0 8px var(--green); }
+.notif-blinker.decline { background:var(--red); box-shadow:0 0 8px var(--red); }
+@keyframes blink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.7)} }
+.notif-text { flex:1; }
+.notif-company { font-size:13px; font-weight:700; color:var(--text); }
+.notif-sub { font-size:11px; color:var(--muted); margin-top:1px; }
+.notif-time { font-size:10px; color:var(--muted); }
+.notif-clear { font-size:11px; color:var(--muted); padding:2px 6px; }
+
+/* ── SECTION HEADER ── */
+.section-header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 14px 8px;
+}
+.section-title { font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); }
+.section-count { font-size:11px; color:var(--gold); background:var(--gold-dim); padding:3px 10px; border-radius:20px; }
+
+/* ── PROSPECT CARDS ── */
+.prospect-list { padding:0 14px; display:flex; flex-direction:column; gap:10px; padding-bottom:40px; }
+
+.prospect-card {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--radius); overflow:hidden; transition:border-color 0.2s;
+}
+.prospect-card.done-card { opacity:0.5; }
+.prospect-card.won-card { border-color:var(--gold); background:var(--gold-dim); }
+
+.card-header {
+  display:flex; align-items:center; gap:10px;
+  padding:12px 12px 10px; cursor:pointer;
+}
+.rank-badge {
+  width:32px; height:32px; border-radius:9px;
+  background:var(--gold-dim); border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center;
+  font-size:12px; font-weight:800; color:var(--gold); flex-shrink:0;
+}
+.card-info { flex:1; min-width:0; }
+.card-company { font-size:14px; font-weight:700; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.card-contact { font-size:11px; color:var(--muted); margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.card-sector { font-size:10px; color:var(--gold); margin-top:2px; opacity:0.8; }
+.card-right { display:flex; flex-direction:column; align-items:flex-end; gap:4px; flex-shrink:0; }
+.score-badge { font-size:11px; font-weight:700; color:var(--gold); background:var(--gold-dim); padding:3px 8px; border-radius:6px; }
+.chevron { font-size:11px; color:var(--muted); transition:transform 0.25s; }
+.prospect-card.open .chevron { transform:rotate(180deg); }
+
+/* Reply status indicator on card */
+.reply-indicator {
+  display:none; align-items:center; gap:5px;
+  padding:0 12px 8px;
+}
+.reply-indicator.visible { display:flex; }
+.reply-dot { width:7px; height:7px; border-radius:50%; }
+.reply-dot.replied { background:var(--green); box-shadow:0 0 5px var(--green); animation:blink 1.5s infinite; }
+.reply-dot.declined { background:var(--red); box-shadow:0 0 5px var(--red); animation:blink 1.5s infinite; }
+.reply-label { font-size:11px; font-weight:600; }
+.reply-label.replied { color:var(--green); }
+.reply-label.declined { color:var(--red); }
+
+/* day pills */
+.day-pills { display:flex; gap:6px; padding:0 12px 10px; }
+.day-pill {
+  flex:1; padding:6px 4px; border-radius:7px;
+  border:1.5px solid transparent; text-align:center;
+  font-size:11px; font-weight:700; cursor:pointer;
+  transition:all 0.2s; position:relative;
+}
+.day-pill.d1 { background:var(--green-dim); border-color:rgba(74,222,128,0.3); color:var(--green); }
+.day-pill.d2 { background:var(--amber-dim); border-color:rgba(251,191,36,0.3); color:var(--amber); }
+.day-pill.d3 { background:var(--red-dim); border-color:rgba(248,113,113,0.3); color:var(--red); }
+.day-pill.done-pill { opacity:0.4; }
+.day-pill.done-pill::after { content:'✓'; position:absolute; right:4px; top:2px; font-size:9px; }
+.day-pill-date { font-size:9px; font-weight:500; opacity:0.7; margin-top:1px; }
+
+/* expanded body */
+.card-body { display:none; border-top:1px solid var(--border); }
+.prospect-card.open .card-body { display:block; }
+
+.pain-block { padding:12px; background:var(--surface2); }
+.pain-label { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:4px; }
+.pain-text { font-size:12px; line-height:1.55; color:var(--text); }
+.offer-text { font-size:11px; color:var(--gold); margin-top:8px; padding:7px 9px; background:var(--gold-dim); border-radius:7px; border-left:3px solid var(--gold); }
+
+/* day action blocks */
+.day-actions { padding:12px; display:flex; flex-direction:column; gap:8px; }
+.day-action { border-radius:var(--radius-sm); overflow:hidden; }
+.day-action-header { display:flex; align-items:center; justify-content:space-between; padding:9px 11px; }
+.day-action.d1 .day-action-header { background:var(--green-dim); border-bottom:1px solid rgba(74,222,128,0.15); }
+.day-action.d2 .day-action-header { background:var(--amber-dim); border-bottom:1px solid rgba(251,191,36,0.15); }
+.day-action.d3 .day-action-header { background:var(--red-dim); border-bottom:1px solid rgba(248,113,113,0.15); }
+.day-tag { font-size:11px; font-weight:800; }
+.d1 .day-tag { color:var(--green); }
+.d2 .day-tag { color:var(--amber); }
+.d3 .day-tag { color:var(--red); }
+.day-date-tag { font-size:10px; color:var(--muted); }
+.day-action-text { padding:9px 11px; font-size:12px; line-height:1.55; color:var(--text); background:rgba(128,128,128,0.03); }
+
+/* DM copy block */
+.dm-copy-block {
+  margin:0 12px 4px;
+  background:var(--surface2); border:1px solid var(--border);
+  border-radius:var(--radius-sm); overflow:hidden;
+}
+.dm-copy-header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 10px;
+  border-bottom:1px solid var(--border);
+}
+.dm-copy-label { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); }
+.dm-copy-which { font-size:10px; color:var(--gold); }
+.dm-text-preview {
+  padding:9px 10px;
+  font-size:11px; line-height:1.55; color:var(--muted);
+  max-height:80px; overflow:hidden; position:relative;
+}
+.dm-text-preview::after {
+  content:''; position:absolute; bottom:0; left:0; right:0;
+  height:24px;
+  background:linear-gradient(transparent, var(--surface2));
+}
+.dm-copy-btn {
+  display:block; width:100%; padding:9px;
+  background:var(--gold-dim); border:none; border-top:1px solid var(--border);
+  color:var(--gold); font-size:12px; font-weight:700; cursor:pointer;
+  text-align:center; transition:background 0.15s;
+}
+.dm-copy-btn:active { background:rgba(200,169,110,0.25); }
+
+/* card action buttons */
+.card-actions { display:flex; gap:7px; padding:8px 12px 12px; }
+.btn {
+  flex:1; padding:10px 6px; border-radius:var(--radius-sm);
+  font-size:11px; font-weight:700; border:none; cursor:pointer;
+  display:flex; align-items:center; justify-content:center; gap:4px;
+  transition:all 0.15s; -webkit-appearance:none; text-decoration:none;
+}
+.btn:active { transform:scale(0.97); }
+.btn-li { background:rgba(10,102,194,0.12); border:1px solid rgba(10,102,194,0.35); color:#4a9eff; }
+.btn-reply { background:var(--green-dim); border:1px solid rgba(74,222,128,0.3); color:var(--green); }
+.btn-decline { background:var(--red-dim); border:1px solid rgba(248,113,113,0.3); color:var(--red); }
+.btn-won { background:var(--gold-dim); border:1px solid var(--border); color:var(--gold); }
+
+/* ── REPLY LOG ── */
+.reply-log { padding:0 14px; display:flex; flex-direction:column; gap:8px; padding-bottom:30px; }
+.reply-log-card {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--radius); padding:12px 14px;
+}
+.reply-log-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
+.reply-log-company { font-size:14px; font-weight:700; color:var(--text); }
+.reply-log-status { font-size:11px; font-weight:700; padding:3px 8px; border-radius:6px; }
+.reply-log-status.replied { background:var(--green-dim); color:var(--green); }
+.reply-log-status.declined { background:var(--red-dim); color:var(--red); }
+.reply-log-status.won { background:var(--gold-dim); color:var(--gold); }
+.reply-log-note { font-size:12px; color:var(--muted); margin-top:4px; }
+.reply-log-time { font-size:10px; color:var(--muted); margin-top:6px; }
+.reply-log-empty { text-align:center; padding:40px 20px; color:var(--muted); font-size:14px; }
+
+/* ── TOAST ── */
+.toast {
+  position:fixed; bottom:calc(env(safe-area-inset-bottom,0px) + 20px); left:50%;
+  transform:translateX(-50%) translateY(80px);
+  background:var(--surface2); border:1px solid var(--gold);
+  color:var(--gold); padding:11px 20px; border-radius:30px;
+  font-size:13px; font-weight:600; z-index:999;
+  transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  white-space:nowrap; box-shadow:0 8px 30px rgba(0,0,0,0.3);
+}
+.toast.show { transform:translateX(-50%) translateY(0); }
+
+/* ── MODAL (reply input) ── */
+.modal-overlay {
+  display:none; position:fixed; inset:0; z-index:500;
+  background:rgba(0,0,0,0.7); backdrop-filter:blur(8px);
+  align-items:flex-end;
+}
+.modal-overlay.visible { display:flex; }
+.modal-sheet {
+  width:100%; background:var(--surface);
+  border-radius:24px 24px 0 0; padding:20px 18px;
+  padding-bottom:calc(env(safe-area-inset-bottom,0px) + 24px);
+  border-top:1px solid var(--border);
+}
+.modal-handle { width:36px; height:4px; background:var(--border); border-radius:2px; margin:0 auto 18px; }
+.modal-title { font-size:16px; font-weight:800; color:var(--text); margin-bottom:4px; }
+.modal-sub { font-size:12px; color:var(--muted); margin-bottom:16px; }
+.modal-options { display:flex; gap:8px; margin-bottom:14px; }
+.modal-opt {
+  flex:1; padding:11px 8px; border-radius:10px; text-align:center;
+  font-size:12px; font-weight:700; cursor:pointer; border:1.5px solid var(--border);
+  background:var(--surface2); color:var(--muted); transition:all 0.2s;
+}
+.modal-opt.selected.replied { background:var(--green-dim); border-color:var(--green); color:var(--green); }
+.modal-opt.selected.declined { background:var(--red-dim); border-color:var(--red); color:var(--red); }
+.modal-opt.selected.won { background:var(--gold-dim); border-color:var(--gold); color:var(--gold); }
+.modal-textarea {
+  width:100%; min-height:80px; border-radius:10px;
+  border:1px solid var(--border); background:var(--surface2);
+  color:var(--text); font-size:13px; padding:10px 12px;
+  resize:none; font-family:inherit; margin-bottom:12px;
+}
+.modal-save {
+  width:100%; padding:14px; border-radius:12px;
+  background:var(--gold); border:none; color:#1a1007;
+  font-size:14px; font-weight:800; cursor:pointer;
+}
+.modal-cancel { width:100%; padding:10px; border:none; background:transparent; color:var(--muted); font-size:13px; cursor:pointer; margin-top:6px; }
+
+/* ── TEMPLATES ── */
+.templates-list { padding:0 14px; display:flex; flex-direction:column; gap:10px; padding-bottom:40px; }
+.template-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+.template-header { display:flex; align-items:center; justify-content:space-between; padding:11px 13px; background:var(--surface2); }
+.template-name { font-size:13px; font-weight:700; color:var(--text); }
+.template-body { padding:10px 13px; font-size:12px; line-height:1.6; color:var(--muted); }
+.template-copy-btn {
+  display:block; width:calc(100% - 26px); margin:0 13px 13px;
+  padding:9px; border-radius:var(--radius-sm);
+  background:var(--gold-dim); border:1px solid var(--border);
+  color:var(--gold); font-size:12px; font-weight:700; cursor:pointer; text-align:center;
+}
+.template-copy-btn:active { background:rgba(200,169,110,0.25); }
+
+/* ── SETTINGS ── */
+.settings-list { padding:12px 14px; display:flex; flex-direction:column; gap:10px; }
+.settings-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:13px; }
+.settings-label { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
+.settings-row { display:flex; justify-content:space-between; align-items:center; padding:7px 0; border-bottom:1px solid var(--border); }
+.settings-row:last-child { border-bottom:none; }
+.settings-key { font-size:12px; color:var(--muted); }
+.settings-val { font-size:12px; font-weight:600; color:var(--gold); }
+.reset-btn {
+  width:100%; padding:12px; border-radius:var(--radius-sm);
+  background:var(--red-dim); border:1px solid rgba(248,113,113,0.3);
+  color:var(--red); font-size:13px; font-weight:700; cursor:pointer;
+}
+
+/* hidden views */
+.view { display:none; }
+.view.active { display:block; }
+
+/* sync status bar */
+.sync-bar {
+  display:flex; align-items:center; justify-content:center; gap:6px;
+  padding:6px 14px;
+  font-size:10px; color:var(--muted);
+  border-bottom:1px solid var(--border);
+  background:var(--surface2);
+}
+.sync-bar a { color:var(--gold); text-decoration:none; }
+</style>
+</head>
+<body class="night">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-row1">
+    <div class="logo">⬡ Prisynchracy</div>
+    <div class="header-controls">
+      <div class="sync-dot" id="syncDot" title="Sync status"></div>
+      <div class="theme-toggle" onclick="toggleTheme()" title="Toggle day/night">
+        <div class="theme-knob" id="themeKnob">🌙</div>
+      </div>
+    </div>
+  </div>
+  <div class="header-row2">
+    <div class="header-title">Command Center</div>
+    <div class="date-badge" id="dateBadge">—</div>
+  </div>
+</div>
+
+<!-- SYNC BAR -->
+<div class="sync-bar" id="syncBar">
+  <span id="syncLabel">Syncing…</span>
+  <a id="openDesktopLink" href="#" target="_blank" rel="noopener">Open Desktop ↗</a>
+</div>
+
+<!-- NOTIFICATION BANNER -->
+<div class="notif-banner" id="notifBanner"></div>
+
+<!-- REVENUE -->
+<div class="revenue-strip">
+  <div class="rev-row">
+    <div><div class="rev-label">MRR Target</div><div class="rev-value">BHD 4,500</div></div>
+    <div style="text-align:right"><div class="rev-label">Current MRR</div><div class="rev-value" id="currentMRR">BHD 0</div></div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+  <div class="rev-stats">
+    <div class="rev-stat"><div class="rev-stat-n">6</div><div class="rev-stat-l">Needed</div></div>
+    <div class="rev-stat"><div class="rev-stat-n" id="retainersWon">0</div><div class="rev-stat-l">Won</div></div>
+    <div class="rev-stat"><div class="rev-stat-n">BHD 750</div><div class="rev-stat-l">Per/mo</div></div>
+    <div class="rev-stat"><div class="rev-stat-n" id="pipelineCount">10</div><div class="rev-stat-l">Pipeline</div></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <button class="nav-btn active" onclick="showView('prospects',this)">🎯 Prospects</button>
+  <button class="nav-btn" onclick="showView('today',this)">📅 Today</button>
+  <button class="nav-btn" onclick="showView('replies',this)">💬 Replies <span id="replyBadge"></span></button>
+  <button class="nav-btn" onclick="showView('templates',this)">📋 Scripts</button>
+  <button class="nav-btn" onclick="showView('settings',this)">⚙️</button>
+</div>
+
+<!-- ════════════════════════════════════
+  VIEW: PROSPECTS
+════════════════════════════════════ -->
+<div class="view active" id="view-prospects">
+  <div class="section-header">
+    <span class="section-title">Top 10 · May 3–7</span>
+    <span class="section-count" id="completedCount">0 / 10</span>
+  </div>
+  <div class="prospect-list" id="prospectList"></div>
+</div>
+
+<!-- ════════════════════════════════════
+  VIEW: TODAY
+════════════════════════════════════ -->
+<div class="view" id="view-today">
+  <div style="margin:12px 14px 0; background:var(--green-dim); border:1px solid rgba(74,222,128,0.25); border-radius:var(--radius); padding:12px 14px;">
+    <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:5px;">🔥 D1 Mission — Sat May 3</div>
+    <div style="font-size:13px;color:var(--text);line-height:1.5;">Comment on each prospect's latest LinkedIn post. <strong>No pitch, no CTA.</strong> Just sharp, relevant engagement. Build presence first.</div>
+  </div>
+  <div class="section-header">
+    <span class="section-title">D1 Warm-Up List</span>
+    <span class="section-count" id="todayCount">0 done</span>
+  </div>
+  <div class="prospect-list" id="todayList"></div>
+</div>
+
+<!-- ════════════════════════════════════
+  VIEW: REPLIES
+════════════════════════════════════ -->
+<div class="view" id="view-replies">
+  <div class="section-header">
+    <span class="section-title">Reply Tracker</span>
+    <button style="font-size:11px;color:var(--muted);background:none;border:none;cursor:pointer;" onclick="clearNotifs()">Clear all</button>
+  </div>
+  <div class="reply-log" id="replyLog"></div>
+</div>
+
+<!-- ════════════════════════════════════
+  VIEW: TEMPLATES / DM SCRIPTS
+════════════════════════════════════ -->
+<div class="view" id="view-templates">
+  <div class="section-header">
+    <span class="section-title">DM Scripts — All Prospects</span>
+  </div>
+  <div class="templates-list" id="templatesList"></div>
+</div>
+
+<!-- ════════════════════════════════════
+  VIEW: SETTINGS
+════════════════════════════════════ -->
+<div class="view" id="view-settings">
+  <div class="settings-list">
+    <div class="settings-card">
+      <div class="settings-label">Campaign Window</div>
+      <div class="settings-row"><span class="settings-key">D1 Warm-Up</span><span class="settings-val" style="color:var(--green)">Sat · May 3</span></div>
+      <div class="settings-row"><span class="settings-key">D2 Insight DM</span><span class="settings-val" style="color:var(--amber)">Mon · May 5</span></div>
+      <div class="settings-row"><span class="settings-key">D3 ASK</span><span class="settings-val" style="color:var(--red)">Wed · May 7</span></div>
+    </div>
+    <div class="settings-card">
+      <div class="settings-label">Revenue Target</div>
+      <div class="settings-row"><span class="settings-key">Retainer price</span><span class="settings-val">BHD 750/mo</span></div>
+      <div class="settings-row"><span class="settings-key">MRR goal</span><span class="settings-val">BHD 4,500</span></div>
+      <div class="settings-row"><span class="settings-key">Retainers needed</span><span class="settings-val">6 clients</span></div>
+    </div>
+    <div class="settings-card">
+      <div class="settings-label">Payment & Market</div>
+      <div class="settings-row"><span class="settings-key">BenefitPay</span><span class="settings-val">+973 6636 9697</span></div>
+      <div class="settings-row"><span class="settings-key">Region</span><span class="settings-val">GCC / Bahrain</span></div>
+      <div class="settings-row"><span class="settings-key">Database</span><span class="settings-val">96 prospects</span></div>
+    </div>
+    <div class="settings-card">
+      <div class="settings-label">Data Source</div>
+      <div class="settings-row"><span class="settings-key">Hosting</span><span class="settings-val" style="font-size:10px">GitHub Pages</span></div>
+      <div class="settings-row"><span class="settings-key">Repo</span><span class="settings-val" style="font-size:10px">gienelsbalanquit-collab/prisy-pwa</span></div>
+      <div class="settings-row"><span class="settings-key">Live URL</span><span class="settings-val" style="font-size:10px">gienelsbalanquit-collab.github.io/prisy-pwa</span></div>
+      <div class="settings-row"><span class="settings-key">JSON source</span><span class="settings-val" style="font-size:10px">../linkedin_prospects.json (Morning Dashboard root)</span></div>
+      <div class="settings-row"><span class="settings-key">Last fetch</span><span class="settings-val" id="lastSyncTime">—</span></div>
+      <div class="settings-row"><span class="settings-key">Status</span><span class="settings-val" id="syncStatusDetail" style="font-size:10px">—</span></div>
+    </div>
+    <div class="settings-card" style="opacity:0.65">
+      <div class="settings-label">Desktop Sync (optional, LAN-only)</div>
+      <div class="settings-row" style="flex-direction:column;align-items:flex-start;gap:6px">
+        <span class="settings-key">Dashboard URL</span>
+        <input id="dashboardUrlInput" type="text" placeholder="http://192.168.1.x:8765"
+               style="width:100%;padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:12px;font-family:monospace"
+               onchange="saveDashboardUrl(this.value)" />
+        <span style="font-size:10px;color:var(--text-dim)">Only used when viewing the PWA on your Mac. The phone PWA loads prospects from GitHub Pages directly — no LAN needed.</span>
+      </div>
+    </div>
+    <div class="settings-card">
+      <div class="settings-label">Appearance</div>
+      <div class="settings-row">
+        <span class="settings-key">Theme</span>
+        <div style="display:flex;gap:8px">
+          <button onclick="setTheme('night')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;">🌙 Night</button>
+          <button onclick="setTheme('day')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;">☀️ Day</button>
+        </div>
+      </div>
+    </div>
+    <div class="settings-card">
+      <div class="settings-label">Reset</div>
+      <button class="reset-btn" onclick="resetProgress()">🔄 Reset All Progress</button>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- REPLY MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="modalTitle">Log Reply</div>
+    <div class="modal-sub" id="modalSub">Record what happened with this prospect</div>
+    <div class="modal-options">
+      <div class="modal-opt" id="optReplied" onclick="selectModalOpt('replied')">✅ Replied</div>
+      <div class="modal-opt" id="optDeclined" onclick="selectModalOpt('declined')">❌ Declined</div>
+      <div class="modal-opt" id="optWon" onclick="selectModalOpt('won')">🏆 Won</div>
+    </div>
+    <textarea class="modal-textarea" id="modalNote" placeholder="Add a note (optional)…"></textarea>
+    <button class="modal-save" onclick="saveModalReply()">Save</button>
+    <button class="modal-cancel" onclick="closeModal()">Cancel</button>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════
+//  PROSPECT DATA (loaded from linkedin_prospects.json — see loadProspects below)
+//  Initial fallback array kept so the PWA renders something on first paint
+//  before the fetch completes (and as offline fallback for the service worker).
+// ══════════════════════════════════════════
+let PROSPECTS = [
+  { rank:1, company:"Newton Properties", sector:"Real Estate", region:"Bahrain",
+    contact:"Ehab Faraj — Founder & CEO", firstName:"Ehab", score:85,
+    linkedin:"https://bh.linkedin.com/in/ehab-faraj",
+    critical_issue:"Sales-heavy messaging can miss premium positioning and buyer confidence.",
+    prisy_offer:"Brand authority refresh + investor pitch + content engine.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent Newton Properties post or update. No pitch."},
+      d2:{date:"Mon · May 18", action:"DM: 'Ehab — Your expertise should look as strong online as it is in the room. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Sales-heavy messaging can miss premium positioning and buyer confidence. Brand authority refresh + investor pitch + content engine. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  },
+  { rank:2, company:"Middle East Hospital", sector:"Healthcare / Hospital", region:"Bahrain",
+    contact:"Nissam Mohammed — Asst. Manager Marketing & Corporate Sales", firstName:"Nissam", score:84,
+    linkedin:"https://bh.linkedin.com/in/nissam-mohammed-6979a365",
+    critical_issue:"Medical services can feel generic without trust-led brand communication.",
+    prisy_offer:"Patient journey audit + content strategy + healthcare campaign materials.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent Middle East Hospital post or update. No pitch."},
+      d2:{date:"Mon · May 18", action:"DM: 'Nissam — Patients choose confidence before they choose a clinic. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Medical services can feel generic without trust-led brand communication. Patient journey audit + content strategy + healthcare campaign materials. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  },
+  { rank:3, company:"MKJ Skin Co.", sector:"Skincare / Beauty", region:"Bahrain",
+    contact:"Mohamed AlBahraini — MKJ Skin Co.", firstName:"Mohamed", score:83,
+    linkedin:"https://bh.linkedin.com/in/mohdalbahraini/ar",
+    critical_issue:"Can become visually generic unless the brand story and product proof are clear.",
+    prisy_offer:"Beauty brand refresh + content direction + product launch campaign.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent MKJ Skin Co. post or update. No pitch."},
+      d2:{date:"Mon · May 18", action:"DM: 'Mohamed — Skincare sells confidence, but the brand has to make that confidence visible. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Beauty brands can become visually generic unless the story and product proof are clear. Beauty brand refresh + content direction + product launch campaign. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  },
+  { rank:4, company:"LuLu Hypermarket Bahrain / LuLu Group", sector:"Retail / Grocery / Hypermarket", region:"Bahrain",
+    contact:"Nimish TK — Marketing Media Manager, LuLu Group", firstName:"Nimish", score:82,
+    linkedin:"https://bh.linkedin.com/in/nimishtk",
+    critical_issue:"Large retail brands can become promotional but not emotionally sticky.",
+    prisy_offer:"Retail campaign system + seasonal creative + shopper journey content.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent LuLu Bahrain post or update. No pitch."},
+      d2:{date:"Mon · May 18", action:"DM: 'Nimish — Promotions bring footfall; brand memory brings repeat families. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Large retail brands can become promotional but not emotionally sticky. Retail campaign system + seasonal creative + shopper journey content. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  },
+  { rank:5, company:"Alosra Supermarket", sector:"Premium Grocery / Retail", region:"Bahrain",
+    contact:"Decision maker to verify via LinkedIn company search", firstName:"team", score:81,
+    linkedin:"https://www.linkedin.com/search/results/people/?keywords=Alosra%20Bahrain%20marketing",
+    critical_issue:"Need sharper lifestyle storytelling and loyalty beyond price/promo.",
+    prisy_offer:"Campaigns + in-store storytelling + content pillars.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Verify Alosra Marketing decision-maker via LinkedIn company search, then engage on a recent post."},
+      d2:{date:"Mon · May 18", action:"DM (once verified): 'Hi — Premium grocery can become a lifestyle brand, not just a basket. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Premium grocery needs sharper lifestyle storytelling and loyalty beyond price/promo. Campaigns + in-store storytelling + content pillars. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  },
+  { rank:6, company:"Marassi Galleria", sector:"Luxury Mall / Destination Retail", region:"Bahrain",
+    contact:"Julian Smith — GM Property / Mall Leasing", firstName:"Julian", score:79,
+    linkedin:"https://bh.linkedin.com/in/juliansmith/ar",
+    critical_issue:"Malls need more than footfall; they need cultural relevance and tenant conversion.",
+    prisy_offer:"Destination campaign + tenant content kits + seasonal activation identity.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent Marassi Galleria post or update. No pitch."},
+      d2:{date:"Mon · May 18", action:"DM: 'Julian — A luxury destination must feel like a reason to go, not just a place to shop. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Malls need more than footfall; they need cultural relevance and tenant conversion. Destination campaign + tenant content kits + seasonal activation identity. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  },
+  { rank:7, company:"Bahrain Marina Development", sector:"Real Estate / Tourism Lifestyle", region:"Bahrain",
+    contact:"Decision maker to verify", firstName:"team", score:78,
+    linkedin:"https://www.linkedin.com/search/results/people/?keywords=Bahrain%20Marina%20marketing%20development",
+    critical_issue:"Development stories can become too technical without emotional pull.",
+    prisy_offer:"Launch narrative + investor deck + experiential campaign.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Verify Bahrain Marina Development marketing/comms lead via LinkedIn company search, then engage on a recent post."},
+      d2:{date:"Mon · May 18", action:"DM (once verified): 'Hi — Waterfront projects win when they become symbols, not addresses. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Development stories can become too technical without emotional pull. Launch narrative + investor deck + experiential campaign. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  },
+  { rank:8, company:"Edamah", sector:"Real Estate / Investment / Destination Projects", region:"Bahrain",
+    contact:"Fahad AlSaad — Real Estate & Investment Leader / Edamah", firstName:"Fahad", score:77,
+    linkedin:"https://bh.linkedin.com/in/fahad-alsaad-b980b349",
+    critical_issue:"Institutional projects need clearer market-facing emotion and investor communication.",
+    prisy_offer:"Stakeholder deck + campaign positioning + destination content.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent Edamah post or update. No pitch."},
+      d2:{date:"Mon · May 18", action:"DM: 'Fahad — Public assets need public imagination — clear story, not just infrastructure. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Institutional projects need clearer market-facing emotion and investor communication. Stakeholder deck + campaign positioning + destination content. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  },
+  { rank:9, company:"Fintech Revolution Summit Bahrain / TraiCon Events", sector:"Events / Fintech", region:"Bahrain",
+    contact:"Organizer/decision maker to verify", firstName:"team", score:76,
+    linkedin:"https://www.linkedin.com/search/results/people/?keywords=TraiCon%20Events%20Bahrain%20Fintech%20Revolution%20Summit",
+    critical_issue:"Summits often underuse thought-leadership content and sponsor value storytelling.",
+    prisy_offer:"Event campaign + sponsor decks + LinkedIn content engine.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Verify TraiCon/Fintech Revolution Summit organizer via LinkedIn company search, then engage on a recent post."},
+      d2:{date:"Mon · May 18", action:"DM (once verified): 'Hi — Fintech events should not end at attendance — they should become authority engines. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Summits often underuse thought-leadership content and sponsor value storytelling. Event campaign + sponsor decks + LinkedIn content engine. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  },
+  { rank:10, company:"Explore Bahrain / Connections Luxury", sector:"Luxury Travel / Tourism Events", region:"Bahrain",
+    contact:"Decision maker to verify", firstName:"team", score:75,
+    linkedin:"https://www.linkedin.com/search/results/people/?keywords=Connections%20Luxury%20Explore%20Bahrain",
+    critical_issue:"Luxury experiences need high-trust, high-taste marketing materials.",
+    prisy_offer:"Luxury B2B presentation + partner campaign + experience storytelling.",
+    plan:{
+      d1:{date:"Sat · May 16", action:"Verify Explore Bahrain / Connections Luxury contact via LinkedIn company search, then engage on a recent post."},
+      d2:{date:"Mon · May 18", action:"DM (once verified): 'Hi — Luxury travel is sold through imagination before itinerary. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Luxury experiences need high-trust, high-taste marketing materials. Luxury B2B presentation + partner campaign + experience storytelling. BHD 750/mo covers it. 20-min call this week?'"}
+    }
+  }
+];
+
+// ══════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════
+let state = JSON.parse(localStorage.getItem('pcc-state-v2') || '{}');
+let replies = JSON.parse(localStorage.getItem('pcc-replies') || '[]');
+let retainersWon = parseInt(localStorage.getItem('pcc-won') || '0');
+let theme = localStorage.getItem('pcc-theme') || 'night';
+
+// Modal state
+let modalRank = null;
+let modalSelectedOpt = null;
+
+function getState(rank) {
+  return state[rank] || { d1:false, d2:false, d3:false, won:false, reply:null };
+}
+function saveState() {
+  localStorage.setItem('pcc-state-v2', JSON.stringify(state));
+  localStorage.setItem('pcc-replies', JSON.stringify(replies));
+  localStorage.setItem('pcc-won', retainersWon);
+  syncToDesktop();
+}
+
+// ══════════════════════════════════════════
+//  PROSPECT LOADER — fetch linkedin_prospects.json from the same site
+// ══════════════════════════════════════════
+//  Schema normalizer: the rotation-generated JSON uses slightly different keys
+//  (priority_score, plan.day_1/day_2/day_3, contact only) than the inline
+//  fallback array (score, plan.d1/d2/d3, contact + firstName). Map them here
+//  so the rest of the PWA doesn't have to know.
+function _normalizeProspect(p) {
+  const contact = p.contact || '';
+  const firstName = p.firstName || (contact.split(/[—\-]/)[0] || '').trim().split(/\s+/)[0] || '';
+  const dayKey = (plan, n) => (plan[`day_${n}`] || plan[`d${n}`] || {});
+  const plan = p.plan || {};
+  return {
+    rank: p.rank,
+    company: p.company,
+    sector: p.sector,
+    region: p.region || 'Bahrain',
+    contact: contact,
+    firstName: firstName,
+    score: p.score ?? p.priority_score ?? 0,
+    linkedin: p.linkedin || '',
+    critical_issue: p.critical_issue || '',
+    prisy_offer: p.prisy_offer || '',
+    plan: {
+      d1: dayKey(plan, 1),
+      d2: dayKey(plan, 2),
+      d3: dayKey(plan, 3)
+    }
+  };
+}
+
+async function loadProspects() {
+  try {
+    // PWA is served at /pwa/ — the JSON lives in the parent (Morning Dashboard root)
+    const r = await fetch('../linkedin_prospects.json?ts=' + Date.now(),
+                         {cache:'no-store', signal: AbortSignal.timeout(8000)});
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const data = await r.json();
+    if (Array.isArray(data?.prospects) && data.prospects.length > 0) {
+      PROSPECTS = data.prospects.map(_normalizeProspect);
+      // If the JSON includes a window block, surface it on the prospects view
+      if (data.window) {
+        const wb = document.getElementById('prospectsWindow');
+        if (wb) wb.textContent = `${data.window.start} → ${data.window.end}`;
+      }
+      const detail = document.getElementById('syncStatusDetail');
+      if (detail) detail.textContent = `Loaded ${PROSPECTS.length} prospects from JSON · ${new Date().toLocaleTimeString('en-GB')}`;
+      renderAll();
+      updateRevenue();
+    }
+  } catch (e) {
+    // Quiet fallback — keep the embedded PROSPECTS array. Don't block UI.
+    console.warn('Prospects JSON load failed, using embedded fallback:', e.message);
+  }
+}
+
+// ══════════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════════
+window.addEventListener('DOMContentLoaded', () => {
+  setTheme(theme, false);
+  document.getElementById('dateBadge').textContent = new Date().toLocaleDateString('en-GB', {weekday:'short',month:'short',day:'numeric'});
+  renderAll();
+  updateRevenue();
+  refreshDashboardLinks();      // wire Open-Desktop link to current Dashboard URL
+  loadProspects();              // pull fresh prospects from same-site JSON (GitHub Pages)
+  syncFromDesktop();            // attempt LAN sync to Mac dashboard (will fail silently on phone)
+  // Re-pull JSON every 5 min so a rotation push reaches the phone within 5 min
+  setInterval(loadProspects, 5 * 60 * 1000);
+  setInterval(syncFromDesktop, 60000);
+  // SW — bump cache by forcing update on load so this fix actually ships to your phone
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js').then(reg => { try { reg.update(); } catch(e){} }).catch(()=>{});
+  }
+});
+
+// ══════════════════════════════════════════
+//  THEME
+// ══════════════════════════════════════════
+function toggleTheme() {
+  setTheme(theme === 'night' ? 'day' : 'night');
+}
+function setTheme(t, save=true) {
+  theme = t;
+  document.body.className = t;
+  document.getElementById('themeKnob').textContent = t === 'night' ? '🌙' : '☀️';
+  document.getElementById('themeColorMeta').content = t === 'night' ? '#0a0a0f' : '#f5f3ef';
+  if (save) localStorage.setItem('pcc-theme', t);
+}
+
+// ══════════════════════════════════════════
+//  DASHBOARD URL CONFIG (persisted in localStorage)
+// ══════════════════════════════════════════
+const DEFAULT_DASHBOARD_URL = 'http://localhost:8765';
+
+function getDashboardUrl() {
+  let u = (localStorage.getItem('pcc-dashboard-url') || DEFAULT_DASHBOARD_URL).trim();
+  if (!u) u = DEFAULT_DASHBOARD_URL;
+  if (!/^https?:\/\//i.test(u)) u = 'http://' + u;
+  return u.replace(/\/+$/, '');
+}
+
+function saveDashboardUrl(value) {
+  const v = (value || '').trim();
+  if (v) localStorage.setItem('pcc-dashboard-url', v);
+  else localStorage.removeItem('pcc-dashboard-url');
+  refreshDashboardLinks();
+  syncFromDesktop();
+}
+
+function refreshDashboardLinks() {
+  const base = getDashboardUrl();
+  const link = document.getElementById('openDesktopLink');
+  if (link) link.href = base + '/morning-command-center.html#prospects';
+  const input = document.getElementById('dashboardUrlInput');
+  if (input && !input.value) input.value = (localStorage.getItem('pcc-dashboard-url') || '');
+}
+
+// ══════════════════════════════════════════
+//  SYNC WITH DESKTOP DASHBOARD
+// ══════════════════════════════════════════
+async function syncFromDesktop() {
+  const dot = document.getElementById('syncDot');
+  const label = document.getElementById('syncLabel');
+  const detail = document.getElementById('syncStatusDetail');
+  const base = getDashboardUrl();
+  const isLocalhost = /^https?:\/\/localhost(:|\/|$)/i.test(base) || /^https?:\/\/127\.0\.0\.1/i.test(base);
+  const isPhone = /Mobi|iPhone|iPad|iPod|Android/i.test(navigator.userAgent || '');
+
+  // On a phone, the PWA's source of truth is GitHub Pages — not the Mac LAN server.
+  // Skip the LAN sync attempt entirely so we don't show a misleading "offline" banner.
+  if (isPhone && isLocalhost) {
+    dot.className = 'sync-dot synced';
+    label.textContent = '✓ Live from GitHub';
+    return;
+  }
+
+  dot.className = 'sync-dot syncing';
+  label.textContent = 'Syncing…';
+  if (detail) detail.textContent = 'Trying ' + base;
+
+  try {
+    const r = await fetch(base + '/linkedin_prospects.json?ts=' + Date.now(),
+                         {cache:'no-store', signal: AbortSignal.timeout(5000)});
+    if (r.ok) {
+      dot.className = 'sync-dot synced';
+      const now = new Date().toLocaleTimeString('en-GB', {hour:'2-digit',minute:'2-digit'});
+      label.textContent = '✓ Synced with desktop dashboard';
+      document.getElementById('lastSyncTime').textContent = now;
+      if (detail) detail.textContent = 'OK · ' + base;
+    } else throw new Error('HTTP ' + r.status);
+  } catch(e) {
+    dot.className = 'sync-dot';
+    if (isLocalhost && !/Mac|MacIntel/i.test(navigator.platform || '')) {
+      // Phones can't reach a Mac at "localhost". Tell the user the actual fix.
+      label.textContent = 'Set Mac LAN IP in Settings to sync';
+      if (detail) detail.textContent = 'Phones cannot reach "localhost" on a Mac. Open Settings → Dashboard URL and enter your Mac\'s LAN IP (e.g. http://192.168.1.42:8765).';
+    } else {
+      label.textContent = 'Desktop offline — using cached data';
+      if (detail) detail.textContent = 'Could not reach ' + base + ' (' + (e.message || 'timeout') + ')';
+    }
+  }
+}
+
+function syncToDesktop() {
+  // Write progress state back to JSON via fetch POST if server supports it
+  // Falls back gracefully — primary sync is read-only from JSON
+  document.getElementById('syncDot').className = 'sync-dot syncing';
+  setTimeout(() => {
+    document.getElementById('syncDot').className = 'sync-dot synced';
+  }, 800);
+}
+
+// ══════════════════════════════════════════
+//  RENDER ALL
+// ══════════════════════════════════════════
+function renderAll() {
+  renderProspects();
+  renderToday();
+  renderReplies();
+  renderTemplates();
+  updateReplyBanner();
+  updateReplyBadge();
+}
+
+// ══════════════════════════════════════════
+//  PROSPECT CARDS
+// ══════════════════════════════════════════
+function renderProspects() {
+  const list = document.getElementById('prospectList');
+  let done = 0;
+  list.innerHTML = PROSPECTS.map(p => {
+    const st = getState(p.rank);
+    const allDone = st.d1 && st.d2 && st.d3;
+    if (allDone) done++;
+    const replyType = st.reply ? st.reply.type : null;
+    const nextDM = !st.d2 ? p.plan.d2.action : p.plan.d3.action;
+    const nextDMLabel = !st.d2 ? 'D2 · Mon May 5' : 'D3 · Wed May 7';
+
+    return `<div class="prospect-card${allDone?' done-card':''}${st.won?' won-card':''}" id="card-${p.rank}">
+      <div class="card-header" onclick="toggleCard(${p.rank})">
+        <div class="rank-badge">#${p.rank}</div>
+        <div class="card-info">
+          <div class="card-company">${p.company}</div>
+          <div class="card-contact">${p.contact}</div>
+          <div class="card-sector">${p.sector} · ${p.region}</div>
+        </div>
+        <div class="card-right">
+          <div class="score-badge">${p.score}</div>
+          <div class="chevron">▼</div>
+        </div>
+      </div>
+
+      ${replyType ? `<div class="reply-indicator visible">
+        <div class="reply-dot ${replyType}"></div>
+        <span class="reply-label ${replyType}">${replyType === 'replied' ? '✓ Replied' : replyType === 'declined' ? '✗ Declined' : '🏆 Won'}</span>
+        ${st.reply.note ? `<span style="font-size:10px;color:var(--muted);margin-left:4px">— ${st.reply.note.substring(0,30)}</span>` : ''}
+      </div>` : ''}
+
+      <div class="day-pills">
+        <div class="day-pill d1${st.d1?' done-pill':''}" onclick="toggleDay(${p.rank},'d1',event)">D1<div class="day-pill-date">May 3</div></div>
+        <div class="day-pill d2${st.d2?' done-pill':''}" onclick="toggleDay(${p.rank},'d2',event)">D2<div class="day-pill-date">May 5</div></div>
+        <div class="day-pill d3${st.d3?' done-pill':''}" onclick="toggleDay(${p.rank},'d3',event)">D3<div class="day-pill-date">May 7</div></div>
+      </div>
+
+      <div class="card-body">
+        <div class="pain-block">
+          <div class="pain-label">Critical Issue</div>
+          <div class="pain-text">${p.critical_issue}</div>
+          <div class="offer-text">✦ ${p.prisy_offer}</div>
+        </div>
+
+        <div class="day-actions">
+          <div class="day-action d1">
+            <div class="day-action-header"><span class="day-tag">D1 · Warm-Up</span><span class="day-date-tag">${p.plan.d1.date}</span></div>
+            <div class="day-action-text">${p.plan.d1.action}</div>
+          </div>
+          <div class="day-action d2">
+            <div class="day-action-header"><span class="day-tag">D2 · Insight DM</span><span class="day-date-tag">${p.plan.d2.date}</span></div>
+            <div class="day-action-text">${p.plan.d2.action}</div>
+          </div>
+          <div class="day-action d3">
+            <div class="day-action-header"><span class="day-tag">D3 · ASK</span><span class="day-date-tag">${p.plan.d3.date}</span></div>
+            <div class="day-action-text">${p.plan.d3.action}</div>
+          </div>
+        </div>
+
+        <div class="dm-copy-block">
+          <div class="dm-copy-header">
+            <span class="dm-copy-label">📋 Next DM to send</span>
+            <span class="dm-copy-which">${nextDMLabel}</span>
+          </div>
+          <div class="dm-text-preview">${nextDM}</div>
+          <button class="dm-copy-btn" onclick="copyText(${p.rank})">Tap to Copy DM → Paste in LinkedIn</button>
+        </div>
+
+        <div class="card-actions">
+          <a class="btn btn-li" href="${p.linkedin}" target="_blank">🔗 LinkedIn</a>
+          <button class="btn btn-reply" onclick="openModal(${p.rank}, event)">💬 Log Reply</button>
+          <button class="btn btn-won" onclick="markWon(${p.rank}, event)">🏆 Won</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('completedCount').textContent = `${done} / ${PROSPECTS.length} done`;
+}
+
+// ══════════════════════════════════════════
+//  TODAY VIEW
+// ══════════════════════════════════════════
+function renderToday() {
+  const list = document.getElementById('todayList');
+  let done = 0;
+  list.innerHTML = PROSPECTS.map(p => {
+    const st = getState(p.rank);
+    if (st.d1) done++;
+    return `<div class="prospect-card${st.d1?' done-card':''}">
+      <div class="card-header" style="cursor:default">
+        <div class="rank-badge">#${p.rank}</div>
+        <div class="card-info">
+          <div class="card-company">${p.company}</div>
+          <div class="card-contact" style="font-size:11px;white-space:normal;margin-top:4px;line-height:1.4">${p.plan.d1.action}</div>
+        </div>
+        <div class="card-right">
+          ${st.d1
+            ? '<span style="font-size:22px">✅</span>'
+            : `<button class="btn btn-reply" style="padding:8px 10px;font-size:11px" onclick="toggleDay(${p.rank},'d1',event)">Done</button>`
+          }
+        </div>
+      </div>
+      <div class="card-actions" style="padding:0 12px 12px">
+        <a class="btn btn-li" href="${p.linkedin}" target="_blank">🔗 Open ${p.firstName}'s LinkedIn</a>
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('todayCount').textContent = `${done} / 10 done`;
+}
+
+// ══════════════════════════════════════════
+//  REPLY LOG VIEW
+// ══════════════════════════════════════════
+function renderReplies() {
+  const log = document.getElementById('replyLog');
+  if (!replies.length) {
+    log.innerHTML = '<div class="reply-log-empty">No replies logged yet.<br><span style="font-size:12px;margin-top:6px;display:block">Tap "Log Reply" on any prospect card.</span></div>';
+    return;
+  }
+  log.innerHTML = [...replies].reverse().map(r => `
+    <div class="reply-log-card">
+      <div class="reply-log-header">
+        <span class="reply-log-company">${r.company}</span>
+        <span class="reply-log-status ${r.type}">${r.type === 'replied' ? '✅ Replied' : r.type === 'declined' ? '❌ Declined' : '🏆 Won'}</span>
+      </div>
+      <div class="reply-log-note">${r.contact}</div>
+      ${r.note ? `<div class="reply-log-note" style="margin-top:6px;font-style:italic">"${r.note}"</div>` : ''}
+      <div class="reply-log-time">${r.time}</div>
+    </div>`).join('');
+}
+
+// ══════════════════════════════════════════
+//  NOTIFICATION BANNER (blinker)
+// ══════════════════════════════════════════
+function updateReplyBanner() {
+  const banner = document.getElementById('notifBanner');
+  const unread = replies.filter(r => !r.read);
+  if (!unread.length) { banner.classList.remove('visible'); return; }
+  banner.classList.add('visible');
+  banner.innerHTML = unread.slice(0,3).map(r => `
+    <div class="notif-item" onclick="markRead(${r.id}); showView('replies', document.querySelector('.nav-btn:nth-child(3)'))">
+      <div class="notif-blinker ${r.type}"></div>
+      <div class="notif-text">
+        <div class="notif-company">${r.company} ${r.type === 'replied' ? 'replied' : r.type === 'declined' ? 'declined' : '— WON! 🏆'}</div>
+        <div class="notif-sub">${r.note || r.contact}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+        <div class="notif-time">${r.time}</div>
+        <div class="notif-clear" onclick="event.stopPropagation();markRead(${r.id})">✕</div>
+      </div>
+    </div>`).join('');
+}
+
+function updateReplyBadge() {
+  const unread = replies.filter(r => !r.read).length;
+  const badge = document.getElementById('replyBadge');
+  badge.textContent = unread ? `(${unread})` : '';
+  badge.style.color = 'var(--red)';
+}
+
+function markRead(id) {
+  const r = replies.find(x => x.id === id);
+  if (r) r.read = true;
+  saveState();
+  updateReplyBanner();
+  updateReplyBadge();
+}
+
+function clearNotifs() {
+  replies.forEach(r => r.read = true);
+  saveState();
+  updateReplyBanner();
+  updateReplyBadge();
+}
+
+// ══════════════════════════════════════════
+//  TEMPLATES VIEW
+// ══════════════════════════════════════════
+function renderTemplates() {
+  document.getElementById('templatesList').innerHTML = PROSPECTS.map(p => `
+    <div class="template-card">
+      <div class="template-header">
+        <span class="template-name">${p.company}</span>
+        <a href="${p.linkedin}" target="_blank" style="font-size:11px;color:var(--blue);text-decoration:none">🔗 LinkedIn ↗</a>
+      </div>
+      <div style="padding:8px 13px 2px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--amber)">D2 · Insight DM · Mon May 5</div>
+      <div class="template-body">${p.plan.d2.action}</div>
+      <button class="template-copy-btn" onclick="copyRaw(\`${escJS(p.plan.d2.action)}\`)">📋 Copy D2 DM</button>
+      <div style="padding:8px 13px 2px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--red)">D3 · ASK · Wed May 7</div>
+      <div class="template-body">${p.plan.d3.action}</div>
+      <button class="template-copy-btn" onclick="copyRaw(\`${escJS(p.plan.d3.action)}\`)">📋 Copy D3 ASK</button>
+    </div>`).join('');
+}
+
+// ══════════════════════════════════════════
+//  MODAL — LOG REPLY
+// ══════════════════════════════════════════
+function openModal(rank, e) {
+  e && e.stopPropagation();
+  modalRank = rank;
+  modalSelectedOpt = null;
+  const p = PROSPECTS.find(x => x.rank === rank);
+  document.getElementById('modalTitle').textContent = p.company;
+  document.getElementById('modalSub').textContent = p.contact;
+  document.getElementById('modalNote').value = '';
+  ['optReplied','optDeclined','optWon'].forEach(id => {
+    document.getElementById(id).className = 'modal-opt';
+  });
+  document.getElementById('modalOverlay').classList.add('visible');
+}
+
+function closeModal(e) {
+  if (e && e.target !== document.getElementById('modalOverlay')) return;
+  document.getElementById('modalOverlay').classList.remove('visible');
+}
+
+function selectModalOpt(type) {
+  modalSelectedOpt = type;
+  ['optReplied','optDeclined','optWon'].forEach(id => {
+    document.getElementById(id).className = 'modal-opt';
+  });
+  const map = {replied:'optReplied', declined:'optDeclined', won:'optWon'};
+  document.getElementById(map[type]).className = `modal-opt selected ${type}`;
+}
+
+function saveModalReply() {
+  if (!modalSelectedOpt) { showToast('Select a status first'); return; }
+  const p = PROSPECTS.find(x => x.rank === modalRank);
+  const note = document.getElementById('modalNote').value.trim();
+  const entry = {
+    id: Date.now(),
+    rank: modalRank,
+    company: p.company,
+    contact: p.contact,
+    type: modalSelectedOpt,
+    note,
+    time: new Date().toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}),
+    read: false
+  };
+  replies.push(entry);
+  if (!state[modalRank]) state[modalRank] = {d1:false,d2:false,d3:false,won:false,reply:null};
+  state[modalRank].reply = entry;
+  if (modalSelectedOpt === 'won') { state[modalRank].won = true; retainersWon++; }
+  saveState();
+  renderAll();
+  updateRevenue();
+  document.getElementById('modalOverlay').classList.remove('visible');
+  const emoji = modalSelectedOpt === 'replied' ? '✅' : modalSelectedOpt === 'declined' ? '❌' : '🏆';
+  showToast(`${emoji} ${p.company} logged as ${modalSelectedOpt}`);
+  // Vibrate if available
+  if (navigator.vibrate) navigator.vibrate([50, 30, 50]);
+}
+
+// ══════════════════════════════════════════
+//  ACTIONS
+// ══════════════════════════════════════════
+function toggleCard(rank) {
+  document.getElementById(`card-${rank}`).classList.toggle('open');
+}
+
+function toggleDay(rank, day, e) {
+  e && e.stopPropagation();
+  if (!state[rank]) state[rank] = {d1:false,d2:false,d3:false,won:false,reply:null};
+  state[rank][day] = !state[rank][day];
+  saveState();
+  renderProspects();
+  renderToday();
+  updateRevenue();
+  showToast(state[rank][day] ? '✓ Marked done' : 'Unmarked');
+}
+
+function markWon(rank, e) {
+  e && e.stopPropagation();
+  if (!state[rank]) state[rank] = {d1:true,d2:true,d3:true,won:false,reply:null};
+  if (state[rank].won) {
+    state[rank].won = false;
+    retainersWon = Math.max(0, retainersWon - 1);
+  } else {
+    state[rank].won = true; state[rank].d1 = true; state[rank].d2 = true; state[rank].d3 = true;
+    retainersWon++;
+  }
+  saveState(); renderAll(); updateRevenue();
+  showToast(state[rank].won ? '🏆 +BHD 750/mo won!' : 'Removed from won');
+}
+
+function copyText(rank) {
+  const p = PROSPECTS.find(x => x.rank === rank);
+  const st = getState(rank);
+  const text = !st.d2 ? p.plan.d2.action : p.plan.d3.action;
+  copyRaw(text);
+}
+
+function copyRaw(text) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).then(() => showToast('📋 Copied! Paste in LinkedIn'));
+  } else {
+    const el = document.createElement('textarea');
+    el.value = text; document.body.appendChild(el);
+    el.select(); document.execCommand('copy');
+    document.body.removeChild(el);
+    showToast('📋 Copied!');
+  }
+}
+
+function updateRevenue() {
+  const mrr = retainersWon * 750;
+  const pct = Math.min(100, Math.round((mrr / 4500) * 100));
+  document.getElementById('retainersWon').textContent = retainersWon;
+  document.getElementById('currentMRR').textContent = `BHD ${mrr.toLocaleString()}`;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('pipelineCount').textContent = PROSPECTS.filter(p => !getState(p.rank).won).length;
+}
+
+function showView(name, btn) {
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('view-' + name).classList.add('active');
+  if (btn) btn.classList.add('active');
+  else document.querySelector(`.nav-btn[onclick*="${name}"]`)?.classList.add('active');
+}
+
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2400);
+}
+
+function resetProgress() {
+  if (confirm('Reset all progress and replies?')) {
+    state = {}; replies = []; retainersWon = 0; saveState();
+    renderAll(); updateRevenue(); showToast('🔄 Reset done');
+  }
+}
+
+function escJS(str) {
+  return str.replace(/`/g,'\\`').replace(/\$/g,'\\$');
+}
+</script>
+</body>
+</html>
