@@ -457,6 +457,7 @@ body.day .theme-knob { transform:translateX(18px); }
   <button class="nav-btn" onclick="showView('today',this)">📅 Today</button>
   <button class="nav-btn" onclick="showView('replies',this)">💬 Replies <span id="replyBadge"></span></button>
   <button class="nav-btn" onclick="showView('templates',this)">📋 Scripts</button>
+  <button class="nav-btn" onclick="showView('goodnesscities',this)">🌆 GC</button>
   <button class="nav-btn" onclick="showView('settings',this)">⚙️</button>
 </div>
 
@@ -465,7 +466,7 @@ body.day .theme-knob { transform:translateX(18px); }
 ════════════════════════════════════ -->
 <div class="view active" id="view-prospects">
   <div class="section-header">
-    <span class="section-title">Top 10 · May 3–7</span>
+    <span class="section-title" id="windowTitle">Top 10</span>
     <span class="section-count" id="completedCount">0 / 10</span>
   </div>
   <div class="prospect-list" id="prospectList"></div>
@@ -476,7 +477,7 @@ body.day .theme-knob { transform:translateX(18px); }
 ════════════════════════════════════ -->
 <div class="view" id="view-today">
   <div style="margin:12px 14px 0; background:var(--green-dim); border:1px solid rgba(74,222,128,0.25); border-radius:var(--radius); padding:12px 14px;">
-    <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:5px;">🔥 D1 Mission — Sat May 3</div>
+    <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:5px;" id="d1MissionLabel">🔥 D1 Mission</div>
     <div style="font-size:13px;color:var(--text);line-height:1.5;">Comment on each prospect's latest LinkedIn post. <strong>No pitch, no CTA.</strong> Just sharp, relevant engagement. Build presence first.</div>
   </div>
   <div class="section-header">
@@ -508,15 +509,43 @@ body.day .theme-knob { transform:translateX(18px); }
 </div>
 
 <!-- ════════════════════════════════════
+  VIEW: GOODNESSCITIES
+════════════════════════════════════ -->
+<div class="view" id="view-goodnesscities">
+  <div style="margin:12px 14px 0; background:var(--blue-dim,rgba(96,165,250,0.12)); border:1px solid rgba(96,165,250,0.3); border-radius:var(--radius); padding:12px 14px;">
+    <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:5px;">🌆 GoodnessCities — Daily Outreach</div>
+    <div style="font-size:13px;color:var(--text);line-height:1.5;" id="gcMissionText">Sales pitch for a paid service. Today's picks pull from the uploaded lead list — every channel action button opens the real contact method for that lead.</div>
+  </div>
+  <div class="section-header">
+    <span class="section-title">Today's Picks</span>
+    <span class="section-count" id="gcCompletedCount">0 / 0</span>
+  </div>
+  <div id="gcComplianceBanner" style="display:none;margin:0 14px 10px;background:var(--red-dim);border:1px solid rgba(248,113,113,0.3);border-radius:var(--radius-sm);padding:10px 12px;font-size:11px;line-height:1.5;color:var(--red)"></div>
+  <div class="prospect-list" id="gcList"></div>
+
+  <div class="section-header">
+    <span class="section-title">Pipeline Snapshot</span>
+  </div>
+  <div class="settings-list" style="padding-top:0">
+    <div class="settings-card">
+      <div class="settings-row"><span class="settings-key">Total real leads</span><span class="settings-val" id="gcTotalLeads">—</span></div>
+      <div class="settings-row"><span class="settings-key">Email-ready</span><span class="settings-val" id="gcEmailReady">—</span></div>
+      <div class="settings-row"><span class="settings-key">Excluded (fictional rows)</span><span class="settings-val" id="gcExcluded">—</span></div>
+      <div class="settings-row"><span class="settings-key">Source</span><span class="settings-val" style="font-size:10px">GoodnessCities_Leads_Clean.csv</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
   VIEW: SETTINGS
 ════════════════════════════════════ -->
 <div class="view" id="view-settings">
   <div class="settings-list">
     <div class="settings-card">
       <div class="settings-label">Campaign Window</div>
-      <div class="settings-row"><span class="settings-key">D1 Warm-Up</span><span class="settings-val" style="color:var(--green)">Sat · May 3</span></div>
-      <div class="settings-row"><span class="settings-key">D2 Insight DM</span><span class="settings-val" style="color:var(--amber)">Mon · May 5</span></div>
-      <div class="settings-row"><span class="settings-key">D3 ASK</span><span class="settings-val" style="color:var(--red)">Wed · May 7</span></div>
+      <div class="settings-row"><span class="settings-key">D1 Warm-Up</span><span class="settings-val" style="color:var(--green)" id="settingsD1">–</span></div>
+      <div class="settings-row"><span class="settings-key">D2 Insight DM</span><span class="settings-val" style="color:var(--amber)" id="settingsD2">–</span></div>
+      <div class="settings-row"><span class="settings-key">D3 ASK</span><span class="settings-val" style="color:var(--red)" id="settingsD3">–</span></div>
     </div>
     <div class="settings-card">
       <div class="settings-label">Revenue Target</div>
@@ -535,7 +564,7 @@ body.day .theme-knob { transform:translateX(18px); }
       <div class="settings-row"><span class="settings-key">Hosting</span><span class="settings-val" style="font-size:10px">GitHub Pages</span></div>
       <div class="settings-row"><span class="settings-key">Repo</span><span class="settings-val" style="font-size:10px">gienelsbalanquit-collab/prisy-pwa</span></div>
       <div class="settings-row"><span class="settings-key">Live URL</span><span class="settings-val" style="font-size:10px">gienelsbalanquit-collab.github.io/prisy-pwa</span></div>
-      <div class="settings-row"><span class="settings-key">JSON source</span><span class="settings-val" style="font-size:10px">../linkedin_prospects.json (Morning Dashboard root)</span></div>
+      <div class="settings-row"><span class="settings-key">JSON source</span><span class="settings-val" style="font-size:10px">./linkedin_prospects.json</span></div>
       <div class="settings-row"><span class="settings-key">Last fetch</span><span class="settings-val" id="lastSyncTime">—</span></div>
       <div class="settings-row"><span class="settings-key">Status</span><span class="settings-val" id="syncStatusDetail" style="font-size:10px">—</span></div>
     </div>
@@ -599,9 +628,9 @@ let PROSPECTS = [
     critical_issue:"Sales-heavy messaging can miss premium positioning and buyer confidence.",
     prisy_offer:"Brand authority refresh + investor pitch + content engine.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent Newton Properties post or update. No pitch."},
-      d2:{date:"Mon · May 18", action:"DM: 'Ehab — Your expertise should look as strong online as it is in the room. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Sales-heavy messaging can miss premium positioning and buyer confidence. Brand authority refresh + investor pitch + content engine. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Engage on LinkedIn — comment thoughtfully on a recent Newton Properties post or update. No pitch."},
+      d2:{date:W.d2, action:"DM: 'Ehab — Your expertise should look as strong online as it is in the room. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Sales-heavy messaging can miss premium positioning and buyer confidence. Brand authority refresh + investor pitch + content engine. BHD 750/mo covers it. 20-min call this week?'"}
     }
   },
   { rank:2, company:"Middle East Hospital", sector:"Healthcare / Hospital", region:"Bahrain",
@@ -610,9 +639,9 @@ let PROSPECTS = [
     critical_issue:"Medical services can feel generic without trust-led brand communication.",
     prisy_offer:"Patient journey audit + content strategy + healthcare campaign materials.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent Middle East Hospital post or update. No pitch."},
-      d2:{date:"Mon · May 18", action:"DM: 'Nissam — Patients choose confidence before they choose a clinic. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Medical services can feel generic without trust-led brand communication. Patient journey audit + content strategy + healthcare campaign materials. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Engage on LinkedIn — comment thoughtfully on a recent Middle East Hospital post or update. No pitch."},
+      d2:{date:W.d2, action:"DM: 'Nissam — Patients choose confidence before they choose a clinic. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Medical services can feel generic without trust-led brand communication. Patient journey audit + content strategy + healthcare campaign materials. BHD 750/mo covers it. 20-min call this week?'"}
     }
   },
   { rank:3, company:"MKJ Skin Co.", sector:"Skincare / Beauty", region:"Bahrain",
@@ -621,9 +650,9 @@ let PROSPECTS = [
     critical_issue:"Can become visually generic unless the brand story and product proof are clear.",
     prisy_offer:"Beauty brand refresh + content direction + product launch campaign.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent MKJ Skin Co. post or update. No pitch."},
-      d2:{date:"Mon · May 18", action:"DM: 'Mohamed — Skincare sells confidence, but the brand has to make that confidence visible. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Beauty brands can become visually generic unless the story and product proof are clear. Beauty brand refresh + content direction + product launch campaign. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Engage on LinkedIn — comment thoughtfully on a recent MKJ Skin Co. post or update. No pitch."},
+      d2:{date:W.d2, action:"DM: 'Mohamed — Skincare sells confidence, but the brand has to make that confidence visible. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Beauty brands can become visually generic unless the story and product proof are clear. Beauty brand refresh + content direction + product launch campaign. BHD 750/mo covers it. 20-min call this week?'"}
     }
   },
   { rank:4, company:"LuLu Hypermarket Bahrain / LuLu Group", sector:"Retail / Grocery / Hypermarket", region:"Bahrain",
@@ -632,9 +661,9 @@ let PROSPECTS = [
     critical_issue:"Large retail brands can become promotional but not emotionally sticky.",
     prisy_offer:"Retail campaign system + seasonal creative + shopper journey content.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent LuLu Bahrain post or update. No pitch."},
-      d2:{date:"Mon · May 18", action:"DM: 'Nimish — Promotions bring footfall; brand memory brings repeat families. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Large retail brands can become promotional but not emotionally sticky. Retail campaign system + seasonal creative + shopper journey content. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Engage on LinkedIn — comment thoughtfully on a recent LuLu Bahrain post or update. No pitch."},
+      d2:{date:W.d2, action:"DM: 'Nimish — Promotions bring footfall; brand memory brings repeat families. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Large retail brands can become promotional but not emotionally sticky. Retail campaign system + seasonal creative + shopper journey content. BHD 750/mo covers it. 20-min call this week?'"}
     }
   },
   { rank:5, company:"Alosra Supermarket", sector:"Premium Grocery / Retail", region:"Bahrain",
@@ -643,9 +672,9 @@ let PROSPECTS = [
     critical_issue:"Need sharper lifestyle storytelling and loyalty beyond price/promo.",
     prisy_offer:"Campaigns + in-store storytelling + content pillars.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Verify Alosra Marketing decision-maker via LinkedIn company search, then engage on a recent post."},
-      d2:{date:"Mon · May 18", action:"DM (once verified): 'Hi — Premium grocery can become a lifestyle brand, not just a basket. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Premium grocery needs sharper lifestyle storytelling and loyalty beyond price/promo. Campaigns + in-store storytelling + content pillars. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Verify Alosra Marketing decision-maker via LinkedIn company search, then engage on a recent post."},
+      d2:{date:W.d2, action:"DM (once verified): 'Hi — Premium grocery can become a lifestyle brand, not just a basket. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Premium grocery needs sharper lifestyle storytelling and loyalty beyond price/promo. Campaigns + in-store storytelling + content pillars. BHD 750/mo covers it. 20-min call this week?'"}
     }
   },
   { rank:6, company:"Marassi Galleria", sector:"Luxury Mall / Destination Retail", region:"Bahrain",
@@ -654,9 +683,9 @@ let PROSPECTS = [
     critical_issue:"Malls need more than footfall; they need cultural relevance and tenant conversion.",
     prisy_offer:"Destination campaign + tenant content kits + seasonal activation identity.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent Marassi Galleria post or update. No pitch."},
-      d2:{date:"Mon · May 18", action:"DM: 'Julian — A luxury destination must feel like a reason to go, not just a place to shop. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Malls need more than footfall; they need cultural relevance and tenant conversion. Destination campaign + tenant content kits + seasonal activation identity. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Engage on LinkedIn — comment thoughtfully on a recent Marassi Galleria post or update. No pitch."},
+      d2:{date:W.d2, action:"DM: 'Julian — A luxury destination must feel like a reason to go, not just a place to shop. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Malls need more than footfall; they need cultural relevance and tenant conversion. Destination campaign + tenant content kits + seasonal activation identity. BHD 750/mo covers it. 20-min call this week?'"}
     }
   },
   { rank:7, company:"Bahrain Marina Development", sector:"Real Estate / Tourism Lifestyle", region:"Bahrain",
@@ -665,9 +694,9 @@ let PROSPECTS = [
     critical_issue:"Development stories can become too technical without emotional pull.",
     prisy_offer:"Launch narrative + investor deck + experiential campaign.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Verify Bahrain Marina Development marketing/comms lead via LinkedIn company search, then engage on a recent post."},
-      d2:{date:"Mon · May 18", action:"DM (once verified): 'Hi — Waterfront projects win when they become symbols, not addresses. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Development stories can become too technical without emotional pull. Launch narrative + investor deck + experiential campaign. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Verify Bahrain Marina Development marketing/comms lead via LinkedIn company search, then engage on a recent post."},
+      d2:{date:W.d2, action:"DM (once verified): 'Hi — Waterfront projects win when they become symbols, not addresses. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Development stories can become too technical without emotional pull. Launch narrative + investor deck + experiential campaign. BHD 750/mo covers it. 20-min call this week?'"}
     }
   },
   { rank:8, company:"Edamah", sector:"Real Estate / Investment / Destination Projects", region:"Bahrain",
@@ -676,9 +705,9 @@ let PROSPECTS = [
     critical_issue:"Institutional projects need clearer market-facing emotion and investor communication.",
     prisy_offer:"Stakeholder deck + campaign positioning + destination content.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Engage on LinkedIn — comment thoughtfully on a recent Edamah post or update. No pitch."},
-      d2:{date:"Mon · May 18", action:"DM: 'Fahad — Public assets need public imagination — clear story, not just infrastructure. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Institutional projects need clearer market-facing emotion and investor communication. Stakeholder deck + campaign positioning + destination content. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Engage on LinkedIn — comment thoughtfully on a recent Edamah post or update. No pitch."},
+      d2:{date:W.d2, action:"DM: 'Fahad — Public assets need public imagination — clear story, not just infrastructure. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Institutional projects need clearer market-facing emotion and investor communication. Stakeholder deck + campaign positioning + destination content. BHD 750/mo covers it. 20-min call this week?'"}
     }
   },
   { rank:9, company:"Fintech Revolution Summit Bahrain / TraiCon Events", sector:"Events / Fintech", region:"Bahrain",
@@ -687,9 +716,9 @@ let PROSPECTS = [
     critical_issue:"Summits often underuse thought-leadership content and sponsor value storytelling.",
     prisy_offer:"Event campaign + sponsor decks + LinkedIn content engine.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Verify TraiCon/Fintech Revolution Summit organizer via LinkedIn company search, then engage on a recent post."},
-      d2:{date:"Mon · May 18", action:"DM (once verified): 'Hi — Fintech events should not end at attendance — they should become authority engines. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Summits often underuse thought-leadership content and sponsor value storytelling. Event campaign + sponsor decks + LinkedIn content engine. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Verify TraiCon/Fintech Revolution Summit organizer via LinkedIn company search, then engage on a recent post."},
+      d2:{date:W.d2, action:"DM (once verified): 'Hi — Fintech events should not end at attendance — they should become authority engines. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Summits often underuse thought-leadership content and sponsor value storytelling. Event campaign + sponsor decks + LinkedIn content engine. BHD 750/mo covers it. 20-min call this week?'"}
     }
   },
   { rank:10, company:"Explore Bahrain / Connections Luxury", sector:"Luxury Travel / Tourism Events", region:"Bahrain",
@@ -698,9 +727,9 @@ let PROSPECTS = [
     critical_issue:"Luxury experiences need high-trust, high-taste marketing materials.",
     prisy_offer:"Luxury B2B presentation + partner campaign + experience storytelling.",
     plan:{
-      d1:{date:"Sat · May 16", action:"Verify Explore Bahrain / Connections Luxury contact via LinkedIn company search, then engage on a recent post."},
-      d2:{date:"Mon · May 18", action:"DM (once verified): 'Hi — Luxury travel is sold through imagination before itinerary. I spotted one fixable thing — mind if I share it?'"},
-      d3:{date:"Wed · May 20", action:"Send 1-page teardown (attached) + ASK: 'Luxury experiences need high-trust, high-taste marketing materials. Luxury B2B presentation + partner campaign + experience storytelling. BHD 750/mo covers it. 20-min call this week?'"}
+      d1:{date:W.d1, action:"Verify Explore Bahrain / Connections Luxury contact via LinkedIn company search, then engage on a recent post."},
+      d2:{date:W.d2, action:"DM (once verified): 'Hi — Luxury travel is sold through imagination before itinerary. I spotted one fixable thing — mind if I share it?'"},
+      d3:{date:W.d3, action:"Send 1-page teardown (attached) + ASK: 'Luxury experiences need high-trust, high-taste marketing materials. Luxury B2B presentation + partner campaign + experience storytelling. BHD 750/mo covers it. 20-min call this week?'"}
     }
   }
 ];
@@ -708,6 +737,27 @@ let PROSPECTS = [
 // ══════════════════════════════════════════
 //  STATE
 // ══════════════════════════════════════════
+
+// ── AUTO-COMPUTE OUTREACH WINDOW (Mon/Wed/Fri of current week) ──────────────
+function computeWindow() {
+  const now = new Date();
+  const dow = now.getDay(); // 0=Sun,1=Mon,...,6=Sat
+  const diff = dow === 0 ? 1 : (1 - dow);  // days to Monday
+  const mon = new Date(now); mon.setDate(now.getDate() + diff);
+  const wed = new Date(mon); wed.setDate(mon.getDate() + 2);
+  const fri = new Date(mon); fri.setDate(mon.getDate() + 4);
+  const DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const fmt  = d => DAYS[d.getDay()] + ' · ' + MONTHS[d.getMonth()] + ' ' + d.getDate();
+  const fmtS = d => MONTHS[d.getMonth()] + ' ' + d.getDate();
+  return {
+    d1: fmt(mon),  d1s: fmtS(mon),
+    d2: fmt(wed),  d2s: fmtS(wed),
+    d3: fmt(fri),  d3s: fmtS(fri),
+    range: MONTHS[mon.getMonth()] + ' ' + mon.getDate() + '\u2013' + fri.getDate()
+  };
+}
+const W = computeWindow();
 let state = JSON.parse(localStorage.getItem('pcc-state-v2') || '{}');
 let replies = JSON.parse(localStorage.getItem('pcc-replies') || '[]');
 let retainersWon = parseInt(localStorage.getItem('pcc-won') || '0');
@@ -760,8 +810,7 @@ function _normalizeProspect(p) {
 
 async function loadProspects() {
   try {
-    // PWA is served at /pwa/ — the JSON lives in the parent (Morning Dashboard root)
-    const r = await fetch('../linkedin_prospects.json?ts=' + Date.now(),
+    const r = await fetch('./linkedin_prospects.json?ts=' + Date.now(),
                          {cache:'no-store', signal: AbortSignal.timeout(8000)});
     if (!r.ok) throw new Error('HTTP ' + r.status);
     const data = await r.json();
@@ -784,18 +833,136 @@ async function loadProspects() {
 }
 
 // ══════════════════════════════════════════
+//  GOODNESSCITIES — DAILY OUTREACH (separate business, separate data source)
+//  Loaded from goodnesscities_leads.json — real leads from the uploaded CSV,
+//  fictional/"DO NOT CONTACT" rows already excluded at build time.
+// ══════════════════════════════════════════
+let GC_DATA = { hot_picks: [], leads: [], total_real_leads: 0, email_ready_count: 0, excluded_fictional_rows: 0, compliance_flags: [] };
+let gcState = JSON.parse(localStorage.getItem('gc-state-v1') || '{}');
+
+function getGCState(id) {
+  return gcState[id] || { contacted: false };
+}
+function saveGCState() {
+  localStorage.setItem('gc-state-v1', JSON.stringify(gcState));
+}
+
+async function loadGCLeads() {
+  try {
+    const r = await fetch('./goodnesscities_leads.json?ts=' + Date.now(),
+                         {cache:'no-store', signal: AbortSignal.timeout(8000)});
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    GC_DATA = await r.json();
+    renderGC();
+  } catch (e) {
+    console.warn('GoodnessCities JSON load failed:', e.message);
+  }
+}
+
+function gcActionButton(lead) {
+  const ch = (lead.outreach_channel || '').toLowerCase();
+  if (lead.email) {
+    const subject = encodeURIComponent(`GoodnessCities — quick idea for ${lead.business}`);
+    return `<a class="btn btn-li" href="mailto:${lead.email}?subject=${subject}" target="_blank">✉️ Email</a>`;
+  }
+  if (ch.includes('linkedin') && lead.website_social) {
+    return `<a class="btn btn-li" href="${lead.website_social}" target="_blank">🔗 LinkedIn</a>`;
+  }
+  if (ch.includes('instagram') && lead.website_social) {
+    return `<a class="btn btn-li" href="${lead.website_social}" target="_blank">📷 Instagram</a>`;
+  }
+  if (ch.includes('job link') && lead.website_social) {
+    return `<a class="btn btn-li" href="${lead.website_social}" target="_blank">💼 Job Link</a>`;
+  }
+  if (lead.phone) {
+    return `<a class="btn btn-li" href="tel:${lead.phone.replace(/\s+/g,'')}" target="_blank">📞 Call (review consent rules)</a>`;
+  }
+  if (lead.website_social) {
+    return `<a class="btn btn-li" href="${lead.website_social}" target="_blank">🌐 Website</a>`;
+  }
+  return '';
+}
+
+function renderGC() {
+  const list = document.getElementById('gcList');
+  if (!list) return;
+  const picks = (GC_DATA.hot_picks && GC_DATA.hot_picks.length) ? GC_DATA.hot_picks : [];
+  let done = 0;
+  list.innerHTML = picks.map(lead => {
+    const st = getGCState(lead.id);
+    if (st.contacted) done++;
+    return `<div class="prospect-card${st.contacted ? ' done-card' : ''}">
+      <div class="card-header" style="cursor:default">
+        <div class="rank-badge">#${lead.id}</div>
+        <div class="card-info">
+          <div class="card-company">${lead.business}</div>
+          <div class="card-contact">${lead.contact || lead.industry}</div>
+          <div class="card-sector">${lead.industry}${lead.geography ? ' · ' + lead.geography : ''}</div>
+        </div>
+        <div class="card-right">
+          <div class="score-badge">${lead.priority}</div>
+        </div>
+      </div>
+      <div class="card-body" style="display:block">
+        <div class="pain-block">
+          <div class="pain-label">Pain Point</div>
+          <div class="pain-text">${lead.pain_point || ''}</div>
+          <div class="offer-text">✦ ${lead.solution || ''}</div>
+        </div>
+        <div class="card-actions">
+          ${gcActionButton(lead)}
+          <button class="btn ${st.contacted ? 'btn-won' : 'btn-reply'}" onclick="toggleGCContacted(${lead.id})">${st.contacted ? '✓ Contacted' : 'Mark Contacted'}</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('gcCompletedCount').textContent = `${done} / ${picks.length}`;
+  document.getElementById('gcTotalLeads').textContent = GC_DATA.total_real_leads ?? '—';
+  document.getElementById('gcEmailReady').textContent = GC_DATA.email_ready_count ?? '—';
+  document.getElementById('gcExcluded').textContent = GC_DATA.excluded_fictional_rows ?? '—';
+  const banner = document.getElementById('gcComplianceBanner');
+  if (GC_DATA.compliance_flags && GC_DATA.compliance_flags.length) {
+    banner.style.display = 'block';
+    banner.innerHTML = '⚠️ ' + GC_DATA.compliance_flags.join('<br>⚠️ ');
+  } else {
+    banner.style.display = 'none';
+  }
+}
+
+function toggleGCContacted(id) {
+  if (!gcState[id]) gcState[id] = { contacted: false };
+  gcState[id].contacted = !gcState[id].contacted;
+  saveGCState();
+  renderGC();
+  showToast(gcState[id].contacted ? '✓ Marked contacted' : 'Unmarked');
+}
+
+// ══════════════════════════════════════════
 //  INIT
 // ══════════════════════════════════════════
 window.addEventListener('DOMContentLoaded', () => {
   setTheme(theme, false);
+  
+  // ── Set dynamic date labels ──
+  (function(){
+    const _W = computeWindow();
+    const _set = (id, v) => { const el = document.getElementById(id); if(el) el.textContent = v; };
+    _set('windowTitle',   'Top 10 · ' + _W.range);
+    _set('d1MissionLabel','🔥 D1 Mission — ' + _W.d1);
+    _set('settingsD1', _W.d1);
+    _set('settingsD2', _W.d2);
+    _set('settingsD3', _W.d3);
+  })();
   document.getElementById('dateBadge').textContent = new Date().toLocaleDateString('en-GB', {weekday:'short',month:'short',day:'numeric'});
   renderAll();
   updateRevenue();
   refreshDashboardLinks();      // wire Open-Desktop link to current Dashboard URL
   loadProspects();              // pull fresh prospects from same-site JSON (GitHub Pages)
+  loadGCLeads();                // pull GoodnessCities daily picks from same-site JSON
   syncFromDesktop();            // attempt LAN sync to Mac dashboard (will fail silently on phone)
   // Re-pull JSON every 5 min so a rotation push reaches the phone within 5 min
   setInterval(loadProspects, 5 * 60 * 1000);
+  setInterval(loadGCLeads, 5 * 60 * 1000);
   setInterval(syncFromDesktop, 60000);
   // SW — bump cache by forcing update on load so this fix actually ships to your phone
   if ('serviceWorker' in navigator) {
@@ -924,7 +1091,7 @@ function renderProspects() {
     if (allDone) done++;
     const replyType = st.reply ? st.reply.type : null;
     const nextDM = !st.d2 ? p.plan.d2.action : p.plan.d3.action;
-    const nextDMLabel = !st.d2 ? 'D2 · Mon May 5' : 'D3 · Wed May 7';
+    const nextDMLabel = !st.d2 ? `D2 · ${W.d2}` : `D3 · ${W.d3}`;
 
     return `<div class="prospect-card${allDone?' done-card':''}${st.won?' won-card':''}" id="card-${p.rank}">
       <div class="card-header" onclick="toggleCard(${p.rank})">
@@ -947,9 +1114,9 @@ function renderProspects() {
       </div>` : ''}
 
       <div class="day-pills">
-        <div class="day-pill d1${st.d1?' done-pill':''}" onclick="toggleDay(${p.rank},'d1',event)">D1<div class="day-pill-date">May 3</div></div>
-        <div class="day-pill d2${st.d2?' done-pill':''}" onclick="toggleDay(${p.rank},'d2',event)">D2<div class="day-pill-date">May 5</div></div>
-        <div class="day-pill d3${st.d3?' done-pill':''}" onclick="toggleDay(${p.rank},'d3',event)">D3<div class="day-pill-date">May 7</div></div>
+        <div class="day-pill d1${st.d1?' done-pill':''}" onclick="toggleDay(${p.rank},'d1',event)">D1<div class="day-pill-date">${W.d1s}</div></div>
+        <div class="day-pill d2${st.d2?' done-pill':''}" onclick="toggleDay(${p.rank},'d2',event)">D2<div class="day-pill-date">${W.d2s}</div></div>
+        <div class="day-pill d3${st.d3?' done-pill':''}" onclick="toggleDay(${p.rank},'d3',event)">D3<div class="day-pill-date">${W.d3s}</div></div>
       </div>
 
       <div class="card-body">
@@ -1100,10 +1267,10 @@ function renderTemplates() {
         <span class="template-name">${p.company}</span>
         <a href="${p.linkedin}" target="_blank" style="font-size:11px;color:var(--blue);text-decoration:none">🔗 LinkedIn ↗</a>
       </div>
-      <div style="padding:8px 13px 2px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--amber)">D2 · Insight DM · Mon May 5</div>
+      <div style="padding:8px 13px 2px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--amber)">D2 · Insight DM · ${W.d2}</div>
       <div class="template-body">${p.plan.d2.action}</div>
       <button class="template-copy-btn" onclick="copyRaw(\`${escJS(p.plan.d2.action)}\`)">📋 Copy D2 DM</button>
-      <div style="padding:8px 13px 2px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--red)">D3 · ASK · Wed May 7</div>
+      <div style="padding:8px 13px 2px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--red)">D3 · ASK · ${W.d3}</div>
       <div class="template-body">${p.plan.d3.action}</div>
       <button class="template-copy-btn" onclick="copyRaw(\`${escJS(p.plan.d3.action)}\`)">📋 Copy D3 ASK</button>
     </div>`).join('');
