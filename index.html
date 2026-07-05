@@ -6,7 +6,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="GoodnessCities">
-<meta name="theme-color" id="themeColorMeta" content="#0a0a0f">
+<meta name="theme-color" id="themeColorMeta" content="#fafafa">
 <link rel="manifest" href="manifest.json">
 <title>GoodnessCities Command Center</title>
 <style>
@@ -14,51 +14,53 @@
    THEME VARIABLES
 ══════════════════════════════════════════ */
 :root {
-  --gold: #c8a96e;
-  --gold-light: #e8c98e;
-  --gold-dim: rgba(200,169,110,0.15);
-  --radius: 16px;
+  /* One accent color, used sparingly — a muted bronze, not a shiny gold */
+  --gold: #92400e;
+  --gold-light: #b45309;
+  --gold-dim: rgba(146,64,14,0.08);
+  --radius: 14px;
   --radius-sm: 10px;
-  --green: #4ade80;
-  --green-dim: rgba(74,222,128,0.12);
-  --amber: #fbbf24;
-  --amber-dim: rgba(251,191,36,0.12);
-  --red: #f87171;
-  --red-dim: rgba(248,113,113,0.12);
-  --blue: #60a5fa;
+  /* Semantic status colors (D1/D2/D3, reply/decline) — refined, not neon */
+  --green: #15803d;
+  --green-dim: rgba(21,128,61,0.08);
+  --amber: #d97706;
+  --amber-dim: rgba(217,119,6,0.08);
+  --red: #dc2626;
+  --red-dim: rgba(220,38,38,0.08);
+  --blue: #2563eb;
+  --blue-dim: rgba(37,99,235,0.08);
 }
 
-/* NIGHT MODE (default) */
-body.night {
-  --bg: #0a0a0f;
-  --surface: #12121a;
-  --surface2: #1a1a26;
-  --border: rgba(200,169,110,0.2);
-  --text: #f0ede8;
-  --muted: #8a8a9a;
-  --header-bg: rgba(10,10,15,0.95);
-  --card-hover: rgba(200,169,110,0.04);
-}
-
-/* DAY MODE */
+/* DAY MODE (default) — near-white, restrained, no gold-tinted borders */
 body.day {
-  --bg: #f5f3ef;
+  --bg: #fafafa;
   --surface: #ffffff;
-  --surface2: #f0ede8;
-  --border: rgba(180,140,80,0.25);
-  --text: #1a1207;
-  --muted: #7a6f5e;
-  --header-bg: rgba(245,243,239,0.96);
-  --card-hover: rgba(180,140,80,0.05);
-  --gold: #9a6f2e;
-  --gold-light: #b88a40;
-  --gold-dim: rgba(154,111,46,0.12);
+  --surface2: #f8fafc;
+  --border: #e6e8eb;
+  --text: #17181c;
+  --muted: #6b7280;
+  --header-bg: rgba(255,255,255,0.85);
+  --card-hover: rgba(15,23,42,0.03);
+  --card-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 1px 8px rgba(15,23,42,0.03);
+}
+
+/* NIGHT MODE (optional, toggle) — soft slate, not pure black */
+body.night {
+  --bg: #0d0f14;
+  --surface: #15171e;
+  --surface2: #1b1e27;
+  --border: rgba(255,255,255,0.08);
+  --text: #e7e8ea;
+  --muted: #8b8f9a;
+  --header-bg: rgba(13,15,20,0.9);
+  --card-hover: rgba(255,255,255,0.03);
+  --card-shadow: none;
 }
 
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', ui-sans-serif, system-ui, 'Segoe UI', Roboto, sans-serif;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
@@ -95,7 +97,7 @@ body.day .theme-knob { transform:translateX(18px); }
   width:8px; height:8px; border-radius:50%; background:#6b7280;
   transition:background 0.3s;
 }
-.sync-dot.synced { background:var(--green); box-shadow:0 0 6px var(--green); }
+.sync-dot.synced { background:var(--green); }
 .sync-dot.syncing { background:var(--amber); animation:pulse 1s infinite; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
@@ -112,12 +114,13 @@ body.day .theme-knob { transform:translateX(18px); }
   margin:12px 14px 0;
   background:var(--surface); border:1px solid var(--border);
   border-radius:var(--radius); padding:14px;
+  box-shadow:var(--card-shadow);
 }
 .rev-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
 .rev-label { font-size:10px; color:var(--muted); letter-spacing:0.5px; text-transform:uppercase; }
 .rev-value { font-size:20px; font-weight:800; color:var(--gold); }
 .progress-bar { height:5px; background:rgba(128,128,128,0.15); border-radius:3px; overflow:hidden; margin-bottom:8px; }
-.progress-fill { height:100%; background:linear-gradient(90deg,var(--gold),var(--gold-light)); border-radius:3px; transition:width 1s ease; }
+.progress-fill { height:100%; background:var(--gold); border-radius:3px; transition:width 1s ease; }
 .rev-stats { display:flex; gap:8px; }
 .rev-stat { flex:1; background:var(--surface2); border-radius:8px; padding:8px 6px; text-align:center; }
 .rev-stat-n { font-size:14px; font-weight:800; color:var(--gold); }
@@ -157,8 +160,8 @@ body.day .theme-knob { transform:translateX(18px); }
   width:10px; height:10px; border-radius:50%; flex-shrink:0;
   animation:blink 1.2s ease-in-out infinite;
 }
-.notif-blinker.reply { background:var(--green); box-shadow:0 0 8px var(--green); }
-.notif-blinker.decline { background:var(--red); box-shadow:0 0 8px var(--red); }
+.notif-blinker.reply { background:var(--green); }
+.notif-blinker.decline { background:var(--red); }
 @keyframes blink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.7)} }
 .notif-text { flex:1; }
 .notif-company { font-size:13px; font-weight:700; color:var(--text); }
@@ -179,7 +182,8 @@ body.day .theme-knob { transform:translateX(18px); }
 
 .prospect-card {
   background:var(--surface); border:1px solid var(--border);
-  border-radius:var(--radius); overflow:hidden; transition:border-color 0.2s;
+  border-radius:var(--radius); overflow:hidden; transition:border-color 0.2s, box-shadow 0.2s;
+  box-shadow:var(--card-shadow);
 }
 .prospect-card.done-card { opacity:0.5; }
 .prospect-card.won-card { border-color:var(--gold); background:var(--gold-dim); }
@@ -210,8 +214,8 @@ body.day .theme-knob { transform:translateX(18px); }
 }
 .reply-indicator.visible { display:flex; }
 .reply-dot { width:7px; height:7px; border-radius:50%; }
-.reply-dot.replied { background:var(--green); box-shadow:0 0 5px var(--green); animation:blink 1.5s infinite; }
-.reply-dot.declined { background:var(--red); box-shadow:0 0 5px var(--red); animation:blink 1.5s infinite; }
+.reply-dot.replied { background:var(--green); animation:blink 1.5s infinite; }
+.reply-dot.declined { background:var(--red); animation:blink 1.5s infinite; }
 .reply-label { font-size:11px; font-weight:600; }
 .reply-label.replied { color:var(--green); }
 .reply-label.declined { color:var(--red); }
@@ -224,9 +228,9 @@ body.day .theme-knob { transform:translateX(18px); }
   font-size:11px; font-weight:700; cursor:pointer;
   transition:all 0.2s; position:relative;
 }
-.day-pill.d1 { background:var(--green-dim); border-color:rgba(74,222,128,0.3); color:var(--green); }
-.day-pill.d2 { background:var(--amber-dim); border-color:rgba(251,191,36,0.3); color:var(--amber); }
-.day-pill.d3 { background:var(--red-dim); border-color:rgba(248,113,113,0.3); color:var(--red); }
+.day-pill.d1 { background:var(--green-dim); border-color:rgba(21,128,61,0.3); color:var(--green); }
+.day-pill.d2 { background:var(--amber-dim); border-color:rgba(217,119,6,0.3); color:var(--amber); }
+.day-pill.d3 { background:var(--red-dim); border-color:rgba(220,38,38,0.3); color:var(--red); }
 .day-pill.done-pill { opacity:0.4; }
 .day-pill.done-pill::after { content:'✓'; position:absolute; right:4px; top:2px; font-size:9px; }
 .day-pill-date { font-size:9px; font-weight:500; opacity:0.7; margin-top:1px; }
@@ -244,9 +248,9 @@ body.day .theme-knob { transform:translateX(18px); }
 .day-actions { padding:12px; display:flex; flex-direction:column; gap:8px; }
 .day-action { border-radius:var(--radius-sm); overflow:hidden; }
 .day-action-header { display:flex; align-items:center; justify-content:space-between; padding:9px 11px; }
-.day-action.d1 .day-action-header { background:var(--green-dim); border-bottom:1px solid rgba(74,222,128,0.15); }
-.day-action.d2 .day-action-header { background:var(--amber-dim); border-bottom:1px solid rgba(251,191,36,0.15); }
-.day-action.d3 .day-action-header { background:var(--red-dim); border-bottom:1px solid rgba(248,113,113,0.15); }
+.day-action.d1 .day-action-header { background:var(--green-dim); border-bottom:1px solid rgba(21,128,61,0.15); }
+.day-action.d2 .day-action-header { background:var(--amber-dim); border-bottom:1px solid rgba(217,119,6,0.15); }
+.day-action.d3 .day-action-header { background:var(--red-dim); border-bottom:1px solid rgba(220,38,38,0.15); }
 .day-tag { font-size:11px; font-weight:800; }
 .d1 .day-tag { color:var(--green); }
 .d2 .day-tag { color:var(--amber); }
@@ -283,7 +287,7 @@ body.day .theme-knob { transform:translateX(18px); }
   color:var(--gold); font-size:12px; font-weight:700; cursor:pointer;
   text-align:center; transition:background 0.15s;
 }
-.dm-copy-btn:active { background:rgba(200,169,110,0.25); }
+.dm-copy-btn:active { background:rgba(0,0,0,0.06); }
 
 /* card action buttons */
 .card-actions { display:flex; gap:7px; padding:8px 12px 12px; }
@@ -294,9 +298,9 @@ body.day .theme-knob { transform:translateX(18px); }
   transition:all 0.15s; -webkit-appearance:none; text-decoration:none;
 }
 .btn:active { transform:scale(0.97); }
-.btn-li { background:rgba(10,102,194,0.12); border:1px solid rgba(10,102,194,0.35); color:#4a9eff; }
-.btn-reply { background:var(--green-dim); border:1px solid rgba(74,222,128,0.3); color:var(--green); }
-.btn-decline { background:var(--red-dim); border:1px solid rgba(248,113,113,0.3); color:var(--red); }
+.btn-li { background:rgba(10,102,194,0.08); border:1px solid rgba(10,102,194,0.3); color:#0a66c2; }
+.btn-reply { background:var(--green-dim); border:1px solid rgba(21,128,61,0.3); color:var(--green); }
+.btn-decline { background:var(--red-dim); border:1px solid rgba(220,38,38,0.3); color:var(--red); }
 .btn-won { background:var(--gold-dim); border:1px solid var(--border); color:var(--gold); }
 
 /* ── REPLY LOG ── */
@@ -304,6 +308,7 @@ body.day .theme-knob { transform:translateX(18px); }
 .reply-log-card {
   background:var(--surface); border:1px solid var(--border);
   border-radius:var(--radius); padding:12px 14px;
+  box-shadow:var(--card-shadow);
 }
 .reply-log-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
 .reply-log-company { font-size:14px; font-weight:700; color:var(--text); }
@@ -323,14 +328,14 @@ body.day .theme-knob { transform:translateX(18px); }
   color:var(--gold); padding:11px 20px; border-radius:30px;
   font-size:13px; font-weight:600; z-index:999;
   transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
-  white-space:nowrap; box-shadow:0 8px 30px rgba(0,0,0,0.3);
+  white-space:nowrap; box-shadow:0 4px 20px rgba(15,23,42,0.12);
 }
 .toast.show { transform:translateX(-50%) translateY(0); }
 
 /* ── MODAL (reply input) ── */
 .modal-overlay {
   display:none; position:fixed; inset:0; z-index:500;
-  background:rgba(0,0,0,0.7); backdrop-filter:blur(8px);
+  background:rgba(15,23,42,0.45); backdrop-filter:blur(8px);
   align-items:flex-end;
 }
 .modal-overlay.visible { display:flex; }
@@ -360,14 +365,14 @@ body.day .theme-knob { transform:translateX(18px); }
 }
 .modal-save {
   width:100%; padding:14px; border-radius:12px;
-  background:var(--gold); border:none; color:#1a1007;
+  background:var(--gold); border:none; color:#ffffff;
   font-size:14px; font-weight:800; cursor:pointer;
 }
 .modal-cancel { width:100%; padding:10px; border:none; background:transparent; color:var(--muted); font-size:13px; cursor:pointer; margin-top:6px; }
 
 /* ── TEMPLATES ── */
 .templates-list { padding:0 14px; display:flex; flex-direction:column; gap:10px; padding-bottom:40px; }
-.template-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
+.template-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; box-shadow:var(--card-shadow); }
 .template-header { display:flex; align-items:center; justify-content:space-between; padding:11px 13px; background:var(--surface2); }
 .template-name { font-size:13px; font-weight:700; color:var(--text); }
 .template-body { padding:10px 13px; font-size:12px; line-height:1.6; color:var(--muted); }
@@ -377,11 +382,11 @@ body.day .theme-knob { transform:translateX(18px); }
   background:var(--gold-dim); border:1px solid var(--border);
   color:var(--gold); font-size:12px; font-weight:700; cursor:pointer; text-align:center;
 }
-.template-copy-btn:active { background:rgba(200,169,110,0.25); }
+.template-copy-btn:active { background:rgba(0,0,0,0.06); }
 
 /* ── SETTINGS ── */
 .settings-list { padding:12px 14px; display:flex; flex-direction:column; gap:10px; }
-.settings-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:13px; }
+.settings-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:13px; box-shadow:var(--card-shadow); }
 .settings-label { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
 .settings-row { display:flex; justify-content:space-between; align-items:center; padding:7px 0; border-bottom:1px solid var(--border); }
 .settings-row:last-child { border-bottom:none; }
@@ -389,7 +394,7 @@ body.day .theme-knob { transform:translateX(18px); }
 .settings-val { font-size:12px; font-weight:600; color:var(--gold); }
 .reset-btn {
   width:100%; padding:12px; border-radius:var(--radius-sm);
-  background:var(--red-dim); border:1px solid rgba(248,113,113,0.3);
+  background:var(--red-dim); border:1px solid rgba(220,38,38,0.3);
   color:var(--red); font-size:13px; font-weight:700; cursor:pointer;
 }
 
@@ -416,13 +421,14 @@ body.day .theme-knob { transform:translateX(18px); }
 .switcher-title { font-size:22px; font-weight:800; color:var(--text); text-align:center; margin-bottom:4px; }
 .switcher-sub { font-size:13px; color:var(--muted); text-align:center; margin-bottom:28px; }
 .brand-card {
-  background:var(--surface); border:1.5px solid var(--border);
+  background:var(--surface); border:1px solid var(--border);
   border-radius:var(--radius); padding:20px; margin-bottom:14px;
-  cursor:pointer; transition:border-color 0.2s, transform 0.15s;
+  cursor:pointer; transition:border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+  box-shadow:var(--card-shadow);
 }
 .brand-card:active { transform:scale(0.98); }
 .brand-card.parent { border-color:var(--gold); }
-.brand-card.arm { border-color:rgba(96,165,250,0.4); }
+.brand-card.arm { border-color:rgba(37,99,235,0.4); }
 .brand-card-tag { font-size:10px; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; }
 .brand-card.parent .brand-card-tag { color:var(--gold); }
 .brand-card.arm .brand-card-tag { color:var(--blue); }
@@ -432,7 +438,7 @@ body.day .theme-knob { transform:translateX(18px); }
 .app-header-switch { font-size:11px; color:var(--muted); background:var(--surface2); border:1px solid var(--border); border-radius:20px; padding:4px 10px; cursor:pointer; }
 </style>
 </head>
-<body class="night">
+<body class="day">
 
 <!-- ════════════════════════════════════
   BRAND SWITCHER (landing — GoodnessCities is the mother brand)
@@ -470,7 +476,7 @@ body.day .theme-knob { transform:translateX(18px); }
       <button class="app-header-switch" onclick="showApp(null)">↩ Switch</button>
       <div class="sync-dot" id="syncDot" title="Sync status"></div>
       <div class="theme-toggle" onclick="toggleTheme()" title="Toggle day/night">
-        <div class="theme-knob" id="themeKnob">🌙</div>
+        <div class="theme-knob" id="themeKnob">☀️</div>
       </div>
     </div>
   </div>
@@ -528,7 +534,7 @@ body.day .theme-knob { transform:translateX(18px); }
   VIEW: TODAY
 ════════════════════════════════════ -->
 <div class="view" id="view-today">
-  <div style="margin:12px 14px 0; background:var(--green-dim); border:1px solid rgba(74,222,128,0.25); border-radius:var(--radius); padding:12px 14px;">
+  <div style="margin:12px 14px 0; background:var(--green-dim); border:1px solid rgba(21,128,61,0.25); border-radius:var(--radius); padding:12px 14px;">
     <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:5px;" id="d1MissionLabel">🔥 D1 Mission</div>
     <div style="font-size:13px;color:var(--text);line-height:1.5;">Comment on each prospect's latest LinkedIn post. <strong>No pitch, no CTA.</strong> Just sharp, relevant engagement. Build presence first.</div>
   </div>
@@ -633,7 +639,7 @@ body.day .theme-knob { transform:translateX(18px); }
     <div class="header-controls">
       <button class="app-header-switch" onclick="showApp(null)">↩ Switch</button>
       <div class="theme-toggle" onclick="toggleTheme()" title="Toggle day/night">
-        <div class="theme-knob" id="gcThemeKnob">🌙</div>
+        <div class="theme-knob" id="gcThemeKnob">☀️</div>
       </div>
     </div>
   </div>
@@ -670,7 +676,7 @@ body.day .theme-knob { transform:translateX(18px); }
   GC VIEW: TODAY'S PICKS
 ════════════════════════════════════ -->
 <div class="view active" id="gcview-today">
-  <div style="margin:12px 14px 0; background:var(--blue-dim,rgba(96,165,250,0.12)); border:1px solid rgba(96,165,250,0.3); border-radius:var(--radius); padding:12px 14px;">
+  <div style="margin:12px 14px 0; background:var(--blue-dim,rgba(37,99,235,0.12)); border:1px solid rgba(37,99,235,0.3); border-radius:var(--radius); padding:12px 14px;">
     <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:5px;">🌆 Sales pitch for a paid service</div>
     <div style="font-size:13px;color:var(--text);line-height:1.5;" id="gcMissionText">Today's picks pull from the uploaded lead list — every channel action button opens the real contact method for that lead. Different pain points and solution tier than Prisynchracy's Bahrain/GCC motion — this is GoodnessCities' own direct pipeline.</div>
   </div>
@@ -678,7 +684,7 @@ body.day .theme-knob { transform:translateX(18px); }
     <span class="section-title">Today's Picks</span>
     <span class="section-count" id="gcCompletedCount">0 / 0</span>
   </div>
-  <div id="gcComplianceBanner" style="display:none;margin:0 14px 10px;background:var(--red-dim);border:1px solid rgba(248,113,113,0.3);border-radius:var(--radius-sm);padding:10px 12px;font-size:11px;line-height:1.5;color:var(--red)"></div>
+  <div id="gcComplianceBanner" style="display:none;margin:0 14px 10px;background:var(--red-dim);border:1px solid rgba(220,38,38,0.3);border-radius:var(--radius-sm);padding:10px 12px;font-size:11px;line-height:1.5;color:var(--red)"></div>
   <div class="prospect-list" id="gcList"></div>
 </div>
 
@@ -917,7 +923,7 @@ let PROSPECTS = [
 let state = JSON.parse(localStorage.getItem('pcc-state-v2') || '{}');
 let replies = JSON.parse(localStorage.getItem('pcc-replies') || '[]');
 let retainersWon = parseInt(localStorage.getItem('pcc-won') || '0');
-let theme = localStorage.getItem('pcc-theme') || 'night';
+let theme = localStorage.getItem('pcc-theme') || 'day';
 
 // Modal state
 let modalRank = null;
@@ -1202,7 +1208,7 @@ function setTheme(t, save=true) {
   document.body.className = t;
   const knob = document.getElementById('themeKnob'); if (knob) knob.textContent = t === 'night' ? '🌙' : '☀️';
   const gcKnob = document.getElementById('gcThemeKnob'); if (gcKnob) gcKnob.textContent = t === 'night' ? '🌙' : '☀️';
-  document.getElementById('themeColorMeta').content = t === 'night' ? '#0a0a0f' : '#f5f3ef';
+  document.getElementById('themeColorMeta').content = t === 'night' ? '#0d0f14' : '#fafafa';
   if (save) localStorage.setItem('pcc-theme', t);
 }
 

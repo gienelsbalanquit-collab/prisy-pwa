@@ -4,8 +4,8 @@
   "description": "Daily outreach command center for GoodnessCities (mother brand) and Prisynchracy (marketing arm, GCC B2B retainer sales)",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#0a0a0f",
-  "theme_color": "#c8a96e",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa",
   "orientation": "portrait",
   "icons": [
     {
