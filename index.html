@@ -621,6 +621,34 @@ body.day .theme-knob { transform:translateX(18px); }
 //  Initial fallback array kept so the PWA renders something on first paint
 //  before the fetch completes (and as offline fallback for the service worker).
 // ══════════════════════════════════════════
+
+// ── AUTO-COMPUTE OUTREACH WINDOW (Mon/Wed/Fri of current week) ──────────────
+// NOTE: this must be defined and assigned BEFORE the PROSPECTS array below,
+// since that array's fallback data reads W.d1/W.d2/W.d3 at literal-evaluation
+// time. Defining W after PROSPECTS throws "Cannot access 'W' before
+// initialization" (a TDZ ReferenceError), which silently aborts the rest of
+// this script — including the DOMContentLoaded listener — so nothing ever
+// renders, syncs, or fetches fresh JSON. Fixed 2026-07-05.
+function computeWindow() {
+  const now = new Date();
+  const dow = now.getDay(); // 0=Sun,1=Mon,...,6=Sat
+  const diff = dow === 0 ? 1 : (1 - dow);  // days to Monday
+  const mon = new Date(now); mon.setDate(now.getDate() + diff);
+  const wed = new Date(mon); wed.setDate(mon.getDate() + 2);
+  const fri = new Date(mon); fri.setDate(mon.getDate() + 4);
+  const DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const fmt  = d => DAYS[d.getDay()] + ' · ' + MONTHS[d.getMonth()] + ' ' + d.getDate();
+  const fmtS = d => MONTHS[d.getMonth()] + ' ' + d.getDate();
+  return {
+    d1: fmt(mon),  d1s: fmtS(mon),
+    d2: fmt(wed),  d2s: fmtS(wed),
+    d3: fmt(fri),  d3s: fmtS(fri),
+    range: MONTHS[mon.getMonth()] + ' ' + mon.getDate() + '–' + fri.getDate()
+  };
+}
+const W = computeWindow();
+
 let PROSPECTS = [
   { rank:1, company:"Newton Properties", sector:"Real Estate", region:"Bahrain",
     contact:"Ehab Faraj — Founder & CEO", firstName:"Ehab", score:85,
@@ -738,26 +766,6 @@ let PROSPECTS = [
 //  STATE
 // ══════════════════════════════════════════
 
-// ── AUTO-COMPUTE OUTREACH WINDOW (Mon/Wed/Fri of current week) ──────────────
-function computeWindow() {
-  const now = new Date();
-  const dow = now.getDay(); // 0=Sun,1=Mon,...,6=Sat
-  const diff = dow === 0 ? 1 : (1 - dow);  // days to Monday
-  const mon = new Date(now); mon.setDate(now.getDate() + diff);
-  const wed = new Date(mon); wed.setDate(mon.getDate() + 2);
-  const fri = new Date(mon); fri.setDate(mon.getDate() + 4);
-  const DAYS = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-  const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  const fmt  = d => DAYS[d.getDay()] + ' · ' + MONTHS[d.getMonth()] + ' ' + d.getDate();
-  const fmtS = d => MONTHS[d.getMonth()] + ' ' + d.getDate();
-  return {
-    d1: fmt(mon),  d1s: fmtS(mon),
-    d2: fmt(wed),  d2s: fmtS(wed),
-    d3: fmt(fri),  d3s: fmtS(fri),
-    range: MONTHS[mon.getMonth()] + ' ' + mon.getDate() + '\u2013' + fri.getDate()
-  };
-}
-const W = computeWindow();
 let state = JSON.parse(localStorage.getItem('pcc-state-v2') || '{}');
 let replies = JSON.parse(localStorage.getItem('pcc-replies') || '[]');
 let retainersWon = parseInt(localStorage.getItem('pcc-won') || '0');
