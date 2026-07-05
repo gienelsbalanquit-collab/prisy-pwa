@@ -1003,8 +1003,10 @@ async function loadProspects() {
 let GC_DATA = { hot_picks: [], leads: [], total_real_leads: 0, email_ready_count: 0, excluded_fictional_rows: 0, compliance_flags: [] };
 let gcState = JSON.parse(localStorage.getItem('gc-state-v1') || '{}');
 
+const GC_FOUNDER_EMAIL = 'founder@goodnesscities.com';
+
 function getGCState(id) {
-  return gcState[id] || { contacted: false };
+  return gcState[id] || { contacted: false, d1: false, d2: false, d3: false };
 }
 function saveGCState() {
   localStorage.setItem('gc-state-v1', JSON.stringify(gcState));
@@ -1022,33 +1024,90 @@ async function loadGCLeads() {
   }
 }
 
-function gcActionButton(lead) {
+// A lead is "phone-restricted" if it's in the segment already flagged for
+// TCPA consent review (US Local Service – Plumbing). WhatsApp is treated the
+// same as SMS/auto-dial for that segment — no direct-message deep link,
+// caution-only tel: link, same as before.
+function gcIsPhoneRestricted(lead) {
+  return /plumbing/i.test(lead.segment || '');
+}
+
+function gcWaNumber(phone) {
+  return (phone || '').replace(/[^\d]/g, '');
+}
+
+function gcFirstName(lead) {
+  const c = (lead.contact || '').trim();
+  if (!c || /verify|to be confirmed|decision maker/i.test(c)) return lead.business;
+  return c.split(/[\s,–-]/)[0];
+}
+
+// D1 → D2 → D3 cadence, same warm-up → insight → ask shape as Prisynchracy,
+// generated from each lead's own pain_point/solution rather than hand-written
+// per lead (245 leads vs Prisynchracy's curated top 10) — still personalized
+// per-lead since pain_point/solution differ, just templated instead of bespoke.
+function gcPlan(lead) {
+  const name = gcFirstName(lead);
   const ch = (lead.outreach_channel || '').toLowerCase();
+  let viaWord = 'their site';
+  if (lead.email) viaWord = 'email';
+  else if (ch.includes('linkedin')) viaWord = 'LinkedIn';
+  else if (ch.includes('instagram')) viaWord = 'Instagram';
+  else if (ch.includes('job')) viaWord = 'the job post';
+  else if (lead.phone && !gcIsPhoneRestricted(lead)) viaWord = 'WhatsApp';
+  return {
+    d1: { action: `Warm-up via ${viaWord} — no pitch. Note something specific about ${lead.business} first.` },
+    d2: { action: `${name} — ${lead.pain_point} I spotted one fixable thing — mind if I share it?` },
+    d3: { action: `Send the 1-page idea + ASK: "${lead.pain_point} ${lead.solution} Worth a quick call this week?"` }
+  };
+}
+
+function gcEmailHref(lead) {
+  const subject = encodeURIComponent(`GoodnessCities — quick idea for ${lead.business}`);
+  const body = encodeURIComponent(`Hi,\n\n${lead.pain_point}\n\n${lead.solution}\n\nWorth a quick call this week?\n\n— GoodnessCities`);
+  // authuser forces Gmail to compose from the founder@goodnesscities.com
+  // account (falls back to account picker if that account isn't signed in
+  // on this device/browser).
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(lead.email)}&su=${subject}&body=${body}&authuser=${encodeURIComponent(GC_FOUNDER_EMAIL)}`;
+}
+
+function gcWaHref(lead) {
+  const num = gcWaNumber(lead.phone);
+  const msg = encodeURIComponent(`Hi — quick one for ${lead.business}. ${lead.pain_point} Mind if I share a quick idea?`);
+  return `https://wa.me/${num}?text=${msg}`;
+}
+
+function gcActionButtons(lead) {
+  const ch = (lead.outreach_channel || '').toLowerCase();
+  const btns = [];
   if (lead.email) {
-    const subject = encodeURIComponent(`GoodnessCities — quick idea for ${lead.business}`);
-    return `<a class="btn btn-li" href="mailto:${lead.email}?subject=${subject}" target="_blank">✉️ Email</a>`;
+    btns.push(`<a class="btn btn-li" href="${gcEmailHref(lead)}" target="_blank">✉️ Email · founder@goodnesscities.com</a>`);
+  }
+  if (lead.phone && !gcIsPhoneRestricted(lead)) {
+    btns.push(`<a class="btn btn-reply" href="${gcWaHref(lead)}" target="_blank">💬 WhatsApp</a>`);
   }
   if (ch.includes('linkedin') && lead.website_social) {
-    return `<a class="btn btn-li" href="${lead.website_social}" target="_blank">🔗 LinkedIn</a>`;
+    btns.push(`<a class="btn btn-li" href="${lead.website_social}" target="_blank">🔗 LinkedIn</a>`);
+  } else if (ch.includes('instagram') && lead.website_social) {
+    btns.push(`<a class="btn btn-li" href="${lead.website_social}" target="_blank">📷 Instagram</a>`);
+  } else if (ch.includes('job link') && lead.website_social) {
+    btns.push(`<a class="btn btn-li" href="${lead.website_social}" target="_blank">💼 Job Link</a>`);
   }
-  if (ch.includes('instagram') && lead.website_social) {
-    return `<a class="btn btn-li" href="${lead.website_social}" target="_blank">📷 Instagram</a>`;
+  if (lead.phone && gcIsPhoneRestricted(lead)) {
+    btns.push(`<a class="btn btn-li" href="tel:${lead.phone.replace(/\s+/g,'')}" target="_blank">📞 Call (review consent rules)</a>`);
   }
-  if (ch.includes('job link') && lead.website_social) {
-    return `<a class="btn btn-li" href="${lead.website_social}" target="_blank">💼 Job Link</a>`;
+  if (!btns.length && lead.website_social) {
+    btns.push(`<a class="btn btn-li" href="${lead.website_social}" target="_blank">🌐 Website</a>`);
   }
-  if (lead.phone) {
-    return `<a class="btn btn-li" href="tel:${lead.phone.replace(/\s+/g,'')}" target="_blank">📞 Call (review consent rules)</a>`;
-  }
-  if (lead.website_social) {
-    return `<a class="btn btn-li" href="${lead.website_social}" target="_blank">🌐 Website</a>`;
-  }
-  return '';
+  return btns.join('');
 }
 
 function gcCard(lead, st) {
+  const plan = gcPlan(lead);
+  const nextDM = !st.d2 ? plan.d2.action : plan.d3.action;
+  const nextDMLabel = !st.d2 ? `D2 · ${W.d2}` : `D3 · ${W.d3}`;
   return `<div class="prospect-card${st.contacted ? ' done-card' : ''}">
-      <div class="card-header" style="cursor:default">
+      <div class="card-header" onclick="this.parentElement.classList.toggle('open')">
         <div class="rank-badge">#${lead.id}</div>
         <div class="card-info">
           <div class="card-company">${lead.business}</div>
@@ -1057,16 +1116,51 @@ function gcCard(lead, st) {
         </div>
         <div class="card-right">
           <div class="score-badge">${lead.priority}</div>
+          <div class="chevron">▼</div>
         </div>
       </div>
-      <div class="card-body" style="display:block">
-        <div class="pain-block">
-          <div class="pain-label">Pain Point</div>
-          <div class="pain-text">${lead.pain_point || ''}</div>
-          <div class="offer-text">✦ ${lead.solution || ''}</div>
+
+      <div class="day-pills">
+        <div class="day-pill d1${st.d1?' done-pill':''}" onclick="toggleGCDay(${lead.id},'d1',event)">D1<div class="day-pill-date">${W.d1s}</div></div>
+        <div class="day-pill d2${st.d2?' done-pill':''}" onclick="toggleGCDay(${lead.id},'d2',event)">D2<div class="day-pill-date">${W.d2s}</div></div>
+        <div class="day-pill d3${st.d3?' done-pill':''}" onclick="toggleGCDay(${lead.id},'d3',event)">D3<div class="day-pill-date">${W.d3s}</div></div>
+      </div>
+
+      <div class="pain-block" style="border-top:1px solid var(--border)">
+        <div class="pain-label">Pain Point</div>
+        <div class="pain-text">${lead.pain_point || ''}</div>
+        <div class="offer-text">✦ ${lead.solution || ''}</div>
+      </div>
+
+      <div class="card-body">
+        <div class="day-actions">
+          <div class="day-action d1">
+            <div class="day-action-header"><span class="day-tag">D1 · Warm-Up</span><span class="day-date-tag">${W.d1}</span></div>
+            <div class="day-action-text">${plan.d1.action}</div>
+          </div>
+          <div class="day-action d2">
+            <div class="day-action-header"><span class="day-tag">D2 · Insight</span><span class="day-date-tag">${W.d2}</span></div>
+            <div class="day-action-text">${plan.d2.action}</div>
+          </div>
+          <div class="day-action d3">
+            <div class="day-action-header"><span class="day-tag">D3 · ASK</span><span class="day-date-tag">${W.d3}</span></div>
+            <div class="day-action-text">${plan.d3.action}</div>
+          </div>
         </div>
+
+        <div class="dm-copy-block">
+          <div class="dm-copy-header">
+            <span class="dm-copy-label">📋 Next message to send</span>
+            <span class="dm-copy-which">${nextDMLabel}</span>
+          </div>
+          <div class="dm-text-preview">${nextDM}</div>
+          <button class="dm-copy-btn" onclick="copyGCText(${lead.id})">Tap to Copy → Paste in Email/WhatsApp/DM</button>
+        </div>
+
         <div class="card-actions">
-          ${gcActionButton(lead)}
+          ${gcActionButtons(lead)}
+        </div>
+        <div class="card-actions" style="padding-top:0">
           <button class="btn ${st.contacted ? 'btn-won' : 'btn-reply'}" onclick="toggleGCContacted(${lead.id})">${st.contacted ? '✓ Contacted' : 'Mark Contacted'}</button>
         </div>
       </div>
@@ -1125,11 +1219,30 @@ function renderGC() {
 }
 
 function toggleGCContacted(id) {
-  if (!gcState[id]) gcState[id] = { contacted: false };
+  if (!gcState[id]) gcState[id] = { contacted: false, d1:false, d2:false, d3:false };
   gcState[id].contacted = !gcState[id].contacted;
   saveGCState();
   renderGC();
   showToast(gcState[id].contacted ? '✓ Marked contacted' : 'Unmarked');
+}
+
+function toggleGCDay(id, day, e) {
+  e && e.stopPropagation();
+  if (!gcState[id]) gcState[id] = { contacted:false, d1:false, d2:false, d3:false };
+  gcState[id][day] = !gcState[id][day];
+  saveGCState();
+  renderGC();
+  showToast(gcState[id][day] ? '✓ Marked done' : 'Unmarked');
+}
+
+function copyGCText(id) {
+  const allLeads = GC_DATA.leads || [];
+  const lead = allLeads.find(l => l.id === id) || (GC_DATA.hot_picks || []).find(l => l.id === id);
+  if (!lead) return;
+  const st = getGCState(id);
+  const plan = gcPlan(lead);
+  const text = !st.d2 ? plan.d2.action : plan.d3.action;
+  copyRaw(text, '📋 Copied! Paste in Email/WhatsApp/DM');
 }
 
 // ══════════════════════════════════════════
@@ -1600,18 +1713,19 @@ function copyText(rank) {
   const p = PROSPECTS.find(x => x.rank === rank);
   const st = getState(rank);
   const text = !st.d2 ? p.plan.d2.action : p.plan.d3.action;
-  copyRaw(text);
+  copyRaw(text, '📋 Copied! Paste in LinkedIn');
 }
 
-function copyRaw(text) {
+function copyRaw(text, toastMsg) {
+  const msg = toastMsg || '📋 Copied!';
   if (navigator.clipboard) {
-    navigator.clipboard.writeText(text).then(() => showToast('📋 Copied! Paste in LinkedIn'));
+    navigator.clipboard.writeText(text).then(() => showToast(msg));
   } else {
     const el = document.createElement('textarea');
     el.value = text; document.body.appendChild(el);
     el.select(); document.execCommand('copy');
     document.body.removeChild(el);
-    showToast('📋 Copied!');
+    showToast(msg);
   }
 }
 
