@@ -1348,13 +1348,13 @@ function renderProspects() {
         <div class="day-pill d3${st.d3?' done-pill':''}" onclick="toggleDay(${p.rank},'d3',event)">D3<div class="day-pill-date">${W.d3s}</div></div>
       </div>
 
-      <div class="card-body">
-        <div class="pain-block">
-          <div class="pain-label">Critical Issue</div>
-          <div class="pain-text">${p.critical_issue}</div>
-          <div class="offer-text">✦ ${p.prisy_offer}</div>
-        </div>
+      <div class="pain-block" style="border-top:1px solid var(--border)">
+        <div class="pain-label">Critical Issue</div>
+        <div class="pain-text">${p.critical_issue}</div>
+        <div class="offer-text">✦ ${p.prisy_offer}</div>
+      </div>
 
+      <div class="card-body">
         <div class="day-actions">
           <div class="day-action d1">
             <div class="day-action-header"><span class="day-tag">D1 · Warm-Up</span><span class="day-date-tag">${p.plan.d1.date}</span></div>
