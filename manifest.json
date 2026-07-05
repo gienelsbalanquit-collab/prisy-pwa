@@ -1,7 +1,7 @@
 {
-  "name": "Prisynchracy Command Center",
-  "short_name": "Prisynchracy",
-  "description": "Daily outreach command center for GCC B2B retainer sales",
+  "name": "GoodnessCities Command Center",
+  "short_name": "GoodnessCities",
+  "description": "Daily outreach command center for GoodnessCities (mother brand) and Prisynchracy (marketing arm, GCC B2B retainer sales)",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0a0a0f",

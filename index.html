@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Prisynchracy">
+<meta name="apple-mobile-web-app-title" content="GoodnessCities">
 <meta name="theme-color" id="themeColorMeta" content="#0a0a0f">
 <link rel="manifest" href="manifest.json">
-<title>Prisynchracy Command Center</title>
+<title>GoodnessCities Command Center</title>
 <style>
 /* ══════════════════════════════════════════
    THEME VARIABLES
@@ -406,15 +406,68 @@ body.day .theme-knob { transform:translateX(18px); }
   background:var(--surface2);
 }
 .sync-bar a { color:var(--gold); text-decoration:none; }
+
+/* ── BRAND SWITCHER (landing) ── */
+.app-mode { display:none; }
+.app-mode.active { display:block; }
+#brand-switcher { display:none; min-height:100vh; padding:env(safe-area-inset-top,24px) 20px 24px; }
+#brand-switcher.active { display:flex; flex-direction:column; }
+.switcher-eyebrow { font-size:11px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:var(--muted); text-align:center; margin-bottom:6px; }
+.switcher-title { font-size:22px; font-weight:800; color:var(--text); text-align:center; margin-bottom:4px; }
+.switcher-sub { font-size:13px; color:var(--muted); text-align:center; margin-bottom:28px; }
+.brand-card {
+  background:var(--surface); border:1.5px solid var(--border);
+  border-radius:var(--radius); padding:20px; margin-bottom:14px;
+  cursor:pointer; transition:border-color 0.2s, transform 0.15s;
+}
+.brand-card:active { transform:scale(0.98); }
+.brand-card.parent { border-color:var(--gold); }
+.brand-card.arm { border-color:rgba(96,165,250,0.4); }
+.brand-card-tag { font-size:10px; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; }
+.brand-card.parent .brand-card-tag { color:var(--gold); }
+.brand-card.arm .brand-card-tag { color:var(--blue); }
+.brand-card-name { font-size:19px; font-weight:800; color:var(--text); margin-bottom:6px; }
+.brand-card-desc { font-size:12px; color:var(--muted); line-height:1.5; }
+.brand-arrow-row { display:flex; justify-content:center; margin:2px 0 14px; color:var(--muted); font-size:14px; }
+.app-header-switch { font-size:11px; color:var(--muted); background:var(--surface2); border:1px solid var(--border); border-radius:20px; padding:4px 10px; cursor:pointer; }
 </style>
 </head>
 <body class="night">
+
+<!-- ════════════════════════════════════
+  BRAND SWITCHER (landing — GoodnessCities is the mother brand)
+════════════════════════════════════ -->
+<div id="brand-switcher" class="active">
+  <div class="switcher-eyebrow" style="margin-top:20px">GoodnessCities Command Center</div>
+  <div class="switcher-title">Choose a dashboard</div>
+  <div class="switcher-sub">Two brands, two different outreach approaches, pain points, and solution tiers.</div>
+
+  <div class="brand-card parent" onclick="showApp('goodnesscities')">
+    <div class="brand-card-tag">🌆 Mother Brand · SEC-registered, Philippines</div>
+    <div class="brand-card-name">GoodnessCities</div>
+    <div class="brand-card-desc">Direct sales-pitch-for-paid-service outreach — creative, marketing, and outbound retainers pitched to businesses signaling unmet in-house capacity.</div>
+  </div>
+
+  <div class="brand-arrow-row">↓ supported by ↓</div>
+
+  <div class="brand-card arm" onclick="showApp('prisynchracy')">
+    <div class="brand-card-tag">💼 Marketing / CMO Arm · Bahrain · GCC</div>
+    <div class="brand-card-name">Prisynchracy</div>
+    <div class="brand-card-desc">GoodnessCities' CMO / marketing-advertising execution arm — Entry Sprint retainer outreach (BHD 750/mo) to Bahrain/GCC SME, F&B, and clinic prospects.</div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+  APP: PRISYNCHRACY (marketing/CMO arm)
+════════════════════════════════════ -->
+<div id="app-prisynchracy" class="app-mode">
 
 <!-- HEADER -->
 <div class="header">
   <div class="header-row1">
     <div class="logo">⬡ Prisynchracy</div>
     <div class="header-controls">
+      <button class="app-header-switch" onclick="showApp(null)">↩ Switch</button>
       <div class="sync-dot" id="syncDot" title="Sync status"></div>
       <div class="theme-toggle" onclick="toggleTheme()" title="Toggle day/night">
         <div class="theme-knob" id="themeKnob">🌙</div>
@@ -422,7 +475,7 @@ body.day .theme-knob { transform:translateX(18px); }
     </div>
   </div>
   <div class="header-row2">
-    <div class="header-title">Command Center</div>
+    <div class="header-title">Command Center <span style="font-size:10px;color:var(--muted);font-weight:600">· arm of GoodnessCities</span></div>
     <div class="date-badge" id="dateBadge">—</div>
   </div>
 </div>
@@ -457,7 +510,6 @@ body.day .theme-knob { transform:translateX(18px); }
   <button class="nav-btn" onclick="showView('today',this)">📅 Today</button>
   <button class="nav-btn" onclick="showView('replies',this)">💬 Replies <span id="replyBadge"></span></button>
   <button class="nav-btn" onclick="showView('templates',this)">📋 Scripts</button>
-  <button class="nav-btn" onclick="showView('goodnesscities',this)">🌆 GC</button>
   <button class="nav-btn" onclick="showView('settings',this)">⚙️</button>
 </div>
 
@@ -506,34 +558,6 @@ body.day .theme-knob { transform:translateX(18px); }
     <span class="section-title">DM Scripts — All Prospects</span>
   </div>
   <div class="templates-list" id="templatesList"></div>
-</div>
-
-<!-- ════════════════════════════════════
-  VIEW: GOODNESSCITIES
-════════════════════════════════════ -->
-<div class="view" id="view-goodnesscities">
-  <div style="margin:12px 14px 0; background:var(--blue-dim,rgba(96,165,250,0.12)); border:1px solid rgba(96,165,250,0.3); border-radius:var(--radius); padding:12px 14px;">
-    <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:5px;">🌆 GoodnessCities — Daily Outreach</div>
-    <div style="font-size:13px;color:var(--text);line-height:1.5;" id="gcMissionText">Sales pitch for a paid service. Today's picks pull from the uploaded lead list — every channel action button opens the real contact method for that lead.</div>
-  </div>
-  <div class="section-header">
-    <span class="section-title">Today's Picks</span>
-    <span class="section-count" id="gcCompletedCount">0 / 0</span>
-  </div>
-  <div id="gcComplianceBanner" style="display:none;margin:0 14px 10px;background:var(--red-dim);border:1px solid rgba(248,113,113,0.3);border-radius:var(--radius-sm);padding:10px 12px;font-size:11px;line-height:1.5;color:var(--red)"></div>
-  <div class="prospect-list" id="gcList"></div>
-
-  <div class="section-header">
-    <span class="section-title">Pipeline Snapshot</span>
-  </div>
-  <div class="settings-list" style="padding-top:0">
-    <div class="settings-card">
-      <div class="settings-row"><span class="settings-key">Total real leads</span><span class="settings-val" id="gcTotalLeads">—</span></div>
-      <div class="settings-row"><span class="settings-key">Email-ready</span><span class="settings-val" id="gcEmailReady">—</span></div>
-      <div class="settings-row"><span class="settings-key">Excluded (fictional rows)</span><span class="settings-val" id="gcExcluded">—</span></div>
-      <div class="settings-row"><span class="settings-key">Source</span><span class="settings-val" style="font-size:10px">GoodnessCities_Leads_Clean.csv</span></div>
-    </div>
-  </div>
 </div>
 
 <!-- ════════════════════════════════════
@@ -594,6 +618,130 @@ body.day .theme-knob { transform:translateX(18px); }
     </div>
   </div>
 </div>
+
+</div> <!-- /#app-prisynchracy -->
+
+<!-- ════════════════════════════════════
+  APP: GOODNESSCITIES (mother brand)
+════════════════════════════════════ -->
+<div id="app-goodnesscities" class="app-mode">
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-row1">
+    <div class="logo" style="color:var(--blue,#60a5fa)">🌆 GoodnessCities</div>
+    <div class="header-controls">
+      <button class="app-header-switch" onclick="showApp(null)">↩ Switch</button>
+      <div class="theme-toggle" onclick="toggleTheme()" title="Toggle day/night">
+        <div class="theme-knob" id="gcThemeKnob">🌙</div>
+      </div>
+    </div>
+  </div>
+  <div class="header-row2">
+    <div class="header-title">Command Center <span style="font-size:10px;color:var(--muted);font-weight:600">· mother brand</span></div>
+    <div class="date-badge" id="gcDateBadge">—</div>
+  </div>
+</div>
+
+<!-- PIPELINE STRIP (GoodnessCities uses lead-pipeline stats, not Prisynchracy's MRR model) -->
+<div class="revenue-strip">
+  <div class="rev-row">
+    <div><div class="rev-label">Real Leads</div><div class="rev-value" id="gcHeaderTotal">—</div></div>
+    <div style="text-align:right"><div class="rev-label">Contacted</div><div class="rev-value" id="gcHeaderContacted">0</div></div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill" id="gcProgressFill" style="width:0%"></div></div>
+  <div class="rev-stats">
+    <div class="rev-stat"><div class="rev-stat-n" id="gcStatEmail">—</div><div class="rev-stat-l">Email-ready</div></div>
+    <div class="rev-stat"><div class="rev-stat-n" id="gcStatPicks">0</div><div class="rev-stat-l">Today's Picks</div></div>
+    <div class="rev-stat"><div class="rev-stat-n" id="gcStatExcluded">—</div><div class="rev-stat-l">Excluded (fict.)</div></div>
+    <div class="rev-stat"><div class="rev-stat-n" id="gcStatPending">—</div><div class="rev-stat-l">Pending review</div></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<div class="nav">
+  <button class="nav-btn active" onclick="showGCView('today',this)">🔥 Today's Picks</button>
+  <button class="nav-btn" onclick="showGCView('allleads',this)">📇 All Leads</button>
+  <button class="nav-btn" onclick="showGCView('contacted',this)">✅ Contacted</button>
+  <button class="nav-btn" onclick="showGCView('gcsettings',this)">⚙️</button>
+</div>
+
+<!-- ════════════════════════════════════
+  GC VIEW: TODAY'S PICKS
+════════════════════════════════════ -->
+<div class="view active" id="gcview-today">
+  <div style="margin:12px 14px 0; background:var(--blue-dim,rgba(96,165,250,0.12)); border:1px solid rgba(96,165,250,0.3); border-radius:var(--radius); padding:12px 14px;">
+    <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:5px;">🌆 Sales pitch for a paid service</div>
+    <div style="font-size:13px;color:var(--text);line-height:1.5;" id="gcMissionText">Today's picks pull from the uploaded lead list — every channel action button opens the real contact method for that lead. Different pain points and solution tier than Prisynchracy's Bahrain/GCC motion — this is GoodnessCities' own direct pipeline.</div>
+  </div>
+  <div class="section-header">
+    <span class="section-title">Today's Picks</span>
+    <span class="section-count" id="gcCompletedCount">0 / 0</span>
+  </div>
+  <div id="gcComplianceBanner" style="display:none;margin:0 14px 10px;background:var(--red-dim);border:1px solid rgba(248,113,113,0.3);border-radius:var(--radius-sm);padding:10px 12px;font-size:11px;line-height:1.5;color:var(--red)"></div>
+  <div class="prospect-list" id="gcList"></div>
+</div>
+
+<!-- ════════════════════════════════════
+  GC VIEW: ALL LEADS (full pipeline)
+════════════════════════════════════ -->
+<div class="view" id="gcview-allleads">
+  <div class="section-header">
+    <span class="section-title">All Real Leads</span>
+    <span class="section-count" id="gcAllLeadsCount">0</span>
+  </div>
+  <div class="prospect-list" id="gcAllLeadsList"></div>
+</div>
+
+<!-- ════════════════════════════════════
+  GC VIEW: CONTACTED LOG
+════════════════════════════════════ -->
+<div class="view" id="gcview-contacted">
+  <div class="section-header">
+    <span class="section-title">Contacted Log</span>
+    <span class="section-count" id="gcContactedCount">0</span>
+  </div>
+  <div class="prospect-list" id="gcContactedList"></div>
+</div>
+
+<!-- ════════════════════════════════════
+  GC VIEW: SETTINGS
+════════════════════════════════════ -->
+<div class="view" id="gcview-gcsettings">
+  <div class="settings-list">
+    <div class="settings-card">
+      <div class="settings-label">Corporate Structure</div>
+      <div class="settings-row"><span class="settings-key">GoodnessCities</span><span class="settings-val">Mother brand · SEC-registered, PH</span></div>
+      <div class="settings-row"><span class="settings-key">Prisynchracy</span><span class="settings-val">CMO / marketing arm</span></div>
+      <div class="settings-row"><span class="settings-key">Outreach contact</span><span class="settings-val" style="font-size:10px">founder@goodnesscities.com</span></div>
+    </div>
+    <div class="settings-card">
+      <div class="settings-label">Pipeline Snapshot</div>
+      <div class="settings-row"><span class="settings-key">Total real leads</span><span class="settings-val" id="gcTotalLeads">—</span></div>
+      <div class="settings-row"><span class="settings-key">Email-ready</span><span class="settings-val" id="gcEmailReady">—</span></div>
+      <div class="settings-row"><span class="settings-key">Excluded (fictional rows)</span><span class="settings-val" id="gcExcluded">—</span></div>
+      <div class="settings-row"><span class="settings-key">Source</span><span class="settings-val" style="font-size:10px">GoodnessCities_Leads_Clean.csv</span></div>
+    </div>
+    <div class="settings-card">
+      <div class="settings-label">Compliance</div>
+      <div class="settings-row" style="flex-direction:column;align-items:flex-start;gap:4px">
+        <span class="settings-key" style="font-size:11px;line-height:1.5">120 US plumbing leads are phone/SMS-only — TCPA consent review required before any auto-dial or SMS. Excluded from Today's Picks until reviewed.</span>
+      </div>
+    </div>
+    <div class="settings-card">
+      <div class="settings-label">Appearance</div>
+      <div class="settings-row">
+        <span class="settings-key">Theme</span>
+        <div style="display:flex;gap:8px">
+          <button onclick="setTheme('night')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;">🌙 Night</button>
+          <button onclick="setTheme('day')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;">☀️ Day</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div> <!-- /#app-goodnesscities -->
 
 <!-- TOAST -->
 <div class="toast" id="toast"></div>
@@ -891,15 +1039,8 @@ function gcActionButton(lead) {
   return '';
 }
 
-function renderGC() {
-  const list = document.getElementById('gcList');
-  if (!list) return;
-  const picks = (GC_DATA.hot_picks && GC_DATA.hot_picks.length) ? GC_DATA.hot_picks : [];
-  let done = 0;
-  list.innerHTML = picks.map(lead => {
-    const st = getGCState(lead.id);
-    if (st.contacted) done++;
-    return `<div class="prospect-card${st.contacted ? ' done-card' : ''}">
+function gcCard(lead, st) {
+  return `<div class="prospect-card${st.contacted ? ' done-card' : ''}">
       <div class="card-header" style="cursor:default">
         <div class="rank-badge">#${lead.id}</div>
         <div class="card-info">
@@ -923,7 +1064,15 @@ function renderGC() {
         </div>
       </div>
     </div>`;
-  }).join('');
+}
+
+function renderGC() {
+  const list = document.getElementById('gcList');
+  if (!list) return;
+  const picks = (GC_DATA.hot_picks && GC_DATA.hot_picks.length) ? GC_DATA.hot_picks : [];
+  const allLeads = GC_DATA.leads || [];
+  let done = 0;
+  list.innerHTML = picks.map(lead => { const st = getGCState(lead.id); if (st.contacted) done++; return gcCard(lead, st); }).join('');
   document.getElementById('gcCompletedCount').textContent = `${done} / ${picks.length}`;
   document.getElementById('gcTotalLeads').textContent = GC_DATA.total_real_leads ?? '—';
   document.getElementById('gcEmailReady').textContent = GC_DATA.email_ready_count ?? '—';
@@ -935,6 +1084,37 @@ function renderGC() {
   } else {
     banner.style.display = 'none';
   }
+
+  // ── All Leads view ──
+  const allList = document.getElementById('gcAllLeadsList');
+  if (allList) {
+    allList.innerHTML = allLeads.map(lead => gcCard(lead, getGCState(lead.id))).join('');
+    document.getElementById('gcAllLeadsCount').textContent = allLeads.length;
+  }
+
+  // ── Contacted Log view ──
+  const contactedIds = Object.keys(gcState).filter(id => gcState[id] && gcState[id].contacted);
+  const contactedLeads = allLeads.filter(l => contactedIds.includes(String(l.id)));
+  const contactedList = document.getElementById('gcContactedList');
+  if (contactedList) {
+    contactedList.innerHTML = contactedLeads.length
+      ? contactedLeads.map(lead => gcCard(lead, getGCState(lead.id))).join('')
+      : '<div class="reply-log-empty">Nothing marked contacted yet.</div>';
+    document.getElementById('gcContactedCount').textContent = contactedLeads.length;
+  }
+
+  // ── Header pipeline strip ──
+  const setTxt = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  setTxt('gcHeaderTotal', GC_DATA.total_real_leads ?? '—');
+  setTxt('gcHeaderContacted', contactedIds.length);
+  setTxt('gcStatEmail', GC_DATA.email_ready_count ?? '—');
+  setTxt('gcStatPicks', picks.length);
+  setTxt('gcStatExcluded', GC_DATA.excluded_fictional_rows ?? '—');
+  setTxt('gcStatPending', GC_DATA.compliance_flags && GC_DATA.compliance_flags.length ? GC_DATA.compliance_flags.length : '0');
+  const total = GC_DATA.total_real_leads || 0;
+  const pct = total ? Math.min(100, Math.round((contactedIds.length / total) * 100)) : 0;
+  const fill = document.getElementById('gcProgressFill');
+  if (fill) fill.style.width = pct + '%';
 }
 
 function toggleGCContacted(id) {
@@ -943,6 +1123,32 @@ function toggleGCContacted(id) {
   saveGCState();
   renderGC();
   showToast(gcState[id].contacted ? '✓ Marked contacted' : 'Unmarked');
+}
+
+// ══════════════════════════════════════════
+//  APP SWITCHER (GoodnessCities landing ↔ Prisynchracy / GoodnessCities apps)
+// ══════════════════════════════════════════
+function showApp(mode) {
+  document.getElementById('brand-switcher').classList.remove('active');
+  document.getElementById('app-prisynchracy').classList.remove('active');
+  document.getElementById('app-goodnesscities').classList.remove('active');
+  if (mode === 'prisynchracy') {
+    document.getElementById('app-prisynchracy').classList.add('active');
+    localStorage.setItem('gcc-app-mode', 'prisynchracy');
+  } else if (mode === 'goodnesscities') {
+    document.getElementById('app-goodnesscities').classList.add('active');
+    localStorage.setItem('gcc-app-mode', 'goodnesscities');
+  } else {
+    document.getElementById('brand-switcher').classList.add('active');
+    localStorage.removeItem('gcc-app-mode');
+  }
+}
+
+function showGCView(name, btn) {
+  document.querySelectorAll('#app-goodnesscities .view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('#app-goodnesscities .nav-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('gcview-' + name).classList.add('active');
+  if (btn) btn.classList.add('active');
 }
 
 // ══════════════════════════════════════════
@@ -961,7 +1167,9 @@ window.addEventListener('DOMContentLoaded', () => {
     _set('settingsD2', _W.d2);
     _set('settingsD3', _W.d3);
   })();
-  document.getElementById('dateBadge').textContent = new Date().toLocaleDateString('en-GB', {weekday:'short',month:'short',day:'numeric'});
+  const todayLabel = new Date().toLocaleDateString('en-GB', {weekday:'short',month:'short',day:'numeric'});
+  document.getElementById('dateBadge').textContent = todayLabel;
+  const gcBadge = document.getElementById('gcDateBadge'); if (gcBadge) gcBadge.textContent = todayLabel;
   renderAll();
   updateRevenue();
   refreshDashboardLinks();      // wire Open-Desktop link to current Dashboard URL
@@ -976,6 +1184,11 @@ window.addEventListener('DOMContentLoaded', () => {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').then(reg => { try { reg.update(); } catch(e){} }).catch(()=>{});
   }
+  // ── Restore last-chosen app (GoodnessCities is the mother brand — default landing is the switcher) ──
+  const savedMode = localStorage.getItem('gcc-app-mode');
+  if (savedMode === 'prisynchracy' || savedMode === 'goodnesscities') {
+    showApp(savedMode);
+  }
 });
 
 // ══════════════════════════════════════════
@@ -987,7 +1200,8 @@ function toggleTheme() {
 function setTheme(t, save=true) {
   theme = t;
   document.body.className = t;
-  document.getElementById('themeKnob').textContent = t === 'night' ? '🌙' : '☀️';
+  const knob = document.getElementById('themeKnob'); if (knob) knob.textContent = t === 'night' ? '🌙' : '☀️';
+  const gcKnob = document.getElementById('gcThemeKnob'); if (gcKnob) gcKnob.textContent = t === 'night' ? '🌙' : '☀️';
   document.getElementById('themeColorMeta').content = t === 'night' ? '#0a0a0f' : '#f5f3ef';
   if (save) localStorage.setItem('pcc-theme', t);
 }
@@ -1404,11 +1618,11 @@ function updateRevenue() {
 }
 
 function showView(name, btn) {
-  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('#app-prisynchracy .view').forEach(v => v.classList.remove('active'));
+  document.querySelectorAll('#app-prisynchracy .nav-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('view-' + name).classList.add('active');
   if (btn) btn.classList.add('active');
-  else document.querySelector(`.nav-btn[onclick*="${name}"]`)?.classList.add('active');
+  else document.querySelector(`#app-prisynchracy .nav-btn[onclick*="${name}"]`)?.classList.add('active');
 }
 
 function showToast(msg) {
