@@ -1,0 +1,20 @@
+{
+  "_purpose": "Tracks which GoodnessCities lead IDs have already been proposed/contacted, so the daily scheduled run rotates fresh names instead of repeating the same ones forever (the exact gap that broke the Prisynchracy prospect list — see MASTER_CONTEXT.md known issues).",
+  "last_run_date": "2026-07-06",
+  "proposed": {
+    "98": { "first_proposed": "2026-07-05", "status": "proposed", "channel": "email", "email_draft_id": "r-8063569538279129191" },
+    "100": { "first_proposed": "2026-07-05", "status": "proposed", "channel": "email" },
+    "101": { "first_proposed": "2026-07-05", "status": "proposed", "channel": "email" },
+    "102": { "first_proposed": "2026-07-05", "status": "proposed", "channel": "email" },
+    "3": { "first_proposed": "2026-07-05", "status": "proposed", "channel": "job_link" },
+    "31": { "first_proposed": "2026-07-05", "status": "proposed", "channel": "linkedin" },
+    "34": { "first_proposed": "2026-07-06", "status": "proposed", "channel": "linkedin" },
+    "36": { "first_proposed": "2026-07-06", "status": "proposed", "channel": "linkedin" },
+    "46": { "first_proposed": "2026-07-06", "status": "proposed", "channel": "linkedin" },
+    "47": { "first_proposed": "2026-07-06", "status": "proposed", "channel": "linkedin" },
+    "7": { "first_proposed": "2026-07-06", "status": "proposed", "channel": "job_link" },
+    "18": { "first_proposed": "2026-07-06", "status": "proposed", "channel": "job_link" }
+  },
+  "excluded_segments_pending_review": ["US Local Service – Plumbing"],
+  "excluded_segments_reason": "120 leads, phone/SMS only, TCPA consent review required before any auto-dial or SMS outreach. Do not add to rotation until Gienel confirms review is complete."
+}
