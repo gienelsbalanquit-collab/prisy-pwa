@@ -88,7 +88,7 @@ body {
   right:-30px; bottom:-14px; transform:rotate(-14deg);
 }
 .header-row1 { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; }
-.logo { font-size:11px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#181511; opacity:.78; }
+.logo { font-size:13px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#181511; opacity:.78; }
 .header-controls { display:flex; align-items:center; gap:8px; }
 .theme-toggle {
   width:44px; height:26px; border-radius:13px;
@@ -101,7 +101,7 @@ body {
   width:18px; height:18px; border-radius:50%;
   background: #181511; transition:transform 0.3s;
   display:flex; align-items:center; justify-content:center;
-  font-size:10px;
+  font-size:12px;
 }
 body.day .theme-knob { transform:translateX(18px); }
 .sync-dot {
@@ -113,10 +113,10 @@ body.day .theme-knob { transform:translateX(18px); }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
 .header-row2 { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; }
-.header-title { font-size:19px; font-weight:800; color:#181511; }
+.header-title { font-size:22px; font-weight:800; color:#181511; }
 .header-title span { color:#181511 !important; opacity:.62; }
 .date-badge {
-  font-size:11px; color:#181511;
+  font-size:13px; color:#181511;
   background:rgba(255,255,255,0.4); padding:4px 10px;
   border-radius:20px; border:1px solid rgba(24,21,17,0.2);
 }
@@ -129,14 +129,14 @@ body.day .theme-knob { transform:translateX(18px); }
   box-shadow:var(--card-shadow);
 }
 .rev-row { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
-.rev-label { font-size:10px; color:var(--muted); letter-spacing:0.5px; text-transform:uppercase; }
-.rev-value { font-size:20px; font-weight:800; color:var(--gold); }
+.rev-label { font-size:12px; color:var(--muted); letter-spacing:0.5px; text-transform:uppercase; }
+.rev-value { font-size:23px; font-weight:800; color:var(--gold); }
 .progress-bar { height:5px; background:rgba(128,128,128,0.15); border-radius:3px; overflow:hidden; margin-bottom:8px; }
 .progress-fill { height:100%; background:var(--gold); border-radius:3px; transition:width 1s ease; }
 .rev-stats { display:flex; gap:8px; }
 .rev-stat { flex:1; background:var(--surface2); border-radius:8px; padding:8px 6px; text-align:center; }
-.rev-stat-n { font-size:14px; font-weight:800; color:var(--gold); }
-.rev-stat-l { font-size:9px; color:var(--muted); margin-top:2px; line-height:1.2; }
+.rev-stat-n { font-size:16px; font-weight:800; color:var(--gold); }
+.rev-stat-l { font-size:11px; color:var(--muted); margin-top:2px; line-height:1.2; }
 
 /* ── NAV ── */
 .nav {
@@ -146,7 +146,7 @@ body.day .theme-knob { transform:translateX(18px); }
 .nav::-webkit-scrollbar { display:none; }
 .nav-btn {
   flex-shrink:0; padding:7px 14px; border-radius:20px;
-  font-size:12px; font-weight:600;
+  font-size:14px; font-weight:600;
   border:1px solid var(--border); background:transparent;
   color:var(--muted); cursor:pointer; transition:all 0.2s;
 }
@@ -176,18 +176,18 @@ body.day .theme-knob { transform:translateX(18px); }
 .notif-blinker.decline { background:var(--red); }
 @keyframes blink { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.7)} }
 .notif-text { flex:1; }
-.notif-company { font-size:13px; font-weight:700; color:var(--text); }
-.notif-sub { font-size:11px; color:var(--muted); margin-top:1px; }
-.notif-time { font-size:10px; color:var(--muted); }
-.notif-clear { font-size:11px; color:var(--muted); padding:2px 6px; }
+.notif-company { font-size:15px; font-weight:700; color:var(--text); }
+.notif-sub { font-size:13px; color:var(--muted); margin-top:1px; }
+.notif-time { font-size:12px; color:var(--muted); }
+.notif-clear { font-size:13px; color:var(--muted); padding:2px 6px; }
 
 /* ── SECTION HEADER ── */
 .section-header {
   display:flex; align-items:center; justify-content:space-between;
   padding:16px 14px 8px;
 }
-.section-title { font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); }
-.section-count { font-size:11px; color:var(--gold); background:var(--gold-dim); padding:3px 10px; border-radius:20px; }
+.section-title { font-size:14px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); }
+.section-count { font-size:13px; color:var(--gold); background:var(--gold-dim); padding:3px 10px; border-radius:20px; }
 
 /* ── PROSPECT CARDS ── */
 .prospect-list { padding:0 14px; display:flex; flex-direction:column; gap:10px; padding-bottom:40px; }
@@ -205,18 +205,18 @@ body.day .theme-knob { transform:translateX(18px); }
   padding:12px 12px 10px; cursor:pointer;
 }
 .rank-badge {
-  width:32px; height:32px; border-radius:9px;
+  width:36px; height:36px; border-radius:9px;
   background:var(--gold-dim); border:1px solid var(--border);
   display:flex; align-items:center; justify-content:center;
-  font-size:12px; font-weight:800; color:var(--gold); flex-shrink:0;
+  font-size:14px; font-weight:800; color:var(--gold); flex-shrink:0;
 }
 .card-info { flex:1; min-width:0; }
-.card-company { font-size:14px; font-weight:700; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.card-contact { font-size:11px; color:var(--muted); margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
-.card-sector { font-size:10px; color:var(--gold); margin-top:2px; opacity:0.8; }
+.card-company { font-size:16px; font-weight:700; color:var(--text); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.card-contact { font-size:13px; color:var(--muted); margin-top:2px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.card-sector { font-size:12px; color:var(--gold); margin-top:2px; opacity:0.8; }
 .card-right { display:flex; flex-direction:column; align-items:flex-end; gap:4px; flex-shrink:0; }
-.score-badge { font-size:11px; font-weight:700; color:var(--gold); background:var(--gold-dim); padding:3px 8px; border-radius:6px; }
-.chevron { font-size:11px; color:var(--muted); transition:transform 0.25s; }
+.score-badge { font-size:13px; font-weight:700; color:var(--gold); background:var(--gold-dim); padding:3px 8px; border-radius:6px; }
+.chevron { font-size:13px; color:var(--muted); transition:transform 0.25s; }
 .prospect-card.open .chevron { transform:rotate(180deg); }
 
 /* Reply status indicator on card */
@@ -228,7 +228,7 @@ body.day .theme-knob { transform:translateX(18px); }
 .reply-dot { width:7px; height:7px; border-radius:50%; }
 .reply-dot.replied { background:var(--green); animation:blink 1.5s infinite; }
 .reply-dot.declined { background:var(--red); animation:blink 1.5s infinite; }
-.reply-label { font-size:11px; font-weight:600; }
+.reply-label { font-size:13px; font-weight:600; }
 .reply-label.replied { color:var(--green); }
 .reply-label.declined { color:var(--red); }
 
@@ -237,24 +237,24 @@ body.day .theme-knob { transform:translateX(18px); }
 .day-pill {
   flex:1; padding:6px 4px; border-radius:7px;
   border:1.5px solid transparent; text-align:center;
-  font-size:11px; font-weight:700; cursor:pointer;
+  font-size:13px; font-weight:700; cursor:pointer;
   transition:all 0.2s; position:relative;
 }
 .day-pill.d1 { background:var(--green-dim); border-color:rgba(21,128,61,0.3); color:var(--green); }
 .day-pill.d2 { background:var(--amber-dim); border-color:rgba(217,119,6,0.3); color:var(--amber); }
 .day-pill.d3 { background:var(--red-dim); border-color:rgba(220,38,38,0.3); color:var(--red); }
 .day-pill.done-pill { opacity:0.4; }
-.day-pill.done-pill::after { content:'✓'; position:absolute; right:4px; top:2px; font-size:9px; }
-.day-pill-date { font-size:9px; font-weight:500; opacity:0.7; margin-top:1px; }
+.day-pill.done-pill::after { content:'✓'; position:absolute; right:4px; top:2px; font-size:11px; }
+.day-pill-date { font-size:11px; font-weight:500; opacity:0.7; margin-top:1px; }
 
 /* expanded body */
 .card-body { display:none; border-top:1px solid var(--border); }
 .prospect-card.open .card-body { display:block; }
 
 .pain-block { padding:12px; background:var(--surface2); }
-.pain-label { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:4px; }
-.pain-text { font-size:12px; line-height:1.55; color:var(--text); }
-.offer-text { font-size:11px; color:var(--gold); margin-top:8px; padding:7px 9px; background:var(--gold-dim); border-radius:7px; border-left:3px solid var(--gold); }
+.pain-label { font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:4px; }
+.pain-text { font-size:14px; line-height:1.55; color:var(--text); }
+.offer-text { font-size:13px; color:var(--gold); margin-top:8px; padding:7px 9px; background:var(--gold-dim); border-radius:7px; border-left:3px solid var(--gold); }
 
 /* day action blocks */
 .day-actions { padding:12px; display:flex; flex-direction:column; gap:8px; }
@@ -263,12 +263,12 @@ body.day .theme-knob { transform:translateX(18px); }
 .day-action.d1 .day-action-header { background:var(--green-dim); border-bottom:1px solid rgba(21,128,61,0.15); }
 .day-action.d2 .day-action-header { background:var(--amber-dim); border-bottom:1px solid rgba(217,119,6,0.15); }
 .day-action.d3 .day-action-header { background:var(--red-dim); border-bottom:1px solid rgba(220,38,38,0.15); }
-.day-tag { font-size:11px; font-weight:800; }
+.day-tag { font-size:13px; font-weight:800; }
 .d1 .day-tag { color:var(--green); }
 .d2 .day-tag { color:var(--amber); }
 .d3 .day-tag { color:var(--red); }
-.day-date-tag { font-size:10px; color:var(--muted); }
-.day-action-text { padding:9px 11px; font-size:12px; line-height:1.55; color:var(--text); background:rgba(128,128,128,0.03); }
+.day-date-tag { font-size:12px; color:var(--muted); }
+.day-action-text { padding:9px 11px; font-size:14px; line-height:1.55; color:var(--text); background:rgba(128,128,128,0.03); }
 
 /* DM copy block */
 .dm-copy-block {
@@ -281,11 +281,11 @@ body.day .theme-knob { transform:translateX(18px); }
   padding:8px 10px;
   border-bottom:1px solid var(--border);
 }
-.dm-copy-label { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); }
-.dm-copy-which { font-size:10px; color:var(--gold); }
+.dm-copy-label { font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); }
+.dm-copy-which { font-size:12px; color:var(--gold); }
 .dm-text-preview {
   padding:9px 10px;
-  font-size:11px; line-height:1.55; color:var(--muted);
+  font-size:13px; line-height:1.55; color:var(--muted);
   max-height:80px; overflow:hidden; position:relative;
 }
 .dm-text-preview::after {
@@ -296,7 +296,7 @@ body.day .theme-knob { transform:translateX(18px); }
 .dm-copy-btn {
   display:block; width:100%; padding:9px;
   background:var(--gold-dim); border:none; border-top:1px solid var(--border);
-  color:var(--gold); font-size:12px; font-weight:700; cursor:pointer;
+  color:var(--gold); font-size:14px; font-weight:700; cursor:pointer;
   text-align:center; transition:background 0.15s;
 }
 .dm-copy-btn:active { background:rgba(0,0,0,0.06); }
@@ -305,7 +305,7 @@ body.day .theme-knob { transform:translateX(18px); }
 .card-actions { display:flex; gap:7px; padding:8px 12px 12px; }
 .btn {
   flex:1; padding:10px 6px; border-radius:var(--radius-sm);
-  font-size:11px; font-weight:700; border:none; cursor:pointer;
+  font-size:13px; font-weight:700; border:none; cursor:pointer;
   display:flex; align-items:center; justify-content:center; gap:4px;
   transition:all 0.15s; -webkit-appearance:none; text-decoration:none;
 }
@@ -323,14 +323,14 @@ body.day .theme-knob { transform:translateX(18px); }
   box-shadow:var(--card-shadow);
 }
 .reply-log-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:4px; }
-.reply-log-company { font-size:14px; font-weight:700; color:var(--text); }
-.reply-log-status { font-size:11px; font-weight:700; padding:3px 8px; border-radius:6px; }
+.reply-log-company { font-size:16px; font-weight:700; color:var(--text); }
+.reply-log-status { font-size:13px; font-weight:700; padding:3px 8px; border-radius:6px; }
 .reply-log-status.replied { background:var(--green-dim); color:var(--green); }
 .reply-log-status.declined { background:var(--red-dim); color:var(--red); }
 .reply-log-status.won { background:var(--gold-dim); color:var(--gold); }
-.reply-log-note { font-size:12px; color:var(--muted); margin-top:4px; }
-.reply-log-time { font-size:10px; color:var(--muted); margin-top:6px; }
-.reply-log-empty { text-align:center; padding:40px 20px; color:var(--muted); font-size:14px; }
+.reply-log-note { font-size:14px; color:var(--muted); margin-top:4px; }
+.reply-log-time { font-size:12px; color:var(--muted); margin-top:6px; }
+.reply-log-empty { text-align:center; padding:40px 20px; color:var(--muted); font-size:16px; }
 
 /* ── TOAST ── */
 .toast {
@@ -338,7 +338,7 @@ body.day .theme-knob { transform:translateX(18px); }
   transform:translateX(-50%) translateY(80px);
   background:var(--surface2); border:1px solid var(--gold);
   color:var(--gold); padding:11px 20px; border-radius:30px;
-  font-size:13px; font-weight:600; z-index:999;
+  font-size:15px; font-weight:600; z-index:999;
   transition:transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
   white-space:nowrap; box-shadow:0 4px 20px rgba(15,23,42,0.12);
 }
@@ -358,12 +358,12 @@ body.day .theme-knob { transform:translateX(18px); }
   border-top:1px solid var(--border);
 }
 .modal-handle { width:36px; height:4px; background:var(--border); border-radius:2px; margin:0 auto 18px; }
-.modal-title { font-size:16px; font-weight:800; color:var(--text); margin-bottom:4px; }
-.modal-sub { font-size:12px; color:var(--muted); margin-bottom:16px; }
+.modal-title { font-size:18px; font-weight:800; color:var(--text); margin-bottom:4px; }
+.modal-sub { font-size:14px; color:var(--muted); margin-bottom:16px; }
 .modal-options { display:flex; gap:8px; margin-bottom:14px; }
 .modal-opt {
   flex:1; padding:11px 8px; border-radius:10px; text-align:center;
-  font-size:12px; font-weight:700; cursor:pointer; border:1.5px solid var(--border);
+  font-size:14px; font-weight:700; cursor:pointer; border:1.5px solid var(--border);
   background:var(--surface2); color:var(--muted); transition:all 0.2s;
 }
 .modal-opt.selected.replied { background:var(--green-dim); border-color:var(--green); color:var(--green); }
@@ -372,42 +372,42 @@ body.day .theme-knob { transform:translateX(18px); }
 .modal-textarea {
   width:100%; min-height:80px; border-radius:10px;
   border:1px solid var(--border); background:var(--surface2);
-  color:var(--text); font-size:13px; padding:10px 12px;
+  color:var(--text); font-size:15px; padding:10px 12px;
   resize:none; font-family:inherit; margin-bottom:12px;
 }
 .modal-save {
   width:100%; padding:14px; border-radius:12px;
   background:var(--gold); border:none; color:#ffffff;
-  font-size:14px; font-weight:800; cursor:pointer;
+  font-size:16px; font-weight:800; cursor:pointer;
 }
-.modal-cancel { width:100%; padding:10px; border:none; background:transparent; color:var(--muted); font-size:13px; cursor:pointer; margin-top:6px; }
+.modal-cancel { width:100%; padding:10px; border:none; background:transparent; color:var(--muted); font-size:15px; cursor:pointer; margin-top:6px; }
 
 /* ── TEMPLATES ── */
 .templates-list { padding:0 14px; display:flex; flex-direction:column; gap:10px; padding-bottom:40px; }
 .template-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; box-shadow:var(--card-shadow); }
 .template-header { display:flex; align-items:center; justify-content:space-between; padding:11px 13px; background:var(--surface2); }
-.template-name { font-size:13px; font-weight:700; color:var(--text); }
-.template-body { padding:10px 13px; font-size:12px; line-height:1.6; color:var(--muted); }
+.template-name { font-size:15px; font-weight:700; color:var(--text); }
+.template-body { padding:10px 13px; font-size:14px; line-height:1.6; color:var(--muted); }
 .template-copy-btn {
   display:block; width:calc(100% - 26px); margin:0 13px 13px;
   padding:9px; border-radius:var(--radius-sm);
   background:var(--gold-dim); border:1px solid var(--border);
-  color:var(--gold); font-size:12px; font-weight:700; cursor:pointer; text-align:center;
+  color:var(--gold); font-size:14px; font-weight:700; cursor:pointer; text-align:center;
 }
 .template-copy-btn:active { background:rgba(0,0,0,0.06); }
 
 /* ── SETTINGS ── */
 .settings-list { padding:12px 14px; display:flex; flex-direction:column; gap:10px; }
 .settings-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:13px; box-shadow:var(--card-shadow); }
-.settings-label { font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
+.settings-label { font-size:12px; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--muted); margin-bottom:10px; }
 .settings-row { display:flex; justify-content:space-between; align-items:center; padding:7px 0; border-bottom:1px solid var(--border); }
 .settings-row:last-child { border-bottom:none; }
-.settings-key { font-size:12px; color:var(--muted); }
-.settings-val { font-size:12px; font-weight:600; color:var(--gold); }
+.settings-key { font-size:14px; color:var(--muted); }
+.settings-val { font-size:14px; font-weight:600; color:var(--gold); }
 .reset-btn {
   width:100%; padding:12px; border-radius:var(--radius-sm);
   background:var(--red-dim); border:1px solid rgba(220,38,38,0.3);
-  color:var(--red); font-size:13px; font-weight:700; cursor:pointer;
+  color:var(--red); font-size:15px; font-weight:700; cursor:pointer;
 }
 
 /* hidden views */
@@ -418,7 +418,7 @@ body.day .theme-knob { transform:translateX(18px); }
 .sync-bar {
   display:flex; align-items:center; justify-content:center; gap:6px;
   padding:6px 14px;
-  font-size:10px; color:var(--muted);
+  font-size:12px; color:var(--muted);
   border-bottom:1px solid var(--border);
   background:var(--surface2);
 }
@@ -429,9 +429,9 @@ body.day .theme-knob { transform:translateX(18px); }
 .app-mode.active { display:block; }
 #brand-switcher { display:none; min-height:100vh; padding:env(safe-area-inset-top,24px) 20px 24px; }
 #brand-switcher.active { display:flex; flex-direction:column; }
-.switcher-eyebrow { font-size:11px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:var(--muted); text-align:center; margin-bottom:6px; }
-.switcher-title { font-size:22px; font-weight:800; color:var(--text); text-align:center; margin-bottom:4px; }
-.switcher-sub { font-size:13px; color:var(--muted); text-align:center; margin-bottom:28px; }
+.switcher-eyebrow { font-size:13px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:var(--muted); text-align:center; margin-bottom:6px; }
+.switcher-title { font-size:25px; font-weight:800; color:var(--text); text-align:center; margin-bottom:4px; }
+.switcher-sub { font-size:15px; color:var(--muted); text-align:center; margin-bottom:28px; }
 .brand-card {
   background:var(--surface); border:1px solid var(--border);
   border-radius:var(--radius); padding:20px; margin-bottom:14px;
@@ -441,28 +441,28 @@ body.day .theme-knob { transform:translateX(18px); }
 .brand-card:active { transform:scale(0.98); }
 .brand-card.parent { border-color:var(--gold); }
 .brand-card.arm { border-color:rgba(37,99,235,0.4); }
-.brand-card-tag { font-size:10px; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; }
+.brand-card-tag { font-size:12px; font-weight:800; letter-spacing:1px; text-transform:uppercase; margin-bottom:8px; }
 .brand-card.parent .brand-card-tag { color:var(--gold); }
 .brand-card.arm .brand-card-tag { color:var(--blue); }
-.brand-card-name { font-size:19px; font-weight:800; color:var(--text); margin-bottom:6px; }
-.brand-card-desc { font-size:12px; color:var(--muted); line-height:1.5; }
-.brand-arrow-row { display:flex; justify-content:center; margin:2px 0 14px; color:var(--muted); font-size:14px; }
+.brand-card-name { font-size:22px; font-weight:800; color:var(--text); margin-bottom:6px; }
+.brand-card-desc { font-size:14px; color:var(--muted); line-height:1.5; }
+.brand-arrow-row { display:flex; justify-content:center; margin:2px 0 14px; color:var(--muted); font-size:16px; }
 .brand-card.priority { border-color:rgba(34,197,94,0.45); }
 .brand-card.priority .brand-card-tag { color:#16a34a; }
 /* ── PRIORITY DECK ── */
 .pd-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:13px; margin:0 14px 12px; box-shadow:var(--card-shadow); }
-.pd-rank { display:inline-flex; align-items:center; justify-content:center; min-width:34px; height:22px; border-radius:11px; font-size:11px; font-weight:800; background:rgba(34,197,94,0.12); color:#16a34a; margin-right:8px; }
+.pd-rank { display:inline-flex; align-items:center; justify-content:center; min-width:38px; height:25px; border-radius:12px; font-size:13px; font-weight:800; background:rgba(34,197,94,0.12); color:#16a34a; margin-right:8px; }
 .pd-rank.hot { background:rgba(220,38,38,0.12); color:var(--red,#dc2626); }
-.pd-task { font-size:13px; font-weight:700; color:var(--text); line-height:1.4; }
-.pd-meta { font-size:11px; color:var(--muted); line-height:1.5; margin-top:5px; display:flex; align-items:center; flex-wrap:wrap; gap:0; }
-.pd-action { font-size:11.5px; font-weight:600; color:#16a34a; margin-top:6px; }
-.pd-sec { font-size:10px; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; color:var(--muted); margin:16px 16px 8px; }
+.pd-task { font-size:15px; font-weight:700; color:var(--text); line-height:1.4; }
+.pd-meta { font-size:13px; color:var(--muted); line-height:1.5; margin-top:5px; display:flex; align-items:center; flex-wrap:wrap; gap:0; }
+.pd-action { font-size:13.5px; font-weight:600; color:#16a34a; margin-top:6px; }
+.pd-sec { font-size:12px; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; color:var(--muted); margin:16px 16px 8px; }
 
 /* ── STATUS PILL — friendly, interactive badge (replaces plain "🟡 in progress" text) ── */
 .status-pill {
   display:inline-flex; align-items:center; gap:6px;
   padding:4px 11px 4px 8px; border-radius:999px; border:none;
-  font:inherit; font-size:10.5px; font-weight:800; letter-spacing:.15px; white-space:nowrap;
+  font:inherit; font-size:12.5px; font-weight:800; letter-spacing:.15px; white-space:nowrap;
   cursor:pointer; -webkit-tap-highlight-color:transparent;
   transition:transform .18s cubic-bezier(.34,1.56,.64,1), box-shadow .18s ease, filter .18s ease;
 }
@@ -484,7 +484,7 @@ body.day .theme-knob { transform:translateX(18px); }
 .pd-progress-fill.done { background:var(--green); }
 .pd-progress-fill.progress { background:var(--amber); }
 .pd-progress-fill.blocked { background:var(--red); }
-.pd-foot { font-size:11px; color:var(--muted); margin-top:9px; }
+.pd-foot { font-size:13px; color:var(--muted); margin-top:9px; }
 /* ── STARWAVE LANDING (scoped to #brand-switcher — app views untouched) ── */
 #brand-switcher {
   position:relative; overflow:hidden; min-height:100vh; padding:8px 16px 60px;
@@ -493,9 +493,9 @@ body.day .theme-knob { transform:translateX(18px); }
 /* ── COVER POSTER — sits straight on the flat orange page, no separate card box ── */
 /* Text hierarchy: eyebrow (label, smallest/quietest) → title (largest/boldest) → sub (supporting, mid-weight) */
 #brand-switcher .cover-poster { position:relative; overflow:hidden; isolation:isolate; box-sizing:border-box; width:100%; max-width:1080px; min-height:230px; margin:26px auto 22px; padding:36px 36px 32px; border-radius:24px; background:transparent; }
-#brand-switcher .cover-eyebrow { position:relative; z-index:2; font-size:11px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#181511; opacity:.72; animation:coverFade .5s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cover-eyebrow { position:relative; z-index:2; font-size:13px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#181511; opacity:.72; animation:coverFade .5s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .cover-title { position:relative; z-index:2; font-size:46px; font-weight:800; letter-spacing:-0.8px; line-height:1.03; color:#181511; margin:14px 0 12px; animation:coverFade .5s .08s cubic-bezier(.2,.8,.2,1) backwards; }
-#brand-switcher .cover-sub { position:relative; z-index:2; max-width:54%; font-size:13.5px; font-weight:600; line-height:1.45; color:#181511; opacity:.68; animation:coverFade .5s .16s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cover-sub { position:relative; z-index:2; max-width:54%; font-size:15.5px; font-weight:600; line-height:1.45; color:#181511; opacity:.68; animation:coverFade .5s .16s cubic-bezier(.2,.8,.2,1) backwards; }
 /* ── PAGE SHAPES — big Bauhaus geometry drifting slowly behind the whole page, animation-only, no text ── */
 #brand-switcher .page-shapes { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
 #brand-switcher .ps-circle { position:absolute; width:560px; height:560px; border-radius:50%; background:#F6EFE4; opacity:.48; right:-180px; top:-140px; animation:psFloat 8s ease-in-out infinite; }
@@ -509,11 +509,11 @@ body.day .theme-knob { transform:translateX(18px); }
 /* ── VERSE CARD — flat solid ink-purple block, no glass/blur/glow ── */
 #brand-switcher .verse-card { position:relative; overflow:hidden; box-sizing:border-box; width:100%; max-width:1080px; margin:0 auto 18px; padding:24px 26px; text-align:center; border-radius:22px; background:#2B2140; animation:cardRise .5s .22s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .verse-card::before { content:''; position:absolute; z-index:0; width:64px; height:64px; border-radius:50%; background:#F6EFE4; opacity:.08; right:-16px; top:-22px; }
-#brand-switcher .verse-label { position:relative; z-index:1; font-size:10.5px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#B9A6FF; margin-bottom:10px; }
-#brand-switcher .verse-text { position:relative; z-index:1; color:#F3EFFF; font-size:16.5px; line-height:1.65; font-style:italic; font-weight:600; }
-#brand-switcher .verse-ref { position:relative; z-index:1; color:#B9A6FF; font-size:10.5px; font-weight:800; letter-spacing:2px; text-transform:uppercase; margin-top:10px; }
+#brand-switcher .verse-label { position:relative; z-index:1; font-size:12.5px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#B9A6FF; margin-bottom:10px; }
+#brand-switcher .verse-text { position:relative; z-index:1; color:#F3EFFF; font-size:18.5px; line-height:1.65; font-style:italic; font-weight:600; }
+#brand-switcher .verse-ref { position:relative; z-index:1; color:#B9A6FF; font-size:12.5px; font-weight:800; letter-spacing:2px; text-transform:uppercase; margin-top:10px; }
 #brand-switcher .verse-divider { height:1px; background:rgba(255,255,255,0.12); margin:16px auto; width:60%; }
-#brand-switcher .verse-text.sub { font-size:13px; }
+#brand-switcher .verse-text.sub { font-size:15px; }
 
 /* ── BRAND CARDS — flat solid colour blocks with a quiet geometric accent, no border-glow ── */
 #brand-switcher .brand-card { position:relative; overflow:hidden; box-sizing:border-box; width:100%; max-width:1080px; margin:0 auto 14px; padding:24px 26px; border-radius:22px; border:none; box-shadow:none; transition:transform .18s cubic-bezier(.2,.8,.2,1); animation:cardRise .5s cubic-bezier(.2,.8,.2,1) backwards; }
@@ -536,7 +536,7 @@ body.day .theme-knob { transform:translateX(18px); }
 #brand-switcher .brand-card-name { color:#181511; }
 #brand-switcher .brand-card-desc { color:rgba(24,21,17,0.68); }
 #brand-switcher .brand-arrow-row { color:rgba(24,21,17,0.75); position:relative; font-weight:700; }
-.app-header-switch { font-size:11px; color:#181511; background:rgba(255,255,255,0.4); border:1px solid rgba(24,21,17,0.2); border-radius:20px; padding:4px 10px; cursor:pointer; position:relative; z-index:1; }
+.app-header-switch { font-size:13px; color:#181511; background:rgba(255,255,255,0.4); border:1px solid rgba(24,21,17,0.2); border-radius:20px; padding:4px 10px; cursor:pointer; position:relative; z-index:1; }
 </style>
 </head>
 <body class="day">
@@ -603,7 +603,7 @@ body.day .theme-knob { transform:translateX(18px); }
     </div>
   </div>
   <div class="header-row2">
-    <div class="header-title">Command Center <span style="font-size:10px;color:var(--muted);font-weight:600">· arm of GoodnessCities</span></div>
+    <div class="header-title">Command Center <span style="font-size:12px;color:var(--muted);font-weight:600">· arm of GoodnessCities</span></div>
     <div class="date-badge" id="dateBadge">—</div>
   </div>
 </div>
@@ -657,8 +657,8 @@ body.day .theme-knob { transform:translateX(18px); }
 ════════════════════════════════════ -->
 <div class="view" id="view-today">
   <div style="margin:12px 14px 0; background:var(--green-dim); border:1px solid rgba(21,128,61,0.25); border-radius:var(--radius); padding:12px 14px;">
-    <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:5px;" id="d1MissionLabel">🔥 D1 Mission</div>
-    <div style="font-size:13px;color:var(--text);line-height:1.5;">Comment on each prospect's latest LinkedIn post. <strong>No pitch, no CTA.</strong> Just sharp, relevant engagement. Build presence first.</div>
+    <div style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:5px;" id="d1MissionLabel">🔥 D1 Mission</div>
+    <div style="font-size:15px;color:var(--text);line-height:1.5;">Comment on each prospect's latest LinkedIn post. <strong>No pitch, no CTA.</strong> Just sharp, relevant engagement. Build presence first.</div>
   </div>
   <div class="section-header">
     <span class="section-title">D1 Warm-Up List</span>
@@ -673,7 +673,7 @@ body.day .theme-knob { transform:translateX(18px); }
 <div class="view" id="view-replies">
   <div class="section-header">
     <span class="section-title">Reply Tracker</span>
-    <button style="font-size:11px;color:var(--muted);background:none;border:none;cursor:pointer;" onclick="clearNotifs()">Clear all</button>
+    <button style="font-size:13px;color:var(--muted);background:none;border:none;cursor:pointer;" onclick="clearNotifs()">Clear all</button>
   </div>
   <div class="reply-log" id="replyLog"></div>
 </div>
@@ -713,21 +713,21 @@ body.day .theme-knob { transform:translateX(18px); }
     </div>
     <div class="settings-card">
       <div class="settings-label">Data Source</div>
-      <div class="settings-row"><span class="settings-key">Hosting</span><span class="settings-val" style="font-size:10px">GitHub Pages</span></div>
-      <div class="settings-row"><span class="settings-key">Repo</span><span class="settings-val" style="font-size:10px">gienelsbalanquit-collab/prisy-pwa</span></div>
-      <div class="settings-row"><span class="settings-key">Live URL</span><span class="settings-val" style="font-size:10px">gienelsbalanquit-collab.github.io/prisy-pwa</span></div>
-      <div class="settings-row"><span class="settings-key">JSON source</span><span class="settings-val" style="font-size:10px">./linkedin_prospects.json</span></div>
+      <div class="settings-row"><span class="settings-key">Hosting</span><span class="settings-val" style="font-size:12px">GitHub Pages</span></div>
+      <div class="settings-row"><span class="settings-key">Repo</span><span class="settings-val" style="font-size:12px">gienelsbalanquit-collab/prisy-pwa</span></div>
+      <div class="settings-row"><span class="settings-key">Live URL</span><span class="settings-val" style="font-size:12px">gienelsbalanquit-collab.github.io/prisy-pwa</span></div>
+      <div class="settings-row"><span class="settings-key">JSON source</span><span class="settings-val" style="font-size:12px">./linkedin_prospects.json</span></div>
       <div class="settings-row"><span class="settings-key">Last fetch</span><span class="settings-val" id="lastSyncTime">—</span></div>
-      <div class="settings-row"><span class="settings-key">Status</span><span class="settings-val" id="syncStatusDetail" style="font-size:10px">—</span></div>
+      <div class="settings-row"><span class="settings-key">Status</span><span class="settings-val" id="syncStatusDetail" style="font-size:12px">—</span></div>
     </div>
     <div class="settings-card" style="opacity:0.65">
       <div class="settings-label">Desktop Sync (optional, LAN-only)</div>
       <div class="settings-row" style="flex-direction:column;align-items:flex-start;gap:6px">
         <span class="settings-key">Dashboard URL</span>
         <input id="dashboardUrlInput" type="text" placeholder="http://192.168.1.x:8765"
-               style="width:100%;padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:12px;font-family:monospace"
+               style="width:100%;padding:6px 8px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:14px;font-family:monospace"
                onchange="saveDashboardUrl(this.value)" />
-        <span style="font-size:10px;color:var(--text-dim)">Only used when viewing the PWA on your Mac. The phone PWA loads prospects from GitHub Pages directly — no LAN needed.</span>
+        <span style="font-size:12px;color:var(--text-dim)">Only used when viewing the PWA on your Mac. The phone PWA loads prospects from GitHub Pages directly — no LAN needed.</span>
       </div>
     </div>
     <div class="settings-card">
@@ -735,8 +735,8 @@ body.day .theme-knob { transform:translateX(18px); }
       <div class="settings-row">
         <span class="settings-key">Theme</span>
         <div style="display:flex;gap:8px">
-          <button onclick="setTheme('night')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;">🌙 Night</button>
-          <button onclick="setTheme('day')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;">☀️ Day</button>
+          <button onclick="setTheme('night')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:13px;cursor:pointer;">🌙 Night</button>
+          <button onclick="setTheme('day')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:13px;cursor:pointer;">☀️ Day</button>
         </div>
       </div>
     </div>
@@ -766,7 +766,7 @@ body.day .theme-knob { transform:translateX(18px); }
     </div>
   </div>
   <div class="header-row2">
-    <div class="header-title">Command Center <span style="font-size:10px;color:var(--muted);font-weight:600">· mother brand</span></div>
+    <div class="header-title">Command Center <span style="font-size:12px;color:var(--muted);font-weight:600">· mother brand</span></div>
     <div class="date-badge" id="gcDateBadge">—</div>
   </div>
 </div>
@@ -799,14 +799,14 @@ body.day .theme-knob { transform:translateX(18px); }
 ════════════════════════════════════ -->
 <div class="view active" id="gcview-today">
   <div style="margin:12px 14px 0; background:var(--blue-dim,rgba(37,99,235,0.12)); border:1px solid rgba(37,99,235,0.3); border-radius:var(--radius); padding:12px 14px;">
-    <div style="font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:5px;">🌆 Sales pitch for a paid service</div>
-    <div style="font-size:13px;color:var(--text);line-height:1.5;" id="gcMissionText">Today's picks pull from the uploaded lead list — every channel action button opens the real contact method for that lead. Different pain points and solution tier than Prisynchracy's Bahrain/GCC motion — this is GoodnessCities' own direct pipeline.</div>
+    <div style="font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--blue);margin-bottom:5px;">🌆 Sales pitch for a paid service</div>
+    <div style="font-size:15px;color:var(--text);line-height:1.5;" id="gcMissionText">Today's picks pull from the uploaded lead list — every channel action button opens the real contact method for that lead. Different pain points and solution tier than Prisynchracy's Bahrain/GCC motion — this is GoodnessCities' own direct pipeline.</div>
   </div>
   <div class="section-header">
     <span class="section-title">Today's Picks</span>
     <span class="section-count" id="gcCompletedCount">0 / 0</span>
   </div>
-  <div id="gcComplianceBanner" style="display:none;margin:0 14px 10px;background:var(--red-dim);border:1px solid rgba(220,38,38,0.3);border-radius:var(--radius-sm);padding:10px 12px;font-size:11px;line-height:1.5;color:var(--red)"></div>
+  <div id="gcComplianceBanner" style="display:none;margin:0 14px 10px;background:var(--red-dim);border:1px solid rgba(220,38,38,0.3);border-radius:var(--radius-sm);padding:10px 12px;font-size:13px;line-height:1.5;color:var(--red)"></div>
   <div class="prospect-list" id="gcList"></div>
 </div>
 
@@ -841,19 +841,19 @@ body.day .theme-knob { transform:translateX(18px); }
       <div class="settings-label">Corporate Structure</div>
       <div class="settings-row"><span class="settings-key">GoodnessCities</span><span class="settings-val">Mother brand · SEC-registered, PH</span></div>
       <div class="settings-row"><span class="settings-key">Prisynchracy</span><span class="settings-val">CMO / marketing arm</span></div>
-      <div class="settings-row"><span class="settings-key">Outreach contact</span><span class="settings-val" style="font-size:10px">founder@goodnesscities.com</span></div>
+      <div class="settings-row"><span class="settings-key">Outreach contact</span><span class="settings-val" style="font-size:12px">founder@goodnesscities.com</span></div>
     </div>
     <div class="settings-card">
       <div class="settings-label">Pipeline Snapshot</div>
       <div class="settings-row"><span class="settings-key">Total real leads</span><span class="settings-val" id="gcTotalLeads">—</span></div>
       <div class="settings-row"><span class="settings-key">Email-ready</span><span class="settings-val" id="gcEmailReady">—</span></div>
       <div class="settings-row"><span class="settings-key">Excluded (fictional rows)</span><span class="settings-val" id="gcExcluded">—</span></div>
-      <div class="settings-row"><span class="settings-key">Source</span><span class="settings-val" style="font-size:10px">GoodnessCities_Leads_Clean.csv</span></div>
+      <div class="settings-row"><span class="settings-key">Source</span><span class="settings-val" style="font-size:12px">GoodnessCities_Leads_Clean.csv</span></div>
     </div>
     <div class="settings-card">
       <div class="settings-label">Compliance</div>
       <div class="settings-row" style="flex-direction:column;align-items:flex-start;gap:4px">
-        <span class="settings-key" style="font-size:11px;line-height:1.5">120 US plumbing leads are phone/SMS-only — TCPA consent review required before any auto-dial or SMS. Excluded from Today's Picks until reviewed.</span>
+        <span class="settings-key" style="font-size:13px;line-height:1.5">120 US plumbing leads are phone/SMS-only — TCPA consent review required before any auto-dial or SMS. Excluded from Today's Picks until reviewed.</span>
       </div>
     </div>
     <div class="settings-card">
@@ -861,8 +861,8 @@ body.day .theme-knob { transform:translateX(18px); }
       <div class="settings-row">
         <span class="settings-key">Theme</span>
         <div style="display:flex;gap:8px">
-          <button onclick="setTheme('night')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;">🌙 Night</button>
-          <button onclick="setTheme('day')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:11px;cursor:pointer;">☀️ Day</button>
+          <button onclick="setTheme('night')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:13px;cursor:pointer;">🌙 Night</button>
+          <button onclick="setTheme('day')" style="padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface2);color:var(--text);font-size:13px;cursor:pointer;">☀️ Day</button>
         </div>
       </div>
     </div>
@@ -884,11 +884,11 @@ body.day .theme-knob { transform:translateX(18px); }
       <div class="date-badge" id="pdDateBadge"></div>
     </div>
   </div>
-  <div class="header-title">Master Daily Command <span style="font-size:10px;color:var(--muted);font-weight:600">· REHC & BTC + Prisynchracy + GoodnessCities</span></div>
+  <div class="header-title">Master Daily Command <span style="font-size:12px;color:var(--muted);font-weight:600">· REHC & BTC + Prisynchracy + GoodnessCities</span></div>
 </div>
 
 <div id="pdContent" style="padding-top:10px">
-  <div class="pd-card" style="text-align:center;color:var(--muted);font-size:12px">Loading priority deck…</div>
+  <div class="pd-card" style="text-align:center;color:var(--muted);font-size:14px">Loading priority deck…</div>
 </div>
 
 </div> <!-- /#app-priority -->
@@ -1518,7 +1518,7 @@ async function loadPriorityDeck() {
     renderPriorityDeck(d);
   } catch (e) {
     const el = document.getElementById('pdContent');
-    if (el) el.innerHTML = '<div class="pd-card" style="color:var(--muted);font-size:12px">Could not load priority_deck.json — ' + e.message + '</div>';
+    if (el) el.innerHTML = '<div class="pd-card" style="color:var(--muted);font-size:14px">Could not load priority_deck.json — ' + e.message + '</div>';
   }
 }
 
@@ -1572,7 +1572,7 @@ function renderPriorityDeck(d) {
          + '<div class="pd-foot">📅 ' + esc(it.deadline) + '</div>'
          + '</div>';
     });
-    if (d.rehc_btc.note) h += '<div style="font-size:10px;color:var(--muted);margin:0 16px 6px">' + esc(d.rehc_btc.note) + '</div>';
+    if (d.rehc_btc.note) h += '<div style="font-size:12px;color:var(--muted);margin:0 16px 6px">' + esc(d.rehc_btc.note) + '</div>';
   }
 
   h += '<div class="pd-sec">📌 Today\'s P1–P10</div>';
@@ -1587,7 +1587,7 @@ function renderPriorityDeck(d) {
   if (d.day_plan && d.day_plan.length) {
     h += '<div class="pd-sec">⏰ Suggested day plan</div>';
     d.day_plan.forEach(b => {
-      h += '<div class="pd-card"><div class="pd-task">' + esc(b.block) + ' <span style="font-weight:600;color:var(--muted);font-size:11px">(' + esc(b.when) + ')</span></div>'
+      h += '<div class="pd-card"><div class="pd-task">' + esc(b.block) + ' <span style="font-weight:600;color:var(--muted);font-size:13px">(' + esc(b.when) + ')</span></div>'
          + '<div class="pd-meta">' + esc(b.what) + '</div></div>';
     });
   }
@@ -1595,7 +1595,7 @@ function renderPriorityDeck(d) {
   if (d.scoreboard && d.scoreboard.length) {
     h += '<div class="pd-sec">📊 Scoreboard</div><div class="pd-card">';
     d.scoreboard.forEach(s => {
-      h += '<div class="settings-row"><span class="settings-key">' + esc(s.k) + '</span><span class="settings-val" style="font-size:10.5px">' + esc(s.v) + '</span></div>';
+      h += '<div class="settings-row"><span class="settings-key">' + esc(s.k) + '</span><span class="settings-val" style="font-size:12.5px">' + esc(s.v) + '</span></div>';
     });
     h += '</div>';
   }
@@ -1745,7 +1745,7 @@ function renderProspects() {
       ${replyType ? `<div class="reply-indicator visible">
         <div class="reply-dot ${replyType}"></div>
         <span class="reply-label ${replyType}">${replyType === 'replied' ? '✓ Replied' : replyType === 'declined' ? '✗ Declined' : '🏆 Won'}</span>
-        ${st.reply.note ? `<span style="font-size:10px;color:var(--muted);margin-left:4px">— ${st.reply.note.substring(0,30)}</span>` : ''}
+        ${st.reply.note ? `<span style="font-size:12px;color:var(--muted);margin-left:4px">— ${st.reply.note.substring(0,30)}</span>` : ''}
       </div>` : ''}
 
       <div class="day-pills">
@@ -1810,12 +1810,12 @@ function renderToday() {
         <div class="rank-badge">#${p.rank}</div>
         <div class="card-info">
           <div class="card-company">${p.company}</div>
-          <div class="card-contact" style="font-size:11px;white-space:normal;margin-top:4px;line-height:1.4">${p.plan.d1.action}</div>
+          <div class="card-contact" style="font-size:13px;white-space:normal;margin-top:4px;line-height:1.4">${p.plan.d1.action}</div>
         </div>
         <div class="card-right">
           ${st.d1
-            ? '<span style="font-size:22px">✅</span>'
-            : `<button class="btn btn-reply" style="padding:8px 10px;font-size:11px" onclick="toggleDay(${p.rank},'d1',event)">Done</button>`
+            ? '<span style="font-size:25px">✅</span>'
+            : `<button class="btn btn-reply" style="padding:8px 10px;font-size:13px" onclick="toggleDay(${p.rank},'d1',event)">Done</button>`
           }
         </div>
       </div>
@@ -1833,7 +1833,7 @@ function renderToday() {
 function renderReplies() {
   const log = document.getElementById('replyLog');
   if (!replies.length) {
-    log.innerHTML = '<div class="reply-log-empty">No replies logged yet.<br><span style="font-size:12px;margin-top:6px;display:block">Tap "Log Reply" on any prospect card.</span></div>';
+    log.innerHTML = '<div class="reply-log-empty">No replies logged yet.<br><span style="font-size:14px;margin-top:6px;display:block">Tap "Log Reply" on any prospect card.</span></div>';
     return;
   }
   log.innerHTML = [...replies].reverse().map(r => `
@@ -1900,12 +1900,12 @@ function renderTemplates() {
     <div class="template-card">
       <div class="template-header">
         <span class="template-name">${p.company}</span>
-        <a href="${p.linkedin}" target="_blank" style="font-size:11px;color:var(--blue);text-decoration:none">🔗 LinkedIn ↗</a>
+        <a href="${p.linkedin}" target="_blank" style="font-size:13px;color:var(--blue);text-decoration:none">🔗 LinkedIn ↗</a>
       </div>
-      <div style="padding:8px 13px 2px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--amber)">D2 · Insight DM · ${W.d2}</div>
+      <div style="padding:8px 13px 2px;font-size:12px;font-weight:700;letter-spacing:1px;color:var(--amber)">D2 · Insight DM · ${W.d2}</div>
       <div class="template-body">${p.plan.d2.action}</div>
       <button class="template-copy-btn" onclick="copyRaw(\`${escJS(p.plan.d2.action)}\`)">📋 Copy D2 DM</button>
-      <div style="padding:8px 13px 2px;font-size:10px;font-weight:700;letter-spacing:1px;color:var(--red)">D3 · ASK · ${W.d3}</div>
+      <div style="padding:8px 13px 2px;font-size:12px;font-weight:700;letter-spacing:1px;color:var(--red)">D3 · ASK · ${W.d3}</div>
       <div class="template-body">${p.plan.d3.action}</div>
       <button class="template-copy-btn" onclick="copyRaw(\`${escJS(p.plan.d3.action)}\`)">📋 Copy D3 ASK</button>
     </div>`).join('');
