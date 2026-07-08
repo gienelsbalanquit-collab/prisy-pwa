@@ -496,15 +496,14 @@ body.day .theme-knob { transform:translateX(18px); }
 #brand-switcher .cover-eyebrow { position:relative; z-index:2; font-size:11px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#181511; opacity:.72; animation:coverFade .5s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .cover-title { position:relative; z-index:2; font-size:46px; font-weight:800; letter-spacing:-0.8px; line-height:1.03; color:#181511; margin:14px 0 12px; animation:coverFade .5s .08s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .cover-sub { position:relative; z-index:2; max-width:54%; font-size:13.5px; font-weight:600; line-height:1.45; color:#181511; opacity:.68; animation:coverFade .5s .16s cubic-bezier(.2,.8,.2,1) backwards; }
-#brand-switcher .cover-shapes { position:absolute; inset:0; z-index:1; }
-#brand-switcher .cs-circle { position:absolute; width:130px; height:130px; border-radius:50%; background:#F6EFE4; right:-36px; top:-36px; animation:csPop .6s .28s cubic-bezier(.34,1.56,.64,1) backwards, csFloat 6s 1s ease-in-out infinite; }
-#brand-switcher .cs-bar { position:absolute; width:320px; height:58px; background:#181511; right:-64px; bottom:40px; transform:rotate(-16deg); animation:csSlide .7s .1s cubic-bezier(.2,.8,.2,1) backwards; }
-#brand-switcher .cs-rect { position:absolute; width:88px; height:138px; background:#F6EFE4; right:48px; bottom:-54px; animation:csRise .55s .42s cubic-bezier(.2,.8,.2,1) backwards; }
+/* ── PAGE SHAPES — big Bauhaus geometry drifting slowly behind the whole page, animation-only, no text ── */
+#brand-switcher .page-shapes { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
+#brand-switcher .ps-circle { position:absolute; width:560px; height:560px; border-radius:50%; background:#F6EFE4; opacity:.16; right:-180px; top:-140px; animation:psFloat 9s ease-in-out infinite; }
+#brand-switcher .ps-bar { position:absolute; width:960px; height:130px; background:#181511; opacity:.10; left:-240px; top:32%; transform:rotate(-13deg); animation:psDrift 14s ease-in-out infinite; }
+#brand-switcher .ps-rect { position:absolute; width:280px; height:440px; background:#F6EFE4; opacity:.10; right:8%; bottom:-190px; animation:psFloat 12s 1.5s ease-in-out infinite reverse; }
 @keyframes coverFade { 0%{ opacity:0; transform:translateY(8px) } 100%{ opacity:1; transform:translateY(0) } }
-@keyframes csPop { 0%{ opacity:0; transform:scale(.3) } 100%{ opacity:1; transform:scale(1) } }
-@keyframes csFloat { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-8px) } }
-@keyframes csSlide { 0%{ opacity:0; transform:translate(60px,-20px) rotate(-30deg) } 100%{ opacity:1; transform:translate(0,0) rotate(-16deg) } }
-@keyframes csRise { 0%{ opacity:0; transform:translateY(40px) } 100%{ opacity:1; transform:translateY(0) } }
+@keyframes psFloat { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-30px) } }
+@keyframes psDrift { 0%,100%{ transform:translate(0,0) rotate(-13deg) } 50%{ transform:translate(36px,-16px) rotate(-9deg) } }
 @keyframes cardRise { 0%{ opacity:0; transform:translateY(16px) } 100%{ opacity:1; transform:translateY(0) } }
 
 /* ── VERSE CARD — flat solid ink-purple block, no glass/blur/glow ── */
@@ -546,12 +545,12 @@ body.day .theme-knob { transform:translateX(18px); }
   BRAND SWITCHER (landing — GoodnessCities is the mother brand)
 ════════════════════════════════════ -->
 <div id="brand-switcher" class="active">
+  <div class="page-shapes" aria-hidden="true">
+    <div class="ps-circle"></div>
+    <div class="ps-bar"></div>
+    <div class="ps-rect"></div>
+  </div>
   <div class="cover-poster">
-    <div class="cover-shapes" aria-hidden="true">
-      <div class="cs-circle"></div>
-      <div class="cs-bar"></div>
-      <div class="cs-rect"></div>
-    </div>
     <div class="cover-eyebrow">Gienel · Master Command Center</div>
     <div class="cover-title">Command<br>the day.</div>
     <div class="cover-sub">One board across everything — then two brands, two outreach motions.</div>
