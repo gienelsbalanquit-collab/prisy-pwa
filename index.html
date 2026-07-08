@@ -6,10 +6,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="GoodnessCities">
+<meta name="apple-mobile-web-app-title" content="Gienel">
 <meta name="theme-color" id="themeColorMeta" content="#fafafa">
 <link rel="manifest" href="manifest.json">
-<title>GoodnessCities Command Center</title>
+<title>Gienel · Command Center</title>
 <style>
 /* ══════════════════════════════════════════
    THEME VARIABLES
@@ -443,9 +443,37 @@ body.day .theme-knob { transform:translateX(18px); }
 .pd-rank { display:inline-flex; align-items:center; justify-content:center; min-width:34px; height:22px; border-radius:11px; font-size:11px; font-weight:800; background:rgba(34,197,94,0.12); color:#16a34a; margin-right:8px; }
 .pd-rank.hot { background:rgba(220,38,38,0.12); color:var(--red,#dc2626); }
 .pd-task { font-size:13px; font-weight:700; color:var(--text); line-height:1.4; }
-.pd-meta { font-size:11px; color:var(--muted); line-height:1.5; margin-top:5px; }
+.pd-meta { font-size:11px; color:var(--muted); line-height:1.5; margin-top:5px; display:flex; align-items:center; flex-wrap:wrap; gap:0; }
 .pd-action { font-size:11.5px; font-weight:600; color:#16a34a; margin-top:6px; }
 .pd-sec { font-size:10px; font-weight:800; letter-spacing:1.2px; text-transform:uppercase; color:var(--muted); margin:16px 16px 8px; }
+
+/* ── STATUS PILL — friendly, interactive badge (replaces plain "🟡 in progress" text) ── */
+.status-pill {
+  display:inline-flex; align-items:center; gap:6px;
+  padding:4px 11px 4px 8px; border-radius:999px; border:none;
+  font:inherit; font-size:10.5px; font-weight:800; letter-spacing:.15px; white-space:nowrap;
+  cursor:pointer; -webkit-tap-highlight-color:transparent;
+  transition:transform .18s cubic-bezier(.34,1.56,.64,1), box-shadow .18s ease, filter .18s ease;
+}
+.status-pill .status-dot { width:7px; height:7px; border-radius:50%; flex:none; }
+.status-pill.done { background:var(--green-dim); color:var(--green); }
+.status-pill.done .status-dot { background:var(--green); }
+.status-pill.progress { background:var(--amber-dim); color:var(--amber); }
+.status-pill.progress .status-dot { background:var(--amber); animation:pillPulse 1.7s ease-in-out infinite; }
+.status-pill.blocked { background:var(--red-dim); color:var(--red); }
+.status-pill.blocked .status-dot { background:var(--red); animation:pillPulse 1.1s ease-in-out infinite; }
+.status-pill:hover { transform:translateY(-1px) scale(1.06); box-shadow:0 4px 14px rgba(15,23,42,0.14); filter:brightness(1.05); }
+.status-pill:active, .status-pill.tapped { transform:scale(.93); }
+@keyframes pillPulse { 0%,100%{ opacity:1 } 50%{ opacity:.4 } }
+.pd-deadline { margin-left:7px; color:var(--muted); }
+.pd-card-head { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; }
+.pd-card-head .pd-task { flex:1; }
+.pd-progress-track { height:6px; border-radius:4px; background:var(--border); margin-top:11px; overflow:hidden; }
+.pd-progress-fill { height:100%; border-radius:4px; transition:width .4s ease; }
+.pd-progress-fill.done { background:var(--green); }
+.pd-progress-fill.progress { background:var(--amber); }
+.pd-progress-fill.blocked { background:var(--red); }
+.pd-foot { font-size:11px; color:var(--muted); margin-top:9px; }
 /* ── STARWAVE LANDING (scoped to #brand-switcher — app views untouched) ── */
 #brand-switcher {
   position:relative; overflow:hidden; min-height:100vh; padding:8px 16px 60px;
@@ -1456,6 +1484,37 @@ async function loadPriorityDeck() {
 
 function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 
+// Friendly, interactive status pill — parses the leading emoji/keyword in a raw
+// status string ("✅ delivered Jul 8", "🟡 in progress", "🔴 decision pending")
+// into a colored, animated, tappable badge + a matching progress-bar fill,
+// so a work-item card reads like a real project card (title, pill, bar, footer)
+// instead of a colored dot sitting next to plain text.
+function statusMeta(raw) {
+  const s = String(raw || '');
+  const label = s.replace(/^[^\w]+/, '').trim() || s;
+  let cls = 'progress', pct = 55;
+  if (/✅|delivered|done/i.test(s)) { cls = 'done'; pct = 100; }
+  else if (/🔴|pending|blocked/i.test(s)) { cls = 'blocked'; pct = 20; }
+  else if (/rolling/i.test(s)) { cls = 'progress'; pct = 55; }
+  else if (/progress/i.test(s)) { cls = 'progress'; pct = 65; }
+  return { cls: cls, label: label, pct: pct };
+}
+function statusBadge(raw, deadline) {
+  const m = statusMeta(raw);
+  return '<button type="button" class="status-pill ' + m.cls + '" data-deadline="' + esc(deadline || '') + '" onclick="statusPillTap(this)">'
+       + '<span class="status-dot"></span>' + esc(m.label) + '</button>';
+}
+function progressBar(raw) {
+  const m = statusMeta(raw);
+  return '<div class="pd-progress-track"><div class="pd-progress-fill ' + m.cls + '" style="width:' + m.pct + '%"></div></div>';
+}
+function statusPillTap(btn) {
+  btn.classList.add('tapped');
+  setTimeout(() => btn.classList.remove('tapped'), 160);
+  const dl = btn.getAttribute('data-deadline');
+  showToast(dl ? '🎯 ' + dl : 'No deadline set');
+}
+
 function renderPriorityDeck(d) {
   setDailyVerse(d && d.verse);
   const el = document.getElementById('pdContent');
@@ -1467,8 +1526,11 @@ function renderPriorityDeck(d) {
   if (d.rehc_btc) {
     h += '<div class="pd-sec">' + esc(d.rehc_btc.title || '🏇 REHC & BTC') + '</div>';
     (d.rehc_btc.items || []).forEach(it => {
-      h += '<div class="pd-card"><div class="pd-task">' + esc(it.task) + '</div>'
-         + '<div class="pd-meta">' + esc(it.status) + ' · ' + esc(it.deadline) + '</div></div>';
+      h += '<div class="pd-card">'
+         + '<div class="pd-card-head"><div class="pd-task">' + esc(it.task) + '</div>' + statusBadge(it.status, it.deadline) + '</div>'
+         + progressBar(it.status)
+         + '<div class="pd-foot">📅 ' + esc(it.deadline) + '</div>'
+         + '</div>';
     });
     if (d.rehc_btc.note) h += '<div style="font-size:10px;color:var(--muted);margin:0 16px 6px">' + esc(d.rehc_btc.note) + '</div>';
   }

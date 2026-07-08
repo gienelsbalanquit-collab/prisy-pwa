@@ -1,7 +1,7 @@
 {
-  "name": "GoodnessCities Command Center",
-  "short_name": "GoodnessCities",
-  "description": "Daily outreach command center for GoodnessCities (mother brand) and Prisynchracy (marketing arm, GCC B2B retainer sales)",
+  "name": "Gienel · Command Center",
+  "short_name": "Gienel",
+  "description": "Gienel's daily outreach command center — sole operator of GoodnessCities (mother brand) and Prisynchracy (marketing arm, GCC B2B retainer sales)",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#fafafa",
