@@ -488,43 +488,56 @@ body.day .theme-knob { transform:translateX(18px); }
 /* ── STARWAVE LANDING (scoped to #brand-switcher — app views untouched) ── */
 #brand-switcher {
   position:relative; overflow:hidden; min-height:100vh; padding:8px 16px 60px;
-  background:
-    radial-gradient(ellipse 90% 45% at 50% -8%, rgba(124,93,250,0.38), transparent 62%),
-    radial-gradient(ellipse 65% 40% at 85% 108%, rgba(56,120,255,0.20), transparent 60%),
-    radial-gradient(ellipse 50% 35% at 8% 60%, rgba(34,197,94,0.10), transparent 55%),
-    #07070d;
+  background:#14110D;
 }
-/* ── COVER POSTER — flat geometric hero, replaces the old blurred-glow header ── */
+/* ── COVER POSTER — flat geometric hero, stretched to fill the screen, gentle looping motion ── */
 /* Text hierarchy: eyebrow (label, smallest/quietest) → title (largest/boldest) → sub (supporting, mid-weight) */
-#brand-switcher .cover-poster { position:relative; overflow:hidden; isolation:isolate; max-width:640px; min-height:196px; margin:26px auto 24px; padding:26px 24px 24px; border-radius:20px; background:#ED7D1F; }
-#brand-switcher .cover-eyebrow { position:relative; z-index:2; font-size:10px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#181511; opacity:.72; animation:coverFade .5s cubic-bezier(.2,.8,.2,1) backwards; }
-#brand-switcher .cover-title { position:relative; z-index:2; font-size:34px; font-weight:800; letter-spacing:-0.6px; line-height:1.06; color:#181511; margin:11px 0 10px; animation:coverFade .5s .08s cubic-bezier(.2,.8,.2,1) backwards; }
-#brand-switcher .cover-sub { position:relative; z-index:2; max-width:66%; font-size:12.5px; font-weight:600; line-height:1.4; color:#181511; opacity:.68; animation:coverFade .5s .16s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cover-poster { position:relative; overflow:hidden; isolation:isolate; max-width:1080px; min-height:230px; margin:26px auto 22px; padding:36px 36px 32px; border-radius:24px; background:#ED7D1F; }
+#brand-switcher .cover-eyebrow { position:relative; z-index:2; font-size:11px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#181511; opacity:.72; animation:coverFade .5s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cover-title { position:relative; z-index:2; font-size:46px; font-weight:800; letter-spacing:-0.8px; line-height:1.03; color:#181511; margin:14px 0 12px; animation:coverFade .5s .08s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cover-sub { position:relative; z-index:2; max-width:54%; font-size:13.5px; font-weight:600; line-height:1.45; color:#181511; opacity:.68; animation:coverFade .5s .16s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .cover-shapes { position:absolute; inset:0; z-index:1; }
-#brand-switcher .cs-circle { position:absolute; width:92px; height:92px; border-radius:50%; background:#F6EFE4; right:-26px; top:-26px; animation:csPop .6s .28s cubic-bezier(.34,1.56,.64,1) backwards; }
-#brand-switcher .cs-bar { position:absolute; width:230px; height:44px; background:#181511; right:-46px; bottom:34px; transform:rotate(-16deg); animation:csSlide .7s .1s cubic-bezier(.2,.8,.2,1) backwards; }
-#brand-switcher .cs-rect { position:absolute; width:66px; height:104px; background:#F6EFE4; right:34px; bottom:-40px; animation:csRise .55s .42s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cs-circle { position:absolute; width:130px; height:130px; border-radius:50%; background:#F6EFE4; right:-36px; top:-36px; animation:csPop .6s .28s cubic-bezier(.34,1.56,.64,1) backwards, csFloat 6s 1s ease-in-out infinite; }
+#brand-switcher .cs-bar { position:absolute; width:320px; height:58px; background:#181511; right:-64px; bottom:40px; transform:rotate(-16deg); animation:csSlide .7s .1s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cs-rect { position:absolute; width:88px; height:138px; background:#F6EFE4; right:48px; bottom:-54px; animation:csRise .55s .42s cubic-bezier(.2,.8,.2,1) backwards; }
 @keyframes coverFade { 0%{ opacity:0; transform:translateY(8px) } 100%{ opacity:1; transform:translateY(0) } }
 @keyframes csPop { 0%{ opacity:0; transform:scale(.3) } 100%{ opacity:1; transform:scale(1) } }
+@keyframes csFloat { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-8px) } }
 @keyframes csSlide { 0%{ opacity:0; transform:translate(60px,-20px) rotate(-30deg) } 100%{ opacity:1; transform:translate(0,0) rotate(-16deg) } }
 @keyframes csRise { 0%{ opacity:0; transform:translateY(40px) } 100%{ opacity:1; transform:translateY(0) } }
-#brand-switcher .verse-card { position:relative; max-width:640px; margin:0 auto 24px; padding:18px 20px; text-align:center; border-radius:18px; border:1px solid rgba(255,255,255,0.10); background:linear-gradient(180deg, rgba(124,93,250,0.16), rgba(255,255,255,0.03)); box-shadow:0 10px 40px rgba(90,60,220,0.18); }
-#brand-switcher .verse-label { font-size:9.5px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#a89bff; margin-bottom:9px; }
-#brand-switcher .verse-text { color:#efedff; font-size:15.5px; line-height:1.65; font-style:italic; font-weight:600; }
-#brand-switcher .verse-ref { color:#a89bff; font-size:10.5px; font-weight:800; letter-spacing:2px; text-transform:uppercase; margin-top:9px; }
+@keyframes cardRise { 0%{ opacity:0; transform:translateY(16px) } 100%{ opacity:1; transform:translateY(0) } }
+
+/* ── VERSE CARD — flat solid ink-purple block, no glass/blur/glow ── */
+#brand-switcher .verse-card { position:relative; overflow:hidden; max-width:1080px; margin:0 auto 18px; padding:24px 26px; text-align:center; border-radius:22px; background:#2B2140; animation:cardRise .5s .22s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .verse-card::before { content:''; position:absolute; z-index:0; width:64px; height:64px; border-radius:50%; background:#F6EFE4; opacity:.08; right:-16px; top:-22px; }
+#brand-switcher .verse-label { position:relative; z-index:1; font-size:10.5px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#B9A6FF; margin-bottom:10px; }
+#brand-switcher .verse-text { position:relative; z-index:1; color:#F3EFFF; font-size:16.5px; line-height:1.65; font-style:italic; font-weight:600; }
+#brand-switcher .verse-ref { position:relative; z-index:1; color:#B9A6FF; font-size:10.5px; font-weight:800; letter-spacing:2px; text-transform:uppercase; margin-top:10px; }
 #brand-switcher .verse-divider { height:1px; background:rgba(255,255,255,0.12); margin:16px auto; width:60%; }
 #brand-switcher .verse-text.sub { font-size:13px; }
-#brand-switcher .brand-card { position:relative; max-width:640px; margin:0 auto 14px; background:rgba(255,255,255,0.045); border:1px solid rgba(255,255,255,0.10); border-radius:18px; box-shadow:none; transition:border-color .2s, transform .15s, box-shadow .25s; }
-#brand-switcher .brand-card:hover { transform:translateY(-2px); }
-#brand-switcher .brand-card.priority { border-color:rgba(34,197,94,0.45); box-shadow:0 8px 34px rgba(34,197,94,0.14); }
-#brand-switcher .brand-card.parent { border-color:rgba(240,180,60,0.40); box-shadow:0 8px 34px rgba(240,180,60,0.10); }
-#brand-switcher .brand-card.arm { border-color:rgba(96,165,250,0.40); box-shadow:0 8px 34px rgba(96,165,250,0.10); }
-#brand-switcher .brand-card.priority .brand-card-tag { color:#4ade80; }
-#brand-switcher .brand-card.parent .brand-card-tag { color:#f0b43c; }
-#brand-switcher .brand-card.arm .brand-card-tag { color:#60a5fa; }
-#brand-switcher .brand-card-name { color:#fff; }
-#brand-switcher .brand-card-desc { color:#a6a9bd; }
-#brand-switcher .brand-arrow-row { color:#5f6379; position:relative; }
+
+/* ── BRAND CARDS — flat solid colour blocks with a quiet geometric accent, no border-glow ── */
+#brand-switcher .brand-card { position:relative; overflow:hidden; max-width:1080px; margin:0 auto 14px; padding:24px 26px; border-radius:22px; border:none; box-shadow:none; transition:transform .18s cubic-bezier(.2,.8,.2,1); animation:cardRise .5s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .brand-card:active { transform:scale(0.98); }
+#brand-switcher .brand-card:hover { transform:translateY(-3px); }
+#brand-switcher .brand-card::after { content:''; position:absolute; z-index:0; width:78px; height:78px; border-radius:50%; right:-22px; bottom:-26px; opacity:.10; }
+#brand-switcher .brand-card > * { position:relative; z-index:1; }
+#brand-switcher .brand-card.priority { background:#134E33; animation-delay:.30s; }
+#brand-switcher .brand-card.priority::after { background:#7BE3AA; }
+#brand-switcher .brand-card.parent { background:#ED7D1F; animation-delay:.38s; }
+#brand-switcher .brand-card.parent::after { background:#181511; }
+#brand-switcher .brand-card.arm { background:#1D3F8F; animation-delay:.46s; }
+#brand-switcher .brand-card.arm::after { background:#9DBBFF; }
+#brand-switcher .brand-card.priority .brand-card-tag { color:#7BE3AA; }
+#brand-switcher .brand-card.parent .brand-card-tag { color:#181511; opacity:.6; }
+#brand-switcher .brand-card.arm .brand-card-tag { color:#9DBBFF; }
+#brand-switcher .brand-card.priority .brand-card-name,
+#brand-switcher .brand-card.arm .brand-card-name { color:#F6EFE4; }
+#brand-switcher .brand-card.parent .brand-card-name { color:#181511; }
+#brand-switcher .brand-card.priority .brand-card-desc,
+#brand-switcher .brand-card.arm .brand-card-desc { color:rgba(246,239,228,0.72); }
+#brand-switcher .brand-card.parent .brand-card-desc { color:rgba(24,21,17,0.68); }
+#brand-switcher .brand-arrow-row { color:#8a8272; position:relative; font-weight:700; }
 .app-header-switch { font-size:11px; color:#181511; background:rgba(255,255,255,0.4); border:1px solid rgba(24,21,17,0.2); border-radius:20px; padding:4px 10px; cursor:pointer; position:relative; z-index:1; }
 </style>
 </head>
