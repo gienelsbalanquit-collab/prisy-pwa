@@ -492,7 +492,7 @@ body.day .theme-knob { transform:translateX(18px); }
 }
 /* ── COVER POSTER — sits straight on the flat orange page, no separate card box ── */
 /* Text hierarchy: eyebrow (label, smallest/quietest) → title (largest/boldest) → sub (supporting, mid-weight) */
-#brand-switcher .cover-poster { position:relative; overflow:hidden; isolation:isolate; max-width:1080px; min-height:230px; margin:26px auto 22px; padding:36px 36px 32px; border-radius:24px; background:transparent; }
+#brand-switcher .cover-poster { position:relative; overflow:hidden; isolation:isolate; box-sizing:border-box; width:100%; max-width:1080px; min-height:230px; margin:26px auto 22px; padding:36px 36px 32px; border-radius:24px; background:transparent; }
 #brand-switcher .cover-eyebrow { position:relative; z-index:2; font-size:11px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#181511; opacity:.72; animation:coverFade .5s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .cover-title { position:relative; z-index:2; font-size:46px; font-weight:800; letter-spacing:-0.8px; line-height:1.03; color:#181511; margin:14px 0 12px; animation:coverFade .5s .08s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .cover-sub { position:relative; z-index:2; max-width:54%; font-size:13.5px; font-weight:600; line-height:1.45; color:#181511; opacity:.68; animation:coverFade .5s .16s cubic-bezier(.2,.8,.2,1) backwards; }
@@ -507,7 +507,7 @@ body.day .theme-knob { transform:translateX(18px); }
 @keyframes cardRise { 0%{ opacity:0; transform:translateY(16px) } 100%{ opacity:1; transform:translateY(0) } }
 
 /* ── VERSE CARD — flat solid ink-purple block, no glass/blur/glow ── */
-#brand-switcher .verse-card { position:relative; overflow:hidden; max-width:1080px; margin:0 auto 18px; padding:24px 26px; text-align:center; border-radius:22px; background:#2B2140; animation:cardRise .5s .22s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .verse-card { position:relative; overflow:hidden; box-sizing:border-box; width:100%; max-width:1080px; margin:0 auto 18px; padding:24px 26px; text-align:center; border-radius:22px; background:#2B2140; animation:cardRise .5s .22s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .verse-card::before { content:''; position:absolute; z-index:0; width:64px; height:64px; border-radius:50%; background:#F6EFE4; opacity:.08; right:-16px; top:-22px; }
 #brand-switcher .verse-label { position:relative; z-index:1; font-size:10.5px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#B9A6FF; margin-bottom:10px; }
 #brand-switcher .verse-text { position:relative; z-index:1; color:#F3EFFF; font-size:16.5px; line-height:1.65; font-style:italic; font-weight:600; }
@@ -516,7 +516,7 @@ body.day .theme-knob { transform:translateX(18px); }
 #brand-switcher .verse-text.sub { font-size:13px; }
 
 /* ── BRAND CARDS — flat solid colour blocks with a quiet geometric accent, no border-glow ── */
-#brand-switcher .brand-card { position:relative; overflow:hidden; max-width:1080px; margin:0 auto 14px; padding:24px 26px; border-radius:22px; border:none; box-shadow:none; transition:transform .18s cubic-bezier(.2,.8,.2,1); animation:cardRise .5s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .brand-card { position:relative; overflow:hidden; box-sizing:border-box; width:100%; max-width:1080px; margin:0 auto 14px; padding:24px 26px; border-radius:22px; border:none; box-shadow:none; transition:transform .18s cubic-bezier(.2,.8,.2,1); animation:cardRise .5s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .brand-card:active { transform:scale(0.98); }
 #brand-switcher .brand-card:hover { transform:translateY(-3px); }
 #brand-switcher .brand-card::after { content:''; position:absolute; z-index:0; width:78px; height:78px; border-radius:50%; right:-22px; bottom:-26px; opacity:.10; }
