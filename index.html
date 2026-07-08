@@ -498,12 +498,12 @@ body.day .theme-knob { transform:translateX(18px); }
 #brand-switcher .cover-sub { position:relative; z-index:2; max-width:54%; font-size:13.5px; font-weight:600; line-height:1.45; color:#181511; opacity:.68; animation:coverFade .5s .16s cubic-bezier(.2,.8,.2,1) backwards; }
 /* ── PAGE SHAPES — big Bauhaus geometry drifting slowly behind the whole page, animation-only, no text ── */
 #brand-switcher .page-shapes { position:absolute; inset:0; z-index:0; overflow:hidden; pointer-events:none; }
-#brand-switcher .ps-circle { position:absolute; width:560px; height:560px; border-radius:50%; background:#F6EFE4; opacity:.16; right:-180px; top:-140px; animation:psFloat 9s ease-in-out infinite; }
-#brand-switcher .ps-bar { position:absolute; width:960px; height:130px; background:#181511; opacity:.10; left:-240px; top:32%; transform:rotate(-13deg); animation:psDrift 14s ease-in-out infinite; }
-#brand-switcher .ps-rect { position:absolute; width:280px; height:440px; background:#F6EFE4; opacity:.10; right:8%; bottom:-190px; animation:psFloat 12s 1.5s ease-in-out infinite reverse; }
+#brand-switcher .ps-circle { position:absolute; width:560px; height:560px; border-radius:50%; background:#F6EFE4; opacity:.48; right:-180px; top:-140px; animation:psFloat 8s ease-in-out infinite; }
+#brand-switcher .ps-bar { position:absolute; width:960px; height:130px; background:#181511; opacity:.34; left:-240px; top:32%; transform:rotate(-13deg); animation:psDrift 12s ease-in-out infinite; }
+#brand-switcher .ps-rect { position:absolute; width:280px; height:440px; background:#181511; opacity:.30; right:8%; bottom:-190px; animation:psFloat 10s 1.2s ease-in-out infinite reverse; }
 @keyframes coverFade { 0%{ opacity:0; transform:translateY(8px) } 100%{ opacity:1; transform:translateY(0) } }
-@keyframes psFloat { 0%,100%{ transform:translateY(0) } 50%{ transform:translateY(-30px) } }
-@keyframes psDrift { 0%,100%{ transform:translate(0,0) rotate(-13deg) } 50%{ transform:translate(36px,-16px) rotate(-9deg) } }
+@keyframes psFloat { 0%,100%{ transform:translateY(0) scale(1) } 50%{ transform:translateY(-38px) scale(1.05) } }
+@keyframes psDrift { 0%,100%{ transform:translate(0,0) rotate(-13deg) } 50%{ transform:translate(46px,-22px) rotate(-5deg) } }
 @keyframes cardRise { 0%{ opacity:0; transform:translateY(16px) } 100%{ opacity:1; transform:translateY(0) } }
 
 /* ── VERSE CARD — flat solid ink-purple block, no glass/blur/glow ── */
