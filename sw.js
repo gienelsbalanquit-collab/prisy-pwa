@@ -1,4 +1,4 @@
-const CACHE = 'prisynchracy-v4-2026-07-08-prioritydeck';
+const CACHE = 'prisynchracy-v5-2026-07-08-starwave-verse';
 const ASSETS = ['./index.html', './manifest.json', './linkedin_prospects.json', './priority_deck.json'];
 
 self.addEventListener('install', e => {
