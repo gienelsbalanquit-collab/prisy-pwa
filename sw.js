@@ -1,5 +1,5 @@
-const CACHE = 'prisynchracy-v4-2026-05-06-localserver';
-const ASSETS = ['./index.html', './manifest.json'];
+const CACHE = 'prisynchracy-v4-2026-07-08-prioritydeck';
+const ASSETS = ['./index.html', './manifest.json', './linkedin_prospects.json', './priority_deck.json'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
