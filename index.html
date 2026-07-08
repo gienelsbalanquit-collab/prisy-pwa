@@ -70,26 +70,36 @@ body {
 }
 
 /* ── HEADER ── */
+/* ── HEADER — same flat-poster identity as the landing cover, on every view ── */
 .header {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--header-bg);
-  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 100; overflow:hidden;
+  background: #ED7D1F;
+  border-bottom: none;
   padding: env(safe-area-inset-top, 14px) 18px 12px;
 }
-.header-row1 { display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; }
-.logo { font-size:11px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:var(--gold); }
+.header::before {
+  content:''; position:absolute; z-index:0; pointer-events:none;
+  width:64px; height:64px; border-radius:50%; background:#F6EFE4;
+  right:-18px; top:-28px; opacity:.95;
+}
+.header::after {
+  content:''; position:absolute; z-index:0; pointer-events:none;
+  width:150px; height:26px; background:#181511;
+  right:-30px; bottom:-14px; transform:rotate(-14deg);
+}
+.header-row1 { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; margin-bottom:6px; }
+.logo { font-size:11px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#181511; opacity:.78; }
 .header-controls { display:flex; align-items:center; gap:8px; }
 .theme-toggle {
   width:44px; height:26px; border-radius:13px;
-  background: var(--surface2); border:1px solid var(--border);
+  background: rgba(255,255,255,0.4); border:1px solid rgba(24,21,17,0.2);
   position:relative; cursor:pointer; transition:background 0.3s;
   flex-shrink:0;
 }
 .theme-knob {
   position:absolute; top:3px; left:3px;
   width:18px; height:18px; border-radius:50%;
-  background: var(--gold); transition:transform 0.3s;
+  background: #181511; transition:transform 0.3s;
   display:flex; align-items:center; justify-content:center;
   font-size:10px;
 }
@@ -102,12 +112,13 @@ body.day .theme-knob { transform:translateX(18px); }
 .sync-dot.syncing { background:var(--amber); animation:pulse 1s infinite; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
-.header-row2 { display:flex; align-items:center; justify-content:space-between; }
-.header-title { font-size:18px; font-weight:800; color:var(--text); }
+.header-row2 { position:relative; z-index:1; display:flex; align-items:center; justify-content:space-between; }
+.header-title { font-size:19px; font-weight:800; color:#181511; }
+.header-title span { color:#181511 !important; opacity:.62; }
 .date-badge {
-  font-size:11px; color:var(--muted);
-  background:var(--surface2); padding:4px 10px;
-  border-radius:20px; border:1px solid var(--border);
+  font-size:11px; color:#181511;
+  background:rgba(255,255,255,0.4); padding:4px 10px;
+  border-radius:20px; border:1px solid rgba(24,21,17,0.2);
 }
 
 /* ── REVENUE BAR ── */
@@ -514,7 +525,7 @@ body.day .theme-knob { transform:translateX(18px); }
 #brand-switcher .brand-card-name { color:#fff; }
 #brand-switcher .brand-card-desc { color:#a6a9bd; }
 #brand-switcher .brand-arrow-row { color:#5f6379; position:relative; }
-.app-header-switch { font-size:11px; color:var(--muted); background:var(--surface2); border:1px solid var(--border); border-radius:20px; padding:4px 10px; cursor:pointer; }
+.app-header-switch { font-size:11px; color:#181511; background:rgba(255,255,255,0.4); border:1px solid rgba(24,21,17,0.2); border-radius:20px; padding:4px 10px; cursor:pointer; position:relative; z-index:1; }
 </style>
 </head>
 <body class="day">
