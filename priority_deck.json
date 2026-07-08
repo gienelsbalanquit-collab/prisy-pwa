@@ -3,25 +3,27 @@
   "generated_by": "Master Daily Command",
   "verse": { "text": "Those who hope in the LORD will renew their strength. They will soar on wings like eagles; they will run and not grow weary.", "ref": "Isaiah 40:31 — Day 8 of 31, from 21 Bible/📖 Daily Verse Rotation" },
   "rehc_btc": {
-    "title": "🏇 REHC & BTC — 50-Years Campaign (2026–2027)",
-    "note": "Day-job project-fee stream · files on Extreme Pro / 2026-27 50 yrs REHC & BTC",
+    "title": "🏇 REHC & BTC — 2026 Works (source: Extreme Pro)",
+    "note": "Live from 💽 Extreme Pro — REHC & BTC Design Source (vault) · inventory refreshed 2026-07-08",
     "items": [
+      { "task": "🪪 REHC RFID CARD — LATEST JOB: updated PDF delivered today 13:00", "deadline": "Confirm sign-off / print specs", "status": "✅ delivered Jul 8" },
+      { "task": "50-yrs brochures — Brochuire REHC & BTC (Jul 7) + BTC Horseman's brochure (Jul 5 final)", "deadline": "2026–2027 campaign window", "status": "🟡 in progress" },
       { "task": "OOH Campaign vendor decision — REHC-2680 (1 outdoor, 7-mo) + REHC-2681 (22 Bapco screens, 6-mo)", "deadline": "Quote validity UNCONFIRMED — check today", "status": "🔴 decision pending" },
       { "task": "REHC 50 Years Brand Guidelines — finalize", "deadline": "Launch/milestone date unconfirmed — pin it", "status": "🔴 date-blocked" },
-      { "task": "July 2026 50yrs deliverables (master template, sponsor deck, brochures, lamp post)", "deadline": "2026–2027 campaign window", "status": "🟡 in progress" }
+      { "task": "2026 streams: BJA final, silks 2026, race cards, KC Festival schedule, badges, Turf Village", "deadline": "ongoing", "status": "🟡 rolling" }
     ]
   },
   "priorities": [
-    { "p": 1,  "area": "🏇 REHC/BTC",  "task": "OOH vendor decision — REHC-2680 + REHC-2681", "why": "Quote validity unconfirmed; a silently expired quote costs the 2026 run", "action": "Open both quote PDFs, confirm validity dates, decide or escalate", "est": "45m" },
-    { "p": 2,  "area": "🏇 REHC/BTC",  "task": "Brand Guidelines — finalize + pin launch date", "why": "Unconfirmed date blocks everything downstream", "action": "Message stakeholder to fix the milestone date", "est": "30m" },
-    { "p": 3,  "area": "💼 Prisynchracy", "task": "Fire 6 Day-0 connects (Aida, Sara, Deena, Maram, Amalfi, Rania)", "why": "Pipeline empty of live follow-ups — only path to BHD 4,500", "action": "Open LinkedIn, send connect #1 with hook", "est": "40m" },
-    { "p": 4,  "area": "💼 Prisynchracy", "task": "Close the Sibiraj decision (D25 silent, rec unactioned 11d)", "why": "LinkedIn spent; you hold email + phone. Decide, don't drift", "action": "Email Abacus-vs-GCC observation + WhatsApp heads-up, OR park him", "est": "25m" },
-    { "p": 5,  "area": "🌆 GoodnessCities", "task": "Fire 4 LinkedIn DMs + 2 job-board replies (Jul 7 picks)", "why": "Picks already live on PWA; they cool daily", "action": "Open first DM template from AU-Lead-List workbook", "est": "30m" },
-    { "p": 6,  "area": "💼 Prisynchracy", "task": "Regenerate 5-day cycle prospect file (10 names)", "why": "Overdue since ~Jun 27; running on backfill", "action": "Ask Claude to rebuild from CMO xlsx ranks 7–16", "est": "20m" },
-    { "p": 7,  "area": "⚙️ Systems", "task": "Rebuild today.json pipeline (folder gone from disk)", "why": "Briefings run on workaround data", "action": "Decide: rebuild in PWA folder vs retire today.json", "est": "30m" },
-    { "p": 8,  "area": "⚙️ Systems", "task": "HubSpot automation — lead → CRM → follow-up", "why": "\"Next priority\" since March; manual leads = leakage", "action": "Open Make.com, create scenario skeleton", "est": "45m" },
-    { "p": 9,  "area": "⚙️ Systems", "task": "Gmail OAuth for PWA draft-only email flow", "why": "Monaco leads exit cooldown 2026-07-10", "action": "Resume OAuth setup where it stalled", "est": "30m" },
-    { "p": 10, "area": "🌆 GC/Compliance", "task": "Rule on the 120-lead plumbing/TCPA segment", "why": "120 leads frozen until consent decision", "action": "15-min TCPA read → drop segment or source consent", "est": "15m" }
+    { "p": 1,  "area": "🏇 REHC/BTC",  "task": "🪪 RFID card close-out — updated PDF delivered today 13:00 ✅", "why": "Latest live job; unclosed deliverables invite rework", "action": "Confirm client sign-off + print specs, file final to drive", "est": "15m" },
+    { "p": 2,  "area": "🏇 REHC/BTC",  "task": "OOH vendor decision — REHC-2680 + REHC-2681", "why": "Quote validity unconfirmed; a silently expired quote costs the 2026 run", "action": "Open both quote PDFs, confirm validity dates, decide or escalate", "est": "45m" },
+    { "p": 3,  "area": "🏇 REHC/BTC",  "task": "Brand Guidelines — finalize + pin launch date", "why": "Unconfirmed date blocks everything downstream", "action": "Message stakeholder to fix the milestone date", "est": "30m" },
+    { "p": 4,  "area": "💼 Prisynchracy", "task": "Fire 6 Day-0 connects (Aida, Sara, Deena, Maram, Amalfi, Rania)", "why": "Pipeline empty of live follow-ups — only path to BHD 4,500", "action": "Open LinkedIn, send connect #1 with hook", "est": "40m" },
+    { "p": 5,  "area": "💼 Prisynchracy", "task": "Close the Sibiraj decision (D25 silent, rec unactioned 11d)", "why": "LinkedIn spent; you hold email + phone. Decide, don't drift", "action": "Email Abacus-vs-GCC observation + WhatsApp heads-up, OR park him", "est": "25m" },
+    { "p": 6,  "area": "🌆 GoodnessCities", "task": "Fire 4 LinkedIn DMs + 2 job-board replies (Jul 7 picks)", "why": "Picks already live on PWA; they cool daily", "action": "Open first DM template from AU-Lead-List workbook", "est": "30m" },
+    { "p": 7,  "area": "💼 Prisynchracy", "task": "Regenerate 5-day cycle prospect file (10 names)", "why": "Overdue since ~Jun 27; running on backfill", "action": "Ask Claude to rebuild from CMO xlsx ranks 7–16", "est": "20m" },
+    { "p": 8,  "area": "⚙️ Systems", "task": "Rebuild today.json pipeline (folder gone from disk)", "why": "Briefings run on workaround data", "action": "Decide: rebuild in PWA folder vs retire today.json", "est": "30m" },
+    { "p": 9,  "area": "⚙️ Systems", "task": "HubSpot automation — lead → CRM → follow-up", "why": "\"Next priority\" since March; manual leads = leakage", "action": "Open Make.com, create scenario skeleton", "est": "45m" },
+    { "p": 10, "area": "⚙️ Systems", "task": "Gmail OAuth for PWA draft-only email flow", "why": "Monaco leads exit cooldown 2026-07-10", "action": "Resume OAuth setup where it stalled", "est": "30m" }
   ],
   "day_plan": [
     { "block": "🌅 Morning deep work", "when": "before noon", "what": "P1 + P2 — REHC/BTC decisions while fresh (only items with external deadlines)" },
@@ -32,6 +34,6 @@
     { "k": "MRR", "v": "BHD 0 / 4,500 (0 of 6 retainers)" },
     { "k": "Prisy active threads", "v": "0 live — Sibiraj/Ayush stale D25 · refill = P3" },
     { "k": "GoodnessCities", "v": "12 proposed Jul 5–7 · email motion resumes Jul 10" },
-    { "k": "REHC/BTC", "v": "2 open decisions, both date-blocked · unblock = P1/P2" }
+    { "k": "REHC/BTC", "v": "🪪 RFID delivered Jul 8 ✅ · 2 decisions open (OOH quotes, guidelines date) = P2/P3" }
   ]
 }
