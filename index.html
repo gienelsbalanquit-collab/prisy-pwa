@@ -560,6 +560,9 @@ body.day .theme-knob { transform:translateX(18px); }
     <div class="verse-label">✝️ Motivation of the day</div>
     <div class="verse-text" id="dailyVerseText">"Those who hope in the LORD will renew their strength."</div>
     <div class="verse-ref" id="dailyVerseRef">Isaiah 40:31</div>
+    <div class="verse-divider" id="dailyIntentionDivider" style="display:none"></div>
+    <div class="verse-label" id="dailyIntentionLabel" style="display:none">🎯 Today's Intention</div>
+    <div class="verse-text sub" id="dailyIntentionText" style="display:none"></div>
   </div>
 
   <div class="brand-card priority" onclick="showApp('priority')">
@@ -1507,6 +1510,27 @@ function setDailyVerse(v) {
   r.textContent = DAILY_VERSES[idx][1];
 }
 
+// Today's Intention — from 🎯 Master Vision Mission Values (Obsidian), synced daily via
+// priority_deck.json "intention" {value, note}. Hidden entirely if the key is absent —
+// never invents a value if the vault note was unreachable that run.
+function setDailyIntention(i) {
+  const divider = document.getElementById('dailyIntentionDivider');
+  const label = document.getElementById('dailyIntentionLabel');
+  const text = document.getElementById('dailyIntentionText');
+  if (!divider || !label || !text) return;
+  if (i && i.value) {
+    text.textContent = i.note ? (i.value + ' — ' + i.note) : i.value;
+    divider.style.display = '';
+    label.style.display = '';
+    text.style.display = '';
+  } else {
+    divider.style.display = 'none';
+    label.style.display = 'none';
+    text.style.display = 'none';
+    text.textContent = '';
+  }
+}
+
 // ══════════════════════════════════════════
 //  MASTER PRIORITY DECK (priority_deck.json — regenerated daily at 8 AM)
 // ══════════════════════════════════════════
@@ -1557,6 +1581,7 @@ function statusPillTap(btn) {
 
 function renderPriorityDeck(d) {
   setDailyVerse(d && d.verse);
+  setDailyIntention(d && d.intention);
   const el = document.getElementById('pdContent');
   if (!el || !d) return;
   const badge = document.getElementById('pdDateBadge');
