@@ -493,7 +493,11 @@ body.day .theme-knob { transform:translateX(18px); }
 /* ── COVER POSTER — sits straight on the flat orange page, no separate card box ── */
 /* Text hierarchy: eyebrow (label, smallest/quietest) → title (largest/boldest) → sub (supporting, mid-weight) */
 #brand-switcher .cover-poster { position:relative; overflow:hidden; isolation:isolate; box-sizing:border-box; width:100%; max-width:1080px; min-height:230px; margin:26px auto 22px; padding:36px 36px 32px; border-radius:24px; background:transparent; }
-#brand-switcher .cover-eyebrow { position:relative; z-index:2; font-size:18px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#181511; opacity:.72; animation:coverFade .5s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cover-top-row { position:relative; z-index:2; display:flex; align-items:flex-start; justify-content:space-between; gap:16px; }
+#brand-switcher .cover-eyebrow { font-size:18px; font-weight:800; letter-spacing:3px; text-transform:uppercase; color:#181511; opacity:.72; animation:coverFade .5s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cover-date-badge { flex:0 0 auto; text-align:right; animation:coverFade .5s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .cover-date-badge .cdb-day { font-size:36px; font-weight:800; color:#181511; line-height:1; letter-spacing:-0.5px; white-space:nowrap; }
+#brand-switcher .cover-date-badge .cdb-year { font-size:16px; font-weight:800; color:#181511; opacity:.55; letter-spacing:3px; margin-top:3px; }
 #brand-switcher .cover-title { position:relative; z-index:2; font-size:51px; font-weight:800; letter-spacing:-0.8px; line-height:1.05; color:#181511; margin:16px 0 14px; animation:coverFade .5s .08s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .cover-sub { position:relative; z-index:2; max-width:62%; font-size:20.5px; font-weight:600; line-height:1.45; color:#181511; opacity:.68; animation:coverFade .5s .16s cubic-bezier(.2,.8,.2,1) backwards; }
 /* ── PAGE SHAPES — big Bauhaus geometry drifting slowly behind the whole page, animation-only, no text ── */
@@ -551,7 +555,13 @@ body.day .theme-knob { transform:translateX(18px); }
     <div class="ps-rect"></div>
   </div>
   <div class="cover-poster">
-    <div class="cover-eyebrow">Gienel · Master Command Center</div>
+    <div class="cover-top-row">
+      <div class="cover-eyebrow">Gienel · Master Command Center</div>
+      <div class="cover-date-badge" id="coverDateBadge">
+        <div class="cdb-day" id="coverDateDay">—</div>
+        <div class="cdb-year" id="coverDateYear">—</div>
+      </div>
+    </div>
     <div class="cover-title">Command<br>the day.</div>
     <div class="cover-sub">One board across everything — then two brands, two outreach motions.</div>
   </div>
@@ -1440,6 +1450,14 @@ window.addEventListener('DOMContentLoaded', () => {
   const todayLabel = new Date().toLocaleDateString('en-GB', {weekday:'short',month:'short',day:'numeric'});
   document.getElementById('dateBadge').textContent = todayLabel;
   const gcBadge = document.getElementById('gcDateBadge'); if (gcBadge) gcBadge.textContent = todayLabel;
+  // ── Big date/year badge, top-right of the landing cover ──
+  (function(){
+    const _now = new Date();
+    const _day = document.getElementById('coverDateDay');
+    const _year = document.getElementById('coverDateYear');
+    if (_day) _day.textContent = _now.toLocaleDateString('en-GB', {weekday:'short', day:'numeric', month:'short'});
+    if (_year) _year.textContent = _now.getFullYear();
+  })();
   renderAll();
   updateRevenue();
   refreshDashboardLinks();      // wire Open-Desktop link to current Dashboard URL
