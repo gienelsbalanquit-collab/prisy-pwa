@@ -1,42 +1,50 @@
 {
-  "date": "2026-07-12",
-  "generated_by": "Master Daily Command",
-  "verse": { "text": "Commit your way to the LORD; trust in him and he will do this.", "ref": "Psalm 37:5 — Day 12 of 31, from 21 Bible/📖 Daily Verse Rotation" },
-  "intention": { "value": "Clarity of Intention", "note": "Before each of today's 12 DMs, know why you're sending it — if the reason doesn't trace to the mission, don't send it." },
+  "date": "2026-07-14",
+  "generated_by": "prisynchracy-morning-command",
+  "verse": {
+    "text": "Never be lacking in zeal, but keep your spiritual fervor, serving the Lord.",
+    "ref": "Romans 12:11 — Day 14 of 31, from 21 Bible/📖 Daily Verse Rotation"
+  },
+  "intention": {
+    "value": "Clarity of Intention",
+    "note": "Before today's 12 outreach touches go out, check the reason traces back to service, not just the DM quota — and don't let new REHC drive activity distract from the 6-day-old RFID and Sibiraj decisions."
+  },
   "rehc_btc": {
-    "title": "🏇 REHC & BTC — 2026 Works (source: Extreme Pro)",
-    "note": "Extreme Pro drive NOT plugged in this run (2026-07-12) — state below is the vault's last-verified inventory (2026-07-08), not a fresh drive check. Not data loss; drive simply unplugged.",
+    "title": "REHC & BTC — Today's Work",
+    "note": "Extreme Pro live at 08:57 AM — 'final materials' and 'Brochuire REHC & BTC' folders were touched this morning (08:38–08:57), and a new 'lamp post' folder appeared at root level. This is fresh activity beyond what's logged — confirm with Gienel whether this was intentional work already in progress before flagging it as unexplained.",
     "items": [
-      { "task": "🪪 REHC RFID CARD — updated PDF delivered Jul 8 13:00", "deadline": "Confirm client sign-off + print specs, then close", "status": "🟡 sign-off pending 4 days" },
-      { "task": "📰 Brochuire REHC & BTC — text/photos still being updated", "deadline": "Blocked: waiting on REHC to email remaining text", "status": "🟡 in progress — chase the copy" },
-      { "task": "🎯 OOH/ATL Campaign creative deck — UPDATED version finished", "deadline": "Ready for client/stakeholder review", "status": "✅ delivered 2026-07-12 — Downloads/OOH Campaign/REHC_BTC_50Yrs_OOH_ATL_Campaign_2026-2027_UPDATED.pdf/.pptx, supersedes the GMI/…_corrected version" },
-      { "task": "OOH ad-placement vendor decision — REHC-2680 (1 outdoor, 7-mo) + REHC-2681 (22 Bapco screens, 6-mo)", "deadline": "Quote validity UNCONFIRMED — verify before it silently expires", "status": "🔴 decision pending — separate from the creative deck above, NOT resolved by it. Quote PDFs located: Downloads/OOH Campaign/4suare/" },
-      { "task": "REHC 50 Years Brand Guidelines — finalize", "deadline": "Launch/milestone date still unconfirmed — pin it", "status": "🔴 date-blocked" },
-      { "task": "2026 streams: BJA final, silks 2026, race cards, KC Festival schedule, badges, Turf Village", "deadline": "ongoing", "status": "🟡 rolling (unverified — drive unplugged today)" }
+      {"task": "Confirm what changed in 'final materials' / 'Brochuire REHC & BTC' / new 'lamp post' folder this morning", "deadline": "today", "status": "new — unverified"},
+      {"task": "NEW JOB (2026-07-14): Season badges — 2026-27 season, prior-year reference in '2026 All works/NEW BADGES REQUEST'", "deadline": "season — date TBC, confirm with REHC", "status": "new — scope brief needed"},
+      {"task": "NEW JOB (2026-07-14): Wristbands to replace single-pass badges — 4-zone colour system: The Gallery by Alba (Orange), Media (Blue), The Garden (Green), Service (White)", "deadline": "season — date TBC, confirm with REHC", "status": "new — design brief + vendor sourcing needed"},
+      {"task": "RFID card client sign-off + print specs (delivered Jul 8, 13:00)", "deadline": "overdue — 6 days open", "status": "pending"},
+      {"task": "OOH vendor decision — REHC-2680 (1 outdoor, 7-mo) + REHC-2681 (22 Bapco screens, 6-mo), quote validity unconfirmed", "deadline": "2026 run at risk", "status": "pending"},
+      {"task": "REHC 50 Years Brand Guidelines — launch date still unpinned", "deadline": "unconfirmed", "status": "pending"}
     ]
   },
   "priorities": [
-    { "p": 1,  "area": "🏇 REHC/BTC",  "task": "🪪 RFID card close-out — PDF delivered Jul 8 13:00, sign-off still unconfirmed", "why": "Latest live job, now 4 days open; an unclosed deliverable invites rework and a stalled invoice", "action": "Confirm client sign-off + print specs, file final; if silent, send one-line nudge", "est": "15m" },
-    { "p": 2,  "area": "🏇 REHC/BTC",  "task": "OOH vendor decision — REHC-2680 + REHC-2681", "why": "Quote validity unconfirmed; a silently expired quote costs the whole 2026 run", "action": "Quotes found: Downloads/OOH Campaign/4suare/ (CM-REHC-2680, CM-REHC-2681) — confirm validity dates, decide or escalate. Note: this is separate from the OOH/ATL creative deck, which is done.", "est": "30m" },
-    { "p": 3,  "area": "🏇 REHC/BTC",  "task": "Brochuire REHC & BTC — chase the outstanding copy", "why": "The only blocker is REHC sending the remaining text; nothing moves until it arrives", "action": "Email REHC contact requesting the outstanding brochure text + photos", "est": "15m" },
-    { "p": 4,  "area": "💼 Prisynchracy", "task": "Fire 6 Day-0 connects + hook lines (Newton Properties, Middle East Hospital, MKJ Skin Co., LuLu, Alosra, Marassi Galleria)", "why": "Daily 6-DM minimum is non-negotiable; verifiable prospect list has these 6 Bahrain names ready", "action": "Open LinkedIn, send connect + 1-line hook to each (hooks pre-written in prospect file)", "est": "40m" },
-    { "p": 5,  "area": "💼 Prisynchracy", "task": "Close the Sibiraj decision (D29 silent, channel-switch call unactioned since Jul 7 = 5 days)", "why": "The decision was already made; drifting on a made decision costs more than the decision did", "action": "Email Abacus-vs-GCC brand observation + WhatsApp heads-up, OR consciously park him today", "est": "25m" },
-    { "p": 6,  "area": "🌆 GoodnessCities", "task": "Fire 6 fresh hot picks (Petrini ✉️, La Costa ✉️, Surge Marketing, ICON Depot, Ruah Creative, Heritage Plates) + review Petrini email draft", "why": "Prior 24+ IDs (Jul 5–8) still inside 5-day cooldown; Monaco email motion is eligible again", "action": "Review the Petrini Gmail draft, then send the 4 LinkedIn/job DMs from the AU-Lead-List workbook", "est": "30m" },
-    { "p": 7,  "area": "🏇 REHC/BTC", "task": "Brand Guidelines — pin launch / milestone date", "why": "Unconfirmed date blocks everything downstream in the 50-yrs campaign", "action": "Message stakeholder to fix the milestone/launch date", "est": "20m" },
-    { "p": 8,  "area": "📺 PSH", "task": "Complete Week-1 audit (YPP/monetization status + strikes + RPM history)", "why": "The audit gates ALL uploads; no Shorts cadence can start until it passes", "action": "Open YouTube Studio, verify monetization + strikes, record RPM history; tick the audit boxes in the PSH note", "est": "30m" },
-    { "p": 9,  "area": "💼 Prisynchracy", "task": "Regenerate the 5-day cycle prospect file (10 names)", "why": "Overdue since ~Jun 27; running on aged-out Jun 8–12 backfill with no live rotation state", "action": "Rebuild rotation file from CMO priority xlsx (fresh ranks)", "est": "20m" },
-    { "p": 10, "area": "⚙️ Systems", "task": "Gmail OAuth for PWA draft-only email flow", "why": "Monaco email motion is now live; OAuth is the last gap for hands-off drafting", "action": "Resume OAuth setup where it stalled", "est": "30m" }
+    {"p": 1, "area": "🏇 REHC/BTC", "task": "Check this morning's drive activity (final materials, Brochuire, new lamp post folder)", "why": "Files touched 08:38-08:57 AM today, ahead of any logged work", "action": "Open the three folders, confirm what was done", "est": "15 min"},
+    {"p": 2, "area": "🏇 REHC/BTC", "task": "NEW — Season badges design brief (2026-27 season)", "why": "Fresh job request from REHC/BTC — prior-year folder exists but scope/date not yet confirmed", "action": "Check '2026 All works/NEW BADGES REQUEST' for last season's spec, draft this year's brief, confirm season date with REHC", "est": "30 min"},
+    {"p": 3, "area": "🏇 REHC/BTC", "task": "NEW — Wristband system to replace single passes (4 zones: Gallery by Alba-Orange, Media-Blue, Garden-Green, Service-White)", "why": "REHC wants to move off single-pass badges entirely for these 4 access zones", "action": "Draft wristband design concept (4 colourways) + source vendor/material options", "est": "45 min"},
+    {"p": 4, "area": "🏇 REHC/BTC", "task": "RFID card close-out, sign-off pending 6 days", "why": "Delivered Jul 8, no confirmation since — oldest open REHC item", "action": "Confirm client sign-off + print specs, or send a one-line nudge", "est": "10 min"},
+    {"p": 5, "area": "🏇 REHC/BTC", "task": "OOH vendor decision, quote validity unconfirmed", "why": "Scanned PDFs with no readable date — a silently expired quote costs the whole 2026 run", "action": "Open quote PDFs (Downloads/OOH Campaign/4suare/), confirm dates, decide", "est": "20 min"},
+    {"p": 6, "area": "💼 Prisynchracy", "task": "Fire today's Hot 6 (2 Day-6 asks, 2 Day-2 insight DMs, 2 Day-0 connects)", "why": "Daily minimum 6 DMs — MRR still BHD 0/4,500", "action": "Open LinkedIn, send Newton Properties + Middle East Hospital asks first", "est": "30 min"},
+    {"p": 7, "area": "💼 Prisynchracy", "task": "Close the Sibiraj decision, 7 days unactioned", "why": "Channel-switch decision was made 2026-07-07 and is still sitting idle", "action": "Send the Abacus-vs-GCC email + WhatsApp heads-up, or consciously park him", "est": "10 min"},
+    {"p": 8, "area": "🌆 GoodnessCities", "task": "Fire today's 6 hot picks (no email draft — all 4 email-ready leads in cooldown)", "why": "Keeps outreach rotation moving; Monaco leads eligible again Jul 17-18", "action": "Message Goat Media, Cusell Marketing, Hatcher Digital via job links; DM Jocelyn Wright, Stretch Marquees, Grey Lynn Firehouse on LinkedIn", "est": "20 min"},
+    {"p": 9, "area": "📺 PSH", "task": "Week-1 audit still 0/5 boxes — gate closed, no uploads until it passes", "why": "One-time ~30 min block unblocks the whole revival cadence", "action": "Open YouTube Studio, verify YPP/monetization + strikes + RPM history", "est": "30 min"},
+    {"p": 10, "area": "⚙️ Systems", "task": "AXL8GP2 85% full (7d open) + Prisy cycle file overdue + Gmail OAuth pending", "why": "No offload since 2026-07-07; rotation running without live touch-tracking; PWA draft-flow blocked", "action": "Offload to Extreme Pro when time allows; regenerate cycle file; re-auth Gmail", "est": "queued"}
   ],
   "day_plan": [
-    { "block": "🌅 Morning deep work", "when": "before noon", "what": "P1 + P2 + P3 — REHC/BTC close-out, OOH decision, brochure chase (all email/decision work; drive unplugged so no production)" },
-    { "block": "🎯 Midday outreach block", "when": "one sitting, ~90m", "what": "P4 + P5 + P6 — all 12 touches batched (6 Prisy connects + Sibiraj + 6 GC), phone away, templates open" },
-    { "block": "🌙 Evening review", "when": "10 min", "what": "Mark done, tell Claude what moved (vault write-back), confirm tomorrow's P1. (Sunday — no Sat production / Wed stats block today)" }
+    {"block": "Morning deep work", "when": "now", "what": "REHC/BTC: check drive activity, scope new badges + wristband briefs, RFID sign-off, OOH vendor decision"},
+    {"block": "Midday outreach block", "when": "midday", "what": "All 12 DMs batched: Prisy Hot 6 + Sibiraj + GC 6 picks"},
+    {"block": "Evening review", "when": "10 min, evening", "what": "Confirm what sent, what replied, log to vault"}
   ],
   "scoreboard": [
-    { "k": "MRR", "v": "BHD 0 / 4,500 (0 of 6 retainers)" },
-    { "k": "Prisy active threads", "v": "6 Day-0 connects today (Newton/MEH/MKJ/LuLu/Alosra/Marassi) · prior Aida/Sara set has no backing file · Sibiraj/Ayush stale D29" },
-    { "k": "GoodnessCities", "v": "6 fresh picks today (2 email) · Petrini draft prepared · 24+ IDs still in cooldown" },
-    { "k": "REHC/BTC", "v": "🪪 RFID sign-off pending 4 days · brochure blocked on REHC text · 🎯 OOH/ATL creative deck delivered · 2 decisions still open (OOH vendor quotes, guidelines date)" },
-    { "k": "📺 PSH", "v": "Week-1 audit still incomplete — gate closed, no uploads until it passes" }
+    {"k": "MRR", "v": "BHD 0 / 4,500"},
+    {"k": "Prisy DMs today", "v": "6 (min 6 required)"},
+    {"k": "GC picks today", "v": "6 (0 email drafts — cooldown)"},
+    {"k": "PSH phase", "v": "Week-1 audit, 0/5"},
+    {"k": "RFID sign-off", "v": "6 days open"},
+    {"k": "Sibiraj decision", "v": "7 days unactioned"},
+    {"k": "New REHC jobs", "v": "Badges + wristbands (added 2026-07-14)"}
   ]
 }

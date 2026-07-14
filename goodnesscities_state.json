@@ -1,7 +1,105 @@
 {
   "_purpose": "Tracks which GoodnessCities lead IDs have already been proposed/contacted, so the daily scheduled run rotates fresh names instead of repeating the same ones forever (the exact gap that broke the Prisynchracy prospect list — see MASTER_CONTEXT.md known issues).",
-  "last_run_date": "2026-07-09",
+  "last_run_date": "2026-07-14",
   "proposed": {
+    "10": {
+      "first_proposed": "2026-07-08",
+      "last_proposed": "2026-07-14",
+      "status": "proposed",
+      "channel": "job_link"
+    },
+    "18": {
+      "first_proposed": "2026-07-06",
+      "last_proposed": "2026-07-14",
+      "status": "proposed",
+      "channel": "job_link"
+    },
+    "26": {
+      "first_proposed": "2026-07-08",
+      "last_proposed": "2026-07-14",
+      "status": "proposed",
+      "channel": "job_link"
+    },
+    "34": {
+      "first_proposed": "2026-07-06",
+      "last_proposed": "2026-07-14",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "41": {
+      "first_proposed": "2026-07-08",
+      "last_proposed": "2026-07-14",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "47": {
+      "first_proposed": "2026-07-06",
+      "last_proposed": "2026-07-14",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "98": {
+      "first_proposed": "2026-07-05",
+      "last_proposed": "2026-07-13",
+      "status": "proposed",
+      "channel": "email",
+      "email_draft_note": "Gmail draft prepared 2026-07-13 (Caroline Olds Real Estate) — eligible again 2026-07-18"
+    },
+    "100": {
+      "first_proposed": "2026-07-05",
+      "last_proposed": "2026-07-13",
+      "status": "proposed",
+      "channel": "email"
+    },
+    "1": {
+      "first_proposed": "2026-07-07",
+      "last_proposed": "2026-07-13",
+      "status": "proposed",
+      "channel": "job_link"
+    },
+    "7": {
+      "first_proposed": "2026-07-06",
+      "last_proposed": "2026-07-13",
+      "status": "proposed",
+      "channel": "job_link"
+    },
+    "22": {
+      "first_proposed": "2026-07-08",
+      "last_proposed": "2026-07-13",
+      "status": "proposed",
+      "channel": "job_link"
+    },
+    "46": {
+      "first_proposed": "2026-07-06",
+      "last_proposed": "2026-07-13",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "102": {
+      "first_proposed": "2026-07-05",
+      "last_proposed": "2026-07-12",
+      "status": "proposed",
+      "channel": "email",
+      "email_draft_note": "Gmail draft prepared 2026-07-12 (Petrini / Alessandro Ossola)"
+    },
+    "101": {
+      "first_proposed": "2026-07-05",
+      "last_proposed": "2026-07-12",
+      "status": "proposed",
+      "channel": "email"
+    },
+    "29": {
+      "first_proposed": "2026-07-12",
+      "last_proposed": "2026-07-12",
+      "status": "proposed",
+      "channel": "job_link"
+    },
+    "32": {
+      "first_proposed": "2026-07-12",
+      "last_proposed": "2026-07-12",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
     "38": {
       "first_proposed": "2026-07-09",
       "status": "proposed",
@@ -85,11 +183,13 @@
     },
     "3": {
       "first_proposed": "2026-07-05",
+      "last_proposed": "2026-07-12",
       "status": "proposed",
       "channel": "job_link"
     },
     "31": {
       "first_proposed": "2026-07-05",
+      "last_proposed": "2026-07-12",
       "status": "proposed",
       "channel": "linkedin"
     },
