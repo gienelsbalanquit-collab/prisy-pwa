@@ -1,23 +1,24 @@
 {
-  "date": "2026-07-15",
-  "generated_by": "prisynchracy-morning-command",
+  "date": "2026-07-16",
+  "generated_by": "prisynchracy-morning-command (rehc_btc block manually refreshed mid-day after live Extreme Pro re-verification)",
   "verse": {
     "text": "He who began a good work in you will carry it on to completion until the day of Christ Jesus.",
     "ref": "Philippians 1:6 — Day 15 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "intention": {
     "value": "Integrity",
-    "note": "RFID and OOH stay logged as awaiting client approval, not done. The Newton/MEH move to a Day-14 close ask is a judgment call, not a confirmed reply — verify before sending. Extreme Pro drive wasn't mounted this run, so REHC state is carried from yesterday's log, not re-verified today."
+    "note": "RFID and OOH stay logged as awaiting client approval, not done. The Newton/MEH move to a Day-14 close ask is a judgment call, not a confirmed reply — verify before sending. Extreme Pro re-verified live 2026-07-16 (mid-day, after this morning's 8 AM run logged it unmounted) — REHC state below is now current."
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Extreme Pro not mounted this run — state below carried from Active Projects' 2026-07-14 log, not re-verified against the drive.",
+    "note": "Extreme Pro re-mounted and live-verified 2026-07-16 (558 GiB used / 3.1 TiB free) — full drive audit run, 2 folders found that weren't previously catalogued: '2026-27 Condition Book' (198 files) and 'REHC New Joiner' (6 files). See [[💽 Extreme Pro — REHC & BTC Design Source]] for the complete, now-accurate breakdown.",
     "items": [
       {"task": "Season badges design brief (2026-27 season)", "deadline": "season — date TBC, confirm with REHC", "status": "new — scope brief needed"},
       {"task": "Wristbands to replace single-pass badges — 4-zone colour system: The Gallery by Alba (Orange), Media (Blue), The Garden (Green), Service (White)", "deadline": "season — date TBC, confirm with REHC", "status": "new — design brief + vendor sourcing needed"},
       {"task": "RFID card — design/print work done, awaiting client's final approval", "deadline": "awaiting approval", "status": "done — pending sign-off, day 1"},
       {"task": "OOH vendor decision — REHC-2680 + REHC-2681 — done, awaiting client's final approval", "deadline": "awaiting approval", "status": "done — pending sign-off, day 1"},
-      {"task": "REHC 50 Years Brand Guidelines — launch date still unpinned (lamp post asset confirmed in scope)", "deadline": "unconfirmed", "status": "in progress"}
+      {"task": "REHC 50 Years Brand Guidelines — launch date still unpinned (lamp post asset confirmed in scope)", "deadline": "unconfirmed", "status": "in progress"},
+      {"task": "2026-27 Condition Book (198 files) + REHC New Joiner emails (6 files) found on Extreme Pro, not previously tracked — needs Gienel's call on whether these are active or archived work", "deadline": "unconfirmed", "status": "new — needs triage, flagged 2026-07-16"}
     ]
   },
   "priorities": [
