@@ -519,6 +519,20 @@ body.day .theme-knob { transform:translateX(18px); }
 #brand-switcher .verse-divider { height:1px; background:rgba(255,255,255,0.12); margin:16px auto; width:60%; }
 #brand-switcher .verse-text.sub { font-size:15px; }
 
+/* ── HEALTH CARD — mini dashboard, same flat-block language as the verse card ── */
+#brand-switcher .health-card { position:relative; overflow:hidden; box-sizing:border-box; width:100%; max-width:1080px; margin:0 auto 18px; padding:22px 24px; border-radius:22px; background:#3A1F1F; cursor:pointer; animation:cardRise .5s .24s cubic-bezier(.2,.8,.2,1) backwards; }
+#brand-switcher .health-card.ok { background:#1B3327; }
+#brand-switcher .health-card::before { content:''; position:absolute; z-index:0; width:56px; height:56px; border-radius:50%; background:#F6EFE4; opacity:.06; right:-14px; bottom:-18px; }
+#brand-switcher .health-label { position:relative; z-index:1; font-size:12.5px; font-weight:800; letter-spacing:2.5px; text-transform:uppercase; color:#FFB4A6; margin-bottom:10px; }
+#brand-switcher .health-card.ok .health-label { color:#9AE6B4; }
+#brand-switcher .health-status { position:relative; z-index:1; color:#FFF3F0; font-size:15.5px; line-height:1.5; font-weight:700; margin-bottom:14px; }
+#brand-switcher .health-metrics { position:relative; z-index:1; display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+#brand-switcher .health-metric { background:rgba(255,255,255,0.08); border-radius:10px; padding:7px 12px; font-size:12px; color:#F3EFFF; line-height:1.35; min-width:76px; }
+#brand-switcher .health-metric b { display:block; font-size:14.5px; }
+#brand-switcher .health-metric.flag-H { border:1px solid rgba(255,180,166,0.55); }
+#brand-switcher .health-metric.flag-N { border:1px solid rgba(154,230,180,0.4); }
+#brand-switcher .health-foot { position:relative; z-index:1; font-size:11.5px; color:rgba(255,255,255,0.7); }
+
 /* ── BRAND CARDS — flat solid colour blocks with a quiet geometric accent, no border-glow ── */
 #brand-switcher .brand-card { position:relative; overflow:hidden; box-sizing:border-box; width:100%; max-width:1080px; margin:0 auto 14px; padding:24px 26px; border-radius:22px; border:none; box-shadow:none; transition:transform .18s cubic-bezier(.2,.8,.2,1); animation:cardRise .5s cubic-bezier(.2,.8,.2,1) backwards; }
 #brand-switcher .brand-card:active { transform:scale(0.98); }
@@ -570,6 +584,13 @@ body.day .theme-knob { transform:translateX(18px); }
     <div class="verse-label">✝️ Motivation of the day</div>
     <div class="verse-text" id="dailyVerseText">"Those who hope in the LORD will renew their strength."</div>
     <div class="verse-ref" id="dailyVerseRef">Isaiah 40:31</div>
+  </div>
+
+  <div class="health-card" id="healthCard" style="display:none" onclick="showApp('priority')">
+    <div class="health-label">🩺 Health Check-In</div>
+    <div class="health-status" id="healthStatus">Loading…</div>
+    <div class="health-metrics" id="healthMetrics"></div>
+    <div class="health-foot" id="healthFoot"></div>
   </div>
 
   <div class="brand-card priority" onclick="showApp('priority')">
@@ -1530,6 +1551,31 @@ function setDailyVerse(v) {
 // this feature — see prisy-system-status memory / prisynchracy-morning-command SKILL.md.
 
 // ══════════════════════════════════════════
+//  HEALTH CHECK-IN — mini dashboard card (added 2026-07-17, Gienel's request:
+//  "so I'm up to date on my health and reminders routine"). Driven by
+//  priority_deck.json's "health" key, same pattern as the verse card. Shows
+//  the last known snapshot every day; the 8 AM routine refreshes h.status/
+//  h.metrics only when something actually changed (e.g. doctor's visit done).
+// ══════════════════════════════════════════
+function setHealthCard(h) {
+  const card = document.getElementById('healthCard');
+  if (!card) return;
+  if (!h) { card.style.display = 'none'; return; }
+  card.style.display = '';
+  card.className = 'health-card' + (h.status === 'on track' ? ' ok' : '');
+  const statusEl = document.getElementById('healthStatus');
+  if (statusEl) statusEl.textContent = (h.status === 'on track' ? '✅ ' : '⚠️ ') + (h.summary || '');
+  const metricsEl = document.getElementById('healthMetrics');
+  if (metricsEl) {
+    metricsEl.innerHTML = (h.metrics || []).map(m =>
+      '<div class="health-metric flag-' + esc(m.flag || 'N') + '"><b>' + esc(m.value) + '</b>' + esc(m.label) + '</div>'
+    ).join('');
+  }
+  const footEl = document.getElementById('healthFoot');
+  if (footEl) footEl.textContent = (h.action ? '▶ ' + h.action : '') + (h.updated ? '  ·  updated ' + h.updated : '');
+}
+
+// ══════════════════════════════════════════
 //  MASTER PRIORITY DECK (priority_deck.json — regenerated daily at 8 AM)
 // ══════════════════════════════════════════
 async function loadPriorityDeck() {
@@ -1579,6 +1625,7 @@ function statusPillTap(btn) {
 
 function renderPriorityDeck(d) {
   setDailyVerse(d && d.verse);
+  setHealthCard(d && d.health);
   const el = document.getElementById('pdContent');
   if (!el || !d) return;
   const badge = document.getElementById('pdDateBadge');

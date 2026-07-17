@@ -5,6 +5,20 @@
     "text": "Unless the LORD builds the house, the builders labor in vain.",
     "ref": "Psalm 127:1 — Day 17 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
+  "health": {
+    "status": "action needed",
+    "summary": "HbA1c 7.61% + fasting glucose 6.59 (diabetic-range) + high cholesterol — book doctor's visit",
+    "metrics": [
+      {"label": "HbA1c", "value": "7.61%", "flag": "H"},
+      {"label": "Fasting Glucose", "value": "6.59", "flag": "H"},
+      {"label": "Total Cholesterol", "value": "7.62", "flag": "H"},
+      {"label": "LDL", "value": "5.64", "flag": "H"},
+      {"label": "Weight", "value": "71.3kg", "flag": "N"},
+      {"label": "Body Fat", "value": "23.2%", "flag": "N"}
+    ],
+    "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
+    "updated": "2026-07-17"
+  },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
     "note": "Extreme Pro not mounted this run — state carried from vault Latest work log (07-16), not re-verified live.",
