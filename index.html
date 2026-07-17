@@ -382,6 +382,15 @@ body.day .theme-knob { transform:translateX(18px); }
 }
 .modal-cancel { width:100%; padding:10px; border:none; background:transparent; color:var(--muted); font-size:15px; cursor:pointer; margin-top:6px; }
 
+/* ── HEALTH FORECAST MODAL — same bottom-sheet language, scrollable read-only body ── */
+.health-modal-body { max-height:70vh; overflow-y:auto; -webkit-overflow-scrolling:touch; }
+.health-modal-retest { display:inline-block; background:var(--gold-dim); color:var(--gold); border-radius:8px; padding:5px 10px; font-size:12.5px; font-weight:800; margin-bottom:12px; }
+.health-modal-why { font-size:13.5px; line-height:1.6; color:var(--muted); margin-bottom:16px; }
+.health-modal-plan { list-style:none; margin:0 0 16px; padding:0; display:flex; flex-direction:column; gap:10px; }
+.health-modal-plan li { font-size:14px; line-height:1.55; color:var(--text); background:var(--surface2); border:1px solid var(--border); border-radius:12px; padding:11px 13px; }
+.health-modal-plan li b { color:var(--gold); }
+.health-modal-note { font-size:12px; line-height:1.5; color:var(--muted); font-style:italic; border-top:1px solid var(--border); padding-top:12px; }
+
 /* ── TEMPLATES ── */
 .templates-list { padding:0 14px; display:flex; flex-direction:column; gap:10px; padding-bottom:40px; }
 .template-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; box-shadow:var(--card-shadow); }
@@ -586,7 +595,7 @@ body.day .theme-knob { transform:translateX(18px); }
     <div class="verse-ref" id="dailyVerseRef">Isaiah 40:31</div>
   </div>
 
-  <div class="health-card" id="healthCard" style="display:none" onclick="showApp('priority')">
+  <div class="health-card" id="healthCard" style="display:none" onclick="openHealthModal()">
     <div class="health-label">🩺 Health Check-In</div>
     <div class="health-status" id="healthStatus">Loading…</div>
     <div class="health-metrics" id="healthMetrics"></div>
@@ -928,6 +937,20 @@ body.day .theme-knob { transform:translateX(18px); }
 <div class="toast" id="toast"></div>
 
 <!-- REPLY MODAL -->
+<div class="modal-overlay" id="healthModalOverlay" onclick="closeHealthModal(event)">
+  <div class="modal-sheet">
+    <div class="modal-handle"></div>
+    <div class="modal-title" id="healthModalTitle">Solution Forecast</div>
+    <div class="health-modal-body">
+      <div class="health-modal-retest" id="healthModalRetest"></div>
+      <div class="health-modal-why" id="healthModalWhy"></div>
+      <ul class="health-modal-plan" id="healthModalPlan"></ul>
+      <div class="health-modal-note" id="healthModalNote"></div>
+    </div>
+    <button class="modal-cancel" onclick="closeHealthModal()">Close</button>
+  </div>
+</div>
+
 <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
@@ -1557,6 +1580,8 @@ function setDailyVerse(v) {
 //  the last known snapshot every day; the 8 AM routine refreshes h.status/
 //  h.metrics only when something actually changed (e.g. doctor's visit done).
 // ══════════════════════════════════════════
+let __healthForecast = null;
+
 function setHealthCard(h) {
   const card = document.getElementById('healthCard');
   if (!card) return;
@@ -1573,6 +1598,41 @@ function setHealthCard(h) {
   }
   const footEl = document.getElementById('healthFoot');
   if (footEl) footEl.textContent = (h.action ? '▶ ' + h.action : '') + (h.updated ? '  ·  updated ' + h.updated : '');
+  __healthForecast = h.forecast || null;
+}
+
+// Health card tap → dedicated read-only sheet: the plan + timeline for the
+// October retest, nothing else (no priority-deck content). Data comes from
+// priority_deck.json's health.forecast, refreshed by the 8 AM routine.
+function openHealthModal() {
+  const overlay = document.getElementById('healthModalOverlay');
+  if (!overlay) return;
+  const f = __healthForecast;
+  const titleEl = document.getElementById('healthModalTitle');
+  const retestEl = document.getElementById('healthModalRetest');
+  const whyEl = document.getElementById('healthModalWhy');
+  const planEl = document.getElementById('healthModalPlan');
+  const noteEl = document.getElementById('healthModalNote');
+  if (!f) {
+    if (titleEl) titleEl.textContent = 'Solution Forecast';
+    if (retestEl) retestEl.style.display = 'none';
+    if (whyEl) whyEl.textContent = 'No forecast data yet — check back after the next Master Daily Command run.';
+    if (planEl) planEl.innerHTML = '';
+    if (noteEl) noteEl.textContent = '';
+  } else {
+    if (titleEl) titleEl.textContent = f.title || 'Solution Forecast';
+    if (retestEl) { retestEl.style.display = ''; retestEl.textContent = '📅 Retest: ' + (f.retest || '—'); }
+    if (whyEl) whyEl.textContent = f.why_wait || '';
+    if (planEl) planEl.innerHTML = (f.plan || []).map(p => '<li>' + esc(p) + '</li>').join('');
+    if (noteEl) noteEl.textContent = f.note || '';
+  }
+  overlay.classList.add('visible');
+}
+
+function closeHealthModal(e) {
+  if (e && e.target !== document.getElementById('healthModalOverlay')) return;
+  const overlay = document.getElementById('healthModalOverlay');
+  if (overlay) overlay.classList.remove('visible');
 }
 
 // ══════════════════════════════════════════
