@@ -386,9 +386,14 @@ body.day .theme-knob { transform:translateX(18px); }
 .health-modal-body { max-height:70vh; overflow-y:auto; -webkit-overflow-scrolling:touch; }
 .health-modal-retest { display:inline-block; background:var(--gold-dim); color:var(--gold); border-radius:8px; padding:5px 10px; font-size:12.5px; font-weight:800; margin-bottom:12px; }
 .health-modal-why { font-size:13.5px; line-height:1.6; color:var(--muted); margin-bottom:16px; }
+.health-modal-progress { font-size:12.5px; font-weight:800; color:var(--gold); margin-bottom:10px; }
 .health-modal-plan { list-style:none; margin:0 0 16px; padding:0; display:flex; flex-direction:column; gap:10px; }
-.health-modal-plan li { font-size:14px; line-height:1.55; color:var(--text); background:var(--surface2); border:1px solid var(--border); border-radius:12px; padding:11px 13px; }
+.health-modal-plan li { font-size:14px; line-height:1.55; color:var(--text); background:var(--surface2); border:1px solid var(--border); border-radius:12px; padding:11px 13px; transition:opacity .2s; }
 .health-modal-plan li b { color:var(--gold); }
+.health-modal-plan li.done { opacity:.5; }
+.health-modal-plan li.done span { text-decoration:line-through; }
+.health-plan-check { display:flex; align-items:flex-start; gap:10px; cursor:pointer; }
+.health-plan-check input { margin-top:3px; width:18px; height:18px; flex-shrink:0; accent-color:var(--gold); cursor:pointer; }
 .health-modal-note { font-size:12px; line-height:1.5; color:var(--muted); font-style:italic; border-top:1px solid var(--border); padding-top:12px; }
 
 /* ── TEMPLATES ── */
@@ -944,6 +949,7 @@ body.day .theme-knob { transform:translateX(18px); }
     <div class="health-modal-body">
       <div class="health-modal-retest" id="healthModalRetest"></div>
       <div class="health-modal-why" id="healthModalWhy"></div>
+      <div class="health-modal-progress" id="healthModalProgress"></div>
       <ul class="health-modal-plan" id="healthModalPlan"></ul>
       <div class="health-modal-note" id="healthModalNote"></div>
     </div>
@@ -1604,6 +1610,44 @@ function setHealthCard(h) {
 // Health card tap → dedicated read-only sheet: the plan + timeline for the
 // October retest, nothing else (no priority-deck content). Data comes from
 // priority_deck.json's health.forecast, refreshed by the 8 AM routine.
+// Checkbox state lives in localStorage only — this is a static site with no
+// backend, so "done" state is per-browser/per-device, not synced across
+// phone/desktop. Keyed to the forecast's `updated` date, so if the plan
+// itself changes later, old checkmarks don't misleadingly carry over.
+function healthChecksKey(f) {
+  return 'healthPlanChecks_' + ((f && f.updated) || 'na');
+}
+function getHealthChecks(f) {
+  try { return JSON.parse(localStorage.getItem(healthChecksKey(f)) || '{}'); }
+  catch (e) { return {}; }
+}
+function toggleHealthPlanCheck(idx) {
+  const f = __healthForecast;
+  if (!f) return;
+  const checks = getHealthChecks(f);
+  checks[idx] = !checks[idx];
+  localStorage.setItem(healthChecksKey(f), JSON.stringify(checks));
+  renderHealthPlanList(f);
+}
+function renderHealthPlanList(f) {
+  const planEl = document.getElementById('healthModalPlan');
+  const progressEl = document.getElementById('healthModalProgress');
+  if (!planEl) return;
+  const items = f.plan || [];
+  const checks = getHealthChecks(f);
+  const doneCount = items.reduce((n, _, i) => n + (checks[i] ? 1 : 0), 0);
+  if (progressEl) progressEl.textContent = items.length ? ('✅ ' + doneCount + ' of ' + items.length + ' done') : '';
+  planEl.innerHTML = items.map((p, i) => {
+    const done = !!checks[i];
+    return '<li class="' + (done ? 'done' : '') + '">' +
+      '<label class="health-plan-check">' +
+        '<input type="checkbox" ' + (done ? 'checked' : '') + ' onchange="toggleHealthPlanCheck(' + i + ')">' +
+        '<span>' + esc(p) + '</span>' +
+      '</label>' +
+    '</li>';
+  }).join('');
+}
+
 function openHealthModal() {
   const overlay = document.getElementById('healthModalOverlay');
   if (!overlay) return;
@@ -1611,20 +1655,22 @@ function openHealthModal() {
   const titleEl = document.getElementById('healthModalTitle');
   const retestEl = document.getElementById('healthModalRetest');
   const whyEl = document.getElementById('healthModalWhy');
+  const progressEl = document.getElementById('healthModalProgress');
   const planEl = document.getElementById('healthModalPlan');
   const noteEl = document.getElementById('healthModalNote');
   if (!f) {
     if (titleEl) titleEl.textContent = 'Solution Forecast';
     if (retestEl) retestEl.style.display = 'none';
     if (whyEl) whyEl.textContent = 'No forecast data yet — check back after the next Master Daily Command run.';
+    if (progressEl) progressEl.textContent = '';
     if (planEl) planEl.innerHTML = '';
     if (noteEl) noteEl.textContent = '';
   } else {
     if (titleEl) titleEl.textContent = f.title || 'Solution Forecast';
     if (retestEl) { retestEl.style.display = ''; retestEl.textContent = '📅 Retest: ' + (f.retest || '—'); }
     if (whyEl) whyEl.textContent = f.why_wait || '';
-    if (planEl) planEl.innerHTML = (f.plan || []).map(p => '<li>' + esc(p) + '</li>').join('');
-    if (noteEl) noteEl.textContent = f.note || '';
+    renderHealthPlanList(f);
+    if (noteEl) noteEl.textContent = (f.note || '') + '  (checkmarks save on this device only)';
   }
   overlay.classList.add('visible');
 }
