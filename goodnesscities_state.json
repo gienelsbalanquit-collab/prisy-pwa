@@ -1,6 +1,6 @@
 {
   "_purpose": "Tracks which GoodnessCities lead IDs have already been proposed/contacted, so the daily scheduled run rotates fresh names instead of repeating the same ones forever (the exact gap that broke the Prisynchracy prospect list — see MASTER_CONTEXT.md known issues).",
-  "last_run_date": "2026-07-17",
+  "last_run_date": "2026-07-20",
   "proposed": {
     "10": {
       "first_proposed": "2026-07-08",
@@ -23,17 +23,20 @@
     "34": {
       "first_proposed": "2026-07-06",
       "status": "proposed",
-      "channel": "linkedin"
+      "channel": "linkedin",
+      "last_proposed": "2026-07-19"
     },
     "41": {
       "first_proposed": "2026-07-08",
       "status": "proposed",
-      "channel": "linkedin"
+      "channel": "linkedin",
+      "last_proposed": "2026-07-19"
     },
     "47": {
       "first_proposed": "2026-07-06",
       "status": "proposed",
-      "channel": "linkedin"
+      "channel": "linkedin",
+      "last_proposed": "2026-07-19"
     },
     "98": {
       "first_proposed": "2026-07-05",
@@ -48,6 +51,25 @@
       "last_proposed": "2026-07-17",
       "email_draft_id": "r-2665402679433700219"
     },
+    "101": {
+      "first_proposed": "2026-07-05",
+      "status": "proposed",
+      "channel": "email",
+      "last_proposed": "2026-07-19",
+      "email_draft_id": "r-7507793591165494176"
+    },
+    "22": {
+      "first_proposed": "2026-07-08",
+      "status": "proposed",
+      "channel": "job_link",
+      "last_proposed": "2026-07-19"
+    },
+    "55": {
+      "first_proposed": "2026-07-09",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-07-19"
+    },
     "1": {
       "first_proposed": "2026-07-07",
       "status": "proposed",
@@ -60,11 +82,6 @@
       "channel": "Message/apply via OnlineJobs.ph job link",
       "last_proposed": "2026-07-16"
     },
-    "22": {
-      "first_proposed": "2026-07-08",
-      "status": "proposed",
-      "channel": "job_link"
-    },
     "46": {
       "first_proposed": "2026-07-06",
       "status": "proposed",
@@ -76,20 +93,15 @@
       "status": "proposed",
       "channel": "email"
     },
-    "101": {
-      "first_proposed": "2026-07-05",
-      "status": "proposed",
-      "channel": "email"
-    },
     "29": {
       "first_proposed": "2026-07-12",
-      "last_proposed": "2026-07-12",
+      "last_proposed": "2026-07-20",
       "status": "proposed",
       "channel": "job_link"
     },
     "32": {
       "first_proposed": "2026-07-12",
-      "last_proposed": "2026-07-12",
+      "last_proposed": "2026-07-20",
       "status": "proposed",
       "channel": "linkedin"
     },
@@ -123,30 +135,27 @@
       "channel": "linkedin",
       "last_proposed": "2026-07-17"
     },
-    "55": {
-      "first_proposed": "2026-07-09",
-      "status": "proposed",
-      "channel": "linkedin"
-    },
     "45": {
       "first_proposed": "2026-07-08",
+      "last_proposed": "2026-07-20",
       "status": "proposed",
       "channel": "linkedin"
     },
     "48": {
       "first_proposed": "2026-07-08",
+      "last_proposed": "2026-07-20",
       "status": "proposed",
       "channel": "linkedin"
     },
     "3": {
       "first_proposed": "2026-07-05",
-      "last_proposed": "2026-07-12",
+      "last_proposed": "2026-07-20",
       "status": "proposed",
       "channel": "job_link"
     },
     "31": {
       "first_proposed": "2026-07-05",
-      "last_proposed": "2026-07-12",
+      "last_proposed": "2026-07-20",
       "status": "proposed",
       "channel": "linkedin"
     },
