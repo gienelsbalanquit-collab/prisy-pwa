@@ -37,10 +37,10 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Extreme Pro mounted and checked live this run (602G/4001G, 16% used, unchanged). Newest job confirmed via live folder listing: Brochure REHC & BTC folder touched 2026-07-20 08:02 — client content (BDSP Printed Brochure Content, 4 PDFs + 1 PPTX) arrived 07-19, layout can now proceed. New '50 yrs REHC BRAND GUIDELINE' folder (2 INDD files) also touched 07-19. No drive activity found beyond what the vault's Latest work log already captured.",
+    "note": "Extreme Pro mounted and checked live this run (591G/4001G, 15% used). `final materials` folder touched again 2026-07-20 15:07 — new activity beyond the 07-19 client-content arrival, contents not yet verified. Brochure REHC & BTC folder touched 2026-07-20 08:02 — client content (BDSP Printed Brochure Content, 4 PDFs + 1 PPTX) arrived 07-19, layout can now proceed. New '50 yrs REHC BRAND GUIDELINE' folder (2 INDD files) also touched 07-19.",
     "items": [
       {
-        "task": "Brochure REHC & BTC — client content arrived 07-19; confirm receipt and resume layout in the InDesign source",
+        "task": "Brochure REHC & BTC — client content arrived 07-19; confirm receipt and resume layout in the InDesign source. Note: 'final materials' folder touched again 07-20 15:07 (unverified new activity)",
         "deadline": "unconfirmed",
         "status": "🟢 unblocked — client text/images received"
       },
