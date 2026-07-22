@@ -1,9 +1,9 @@
 {
-  "date": "2026-07-21",
+  "date": "2026-07-22",
   "generated_by": "prisynchracy-morning-command",
   "verse": {
-    "text": "Let your light shine before others, that they may see your good deeds and glorify your Father in heaven.",
-    "ref": "Matthew 5:16 — Day 21 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "For God has not given us a spirit of fear, but of power and of love and of a sound mind.",
+    "ref": "2 Timothy 1:7 — Day 22 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
@@ -17,7 +17,7 @@
       { "label": "Body Fat", "value": "23.2%", "flag": "N" }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-07-21",
+    "updated": "2026-07-22",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -37,10 +37,10 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Extreme Pro / AXL8GP / AXL8GP2 all NOT plugged in this run (2026-07-21, df returned 'No such file or directory' for all three) — no fresh drive check possible. Item statuses below carried forward unchanged from the last confirmed mount (2026-07-20 16:03), day-counts advanced by 1. Not treated as data loss.",
+    "note": "Extreme Pro / AXL8GP / AXL8GP2 all NOT plugged in this run (2026-07-22, df returned 'No such file or directory' for all three, /Volumes shows only Macintosh HD). No fresh drive check possible. Item statuses below carried forward unchanged from the last confirmed mount (2026-07-20 16:03), day-counts advanced. Not treated as data loss.",
     "items": [
       {
-        "task": "Brochure REHC & BTC — client content arrived 07-19; confirm receipt and resume layout in the InDesign source. 'final materials' folder was touched again 07-20 15:07 (unverified new activity, unconfirmed today)",
+        "task": "Brochure REHC & BTC — client content arrived 07-19; confirm receipt and resume layout in the InDesign source ('50 yrs 2026-27 brochure.indd'). 'final materials' folder was touched 07-20 15:07 (still unverified)",
         "deadline": "unconfirmed",
         "status": "🟢 unblocked — client text/images received"
       },
@@ -52,17 +52,17 @@
       {
         "task": "REHC New Joiner ID (PPTX) — design done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 14 days"
+        "status": "pending sign-off — 15 days"
       },
       {
         "task": "2026-27 Condition Book — in progress, to be finalised",
         "deadline": "unconfirmed",
-        "status": "in progress, no drive movement since 07-16"
+        "status": "in progress, no drive movement confirmed since 07-16"
       },
       {
         "task": "RFID card + OOH Campaign (REHC-2680/2681) — done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 14 days, oldest open item"
+        "status": "pending sign-off — 15 days, oldest open item"
       },
       {
         "task": "Season badges + wristbands (4-zone colour system) — new job requests 07-14",
@@ -76,7 +76,7 @@
       "p": 1,
       "area": "🏇 REHC/BTC",
       "task": "Brochure REHC & BTC — resume layout now that client content has arrived",
-      "why": "Longest-blocked item until 07-19; client text/images landed, still the highest-leverage unblock on the board",
+      "why": "Was the longest-blocked item until 07-19; client text/images landed, still the highest-leverage unblock on the board",
       "action": "Open '50 yrs 2026-27 brochure.indd', drop in the new 'final materials' content, confirm scope with client if anything's missing",
       "est": "45 min"
     },
@@ -84,7 +84,7 @@
       "p": 2,
       "area": "🏇 REHC/BTC",
       "task": "Chase sign-off cluster: RFID card + OOH (REHC-2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, sitting with client for approval — RFID now 14 days pending, oldest unresolved item",
+      "why": "3 deliverables done, sitting with client for approval — now 15 days pending, oldest unresolved item on the board",
       "action": "One consolidated email/call to REHC contact requesting sign-off on all three",
       "est": "20 min"
     },
@@ -92,39 +92,39 @@
       "p": 3,
       "area": "🏇 REHC/BTC",
       "task": "2026-27 Condition Book — finalize",
-      "why": "Active job, in progress, no blocker named, no drive movement since 07-16",
+      "why": "Active job, in progress, no blocker named, no drive movement confirmed since 07-16",
       "action": "Review Condition Book folder (198 files), confirm what 'finalize' requires",
       "est": "30 min"
     },
     {
       "p": 4,
       "area": "💼 Prisynchracy",
-      "task": "Second-touch DM: Floward, Salla, Tamara, The Luxury Closet, Love Bonito, Sociolla",
-      "why": "These 6 went out as Day-0 connects 07-17, then Day-2 insight DM 07-19 (2 days ago) — satisfies the ≥2-day rotation rule; distinct from yesterday's list (Early Riser/Amalfi/BeautyCo batch), avoids a repeat",
+      "task": "Day-6 close ask: Early Riser, Amalfi Foods, The BeautyCo, Crumbles Cafe/Bakery, Mar Belle, The Giving Movement",
+      "why": "First touched 07-16 (Bahrain-First Day-0), escalated to Day-2 insight DM 07-20 — now 6 days out and 2 days since last touch, satisfies the ≥2-day rotation rule; distinct from yesterday's Floward/Salla/Tamara batch (which is not yet eligible, touched only 1 day ago)",
       "action": "LinkedIn DM: move from insight to the ask — share the 1-page teardown, propose the 20-min discovery call, BHD 750 Entry Sprint",
       "est": "25 min"
     },
     {
       "p": 5,
       "area": "🌆 GoodnessCities",
-      "task": "No new email draft today — review the 4 stale drafts instead (Caroline Olds since 07-05, Petrini since 07-12, DAMENO since 07-17, La Costa since 07-19 — all unsent)",
-      "why": "Today's picks include Caroline Olds + Petrini again, both already have unsent drafts 1–2+ weeks old; a 3rd/4th copy would be redundant — the real bottleneck is Gienel reviewing/sending what already exists",
-      "action": "Open Gmail Drafts, review and send (or discard) all 4 Monaco drafts before they go stale further",
+      "task": "No new email draft today — review the stale unsent drafts instead: DAMENO (since 07-17), Petrini (since 07-12), and a duplicate pair of Caroline Olds drafts found this run (07-05 AND 07-13 — two separate unsent drafts to the same address)",
+      "why": "DAMENO is back in rotation today with an existing unsent draft already 5 days old — a new copy would be redundant. The Caroline Olds duplicate is a new finding this run and needs Gienel to pick one and discard the other.",
+      "action": "Open Gmail Drafts, review/send (or discard) DAMENO + Petrini + both Caroline Olds drafts",
       "est": "15 min"
     },
     {
       "p": 6,
       "area": "🌆 GoodnessCities",
-      "task": "DM/apply 6 Hot Picks — Caroline Olds Real Estate, Petrini Exclusive Real Estate, Organic Crew, Smartbox Mobile Self Storage, Seniors@work/Hospitality Solutions, HY Systems",
-      "why": "Pipeline refill; 6 High priority, none in 5-day cooldown (last touched 07-05/07-12/07-15/07-16)",
-      "action": "Email review per P5 (Caroline Olds, Petrini) + LinkedIn DM (Organic Crew, Smartbox, Seniors@work) + job link (HY Systems)",
+      "task": "DM/apply 6 Hot Picks — DAMENO Monaco Real Estate (existing draft, see P5), Goat Media, Cusell Marketing, Little Green Healthery, H & A Hawe Souvenirs, THE BIG POT NURSERY / Conference Design",
+      "why": "Pipeline refill; all 6 High priority, none plumbing/TCPA, none in 5-day cooldown (oldest last-touch 07-15, most recent 07-17)",
+      "action": "Email review per P5 (DAMENO) + job-board reply (Goat Media, Cusell Marketing) + LinkedIn DM (Little Green Healthery, H & A Hawe Souvenirs, THE BIG POT NURSERY)",
       "est": "25 min"
     },
     {
       "p": 7,
       "area": "🎯 Prospects",
       "task": "Ayush (Cognac) — nurture-only, unactioned",
-      "why": "38 days unactioned since June 13 touch; Gmail search this run found no reply evidence",
+      "why": "39 days unactioned since June 13 touch; Gmail search this run (Ayush OR Cognac) found no reply evidence",
       "action": "Awareness only — no action unless Gienel wants to reactivate",
       "est": "—"
     },
@@ -139,8 +139,8 @@
     {
       "p": 9,
       "area": "📺 PSH",
-      "task": "Week-1 audit — still 0/5, now 13 days open",
-      "why": "Blocks all content push until YPP/monetization/strikes/RPM verified",
+      "task": "Week-1 audit — still 0/5, now 14 days open",
+      "why": "Blocks all content push until YPP/monetization/strikes/RPM verified. Today is a scheduled PSH stats-check day (Wed), but there's nothing to check until uploads start.",
       "action": "Gienel: log into YouTube Studio, complete audit checklist",
       "est": "30 min"
     },
@@ -148,7 +148,7 @@
       "p": 10,
       "area": "⚙️ Systems",
       "task": "AXL8GP2 85% full — offload",
-      "why": "Not plugged in this run (2026-07-21) — last confirmed mounted 2026-07-20: 4246/5001GB, 85% used, now 14 days open",
+      "why": "Not plugged in this run (2026-07-22) — last confirmed mounted 2026-07-20: 4246/5001GB, 85% used, now 15 days open",
       "action": "Plug in AXL8GP2, begin moving finished VIDEO CREATION / DESIGN CREATION folders to Extreme Pro (~3.4TB free)",
       "est": "1 hr block"
     }
@@ -162,7 +162,7 @@
     {
       "block": "Midday outreach block",
       "when": "Midday",
-      "what": "Prisy 6 second-touch DMs (P4) + GC 6 picks (P5–P6), batched together"
+      "what": "Prisy 6 Day-6 close-ask DMs (P4) + GC 6 picks (P5–P6), batched together"
     },
     {
       "block": "Evening review",
@@ -175,9 +175,9 @@
     { "k": "Prisy Hot 6 sent", "v": "0/6 (pending)" },
     { "k": "GC Hot Picks sent", "v": "0/6 (pending)" },
     { "k": "Daily DM minimum", "v": "6 (Prisy) — must hit today" },
-    { "k": "PSH Week-1 audit", "v": "0/5 (13 days open)" },
-    { "k": "AXL8GP2", "v": "85% full (14 days open, not plugged in this run)" },
-    { "k": "REHC/BTC sign-offs pending", "v": "3 (RFID, OOH, New Joiner ID) — 14 days" },
+    { "k": "PSH Week-1 audit", "v": "0/5 (14 days open)" },
+    { "k": "AXL8GP2", "v": "85% full (15 days open, not plugged in this run)" },
+    { "k": "REHC/BTC sign-offs pending", "v": "3 (RFID, OOH, New Joiner ID) — 15 days" },
     { "k": "REHC/BTC brochure", "v": "🟢 unblocked (client content arrived 07-19, drive not re-checked this run)" }
   ]
 }
