@@ -1,9 +1,9 @@
 {
-  "date": "2026-07-23",
+  "date": "2026-07-24",
   "generated_by": "prisynchracy-morning-command",
   "verse": {
-    "text": "This is the day the LORD has made; let us rejoice and be glad in it.",
-    "ref": "Psalm 118:24 — Day 23 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "Be sure you know the condition of your flocks, give careful attention to your herds.",
+    "ref": "Proverbs 27:23 — Day 24 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
@@ -41,7 +41,7 @@
       }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-07-23",
+    "updated": "2026-07-24",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,32 +61,27 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Drives BACK ONLINE 2026-07-24 09:10 (8-hourly sync refresh) after 3 days unplugged (07-21→07-23). Live df: AXL8GP 1525/4000 GB (39%), AXL8GP2 4244/5001 GB (85%), Extreme Pro 598/4001 GB — ~7 GB more used vs 07-20 (591), new REHC folder activity: '50 yrs REHC BRAND GUIDELINE' touched 07-23 08:19, new '50 yrs time line' folder + master template + OOH Campaign touched 07-22. Folder-level timestamps only — file contents unverified this pass. Item statuses below carried forward; day-counts advanced +1.",
+    "note": "Drives BACK ONLINE (mounted this run) after 07-20→07-23 unplugged. Live df 2026-07-24: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 598/4001GB (15%). NEWEST activity: root folder '50 yrs 2026-27 brochure LATEST' touched 07-23 13:29 (brochure now in active layout) + '50 yrs REHC BRAND GUIDELINE' 07-23 08:19 + new '50 yrs time line' folder 07-22. Folder-level timestamps only; file contents unverified this pass. Statuses carried forward, day-counts +1.",
     "items": [
       {
-        "task": "Brochure REHC & BTC — client content arrived 07-19; confirm receipt and resume layout in the InDesign source ('50 yrs 2026-27 brochure.indd'). 'final materials' folder was touched 07-20 15:07 (still unverified)",
+        "task": "Brochure REHC & BTC — NEWEST job: root folder '50 yrs 2026-27 brochure LATEST' touched 07-23 13:29; layout now active in the InDesign source. Unblocked since 07-19 (client BDSP content in 'final materials')",
         "deadline": "unconfirmed",
-        "status": "🟢 unblocked — client text/images received"
+        "status": "🟢 in layout — newest live activity 07-23 13:29"
       },
       {
-        "task": "50 yrs REHC BRAND GUIDELINE — folder touched again 07-23 08:19 (drives back online); 2 INDD files (Montserrat + V2)",
-        "deadline": "2026–2027 campaign window, exact date unconfirmed",
+        "task": "50 yrs REHC BRAND GUIDELINE — folder touched 07-23 08:19; 2 INDD files (Montserrat + V2), lamp post asset in scope. Also check new '50 yrs time line' folder",
+        "deadline": "2026-2027 campaign window, exact date unconfirmed",
         "status": "in progress — fresh 07-23 activity, contents unverified"
       },
       {
-        "task": "REHC New Joiner ID (PPTX) — design done, awaiting client final approval",
+        "task": "RFID card + OOH Campaign (REHC-2680/2681) + New Joiner ID — all done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 17 days"
+        "status": "pending sign-off — 17 days, oldest open cluster"
       },
       {
-        "task": "2026-27 Condition Book — in progress, to be finalised",
+        "task": "2026-27 Condition Book — in progress, to be finalised (198 files)",
         "deadline": "unconfirmed",
         "status": "in progress, no drive movement confirmed since 07-16"
-      },
-      {
-        "task": "RFID card + OOH Campaign (REHC-2680/2681) — done, awaiting client final approval",
-        "deadline": "awaiting approval",
-        "status": "pending sign-off — 17 days, oldest open item"
       },
       {
         "task": "Season badges + wristbands (4-zone colour system) — new job requests 07-14",
@@ -99,21 +94,53 @@
     {
       "p": 1,
       "area": "🏇 REHC/BTC",
-      "task": "Chase sign-off cluster: RFID card + OOH (REHC-2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, sitting with client for approval — now 17 days pending, oldest unresolved item on the board",
-      "action": "One consolidated email/call to REHC contact requesting sign-off on all three",
-      "est": "20 min"
+      "task": "Brochure REHC & BTC — resume/finalize layout in '50 yrs 2026-27 brochure LATEST'",
+      "why": "Newest live job on the drive (folder touched 07-23 13:29), unblocked since 07-19 when client BDSP content arrived — highest-leverage production on the board",
+      "action": "Open the LATEST brochure folder + '50 yrs 2026-27 brochure.indd', drop in 'final materials' client content, flag anything missing to client",
+      "est": "45 min"
     },
     {
       "p": 2,
       "area": "🏇 REHC/BTC",
-      "task": "Brochure REHC & BTC — resume layout now that client content has arrived",
-      "why": "Unblocked since 07-19; 'final materials' folder saw unverified activity 07-20, still the highest-leverage unblock on the board",
-      "action": "Open '50 yrs 2026-27 brochure.indd', drop in the 'final materials' content, confirm scope with client if anything's missing",
-      "est": "45 min"
+      "task": "Chase sign-off cluster: RFID card + OOH (REHC-2680/2681) + New Joiner ID",
+      "why": "3 deliverables done, sitting with client for approval — now 17 days pending, oldest unresolved cluster",
+      "action": "One consolidated email/call to REHC contact requesting sign-off on all three",
+      "est": "20 min"
     },
     {
       "p": 3,
+      "area": "🏇 REHC/BTC",
+      "task": "50 yrs REHC Brand Guideline — continue; check new '50 yrs time line' folder",
+      "why": "Fresh 07-23 activity, lamp post asset in scope; launch/milestone date still unconfirmed",
+      "action": "Review BRAND GUIDELINE INDD + '50 yrs time line' contents; confirm launch date with REHC",
+      "est": "30 min"
+    },
+    {
+      "p": 4,
+      "area": "💼 Prisynchracy",
+      "task": "Day-14 final follow-up ask: Early Riser, Amalfi Foods, The BeautyCo, Crumbles Cafe/Bakery, Mar Belle, The Giving Movement",
+      "why": "Bahrain-First batch — Day-0 07-16, Day-2 07-20, Day-6 ask 07-22; now 2 days out, satisfies the >=2-day rotation rule and distinct from yesterday's GCC-Expansion batch (touched 07-23, not yet eligible)",
+      "action": "LinkedIn DM: soft final follow-up referencing the 07-22 ask — re-offer the 1-page teardown + 20-min discovery call, BHD 750 Entry Sprint",
+      "est": "25 min"
+    },
+    {
+      "p": 5,
+      "area": "🌆 GoodnessCities",
+      "task": "Clear 5 stale unsent Monaco drafts (no new draft today)",
+      "why": "La Costa/#101 is email-eligible again today but already has an unsent 07-19 draft — a 2nd would duplicate. Live Gmail search this run found 5 unsent GC drafts: La Costa (07-19), DAMENO (07-17), Petrini (07-12), and a DUPLICATE Caroline Olds pair (07-05 + 07-13)",
+      "action": "Open Gmail Drafts: send or discard La Costa + DAMENO + Petrini; reconcile the two Caroline Olds drafts (send one, delete the other)",
+      "est": "15 min"
+    },
+    {
+      "p": 6,
+      "area": "🌆 GoodnessCities",
+      "task": "DM/pitch 6 Hot Picks — La Costa Properties (email, flagged above), HOMES Monaco/Sandro Piras, Storm in a D Cup, Always Pilates, Dress for Success Auckland, @nellbellsfitness",
+      "why": "Pipeline refill; all 6 High priority, none plumbing/TCPA, none proposed in the last 5 days",
+      "action": "Email flag (La Costa) + LinkedIn/phone DM (HOMES Monaco, Storm in a D Cup, Always Pilates, Dress for Success Auckland) + IG DM (@nellbellsfitness)",
+      "est": "25 min"
+    },
+    {
+      "p": 7,
       "area": "🏇 REHC/BTC",
       "task": "2026-27 Condition Book — finalize",
       "why": "Active job, in progress, no blocker named, no drive movement confirmed since 07-16",
@@ -121,41 +148,9 @@
       "est": "30 min"
     },
     {
-      "p": 4,
-      "area": "💼 Prisynchracy",
-      "task": "Day-6 follow-up ask: Floward, Salla, Tamara, The Luxury Closet, Love Bonito, Sociolla",
-      "why": "First touched 07-17 (Day-0), escalated to an ask DM 07-21 — now 2 days since last touch, satisfies the ≥2-day rotation rule; distinct from the Bahrain-First batch (Early Riser etc.), which was only touched yesterday (07-22) and isn't yet eligible again",
-      "action": "LinkedIn DM: follow up on the 07-21 ask — reference the teardown/offer already sent, propose the 20-min discovery call, BHD 750 Entry Sprint",
-      "est": "25 min"
-    },
-    {
-      "p": 5,
-      "area": "🌆 GoodnessCities",
-      "task": "No new email draft today — 4 stale unsent drafts still sitting: DAMENO (since 07-17), Petrini (since 07-12), and a duplicate unresolved Caroline Olds pair (07-05 + 07-13)",
-      "why": "All 4 email-ready Monaco leads are in the 5-day cooldown (La Costa/101 eligible 07-24, Caroline Olds/98 + La Costa-102 eligible 07-26, DAMENO/100 eligible 07-27) — confirmed via live Gmail drafts search this run, same 4 drafts found, none sent or discarded since 07-22",
-      "action": "Open Gmail Drafts, review/send (or discard) DAMENO + Petrini + both Caroline Olds drafts",
-      "est": "15 min"
-    },
-    {
-      "p": 6,
-      "area": "🌆 GoodnessCities",
-      "task": "DM/apply 6 Hot Picks — Hatcher Digital, Floriddia Creative, JL Marketing (job-board), Call a Cooler Sydney, FEDERATION, Metal Concepts Ltd (LinkedIn)",
-      "why": "Pipeline refill; all 6 High priority, none plumbing/TCPA, none proposed in the last 5 days",
-      "action": "Job-board reply (Hatcher Digital, Floriddia Creative, JL Marketing) + LinkedIn DM (Call a Cooler Sydney, FEDERATION, Metal Concepts Ltd)",
-      "est": "25 min"
-    },
-    {
-      "p": 7,
-      "area": "🎯 Prospects",
-      "task": "Ayush (Cognac) — nurture-only, unactioned",
-      "why": "40 days unactioned since June 13 touch; Gmail search this run (Ayush OR Cognac, 14d) found no reply evidence",
-      "action": "Awareness only — no action unless Gienel wants to reactivate",
-      "est": "—"
-    },
-    {
       "p": 8,
       "area": "🏇 REHC/BTC",
-      "task": "Season badges + wristbands (4-zone colour system) — new job requests",
+      "task": "Season badges + wristbands (4-zone colour system)",
       "why": "Added 07-14, still no deadline confirmed, no drive folder created yet, season approaching",
       "action": "Confirm exact deadline with REHC, then scope design brief",
       "est": "15 min"
@@ -163,17 +158,17 @@
     {
       "p": 9,
       "area": "📺 PSH",
-      "task": "Week-1 audit — still 0/5, now 15 days open",
-      "why": "Blocks all content push until YPP/monetization/strikes/RPM verified",
-      "action": "Gienel: log into YouTube Studio, complete audit checklist",
+      "task": "Week-1 audit — still 0/5, now 16 days open",
+      "why": "Blocks all content push until YPP/monetization/strikes/RPM verified; gate to activate cadence (and eventually @ peace)",
+      "action": "Gienel: log into YouTube Studio, complete the audit checklist",
       "est": "30 min"
     },
     {
       "p": 10,
       "area": "⚙️ Systems",
       "task": "AXL8GP2 85% full — offload",
-      "why": "Back online 2026-07-24 — live df confirms 4244/5001GB, 85% used, now 17 days open (offload still not started)",
-      "action": "AXL8GP2 now mounted — begin moving finished VIDEO CREATION / DESIGN CREATION folders to Extreme Pro (~3.4TB free)",
+      "why": "Back online 2026-07-24 (live df 4244/5001GB, 85% used), now 17 days open, offload still not started",
+      "action": "AXL8GP2 mounted — move finished VIDEO/DESIGN CREATION folders to Extreme Pro (~3.4TB free)",
       "est": "1 hr block"
     }
   ],
@@ -181,12 +176,12 @@
     {
       "block": "Morning deep work",
       "when": "AM",
-      "what": "REHC/BTC — sign-off chase, brochure layout, Condition Book review (P1–P3)"
+      "what": "REHC/BTC — brochure LATEST layout, sign-off chase, brand guideline + time line (P1-P3)"
     },
     {
       "block": "Midday outreach block",
       "when": "Midday",
-      "what": "Prisy 6 Day-6 follow-up ask DMs (P4) + GC 6 picks (P5–P6), batched together"
+      "what": "Prisy 6 Day-14 follow-up DMs (P4) + GC 6 picks / draft cleanup (P5-P6), batched"
     },
     {
       "block": "Evening review",
@@ -213,7 +208,7 @@
     },
     {
       "k": "PSH Week-1 audit",
-      "v": "0/5 (15 days open)"
+      "v": "0/5 (16 days open)"
     },
     {
       "k": "AXL8GP2",
@@ -225,7 +220,7 @@
     },
     {
       "k": "REHC/BTC brochure",
-      "v": "🟢 unblocked (client content arrived 07-19; drives re-checked live 2026-07-24, ~7 GB new activity)"
+      "v": "🟢 in layout — LATEST folder touched 07-23 13:29"
     }
   ]
 }
