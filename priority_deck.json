@@ -9,12 +9,36 @@
     "status": "action needed",
     "summary": "HbA1c 7.61% + fasting glucose 6.59 (diabetic-range) + high cholesterol — book doctor's visit",
     "metrics": [
-      { "label": "HbA1c", "value": "7.61%", "flag": "H" },
-      { "label": "Fasting Glucose", "value": "6.59", "flag": "H" },
-      { "label": "Total Cholesterol", "value": "7.62", "flag": "H" },
-      { "label": "LDL", "value": "5.64", "flag": "H" },
-      { "label": "Weight", "value": "71.3kg", "flag": "N" },
-      { "label": "Body Fat", "value": "23.2%", "flag": "N" }
+      {
+        "label": "HbA1c",
+        "value": "7.61%",
+        "flag": "H"
+      },
+      {
+        "label": "Fasting Glucose",
+        "value": "6.59",
+        "flag": "H"
+      },
+      {
+        "label": "Total Cholesterol",
+        "value": "7.62",
+        "flag": "H"
+      },
+      {
+        "label": "LDL",
+        "value": "5.64",
+        "flag": "H"
+      },
+      {
+        "label": "Weight",
+        "value": "71.3kg",
+        "flag": "N"
+      },
+      {
+        "label": "Body Fat",
+        "value": "23.2%",
+        "flag": "N"
+      }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
     "updated": "2026-07-23",
@@ -37,7 +61,7 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Extreme Pro / AXL8GP / AXL8GP2 all NOT plugged in this run (2026-07-23, df returned 'No such file or directory' for all three, /Volumes shows only Macintosh HD). No fresh drive check possible. Item statuses below carried forward unchanged from the last confirmed mount (2026-07-20 16:03), day-counts advanced. Not treated as data loss.",
+    "note": "Drives BACK ONLINE 2026-07-24 09:10 (8-hourly sync refresh) after 3 days unplugged (07-21→07-23). Live df: AXL8GP 1525/4000 GB (39%), AXL8GP2 4244/5001 GB (85%), Extreme Pro 598/4001 GB — ~7 GB more used vs 07-20 (591), new REHC folder activity: '50 yrs REHC BRAND GUIDELINE' touched 07-23 08:19, new '50 yrs time line' folder + master template + OOH Campaign touched 07-22. Folder-level timestamps only — file contents unverified this pass. Item statuses below carried forward; day-counts advanced +1.",
     "items": [
       {
         "task": "Brochure REHC & BTC — client content arrived 07-19; confirm receipt and resume layout in the InDesign source ('50 yrs 2026-27 brochure.indd'). 'final materials' folder was touched 07-20 15:07 (still unverified)",
@@ -45,14 +69,14 @@
         "status": "🟢 unblocked — client text/images received"
       },
       {
-        "task": "50 yrs REHC BRAND GUIDELINE — new folder activity 07-19 (2 INDD files, Montserrat + V2)",
+        "task": "50 yrs REHC BRAND GUIDELINE — folder touched again 07-23 08:19 (drives back online); 2 INDD files (Montserrat + V2)",
         "deadline": "2026–2027 campaign window, exact date unconfirmed",
-        "status": "in progress"
+        "status": "in progress — fresh 07-23 activity, contents unverified"
       },
       {
         "task": "REHC New Joiner ID (PPTX) — design done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 16 days"
+        "status": "pending sign-off — 17 days"
       },
       {
         "task": "2026-27 Condition Book — in progress, to be finalised",
@@ -62,7 +86,7 @@
       {
         "task": "RFID card + OOH Campaign (REHC-2680/2681) — done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 16 days, oldest open item"
+        "status": "pending sign-off — 17 days, oldest open item"
       },
       {
         "task": "Season badges + wristbands (4-zone colour system) — new job requests 07-14",
@@ -76,7 +100,7 @@
       "p": 1,
       "area": "🏇 REHC/BTC",
       "task": "Chase sign-off cluster: RFID card + OOH (REHC-2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, sitting with client for approval — now 16 days pending, oldest unresolved item on the board",
+      "why": "3 deliverables done, sitting with client for approval — now 17 days pending, oldest unresolved item on the board",
       "action": "One consolidated email/call to REHC contact requesting sign-off on all three",
       "est": "20 min"
     },
@@ -148,8 +172,8 @@
       "p": 10,
       "area": "⚙️ Systems",
       "task": "AXL8GP2 85% full — offload",
-      "why": "Not plugged in this run (2026-07-23) — last confirmed mounted 2026-07-20: 4246/5001GB, 85% used, now 16 days open",
-      "action": "Plug in AXL8GP2, begin moving finished VIDEO CREATION / DESIGN CREATION folders to Extreme Pro (~3.4TB free)",
+      "why": "Back online 2026-07-24 — live df confirms 4244/5001GB, 85% used, now 17 days open (offload still not started)",
+      "action": "AXL8GP2 now mounted — begin moving finished VIDEO CREATION / DESIGN CREATION folders to Extreme Pro (~3.4TB free)",
       "est": "1 hr block"
     }
   ],
@@ -171,13 +195,37 @@
     }
   ],
   "scoreboard": [
-    { "k": "MRR", "v": "BHD 0 / 4,500" },
-    { "k": "Prisy Hot 6 sent", "v": "0/6 (pending)" },
-    { "k": "GC Hot Picks sent", "v": "0/6 (pending)" },
-    { "k": "Daily DM minimum", "v": "6 (Prisy) — must hit today" },
-    { "k": "PSH Week-1 audit", "v": "0/5 (15 days open)" },
-    { "k": "AXL8GP2", "v": "85% full (16 days open, not plugged in this run)" },
-    { "k": "REHC/BTC sign-offs pending", "v": "3 (RFID, OOH, New Joiner ID) — 16 days" },
-    { "k": "REHC/BTC brochure", "v": "🟢 unblocked (client content arrived 07-19, drive not re-checked this run)" }
+    {
+      "k": "MRR",
+      "v": "BHD 0 / 4,500"
+    },
+    {
+      "k": "Prisy Hot 6 sent",
+      "v": "0/6 (pending)"
+    },
+    {
+      "k": "GC Hot Picks sent",
+      "v": "0/6 (pending)"
+    },
+    {
+      "k": "Daily DM minimum",
+      "v": "6 (Prisy) — must hit today"
+    },
+    {
+      "k": "PSH Week-1 audit",
+      "v": "0/5 (15 days open)"
+    },
+    {
+      "k": "AXL8GP2",
+      "v": "85% full (17 days open, back online 2026-07-24)"
+    },
+    {
+      "k": "REHC/BTC sign-offs pending",
+      "v": "3 (RFID, OOH, New Joiner ID) — 17 days"
+    },
+    {
+      "k": "REHC/BTC brochure",
+      "v": "🟢 unblocked (client content arrived 07-19; drives re-checked live 2026-07-24, ~7 GB new activity)"
+    }
   ]
 }
