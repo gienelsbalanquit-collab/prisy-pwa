@@ -37,17 +37,17 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Sat 2026-07-25 08:40 — all three external drives UNPLUGGED again (df shows nothing under /Volumes except Macintosh HD; briefly back 07-24, off again since). Not data loss. Last-known live df (2026-07-24 09:10) carried forward: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 598/4001GB (15%). No new REHC/BTC drive scan possible this pass — statuses carried forward from 07-24, day-counts +1. Newest known job unchanged: '50 yrs 2026-27 brochure LATEST' (07-23 13:29).",
+    "note": "Sat 2026-07-25 16:05 — all three externals STILL mounted (live df unchanged: AXL8GP 1525/4000GB 39%, AXL8GP2 4244/5001GB 85%, Extreme Pro 598/4001GB 15%) — longest continuous mounted stretch this week, and with AXL8GP2 + Extreme Pro both up the 18-day offload window is open right now. REHC work continued through the afternoon: '50 yrs REHC BRAND GUIDELINE' advanced 11:44 → 13:27, while 'Brochure REHC & BTC' stayed at 11:18 — today's focus shifted from brochure to brand guideline.",
     "items": [
       {
-        "task": "Brochure REHC & BTC — NEWEST job: root folder '50 yrs 2026-27 brochure LATEST' touched 07-23 13:29; layout active in the InDesign source. Unblocked since 07-19 (client BDSP content in 'final materials')",
-        "deadline": "unconfirmed",
-        "status": "🟢 in layout — newest live activity 07-23 13:29 (drive unplugged, carried forward)"
+        "task": "50 yrs REHC BRAND GUIDELINE — folder touched 07-25 13:27 (today's most recent REHC activity, advanced from 11:44 this morning). 2 INDD files (Montserrat + V2), lamp post asset in scope. Also check '50 yrs time line' folder (last touched 07-22)",
+        "deadline": "2026-2027 campaign window, exact date unconfirmed",
+        "status": "🟢 today's live workstream — folder touched 07-25 13:27"
       },
       {
-        "task": "50 yrs REHC BRAND GUIDELINE — folder touched 07-23 08:19; 2 INDD files (Montserrat + V2), lamp post asset in scope. Also check new '50 yrs time line' folder",
-        "deadline": "2026-2027 campaign window, exact date unconfirmed",
-        "status": "in progress — fresh 07-23 activity, contents unverified"
+        "task": "Brochure REHC & BTC — folder touched 07-25 11:18 (today), superseding prior newest marker of 07-23 13:29. Unblocked since 07-19 (client BDSP content in 'final materials'), but untouched since late morning",
+        "deadline": "unconfirmed",
+        "status": "🟡 touched today 11:18, paused since — resume after brand guideline"
       },
       {
         "task": "RFID card + OOH Campaign (REHC-2680/2681) + New Joiner ID — all done, awaiting client final approval",
@@ -71,8 +71,8 @@
       "p": 1,
       "area": "🏇 REHC/BTC",
       "task": "Brochure REHC & BTC — resume/finalize layout in '50 yrs 2026-27 brochure LATEST'",
-      "why": "Newest live job on the drive (folder touched 07-23 13:29), unblocked since 07-19 when client BDSP content arrived — highest-leverage production on the board. Plug in Extreme Pro to resume",
-      "action": "Plug in Extreme Pro, open the LATEST brochure folder + '50 yrs 2026-27 brochure.indd', drop in 'final materials' client content, flag anything missing to client",
+      "why": "Touched today 07-25 11:18 then paused while the brand guideline took over (13:27) — unblocked since 07-19 when client BDSP content arrived, still the highest-leverage production on the board. Extreme Pro is mounted right now",
+      "action": "Extreme Pro is already plugged in — open the LATEST brochure folder + '50 yrs 2026-27 brochure.indd', drop in 'final materials' client content, flag anything missing to client",
       "est": "45 min"
     },
     {
@@ -87,7 +87,7 @@
       "p": 3,
       "area": "🏇 REHC/BTC",
       "task": "50 yrs REHC Brand Guideline — continue; check new '50 yrs time line' folder",
-      "why": "Fresh 07-23 activity, lamp post asset in scope; launch/milestone date still unconfirmed",
+      "why": "Live right now — folder touched 07-25 13:27, the most recent REHC activity of the day (advanced from 11:44 this morning); lamp post asset in scope, launch/milestone date still unconfirmed",
       "action": "Review BRAND GUIDELINE INDD + '50 yrs time line' contents; confirm launch date with REHC",
       "est": "30 min"
     },
@@ -143,8 +143,8 @@
       "p": 10,
       "area": "⚙️ Systems",
       "task": "AXL8GP2 85% full — offload (18 days open)",
-      "why": "Unplugged again this run (was 4244/5001GB, 85% used on 07-24), offload still not started; Extreme Pro has ~3.4TB free to receive it",
-      "action": "Plug in AXL8GP2 + Extreme Pro together, then move finished VIDEO/DESIGN CREATION folders to Extreme Pro",
+      "why": "AXL8GP2 (4244/5001GB, 85%) AND Extreme Pro (~3.4TB free) are BOTH mounted right now as of 16:05 — the window that's been missing for days is open today; offload still not started",
+      "action": "Both drives are already plugged in — move finished VIDEO/DESIGN CREATION folders from AXL8GP2 to Extreme Pro now",
       "est": "1 hr block"
     }
   ],
@@ -160,8 +160,8 @@
     { "k": "GC Hot Picks sent", "v": "0/6 (pending)" },
     { "k": "Daily DM minimum", "v": "6 (Prisy) — must hit today" },
     { "k": "PSH Week-1 audit", "v": "0/5 (17 days open)" },
-    { "k": "AXL8GP2", "v": "85% full (18 days open, unplugged again 2026-07-25)" },
+    { "k": "AXL8GP2", "v": "85% full (18 days open) — 🟢 mounted with Extreme Pro, offload window OPEN" },
     { "k": "REHC/BTC sign-offs pending", "v": "3 (RFID, OOH, New Joiner ID) — 18 days" },
-    { "k": "REHC/BTC brochure", "v": "🟢 in layout — LATEST folder touched 07-23 13:29" }
+    { "k": "REHC/BTC live today", "v": "🟢 Brand Guideline touched 13:27 · brochure 11:18" }
   ]
 }
