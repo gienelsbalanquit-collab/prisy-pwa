@@ -61,7 +61,7 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Drives BACK ONLINE (mounted this run) after 07-20→07-23 unplugged. Live df 2026-07-24: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 598/4001GB (15%). NEWEST activity: root folder '50 yrs 2026-27 brochure LATEST' touched 07-23 13:29 (brochure now in active layout) + '50 yrs REHC BRAND GUIDELINE' 07-23 08:19 + new '50 yrs time line' folder 07-22. Folder-level timestamps only; file contents unverified this pass. Statuses carried forward, day-counts +1.",
+    "note": "8-hourly sync 2026-07-25 08:24 — all three external drives still UNPLUGGED (df shows nothing under /Volumes except Macintosh HD; online 07-24 only, off again since 07-25). Not data loss. Last-known live df (2026-07-24 09:10) carried forward: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 598/4001GB (15%). No new REHC/BTC drive check possible this pass — statuses carried forward from 07-24; same calendar day as the 00:08 pass so day-counts unchanged. Newest known job unchanged: '50 yrs 2026-27 brochure LATEST' (07-23 13:29). No 2026-07-25 morning briefing file at run time — not a redundant back-to-back run.",
     "items": [
       {
         "task": "Brochure REHC & BTC — NEWEST job: root folder '50 yrs 2026-27 brochure LATEST' touched 07-23 13:29; layout now active in the InDesign source. Unblocked since 07-19 (client BDSP content in 'final materials')",
@@ -76,7 +76,7 @@
       {
         "task": "RFID card + OOH Campaign (REHC-2680/2681) + New Joiner ID — all done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 17 days, oldest open cluster"
+        "status": "pending sign-off — 18 days, oldest open cluster"
       },
       {
         "task": "2026-27 Condition Book — in progress, to be finalised (198 files)",
@@ -103,7 +103,7 @@
       "p": 2,
       "area": "🏇 REHC/BTC",
       "task": "Chase sign-off cluster: RFID card + OOH (REHC-2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, sitting with client for approval — now 17 days pending, oldest unresolved cluster",
+      "why": "3 deliverables done, sitting with client for approval — now 18 days pending, oldest unresolved cluster",
       "action": "One consolidated email/call to REHC contact requesting sign-off on all three",
       "est": "20 min"
     },
@@ -158,7 +158,7 @@
     {
       "p": 9,
       "area": "📺 PSH",
-      "task": "Week-1 audit — still 0/5, now 16 days open",
+      "task": "Week-1 audit — still 0/5, now 17 days open",
       "why": "Blocks all content push until YPP/monetization/strikes/RPM verified; gate to activate cadence (and eventually @ peace)",
       "action": "Gienel: log into YouTube Studio, complete the audit checklist",
       "est": "30 min"
@@ -167,8 +167,8 @@
       "p": 10,
       "area": "⚙️ Systems",
       "task": "AXL8GP2 85% full — offload",
-      "why": "Back online 2026-07-24 (live df 4244/5001GB, 85% used), now 17 days open, offload still not started",
-      "action": "AXL8GP2 mounted — move finished VIDEO/DESIGN CREATION folders to Extreme Pro (~3.4TB free)",
+      "why": "Unplugged again 2026-07-25 (was 4244/5001GB, 85% used on 07-24), now 18 days open, offload still not started",
+      "action": "Plug in AXL8GP2 + Extreme Pro, then move finished VIDEO/DESIGN CREATION folders to Extreme Pro (~3.4TB free)",
       "est": "1 hr block"
     }
   ],
@@ -208,15 +208,15 @@
     },
     {
       "k": "PSH Week-1 audit",
-      "v": "0/5 (16 days open)"
+      "v": "0/5 (17 days open)"
     },
     {
       "k": "AXL8GP2",
-      "v": "85% full (17 days open, back online 2026-07-24)"
+      "v": "85% full (18 days open, unplugged again 2026-07-25)"
     },
     {
       "k": "REHC/BTC sign-offs pending",
-      "v": "3 (RFID, OOH, New Joiner ID) — 17 days"
+      "v": "3 (RFID, OOH, New Joiner ID) — 18 days"
     },
     {
       "k": "REHC/BTC brochure",
