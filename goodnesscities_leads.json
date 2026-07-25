@@ -1,6 +1,6 @@
 {
   "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
-  "updated": "2026-07-23",
+  "updated": "2026-07-25",
   "total_real_leads": 245,
   "excluded_fictional_rows": 20,
   "compliance_flags": [
@@ -28,52 +28,52 @@
   "email_ready_count": 4,
   "hot_picks": [
     {
-      "id": 101,
-      "business": "La Costa Properties Monaco",
-      "priority": "High",
-      "segment": "Monaco – Real Estate",
-      "channel": "Phone",
-      "action": "email — La Costa Properties Monaco (info@25lcp.com): EMAIL-ELIGIBLE again today but existing 07-19 draft already sitting unsent — send/review that, do NOT create a 2nd"
-    },
-    {
-      "id": 99,
-      "business": "HOMES Monaco (Sandro Piras)",
-      "priority": "High",
-      "segment": "Monaco – Real Estate",
-      "channel": "Phone",
-      "action": "phone/personal-brand — HOMES Monaco (Sandro Piras): solo boutique, personal-branding + listing design + IG templates pitch"
-    },
-    {
-      "id": 56,
-      "business": "Storm in a D Cup Pty Ltd",
+      "id": 34,
+      "business": "Jocelyn Wright Freelance",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Storm in a D Cup Pty Ltd (Anand Keswani, Sydney): serial founder, brand identity/website/social retainer"
+      "action": "LinkedIn DM — Jocelyn Wright Freelance (Jocey Wright): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
     },
     {
-      "id": 58,
-      "business": "Always Pilates Ltd",
+      "id": 41,
+      "business": "Stretch Marquees & Fabric Structures",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Always Pilates Ltd (Tania Huddart, NZ): wellness fit for GC ethical positioning, brand + social retainer"
+      "action": "LinkedIn DM — Stretch Marquees & Fabric Structures (Penny Johnstone): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
     },
     {
-      "id": 59,
-      "business": "Dress for Success Auckland",
+      "id": 47,
+      "business": "Grey Lynn Firehouse",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Dress for Success Auckland (Robyn Moore, CEO): nonprofit, social media management + brand content"
+      "action": "LinkedIn DM — Grey Lynn Firehouse (Luke Jones): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
     },
     {
-      "id": 88,
-      "business": "Online Fitness & Wellness Coach",
+      "id": 22,
+      "business": "Digital Trek",
       "priority": "High",
-      "segment": "Instagram – Wellness Coaches (NY)",
-      "channel": "Instagram only",
-      "action": "Instagram DM — @nellbellsfitness (NY wellness coach, 13.1K): IG content templates + personal brand kit"
+      "segment": "B2B – Job-Board Signal (PH sourced)",
+      "channel": "Job link only",
+      "action": "LinkedIn DM — Digital Trek (owner): Brand identity & graphic design retainer (agency alternative to the hire)"
+    },
+    {
+      "id": 55,
+      "business": "Self-employed",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn only",
+      "action": "LinkedIn DM — Self-employed (Tyler Ames): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
+    },
+    {
+      "id": 53,
+      "business": "Inkd SMP / Conceal Co",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn only",
+      "action": "LinkedIn DM — Inkd SMP / Conceal Co (Ana James): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
     }
   ],
   "leads": [

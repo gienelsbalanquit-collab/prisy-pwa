@@ -1,47 +1,23 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-25",
   "generated_by": "prisynchracy-morning-command",
   "verse": {
-    "text": "Be sure you know the condition of your flocks, give careful attention to your herds.",
-    "ref": "Proverbs 27:23 — Day 24 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "Whoever can be trusted with very little can also be trusted with much.",
+    "ref": "Luke 16:10 — Day 25 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
     "summary": "HbA1c 7.61% + fasting glucose 6.59 (diabetic-range) + high cholesterol — book doctor's visit",
     "metrics": [
-      {
-        "label": "HbA1c",
-        "value": "7.61%",
-        "flag": "H"
-      },
-      {
-        "label": "Fasting Glucose",
-        "value": "6.59",
-        "flag": "H"
-      },
-      {
-        "label": "Total Cholesterol",
-        "value": "7.62",
-        "flag": "H"
-      },
-      {
-        "label": "LDL",
-        "value": "5.64",
-        "flag": "H"
-      },
-      {
-        "label": "Weight",
-        "value": "71.3kg",
-        "flag": "N"
-      },
-      {
-        "label": "Body Fat",
-        "value": "23.2%",
-        "flag": "N"
-      }
+      { "label": "HbA1c", "value": "7.61%", "flag": "H" },
+      { "label": "Fasting Glucose", "value": "6.59", "flag": "H" },
+      { "label": "Total Cholesterol", "value": "7.62", "flag": "H" },
+      { "label": "LDL", "value": "5.64", "flag": "H" },
+      { "label": "Weight", "value": "71.3kg", "flag": "N" },
+      { "label": "Body Fat", "value": "23.2%", "flag": "N" }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-07-24",
+    "updated": "2026-07-25",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,12 +37,12 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "8-hourly sync 2026-07-25 08:24 — all three external drives still UNPLUGGED (df shows nothing under /Volumes except Macintosh HD; online 07-24 only, off again since 07-25). Not data loss. Last-known live df (2026-07-24 09:10) carried forward: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 598/4001GB (15%). No new REHC/BTC drive check possible this pass — statuses carried forward from 07-24; same calendar day as the 00:08 pass so day-counts unchanged. Newest known job unchanged: '50 yrs 2026-27 brochure LATEST' (07-23 13:29). No 2026-07-25 morning briefing file at run time — not a redundant back-to-back run.",
+    "note": "Sat 2026-07-25 08:40 — all three external drives UNPLUGGED again (df shows nothing under /Volumes except Macintosh HD; briefly back 07-24, off again since). Not data loss. Last-known live df (2026-07-24 09:10) carried forward: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 598/4001GB (15%). No new REHC/BTC drive scan possible this pass — statuses carried forward from 07-24, day-counts +1. Newest known job unchanged: '50 yrs 2026-27 brochure LATEST' (07-23 13:29).",
     "items": [
       {
-        "task": "Brochure REHC & BTC — NEWEST job: root folder '50 yrs 2026-27 brochure LATEST' touched 07-23 13:29; layout now active in the InDesign source. Unblocked since 07-19 (client BDSP content in 'final materials')",
+        "task": "Brochure REHC & BTC — NEWEST job: root folder '50 yrs 2026-27 brochure LATEST' touched 07-23 13:29; layout active in the InDesign source. Unblocked since 07-19 (client BDSP content in 'final materials')",
         "deadline": "unconfirmed",
-        "status": "🟢 in layout — newest live activity 07-23 13:29"
+        "status": "🟢 in layout — newest live activity 07-23 13:29 (drive unplugged, carried forward)"
       },
       {
         "task": "50 yrs REHC BRAND GUIDELINE — folder touched 07-23 08:19; 2 INDD files (Montserrat + V2), lamp post asset in scope. Also check new '50 yrs time line' folder",
@@ -95,15 +71,15 @@
       "p": 1,
       "area": "🏇 REHC/BTC",
       "task": "Brochure REHC & BTC — resume/finalize layout in '50 yrs 2026-27 brochure LATEST'",
-      "why": "Newest live job on the drive (folder touched 07-23 13:29), unblocked since 07-19 when client BDSP content arrived — highest-leverage production on the board",
-      "action": "Open the LATEST brochure folder + '50 yrs 2026-27 brochure.indd', drop in 'final materials' client content, flag anything missing to client",
+      "why": "Newest live job on the drive (folder touched 07-23 13:29), unblocked since 07-19 when client BDSP content arrived — highest-leverage production on the board. Plug in Extreme Pro to resume",
+      "action": "Plug in Extreme Pro, open the LATEST brochure folder + '50 yrs 2026-27 brochure.indd', drop in 'final materials' client content, flag anything missing to client",
       "est": "45 min"
     },
     {
       "p": 2,
       "area": "🏇 REHC/BTC",
       "task": "Chase sign-off cluster: RFID card + OOH (REHC-2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, sitting with client for approval — now 18 days pending, oldest unresolved cluster",
+      "why": "3 deliverables done, sitting with client for approval — now 18 days pending, oldest unresolved cluster (no drive needed to send the chase)",
       "action": "One consolidated email/call to REHC contact requesting sign-off on all three",
       "est": "20 min"
     },
@@ -118,37 +94,45 @@
     {
       "p": 4,
       "area": "💼 Prisynchracy",
-      "task": "Day-14 final follow-up ask: Early Riser, Amalfi Foods, The BeautyCo, Crumbles Cafe/Bakery, Mar Belle, The Giving Movement",
-      "why": "Bahrain-First batch — Day-0 07-16, Day-2 07-20, Day-6 ask 07-22; now 2 days out, satisfies the >=2-day rotation rule and distinct from yesterday's GCC-Expansion batch (touched 07-23, not yet eligible)",
-      "action": "LinkedIn DM: soft final follow-up referencing the 07-22 ask — re-offer the 1-page teardown + 20-min discovery call, BHD 750 Entry Sprint",
+      "task": "Saturday warm-up (Day-0, no pitch) — Newton Properties (Ehab Faraj), Middle East Hospital (Nissam Mohammed), MKJ Skin Co. (Mohamed AlBahraini), LuLu Hypermarket (Nimish TK), Alosra Supermarket, Marassi Galleria (Julian Smith)",
+      "why": "Bahrain-First batch (07-16) closed its Day-14 ask yesterday; 5-day cycle file still overdue. Saturday = start a fresh Day-0 warm-up per the Sat→Mon→Wed cadence, cited to linkedin_prospects.json watchlist. Hits the 6-DM minimum with new names, distinct from yesterday",
+      "action": "Thoughtful LinkedIn engagement/comment on a recent post from each — NO pitch. Sets up Mon insight DM → Wed the BHD 750 ask",
       "est": "25 min"
     },
     {
       "p": 5,
       "area": "🌆 GoodnessCities",
-      "task": "Clear 5 stale unsent Monaco drafts (no new draft today)",
-      "why": "La Costa/#101 is email-eligible again today but already has an unsent 07-19 draft — a 2nd would duplicate. Live Gmail search this run found 5 unsent GC drafts: La Costa (07-19), DAMENO (07-17), Petrini (07-12), and a DUPLICATE Caroline Olds pair (07-05 + 07-13)",
+      "task": "Clear 5 stale unsent Monaco drafts (no new draft today — all 4 email leads in 5-day cooldown)",
+      "why": "All email-ready leads (La Costa/#101 07-24, Caroline Olds/#100 07-22, DAMENO/#98 07-21, Petrini/#102 07-21) are within the 5-day cooldown, so no new draft is created. Real action is the backlog: 5 unsent GC drafts sitting in Gmail — La Costa (07-19), DAMENO (07-17), Petrini (07-12), and a DUPLICATE Caroline Olds pair (07-05 + 07-13)",
       "action": "Open Gmail Drafts: send or discard La Costa + DAMENO + Petrini; reconcile the two Caroline Olds drafts (send one, delete the other)",
       "est": "15 min"
     },
     {
       "p": 6,
       "area": "🌆 GoodnessCities",
-      "task": "DM/pitch 6 Hot Picks — La Costa Properties (email, flagged above), HOMES Monaco/Sandro Piras, Storm in a D Cup, Always Pilates, Dress for Success Auckland, @nellbellsfitness",
-      "why": "Pipeline refill; all 6 High priority, none plumbing/TCPA, none proposed in the last 5 days",
-      "action": "Email flag (La Costa) + LinkedIn/phone DM (HOMES Monaco, Storm in a D Cup, Always Pilates, Dress for Success Auckland) + IG DM (@nellbellsfitness)",
+      "task": "DM/pitch 6 fresh Hot Picks — Jocey Wright Freelance, Stretch Marquees (Penny Johnstone), Grey Lynn Firehouse (Luke Jones), Digital Trek, Tyler Ames, Inkd SMP/Conceal Co (Ana James)",
+      "why": "Pipeline refill; all 6 High priority, none plumbing/TCPA, none proposed in the last 5 days (rotated off yesterday's 101/99/56/58/59/88)",
+      "action": "LinkedIn DM (Jocey Wright, Stretch Marquees, Grey Lynn Firehouse, Tyler Ames, Inkd SMP) + job-link message (Digital Trek) per the GC AU/JB templates",
       "est": "25 min"
     },
     {
       "p": 7,
-      "area": "🏇 REHC/BTC",
-      "task": "2026-27 Condition Book — finalize",
-      "why": "Active job, in progress, no blocker named, no drive movement confirmed since 07-16",
-      "action": "Review Condition Book folder (198 files), confirm what 'finalize' requires",
+      "area": "📺 PSH",
+      "task": "SATURDAY block: Week-1 audit is the gate — still 0/5, now 17 days open",
+      "why": "It's the Sat 2.5h production slot, but the pre-content gate is still shut: no uploads until YPP/monetization/strikes/RPM are verified. Today the Sat block converts to completing the audit, not producing",
+      "action": "Gienel: log into YouTube Studio, complete the 5-item audit checklist — this unlocks the 3-Shorts/wk cadence (and eventually @ peace)",
       "est": "30 min"
     },
     {
       "p": 8,
+      "area": "🏇 REHC/BTC",
+      "task": "2026-27 Condition Book — finalize (198 files)",
+      "why": "Active job, in progress, no blocker named, no drive movement confirmed since 07-16",
+      "action": "When drive is plugged in, review Condition Book folder, confirm what 'finalize' requires",
+      "est": "30 min"
+    },
+    {
+      "p": 9,
       "area": "🏇 REHC/BTC",
       "task": "Season badges + wristbands (4-zone colour system)",
       "why": "Added 07-14, still no deadline confirmed, no drive folder created yet, season approaching",
@@ -156,71 +140,28 @@
       "est": "15 min"
     },
     {
-      "p": 9,
-      "area": "📺 PSH",
-      "task": "Week-1 audit — still 0/5, now 17 days open",
-      "why": "Blocks all content push until YPP/monetization/strikes/RPM verified; gate to activate cadence (and eventually @ peace)",
-      "action": "Gienel: log into YouTube Studio, complete the audit checklist",
-      "est": "30 min"
-    },
-    {
       "p": 10,
       "area": "⚙️ Systems",
-      "task": "AXL8GP2 85% full — offload",
-      "why": "Unplugged again 2026-07-25 (was 4244/5001GB, 85% used on 07-24), now 18 days open, offload still not started",
-      "action": "Plug in AXL8GP2 + Extreme Pro, then move finished VIDEO/DESIGN CREATION folders to Extreme Pro (~3.4TB free)",
+      "task": "AXL8GP2 85% full — offload (18 days open)",
+      "why": "Unplugged again this run (was 4244/5001GB, 85% used on 07-24), offload still not started; Extreme Pro has ~3.4TB free to receive it",
+      "action": "Plug in AXL8GP2 + Extreme Pro together, then move finished VIDEO/DESIGN CREATION folders to Extreme Pro",
       "est": "1 hr block"
     }
   ],
   "day_plan": [
-    {
-      "block": "Morning deep work",
-      "when": "AM",
-      "what": "REHC/BTC — brochure LATEST layout, sign-off chase, brand guideline + time line (P1-P3)"
-    },
-    {
-      "block": "Midday outreach block",
-      "when": "Midday",
-      "what": "Prisy 6 Day-14 follow-up DMs (P4) + GC 6 picks / draft cleanup (P5-P6), batched"
-    },
-    {
-      "block": "Evening review",
-      "when": "PM, 10 min",
-      "what": "Confirm DMs sent, check for replies, log progress"
-    }
+    { "block": "Morning deep work", "when": "AM", "what": "REHC/BTC — plug in Extreme Pro; brochure LATEST layout, sign-off chase, brand guideline + time line (P1-P3)" },
+    { "block": "Midday outreach block", "when": "Midday", "what": "Prisy 6 Saturday warm-up engagements (P4) + GC 6 fresh picks / draft cleanup (P5-P6), batched" },
+    { "block": "PSH Saturday block", "when": "Sat ~2.5h", "what": "Gate still shut — complete the Week-1 audit (P7) instead of producing; unlocks the cadence" },
+    { "block": "Evening review", "when": "PM, 10 min", "what": "Confirm DMs sent, check for replies, log progress" }
   ],
   "scoreboard": [
-    {
-      "k": "MRR",
-      "v": "BHD 0 / 4,500"
-    },
-    {
-      "k": "Prisy Hot 6 sent",
-      "v": "0/6 (pending)"
-    },
-    {
-      "k": "GC Hot Picks sent",
-      "v": "0/6 (pending)"
-    },
-    {
-      "k": "Daily DM minimum",
-      "v": "6 (Prisy) — must hit today"
-    },
-    {
-      "k": "PSH Week-1 audit",
-      "v": "0/5 (17 days open)"
-    },
-    {
-      "k": "AXL8GP2",
-      "v": "85% full (18 days open, unplugged again 2026-07-25)"
-    },
-    {
-      "k": "REHC/BTC sign-offs pending",
-      "v": "3 (RFID, OOH, New Joiner ID) — 18 days"
-    },
-    {
-      "k": "REHC/BTC brochure",
-      "v": "🟢 in layout — LATEST folder touched 07-23 13:29"
-    }
+    { "k": "MRR", "v": "BHD 0 / 4,500" },
+    { "k": "Prisy Hot 6 sent", "v": "0/6 (pending — Sat warm-up)" },
+    { "k": "GC Hot Picks sent", "v": "0/6 (pending)" },
+    { "k": "Daily DM minimum", "v": "6 (Prisy) — must hit today" },
+    { "k": "PSH Week-1 audit", "v": "0/5 (17 days open)" },
+    { "k": "AXL8GP2", "v": "85% full (18 days open, unplugged again 2026-07-25)" },
+    { "k": "REHC/BTC sign-offs pending", "v": "3 (RFID, OOH, New Joiner ID) — 18 days" },
+    { "k": "REHC/BTC brochure", "v": "🟢 in layout — LATEST folder touched 07-23 13:29" }
   ]
 }
