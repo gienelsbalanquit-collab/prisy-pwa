@@ -1,6 +1,6 @@
 {
   "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
-  "updated": "2026-07-25",
+  "updated": "2026-07-27",
   "total_real_leads": 245,
   "excluded_fictional_rows": 20,
   "compliance_flags": [
@@ -28,52 +28,52 @@
   "email_ready_count": 4,
   "hot_picks": [
     {
-      "id": 34,
-      "business": "Jocelyn Wright Freelance",
-      "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Jocelyn Wright Freelance (Jocey Wright): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
-    },
-    {
-      "id": 41,
-      "business": "Stretch Marquees & Fabric Structures",
-      "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Stretch Marquees & Fabric Structures (Penny Johnstone): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
-    },
-    {
-      "id": 47,
-      "business": "Grey Lynn Firehouse",
-      "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Grey Lynn Firehouse (Luke Jones): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
-    },
-    {
-      "id": 22,
-      "business": "Digital Trek",
+      "id": 10,
+      "business": "Goat Media",
       "priority": "High",
       "segment": "B2B – Job-Board Signal (PH sourced)",
       "channel": "Job link only",
-      "action": "LinkedIn DM — Digital Trek (owner): Brand identity & graphic design retainer (agency alternative to the hire)"
+      "action": "Message/apply via OnlineJobs.ph job link — Goat Media: Creative/marketing agency retainer tailored to the open VA/Appointment Setter/CSM role"
     },
     {
-      "id": 55,
+      "id": 18,
+      "business": "Cusell Marketing",
+      "priority": "High",
+      "segment": "B2B – Job-Board Signal (PH sourced)",
+      "channel": "Job link only",
+      "action": "Message/apply via OnlineJobs.ph job link — Cusell Marketing: Client servicing & digital-presence retainer (Account Manager/Project Lead signal)"
+    },
+    {
+      "id": 45,
       "business": "Self-employed",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Self-employed (Tyler Ames): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — Self-employed (Abbey Swift): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
     },
     {
-      "id": 53,
-      "business": "Inkd SMP / Conceal Co",
+      "id": 49,
+      "business": "THE BIG POT NURSERY / Conference Design",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Inkd SMP / Conceal Co (Ana James): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — THE BIG POT NURSERY / Conference Design (Anna Patterson): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
+    },
+    {
+      "id": 36,
+      "business": "Organic Crew",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn only",
+      "action": "LinkedIn DM — Organic Crew (Liz Dingle): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
+    },
+    {
+      "id": 31,
+      "business": "THE ICON DEPOT",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn only",
+      "action": "LinkedIn DM — THE ICON DEPOT (Beth Minogue): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
     }
   ],
   "leads": [

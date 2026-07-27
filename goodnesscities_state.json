@@ -1,18 +1,18 @@
 {
   "_purpose": "Tracks which GoodnessCities lead IDs have already been proposed/contacted, so the daily scheduled run rotates fresh names instead of repeating the same ones forever (the exact gap that broke the Prisynchracy prospect list — see MASTER_CONTEXT.md known issues).",
-  "last_run_date": "2026-07-25",
+  "last_run_date": "2026-07-27",
   "proposed": {
     "10": {
       "first_proposed": "2026-07-08",
       "status": "proposed",
       "channel": "job_link",
-      "last_proposed": "2026-07-22"
+      "last_proposed": "2026-07-27"
     },
     "18": {
       "first_proposed": "2026-07-06",
       "status": "proposed",
       "channel": "job_link",
-      "last_proposed": "2026-07-22"
+      "last_proposed": "2026-07-27"
     },
     "26": {
       "first_proposed": "2026-07-08",
@@ -121,7 +121,7 @@
     },
     "49": {
       "first_proposed": "2026-07-09",
-      "last_proposed": "2026-07-22",
+      "last_proposed": "2026-07-27",
       "status": "proposed",
       "channel": "linkedin"
     },
@@ -139,7 +139,7 @@
     },
     "45": {
       "first_proposed": "2026-07-08",
-      "last_proposed": "2026-07-20",
+      "last_proposed": "2026-07-27",
       "status": "proposed",
       "channel": "linkedin"
     },
@@ -157,13 +157,13 @@
     },
     "31": {
       "first_proposed": "2026-07-05",
-      "last_proposed": "2026-07-20",
+      "last_proposed": "2026-07-27",
       "status": "proposed",
       "channel": "linkedin"
     },
     "36": {
       "first_proposed": "2026-07-06",
-      "last_proposed": "2026-07-21",
+      "last_proposed": "2026-07-27",
       "status": "proposed",
       "channel": "linkedin"
     },
