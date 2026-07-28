@@ -1,6 +1,6 @@
 {
   "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
-  "updated": "2026-07-27",
+  "updated": "2026-07-28",
   "total_real_leads": 245,
   "excluded_fictional_rows": 20,
   "compliance_flags": [
@@ -28,52 +28,52 @@
   "email_ready_count": 4,
   "hot_picks": [
     {
-      "id": 10,
-      "business": "Goat Media",
-      "priority": "High",
-      "segment": "B2B – Job-Board Signal (PH sourced)",
-      "channel": "Job link only",
-      "action": "Message/apply via OnlineJobs.ph job link — Goat Media: Creative/marketing agency retainer tailored to the open VA/Appointment Setter/CSM role"
-    },
-    {
-      "id": 18,
-      "business": "Cusell Marketing",
-      "priority": "High",
-      "segment": "B2B – Job-Board Signal (PH sourced)",
-      "channel": "Job link only",
-      "action": "Message/apply via OnlineJobs.ph job link — Cusell Marketing: Client servicing & digital-presence retainer (Account Manager/Project Lead signal)"
-    },
-    {
-      "id": 45,
-      "business": "Self-employed",
+      "id": 60,
+      "business": "Stable88",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Self-employed (Abbey Swift): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — Stable88 (Michelle Amery): equine wellness niche biz, needs brand identity + digital presence — brand identity/website/social retainer (per GoodnessCities AU outreach template)"
     },
     {
-      "id": 49,
-      "business": "THE BIG POT NURSERY / Conference Design",
+      "id": 61,
+      "business": "Johnstone De Beer Property / Stretch Marquees",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — THE BIG POT NURSERY / Conference Design (Anna Patterson): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — Stuart Johnstone: two businesses (property + events), needs brand strategy + digital marketing retainer (per GoodnessCities AU outreach template)"
     },
     {
-      "id": 36,
-      "business": "Organic Crew",
+      "id": 62,
+      "business": "Turn Key Living Australia",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Organic Crew (Liz Dingle): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — Carina Li-Lin Vincent: interior design + Airbnb, 12K followers, needs content strategy + social media retainer (per GoodnessCities AU outreach template)"
     },
     {
-      "id": 31,
-      "business": "THE ICON DEPOT",
+      "id": 63,
+      "business": "Brecknock Consulting P/L",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — THE ICON DEPOT (Beth Minogue): Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — Richard Brecknock: Adelaide consulting firm owner, needs professional digital presence + LinkedIn marketing retainer (per GoodnessCities AU outreach template)"
+    },
+    {
+      "id": 64,
+      "business": "Blygold Oceania / Blygold Queensland",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn only",
+      "action": "LinkedIn DM — Mark Weir: industrial coatings B2B biz, needs digital marketing + website retainer (per GoodnessCities AU outreach template)"
+    },
+    {
+      "id": 66,
+      "business": "FSM Australia (Food Service Machinery)",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn only",
+      "action": "LinkedIn DM — Terry Randall: food service equipment, Melbourne/Sydney/Brisbane offices, needs content + digital marketing retainer (per GoodnessCities AU outreach template)"
     }
   ],
   "leads": [
