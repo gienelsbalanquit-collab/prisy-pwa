@@ -37,17 +37,17 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Sat 2026-08-01 — first live check since 07-28 (no AM run fired 07-29 through 07-31, a 3-day gap, flagged in System Alerts). Live df: Extreme Pro 599/4001GB (15%), AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%) — all three mounted and flat. Corrected the 8-hourly sync's finding from earlier today: it said 'no 07-30/07-31/08-01 movement' but only checked inside the main '2026-27 50 yrs REHC & BTC' folder. A live root-level ls found a NEW combined brand guideline export — 'REHC_50_Years_Brand_Guidelines_Combined new' (.indd/.idml/.pdf + fonts + links), refined as recently as 07-30 13:43, with an intermediate version at 07-29 13:37. This is almost certainly the finished output of the guideline work already logged (subfolder touched 07-29 07:09). Brochure REHC & BTC unchanged at 07-25 11:18 — now 7 days paused.",
+    "note": "Sat 2026-08-01 — AM check found a new combined Brand Guideline export at the drive root (07-30 13:43), missed by the 8-hourly sync. Gienel confirmed midday: Brand Guideline is almost finished (not yet final), and the Brochure 1st draft is now in progress, resuming after 7 days paused. Sign-off cluster (RFID/OOH/New Joiner ID) still untouched today, now 25 days pending — flagged not to let a 3rd workstream open before that gets chased.",
     "items": [
       {
-        "task": "REHC_50_Years_Brand_Guidelines_Combined new — full InDesign export at drive root (.indd 43MB, .idml, .pdf), most recent edit 07-30 13:31. Not inside the tracked campaign folder — the 8-hourly sync missed it",
+        "task": "REHC_50_Years_Brand_Guidelines_Combined new — full InDesign export at drive root. Gienel confirmed 08-01 midday: almost finished, not yet final",
         "deadline": "2026-2027 campaign window, exact date unconfirmed",
-        "status": "🟢 newest live work — confirm with Gienel whether this is the final/print-ready version"
+        "status": "🟡 almost finished (Gienel-confirmed) — not print-ready yet, final pass still needed"
       },
       {
-        "task": "Brochure REHC & BTC — folder unchanged at 07-25 11:18, now 7 days paused while brand guideline work took over. Unblocked since 07-19 (client BDSP content in 'final materials')",
+        "task": "Brochure REHC & BTC — 1st draft now in progress (Gienel confirmed 08-01 midday, resumed after 7 days paused). Unblocked since 07-19 (client BDSP content in 'final materials')",
         "deadline": "unconfirmed",
-        "status": "🟡 paused 7 days — resume once guideline export is confirmed"
+        "status": "🟢 1st draft in progress"
       },
       {
         "task": "Unexplained root-level files: content.png + Story pin image.jpeg (Extreme Pro root, 07-28 afternoon timestamps) — still unconfirmed",
@@ -75,25 +75,25 @@
     {
       "p": 1,
       "area": "🏇 REHC/BTC",
-      "task": "Confirm the new combined Brand Guideline export",
-      "why": "Newest activity on the whole drive (07-30 13:43), sitting at root outside the tracked folder — the 8-hourly sync missed it entirely",
-      "action": "Open REHC_50_Years_Brand_Guidelines_Combined new/*.pdf, confirm whether this is the final print-ready version",
-      "est": "20 min"
+      "task": "Finish the Brand Guideline final pass",
+      "why": "Gienel-confirmed 08-01: almost finished, not yet final — closest deliverable to done",
+      "action": "Complete the last edits on REHC_50_Years_Brand_Guidelines_Combined new, lock the print-ready version",
+      "est": "30 min"
     },
     {
       "p": 2,
       "area": "🏇 REHC/BTC",
       "task": "Chase sign-off cluster: RFID + OOH (2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, now 25 days pending — oldest open item, getting stale",
-      "action": "One consolidated email/call requesting sign-off on all three",
+      "why": "3 deliverables done, now 25 days pending — oldest open item on the whole board, still untouched today",
+      "action": "One consolidated email/call requesting sign-off on all three — do this before opening a 3rd workstream",
       "est": "20 min"
     },
     {
       "p": 3,
       "area": "🏇 REHC/BTC",
-      "task": "Resume Brochure REHC & BTC layout ('...LATEST')",
-      "why": "Paused 7 days while brand guideline work took over; unblocked since 07-19",
-      "action": "Once guideline is confirmed (P1), open LATEST brochure folder + drop in 'final materials' content",
+      "task": "Brochure REHC & BTC — continue 1st draft",
+      "why": "Gienel-confirmed 08-01: 1st draft now in progress, resumed after 7 days paused",
+      "action": "Continue layout in the LATEST brochure folder using 'final materials' client content",
       "est": "45 min"
     },
     {
@@ -167,7 +167,7 @@
     { "k": "PSH Week-1 audit", "v": "0/5 (24 days open)" },
     { "k": "AXL8GP2", "v": "85% full (25 days open, live-verified)" },
     { "k": "REHC/BTC sign-offs pending", "v": "3 (RFID, OOH, New Joiner ID) — 25 days" },
-    { "k": "REHC/BTC live today", "v": "🟢 Combined Brand Guideline export touched 07-30 13:43 (root-level, newly found) · brochure paused 7 days" },
+    { "k": "REHC/BTC live today", "v": "🟡 Brand Guideline almost finished (Gienel-confirmed) · 🟢 Brochure 1st draft in progress" },
     { "k": "Scheduler gap", "v": "🔴 07-29 → 07-31, 3 missing AM runs" }
   ]
 }
