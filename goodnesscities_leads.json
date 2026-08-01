@@ -1,6 +1,6 @@
 {
   "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
-  "updated": "2026-07-28",
+  "updated": "2026-08-01",
   "total_real_leads": 245,
   "excluded_fictional_rows": 20,
   "compliance_flags": [
@@ -28,52 +28,52 @@
   "email_ready_count": 4,
   "hot_picks": [
     {
-      "id": 60,
-      "business": "Stable88",
+      "id": 29,
+      "business": "Surge Marketing",
       "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Stable88 (Michelle Amery): equine wellness niche biz, needs brand identity + digital presence — brand identity/website/social retainer (per GoodnessCities AU outreach template)"
+      "segment": "B2B – Job-Board Signal (PH sourced)",
+      "channel": "Job link only",
+      "action": "Message/apply — Surge Marketing hiring 'Expert Video Editor' (100+ client accounts, ad campaigns + creative content) — video/content production retainer pitch"
     },
     {
-      "id": 61,
-      "business": "Johnstone De Beer Property / Stretch Marquees",
+      "id": 48,
+      "business": "Retail Renaissance / HPH Events",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Stuart Johnstone: two businesses (property + events), needs brand strategy + digital marketing retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — Mike Bickers: retail + events, two businesses, 2nd degree connection — brand identity/website/social retainer (per GoodnessCities AU outreach template)"
     },
     {
-      "id": 62,
-      "business": "Turn Key Living Australia",
+      "id": 3,
+      "business": "Ruah Creative House",
       "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Carina Li-Lin Vincent: interior design + Airbnb, 12K followers, needs content strategy + social media retainer (per GoodnessCities AU outreach template)"
+      "segment": "B2B – Job-Board Signal (PH sourced)",
+      "channel": "Job link only",
+      "action": "Message/apply — Ruah Creative House hiring 'Client Experience + SDR' (churches, nonprofits, faith-driven leaders; video & content strategy) — outbound/client-experience retainer pitch"
     },
     {
-      "id": 63,
-      "business": "Brecknock Consulting P/L",
+      "id": 7,
+      "business": "HY Systems",
       "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Richard Brecknock: Adelaide consulting firm owner, needs professional digital presence + LinkedIn marketing retainer (per GoodnessCities AU outreach template)"
+      "segment": "B2B – Job-Board Signal (PH sourced)",
+      "channel": "Job link only",
+      "action": "Message/apply — HY Systems (AU web/AI automation agency) hiring 'GHL Developer/Web Builder' — creative/marketing agency retainer pitch"
     },
     {
-      "id": 64,
-      "business": "Blygold Oceania / Blygold Queensland",
+      "id": 51,
+      "business": "Seniors@work / Hospitality Solutions",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Mark Weir: industrial coatings B2B biz, needs digital marketing + website retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — Ian Fraser: two Auckland businesses, hospitality needs branding/social/website — brand identity/website/social retainer (per GoodnessCities AU outreach template)"
     },
     {
-      "id": 66,
-      "business": "FSM Australia (Food Service Machinery)",
+      "id": 42,
+      "business": "Smartbox Mobile Self Storage",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Terry Randall: food service equipment, Melbourne/Sydney/Brisbane offices, needs content + digital marketing retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — Steve Phillips: Auckland storage/logistics biz, needs local digital marketing — brand identity/website/social retainer (per GoodnessCities AU outreach template)"
     }
   ],
   "leads": [
