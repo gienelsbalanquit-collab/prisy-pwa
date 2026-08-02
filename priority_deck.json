@@ -61,7 +61,7 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Sun 2026-08-02 AM Master Command: Extreme Pro/AXL8GP/AXL8GP2 still not mounted (3rd check today, same as the two 08-02 8-hourly passes) — no live drive evidence, all items carried forward unchanged from 08-01. Sign-off cluster holds at 26 days (no new day since this is the same tracking cycle), PSH audit day-count advances to 25 (new calendar day, still 0/5). Brand Guideline near-final and Brochure 1st-draft-in-progress statuses are Gienel's own 08-01 midday confirmation, not re-verified today — carried as-is.",
+    "note": "Sun 2026-08-02 8-hourly sync (13:02 UTC / ~16:02 Bahrain): Extreme Pro/AXL8GP/AXL8GP2 still not mounted (4th check today, same as AM Master Command + two prior 08-02 8-hourly passes) — no live drive evidence, all items carried forward unchanged from 08-01. Sign-off cluster holds at 26 days (no new day since this is the same tracking cycle). Brand Guideline near-final and Brochure 1st-draft-in-progress statuses are Gienel's own 08-01 midday confirmation, not re-verified today — carried as-is.",
     "items": [
       {
         "task": "REHC_50_Years_Brand_Guidelines_Combined new — full InDesign export at drive root. Gienel confirmed 08-01 midday: almost finished, not yet final",
@@ -217,7 +217,7 @@
     },
     {
       "k": "AXL8GP2",
-      "v": "85% full (26 days open, not mounted 08-02 — carried forward, last live-verified 08-01)"
+      "v": "85% full (26 days open, not mounted 08-02 — carried forward, last live-verified 08-01, re-checked 16:02 Bahrain still absent)"
     },
     {
       "k": "REHC/BTC sign-offs pending",
