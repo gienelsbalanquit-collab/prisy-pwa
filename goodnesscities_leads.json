@@ -1,6 +1,6 @@
 {
   "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
-  "updated": "2026-08-01",
+  "updated": "2026-08-02",
   "total_real_leads": 245,
   "excluded_fictional_rows": 20,
   "compliance_flags": [
@@ -28,52 +28,52 @@
   "email_ready_count": 4,
   "hot_picks": [
     {
-      "id": 29,
-      "business": "Surge Marketing",
+      "id": 10,
+      "business": "Goat Media",
       "priority": "High",
       "segment": "B2B – Job-Board Signal (PH sourced)",
       "channel": "Job link only",
-      "action": "Message/apply — Surge Marketing hiring 'Expert Video Editor' (100+ client accounts, ad campaigns + creative content) — video/content production retainer pitch"
+      "action": "Message/apply — Goat Media — Actively hiring for 'VA / Appointment Setter / CSM' (Full-Time, budget $700–$800/mo) — signals unmet in-house marketing/"
     },
     {
-      "id": 48,
-      "business": "Retail Renaissance / HPH Events",
-      "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Mike Bickers: retail + events, two businesses, 2nd degree connection — brand identity/website/social retainer (per GoodnessCities AU outreach template)"
-    },
-    {
-      "id": 3,
-      "business": "Ruah Creative House",
+      "id": 18,
+      "business": "Cusell Marketing",
       "priority": "High",
       "segment": "B2B – Job-Board Signal (PH sourced)",
       "channel": "Job link only",
-      "action": "Message/apply — Ruah Creative House hiring 'Client Experience + SDR' (churches, nonprofits, faith-driven leaders; video & content strategy) — outbound/client-experience retainer pitch"
+      "action": "Message/apply — Cusell Marketing — Actively hiring for 'Account Manager / Project Lead' (Full-Time, budget $8–$12/hr) — signals unmet in-house marketing/cr"
     },
     {
-      "id": 7,
-      "business": "HY Systems",
-      "priority": "High",
-      "segment": "B2B – Job-Board Signal (PH sourced)",
-      "channel": "Job link only",
-      "action": "Message/apply — HY Systems (AU web/AI automation agency) hiring 'GHL Developer/Web Builder' — creative/marketing agency retainer pitch"
-    },
-    {
-      "id": 51,
-      "business": "Seniors@work / Hospitality Solutions",
+      "id": 34,
+      "business": "Jocelyn Wright Freelance",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Ian Fraser: two Auckland businesses, hospitality needs branding/social/website — brand identity/website/social retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — Jocelyn Wright Freelance (Jocey Wright) — Creative Manager at Kmart + own freelance biz — needs branding/marketing support"
     },
     {
-      "id": 42,
-      "business": "Smartbox Mobile Self Storage",
+      "id": 37,
+      "business": "FEDERATION",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn only",
-      "action": "LinkedIn DM — Steve Phillips: Auckland storage/logistics biz, needs local digital marketing — brand identity/website/social retainer (per GoodnessCities AU outreach template)"
+      "action": "LinkedIn DM — FEDERATION (Sharon Henderson) — TOP 3 Independent Creative Agency; 3K followers"
+    },
+    {
+      "id": 46,
+      "business": "Little Green Healthery",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn only",
+      "action": "LinkedIn DM — Little Green Healthery (Heidi Tukuafu) — Health/wellness biz in Auckland — strong fit for GoodnessCities brand values"
+    },
+    {
+      "id": 54,
+      "business": "Call a Cooler Sydney",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn only",
+      "action": "LinkedIn DM — Call a Cooler Sydney (Sean Grant) — Active biz owner in Sydney — needs digital marketing + social media management"
     }
   ],
   "leads": [
