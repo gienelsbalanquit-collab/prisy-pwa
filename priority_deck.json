@@ -81,7 +81,7 @@
       {
         "task": "RFID card + OOH Campaign (REHC-2680/2681) + New Joiner ID — all done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 31 days, oldest open cluster on the whole board"
+        "status": "pending sign-off — 32 days, oldest open cluster on the whole board"
       },
       {
         "task": "2026-27 Condition Book — in progress, to be finalised",
@@ -100,7 +100,7 @@
       "p": 1,
       "area": "🏇 REHC/BTC",
       "task": "Chase the sign-off cluster: RFID + OOH (2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, now 31 days pending — oldest open item on the whole board, still no evidence of a chase happening in any recent run",
+      "why": "3 deliverables done, now 32 days pending — oldest open item on the whole board, still no evidence of a chase happening in any recent run",
       "action": "One consolidated email/call requesting sign-off on all three today — stop letting new workstreams (brochure, guideline) open ahead of this",
       "est": "20 min"
     },
@@ -226,7 +226,7 @@
     },
     {
       "k": "REHC/BTC sign-offs pending",
-      "v": "3 (RFID, OOH, New Joiner ID) — 31 days"
+      "v": "3 (RFID, OOH, New Joiner ID) — 32 days"
     },
     {
       "k": "REHC/BTC live today",
