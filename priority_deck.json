@@ -61,7 +61,7 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "Sun 2026-08-02 8-hourly sync (13:02 UTC / ~16:02 Bahrain): Extreme Pro/AXL8GP/AXL8GP2 still not mounted (4th check today, same as AM Master Command + two prior 08-02 8-hourly passes) — no live drive evidence, all items carried forward unchanged from 08-01. Sign-off cluster holds at 26 days (no new day since this is the same tracking cycle). Brand Guideline near-final and Brochure 1st-draft-in-progress statuses are Gienel's own 08-01 midday confirmation, not re-verified today — carried as-is.",
+    "note": "Sat 2026-08-08 8-hourly sync refresh: no daily briefing exists yet for 08-08, so this pass ran in full. IMPORTANT — gap found: last dashboard/priority_deck update was 2026-08-02 16:02 Bahrain; no AM Master Command or 8-hourly sync ran 08-03→08-07 (5 missing days, larger than the earlier 07-29→07-31 gap — flag for Gienel to check the scheduler). Extreme Pro/AXL8GP/AXL8GP2 all still not mounted this pass — no live drive evidence since 08-01. All items and day-counts below carried forward with elapsed-day math only (+6 days since 08-02), not re-verified live. Brand Guideline near-final and Brochure 1st-draft-in-progress statuses remain Gienel's 08-01 midday confirmation, now 7 days stale.",
     "items": [
       {
         "task": "REHC_50_Years_Brand_Guidelines_Combined new — full InDesign export at drive root. Gienel confirmed 08-01 midday: almost finished, not yet final",
@@ -76,12 +76,12 @@
       {
         "task": "Unexplained root-level files: content.png + Story pin image.jpeg (Extreme Pro root, 07-28 afternoon timestamps) — still unconfirmed",
         "deadline": "n/a",
-        "status": "🟡 needs Gienel confirmation, carried forward 5 days"
+        "status": "🟡 needs Gienel confirmation, carried forward 11 days"
       },
       {
         "task": "RFID card + OOH Campaign (REHC-2680/2681) + New Joiner ID — all done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 26 days, oldest open cluster on the whole board"
+        "status": "pending sign-off — 32 days, oldest open cluster on the whole board"
       },
       {
         "task": "2026-27 Condition Book — in progress, to be finalised",
@@ -100,7 +100,7 @@
       "p": 1,
       "area": "🏇 REHC/BTC",
       "task": "Chase the sign-off cluster: RFID + OOH (2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, now 26 days pending — oldest open item on the whole board, still no evidence of a chase happening in any recent run",
+      "why": "3 deliverables done, now 32 days pending — oldest open item on the whole board, still no evidence of a chase happening in any recent run",
       "action": "One consolidated email/call requesting sign-off on all three today — stop letting new workstreams (brochure, guideline) open ahead of this",
       "est": "20 min"
     },
@@ -147,7 +147,7 @@
     {
       "p": 7,
       "area": "📺 PSH",
-      "task": "Week-1 audit still the gate — 0/5, now 25 days open",
+      "task": "Week-1 audit still the gate — 0/5, now 31 days open",
       "why": "No uploads or revival work can start until this completes — the gate exists to protect the channel from an unverified-monetization mistake",
       "action": "Log into YouTube Studio, complete the 5-item audit checklist",
       "est": "30-45 min"
@@ -171,7 +171,7 @@
     {
       "p": 10,
       "area": "🎯 Prospect Tracker",
-      "task": "Ayush (Cognac) — 50 days unactioned, nurture-only",
+      "task": "Ayush (Cognac) — 56 days unactioned, nurture-only",
       "why": "Live Gmail search this run: zero threads found for Ayush or Cognac — no reply evidence, standing decision unchanged",
       "action": "No action needed — continue monitoring, don't escalate",
       "est": "0 min"
@@ -213,23 +213,23 @@
     },
     {
       "k": "PSH Week-1 audit",
-      "v": "0/5 (25 days open)"
+      "v": "0/5 (31 days open)"
     },
     {
       "k": "AXL8GP2",
-      "v": "85% full (26 days open, not mounted 08-02 — carried forward, last live-verified 08-01, re-checked 16:02 Bahrain still absent)"
+      "v": "85% full (32 days open, not mounted 08-08 — carried forward, last live-verified 08-01)"
     },
     {
       "k": "REHC/BTC sign-offs pending",
-      "v": "3 (RFID, OOH, New Joiner ID) — 26 days"
+      "v": "3 (RFID, OOH, New Joiner ID) — 32 days"
     },
     {
       "k": "REHC/BTC live today",
-      "v": "🟡 carried forward from 08-01 (all 3 drives not mounted 08-02) — Brand Guideline near-final · Brochure 1st draft in progress, unconfirmed today"
+      "v": "🟡 carried forward from 08-01, now 7 days stale (drives not mounted 08-08, 6-day sync gap 08-03→08-07) — Brand Guideline near-final · Brochure 1st draft in progress, unconfirmed since 08-01"
     },
     {
       "k": "Scheduler gap",
-      "v": "🔴 07-29 → 07-31, 3 missing AM runs, still unresolved"
+      "v": "🔴 07-29→07-31 (3 missing AM runs) AND 08-03→08-07 (5 missing days, all task types) — both gaps still unresolved"
     },
     {
       "k": "Prospect tracker",
