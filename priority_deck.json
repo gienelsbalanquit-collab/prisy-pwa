@@ -61,7 +61,7 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "AM Master Command 2026-08-08: single-run guard held (no marker existed for today before this run). MAJOR FINDING confirmed via file evidence: no AM Master Command produced any real output 2026-08-03 through 2026-08-07 — no daily briefings exist for those 5 dates, no .run-state markers exist for those 5 dates, and priority_deck.json / MASTER-PRIORITY-DECK.md / both GC json files were all still stamped 2026-08-02 at the start of this run (one exception: an 8-hourly sync pass had partially written an 08-08-dated note into this rehc_btc.note field only, without updating date/priorities/scoreboard/deploying — a failed/partial run, not a completed one). Scheduler's own lastRunAt timestamps show this task fired 10:40 UTC today (13:40 Bahrain) rather than its scheduled 08:06 AM slot — flagged for Gienel to check the scheduler service; this is now the SECOND multi-day AM gap after 07-29→07-31. Extreme Pro/AXL8GP/AXL8GP2 all not mounted this run — no live drive evidence since 2026-08-01. REHC state below is carried forward from Gienel's own 2026-08-01 midday confirmation with elapsed-day math only (+7 days), now 7 days stale and unconfirmed.",
+    "note": "AM Master Command 2026-08-08: single-run guard held (no marker existed for today before this run). MAJOR FINDING confirmed via file evidence: no AM Master Command produced any real output 2026-08-03 through 2026-08-07 — no daily briefings exist for those 5 dates, no .run-state markers exist for those 5 dates, and priority_deck.json / MASTER-PRIORITY-DECK.md / both GC json files were all still stamped 2026-08-02 at the start of this run (one exception: an 8-hourly sync pass had partially written an 08-08-dated note into this rehc_btc.note field only, without updating date/priorities/scoreboard/deploying — a failed/partial run, not a completed one). Scheduler's own lastRunAt timestamps show this task fired 10:40 UTC today (13:40 Bahrain) rather than its scheduled 08:06 AM slot — flagged for Gienel to check the scheduler service; this is now the SECOND multi-day AM gap after 07-29→07-31. Extreme Pro/AXL8GP/AXL8GP2 all not mounted this run — no live drive evidence since 2026-08-01. REHC state below is carried forward from Gienel's own 2026-08-01 midday confirmation with elapsed-day math only (+7 days), now 7 days stale and unconfirmed. — 🔄 2026-08-08 16:02 Bahrain 8-hourly sync refresh (prisynchracy-sync-refresh-8hr, data-only pass, no HOT 6/GC picks/outreach touched): AXL8GP (1525/4000GB, 39%) and AXL8GP2 (4244/5001GB, 85%) both live-verified via df this pass, flat vs 08-01. Extreme Pro still not mounted — REHC/BTC drive check skipped again, no new file evidence, no progress invented. REHC state below remains carried forward from Gienel's 08-01 midday confirmation, still 7 days stale.",
     "items": [
       {
         "task": "REHC_50_Years_Brand_Guidelines_Combined new — full InDesign export at drive root. Gienel confirmed 08-01 midday: almost finished, not yet final",
@@ -222,7 +222,7 @@
     },
     {
       "k": "AXL8GP2",
-      "v": "85% full (32 days open, not mounted since 08-01)"
+      "v": "85% full — live-verified 2026-08-08 16:02 Bahrain (flat vs 08-01), offload window still open (32 days)"
     },
     {
       "k": "REHC/BTC sign-offs pending",
@@ -230,7 +230,7 @@
     },
     {
       "k": "REHC/BTC live today",
-      "v": "🟡 carried forward from 08-01 (drives not mounted) — Brand Guideline near-final · Brochure 1st draft in progress, now 7 days unconfirmed"
+      "v": "🟡 carried forward from 08-01 (Extreme Pro not mounted this pass; AXL8GP/AXL8GP2 live-verified 16:02 Bahrain, flat) — Brand Guideline near-final · Brochure 1st draft in progress, now 7 days unconfirmed"
     },
     {
       "k": "Scheduler gap",
