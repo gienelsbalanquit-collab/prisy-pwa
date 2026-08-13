@@ -1,7 +1,7 @@
 {
   "_purpose": "SINGLE SOURCE OF TRUTH for all Prisynchracy prospect outreach, replacing the two disconnected files (linkedin_prospects.json + CMO priority xlsx) that caused untracked, contradictory touch history through July 2026. Built 2026-08-02. From today forward: every outreach touch (DM, call, reply) gets logged here with an exact date — no other file should be treated as authoritative for Prisy prospect status.",
   "created": "2026-08-02",
-  "known_data_quality_issue": "Dashboard history 2026-07-05 to 2026-08-01 alternated between two source files under the shared label 'Bahrain-First' with no per-contact date log. Several 'Day-N' claims for Floward/Salla/Tamara/Luxury Closet/Love Bonito/Sociolla are contradictory (touched 07-19, 07-21, 07-23 as fresh Day-0 again, and 07-28 — cannot all be true). One 07-28 dashboard entry referenced a prospect ('Nykaa') absent from both source files entirely — likely a fabrication in that run's output, not a real lead. Where history is contradictory or unverifiable, this tracker says so explicitly rather than inventing a clean-looking date.",
+  "known_data_quality_issue": "Dashboard history 2026-07-05 to 2026-08-01 alternated between two source files under the shared label 'Bahrain-First' with no per-contact date log. Several 'Day-N' claims for Floward/Salla/Tamara/Luxury Closet/Love Bonito/Sociolla are contradictory (touched 07-19, 07-21, 07-23 as fresh Day-0 again, and 07-28 — cannot all be true). One 07-28 dashboard entry referenced a prospect ('Nykaa') absent from both source files entirely — likely a fabrication in that run's output, not a real lead. Where history is contradictory or unverifiable, this tracker says so explicitly rather than inventing a clean-looking date. UPDATE 2026-08-12: after today's Pomelo Fashion + ZALORA connects, the entire 24-prospect legacy pool (linkedin_prospects.json + CMO xlsx) has now been touched at least once — a fresh prospect source is needed before the next rotation.",
   "prospects": [
     {
       "id": "LP1",
@@ -75,10 +75,10 @@
       "business": "Bahrain Marina Development",
       "contact": "unverified — LinkedIn search",
       "region": "Bahrain",
-      "status": "Day-0/1 connect sent",
-      "last_touch": "2026-08-02",
-      "last_touch_confidence": "verified (today's run) — a 07-14 dashboard entry also claims a Day-2 touch, unverifiable, treated as stale/reset given 3-week gap",
-      "next_action": "Day-2 insight DM if connection accepted, ~08-04"
+      "status": "Day-10 close ask sent (no reply since 08-02 Day-0/1 connect)",
+      "last_touch": "2026-08-12",
+      "last_touch_confidence": "verified (today's run, AM Master Command after 4-day scheduler gap 08-09 to 08-11)",
+      "next_action": "none — do not re-contact without new signal (close nurture after this ask)"
     },
     {
       "id": "LP8",
@@ -86,10 +86,10 @@
       "business": "Edamah",
       "contact": "Fahad AlSaad (RE & Investment Leader)",
       "region": "Bahrain",
-      "status": "Day-0/1 connect sent",
-      "last_touch": "2026-08-02",
-      "last_touch_confidence": "verified (today's run) — same 07-14 caveat as LP7",
-      "next_action": "Day-2 insight DM if connection accepted, ~08-04"
+      "status": "Day-10 close ask sent (no reply since 08-02 Day-0/1 connect)",
+      "last_touch": "2026-08-12",
+      "last_touch_confidence": "verified (today's run, AM Master Command after 4-day scheduler gap 08-09 to 08-11)",
+      "next_action": "none — do not re-contact without new signal (close nurture after this ask)"
     },
     {
       "id": "LP9",
@@ -97,10 +97,10 @@
       "business": "Fintech Revolution Summit Bahrain / TraiCon Events",
       "contact": "unverified — organizer to confirm",
       "region": "Bahrain",
-      "status": "Day-0/1 connect sent",
-      "last_touch": "2026-08-02",
-      "last_touch_confidence": "verified (today's run) — no prior touch found in any log",
-      "next_action": "Day-2 insight DM if connection accepted, ~08-04"
+      "status": "Day-10 close ask sent (no reply since 08-02 Day-0/1 connect)",
+      "last_touch": "2026-08-12",
+      "last_touch_confidence": "verified (today's run, AM Master Command after 4-day scheduler gap 08-09 to 08-11)",
+      "next_action": "none — do not re-contact without new signal (close nurture after this ask)"
     },
     {
       "id": "LP10",
@@ -108,10 +108,10 @@
       "business": "Explore Bahrain / Connections Luxury",
       "contact": "unverified — LinkedIn search",
       "region": "Bahrain",
-      "status": "Day-0/1 connect sent",
-      "last_touch": "2026-08-02",
-      "last_touch_confidence": "verified (today's run) — no prior touch found in any log",
-      "next_action": "Day-2 insight DM if connection accepted, ~08-04"
+      "status": "Day-10 close ask sent (no reply since 08-02 Day-0/1 connect)",
+      "last_touch": "2026-08-12",
+      "last_touch_confidence": "verified (today's run, AM Master Command after 4-day scheduler gap 08-09 to 08-11)",
+      "next_action": "none — do not re-contact without new signal (close nurture after this ask)"
     },
     {
       "id": "CX1",
@@ -264,10 +264,10 @@
       "contact": "David Jou / Casey Liang (Co-founder/CEO)",
       "region": "Thailand",
       "priority_score": 14,
-      "status": "never contacted",
-      "last_touch": null,
-      "last_touch_confidence": "verified absence — no log entry ever mentions this name",
-      "next_action": "candidate for next Hot 6 rotation once today's 6 are actioned"
+      "status": "Day-0 connect sent (first ever contact)",
+      "last_touch": "2026-08-12",
+      "last_touch_confidence": "verified (today's run) — exhausts the 24-name legacy pool",
+      "next_action": "Day-2 insight DM ~08-14 if connection accepted"
     },
     {
       "id": "CX14",
@@ -276,10 +276,10 @@
       "contact": "Achint Setia (CRO/CMO)",
       "region": "Singapore",
       "priority_score": 15,
-      "status": "never contacted",
-      "last_touch": null,
-      "last_touch_confidence": "verified absence — no log entry ever mentions this name",
-      "next_action": "candidate for next Hot 6 rotation once today's 6 are actioned"
+      "status": "Day-0 connect sent (first ever contact)",
+      "last_touch": "2026-08-12",
+      "last_touch_confidence": "verified (today's run) — exhausts the 24-name legacy pool",
+      "next_action": "Day-2 insight DM ~08-14 if connection accepted"
     }
   ]
 }
