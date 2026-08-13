@@ -1,47 +1,23 @@
 {
-  "date": "2026-08-08",
+  "date": "2026-08-12",
   "generated_by": "prisynchracy-morning-command",
   "verse": {
-    "text": "Those who hope in the LORD will renew their strength. They will soar on wings like eagles; they will run and not grow weary.",
-    "ref": "Isaiah 40:31 — Day 8 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "Commit your way to the LORD; trust in him and he will do this.",
+    "ref": "Psalm 37:5 — Day 12 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
     "summary": "HbA1c 7.61% + fasting glucose 6.59 (diabetic-range) + high cholesterol — book doctor's visit",
     "metrics": [
-      {
-        "label": "HbA1c",
-        "value": "7.61%",
-        "flag": "H"
-      },
-      {
-        "label": "Fasting Glucose",
-        "value": "6.59",
-        "flag": "H"
-      },
-      {
-        "label": "Total Cholesterol",
-        "value": "7.62",
-        "flag": "H"
-      },
-      {
-        "label": "LDL",
-        "value": "5.64",
-        "flag": "H"
-      },
-      {
-        "label": "Weight",
-        "value": "71.3kg",
-        "flag": "N"
-      },
-      {
-        "label": "Body Fat",
-        "value": "23.2%",
-        "flag": "N"
-      }
+      { "label": "HbA1c", "value": "7.61%", "flag": "H" },
+      { "label": "Fasting Glucose", "value": "6.59", "flag": "H" },
+      { "label": "Total Cholesterol", "value": "7.62", "flag": "H" },
+      { "label": "LDL", "value": "5.64", "flag": "H" },
+      { "label": "Weight", "value": "71.3kg", "flag": "N" },
+      { "label": "Body Fat", "value": "23.2%", "flag": "N" }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-08-08",
+    "updated": "2026-08-12",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,27 +37,27 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "AM Master Command 2026-08-08: single-run guard held (no marker existed for today before this run). MAJOR FINDING confirmed via file evidence: no AM Master Command produced any real output 2026-08-03 through 2026-08-07 — no daily briefings exist for those 5 dates, no .run-state markers exist for those 5 dates, and priority_deck.json / MASTER-PRIORITY-DECK.md / both GC json files were all still stamped 2026-08-02 at the start of this run (one exception: an 8-hourly sync pass had partially written an 08-08-dated note into this rehc_btc.note field only, without updating date/priorities/scoreboard/deploying — a failed/partial run, not a completed one). Scheduler's own lastRunAt timestamps show this task fired 10:40 UTC today (13:40 Bahrain) rather than its scheduled 08:06 AM slot — flagged for Gienel to check the scheduler service; this is now the SECOND multi-day AM gap after 07-29→07-31. Extreme Pro/AXL8GP/AXL8GP2 all not mounted this run — no live drive evidence since 2026-08-01. REHC state below is carried forward from Gienel's own 2026-08-01 midday confirmation with elapsed-day math only (+7 days), now 7 days stale and unconfirmed. — 🔄 2026-08-08 16:02 Bahrain 8-hourly sync refresh (prisynchracy-sync-refresh-8hr, data-only pass, no HOT 6/GC picks/outreach touched): AXL8GP (1525/4000GB, 39%) and AXL8GP2 (4244/5001GB, 85%) both live-verified via df this pass, flat vs 08-01. Extreme Pro still not mounted — REHC/BTC drive check skipped again, no new file evidence, no progress invented. REHC state below remains carried forward from Gienel's 08-01 midday confirmation, still 7 days stale. — 🔄 2026-08-09 8-hourly sync refresh (prisynchracy-sync-refresh-8hr, data-only pass, no 2026-08-09 daily briefing existed yet at run time so this pass ran in full): all three drives (AXL8GP, AXL8GP2, Extreme Pro) not mounted this pass via df — no live drive evidence since AXL8GP/AXL8GP2's 08-08 16:02 verification, none since 08-01 for Extreme Pro. REHC/BTC drive check skipped again, no progress invented. Day-count language elapsed +1 across the board (sign-off cluster 32→33d, PSH audit 31→32d, AXL8GP2 32→33d, Ayush 56→57d, REHC Brand Guideline/Brochure 7→8d stale, unexplained root files 11→12d). HOT 6 / GC picks / priorities / outreach untouched per this task's scope. — 🔄 2026-08-09 17:17 Bahrain 8-hourly sync refresh (repeat pass same calendar day, prisynchracy-sync-refresh-8hr, data-only): all three drives (AXL8GP, AXL8GP2, Extreme Pro) still not mounted via df, same as the earlier 08-09 pass — no new live evidence, Extreme Pro REHC/BTC drive check skipped again, no progress invented. No day-count change (same calendar day as the pass already logged above). HOT 6 / GC picks / priorities / outreach untouched per this task's scope. — 🔄 2026-08-10 8-hourly sync refresh (prisynchracy-sync-refresh-8hr, data-only pass; no 2026-08-10 daily briefing existed yet at run time, so this pass ran in full): all three drives (AXL8GP, AXL8GP2, Extreme Pro) not mounted via df — no live drive evidence since AXL8GP/AXL8GP2's 08-08 16:02 verification, none since 08-01 for Extreme Pro; same pattern as every 08-09 pass. Extreme Pro REHC/BTC drive check skipped again, no progress invented. Day-count language elapsed +1 across the board (sign-off cluster 33→34d, PSH audit 32→33d, AXL8GP2 33→34d, Ayush 57→58d, REHC Brand Guideline/Brochure 8→9d stale, unexplained root files 12→13d). HOT 6 / GC picks / priorities / outreach untouched per this task's scope. — 🔄 2026-08-10 08:04 Bahrain 8-hourly sync refresh (repeat pass same calendar day, prisynchracy-sync-refresh-8hr, data-only): all three drives (AXL8GP, AXL8GP2, Extreme Pro) still not mounted via df, same as the earlier 08-10 pass — no new live evidence, Extreme Pro REHC/BTC drive check skipped again, no progress invented. No day-count change (same calendar day as the pass already logged above). HOT 6 / GC picks / priorities / outreach untouched per this task's scope. — 🔄 2026-08-10 16:05 Bahrain 8-hourly sync refresh (repeat pass same calendar day, prisynchracy-sync-refresh-8hr, data-only): all three drives (AXL8GP, AXL8GP2, Extreme Pro) still not mounted via `df`, same as the two earlier 08-10 passes — no new live evidence, Extreme Pro REHC/BTC drive check skipped again, no progress invented. No day-count change (same calendar day as the passes already logged above). HOT 6 / GC picks / priorities / outreach untouched per this task's scope. — 🔄 2026-08-12 8-hourly sync refresh (prisynchracy-sync-refresh-8hr, data-only pass): **major gap flagged** — no AM Master Command output since 2026-08-08 (last daily briefing + priorities/HOT6/GC rotation), and no 8-hourly sync pass logged between 2026-08-10 16:05 and this run — the longest automation gap yet, exceeding both prior gaps (07-29→07-31, 08-03→08-07). All three drives (AXL8GP, AXL8GP2, Extreme Pro) not mounted via df this pass — no live evidence since AXL8GP/AXL8GP2's 08-08 16:02 verification, none since 08-01 for Extreme Pro. Extreme Pro REHC/BTC drive check skipped, no progress invented. Day-count language elapsed +2 (sign-off cluster 34→36d, PSH audit 33→35d, AXL8GP2 34→36d, REHC Brand Guideline/Brochure 9→11d stale, unexplained root files 13→15d) — all still carried forward from Gienel's 08-01 midday confirmation, now 11 days unconfirmed. HOT 6 / GC picks / priorities / outreach untouched per this task's scope — flagging scheduler health as the top item for the next AM Master Command run.",
+    "note": "AM Master Command 2026-08-12: single-run guard held (no marker existed for today before this run). MAJOR FINDING: no AM Master Command produced a full run (briefing + HOT6 + GC picks + deploy + iMessage) since 2026-08-08 — 3 full missing days (08-09, 08-10, 08-11), the third and longest gap after 07-29→07-31 and 08-03→08-07. Worse: no 8-hourly sync pass ran at all on 08-11 either (last sync before today was 08-10 16:05) — a complete 24+ hour automation blackout, not just a missed morning slot. Extreme Pro/AXL8GP/AXL8GP2 all not mounted this run (df: no such file or directory on all three) — no live drive evidence since AXL8GP/AXL8GP2's 08-08 16:02 verification, none since 08-01 for Extreme Pro. REHC state below remains carried forward from Gienel's own 2026-08-01 midday confirmation, now 11 days stale and unconfirmed — no new drive-based evidence to update it. Day-count language elapsed to match: sign-off cluster 36d, PSH audit 35d, AXL8GP2 36d, REHC Brand Guideline/Brochure 11d stale, unexplained root files 15d, Ayush 62d unactioned. Prisy Hot 6 rotated per 🎯 Prisy Prospect Tracker — Merged: LP7–LP10 (Bahrain Marina Development, Edamah, Fintech Revolution Summit Bahrain, Explore Bahrain/Connections Luxury) escalated to a Day-10 close ask (no reply since the 08-02 Day-0/1 connect, 10 days elapsed) and CX13/CX14 (Pomelo Fashion, ZALORA Group) sent as first-ever Day-0 connects — this exhausts the entire 24-name legacy prospect pool inherited from the old linkedin_prospects.json + CMO xlsx files; a fresh prospect source is now genuinely needed before the next rotation, not just flagged as upcoming. GC 6 Hot Picks rotated to the 4 never-before-proposed Monaco High-priority leads (Signature Sailing Charter, Odéon Spa, Quai des Artistes, Monaco Private Advisory — all phone/website-contact-form only, no email on file) plus 2 longest-idle AU/NZ LinkedIn leads (Australian Pacific Lodges/Real Estate Downunder 27d, H & A Hawe Souvenirs 21d) — none overlap the 08-08 batch, none TCPA/plumbing; goodnesscities_leads.json hot_picks + goodnesscities_state.json proposed/last_run_date updated and validated as parseable JSON. No new GC email draft — live Gmail Drafts check confirms all 5 Monaco drafts (Caroline Olds ×2 duplicate 07-05/07-13, Petrini 07-12, DAMENO 07-17, La Costa 07-19) are still sitting unsent, now 24–38 days old; flagged again, needs Gienel to send/discard directly rather than a 6th draft. Ayush (Cognac) Gmail search (Ayush OR Cognac): zero threads found, now 62 days unactioned, nurture-only unchanged. Sibiraj not re-flagged (closed 07-14). prisy_prospect_tracker.json updated with today's 6 touches and validated as parseable JSON. Priority deck (md + JSON) rewritten for today and validated as parseable JSON before deploy. — 🔄 2026-08-13 08:02 Bahrain 8-hourly sync refresh (prisynchracy-sync-refresh-8hr, data-only pass): no 2026-08-13 daily briefing exists yet (last briefing on disk is still 2026-08-08), so this pass ran in full, not skipped. **Automation gap widening:** this file itself is still dated 2026-08-12 with no corresponding dashboard changelog entry for that date's claimed AM run, and the Master Command Dashboard's own 8-hourly changelog has no entry between 2026-08-10 16:05 and now — 08-11 and 08-12 show no sync evidence at all in the dashboard, even though this JSON's own note claims an 08-12 AM run happened. Flagging the inconsistency for Gienel, not resolving it. All three drives (AXL8GP, AXL8GP2, Extreme Pro) not mounted this pass via `df` (\"No such file or directory\" on all three) — no live REHC/BTC evidence, carried forward from Gienel's 2026-08-01 midday confirmation, now 12 days stale. Day-count language (sign-off cluster 36→37d, PSH audit 35→36d, AXL8GP2 36→37d, REHC Brand Guideline/Brochure 11→12d stale, unexplained root files 15→16d, Ayush 62→63d) refreshed with elapsed-day math and JSON-validated; HOT 6 / GC picks / priorities identity / outreach untouched per this task's scope.",
     "items": [
       {
         "task": "REHC_50_Years_Brand_Guidelines_Combined new — full InDesign export at drive root. Gienel confirmed 08-01 midday: almost finished, not yet final",
         "deadline": "2026-2027 campaign window, exact date unconfirmed",
-        "status": "🟡 almost finished (Gienel-confirmed 08-01, now 11 days stale) — not re-verified today, drive not mounted"
+        "status": "🟡 almost finished (Gienel-confirmed 08-01, now 12 days stale) — not re-verified today, drive not mounted"
       },
       {
         "task": "Brochure REHC & BTC — 1st draft in progress (Gienel confirmed 08-01 midday, resumed after 7 days paused)",
         "deadline": "unconfirmed",
-        "status": "🟢 1st draft in progress (as of 08-01, now 11 days unconfirmed)"
+        "status": "🟢 1st draft in progress (as of 08-01, now 12 days unconfirmed)"
       },
       {
         "task": "Unexplained root-level files: content.png + Story pin image.jpeg (Extreme Pro root, 07-28 afternoon timestamps) — still unconfirmed",
         "deadline": "n/a",
-        "status": "🟡 needs Gienel confirmation, carried forward 15 days"
+        "status": "🟡 needs Gienel confirmation, carried forward 16 days"
       },
       {
         "task": "RFID card + OOH Campaign (REHC-2680/2681) + New Joiner ID — all done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 36 days, oldest open cluster on the whole board"
+        "status": "pending sign-off — 37 days, oldest open cluster on the whole board"
       },
       {
         "task": "2026-27 Condition Book — in progress, to be finalised",
@@ -100,23 +76,23 @@
       "p": 1,
       "area": "🏇 REHC/BTC",
       "task": "Chase the sign-off cluster: RFID + OOH (2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, now 34 days pending — oldest open item on the whole board, still no evidence of a chase happening in any recent run",
+      "why": "3 deliverables done, now 37 days pending — oldest open item on the whole board, still no evidence of a chase happening in any recent run",
       "action": "One consolidated email/call requesting sign-off on all three today — stop letting new workstreams (brochure, guideline) open ahead of this",
       "est": "20 min"
     },
     {
       "p": 2,
       "area": "⚙️ Systems",
-      "task": "Investigate the 08-03 → 08-07 scheduler gap (5 missing AM days)",
-      "why": "Second multi-day gap after 07-29→07-31; today's run also fired at 13:40 Bahrain instead of 08:06 AM — pattern suggests the scheduler itself needs Gienel's direct attention, not just a re-run",
-      "action": "Check the scheduled-tasks service / launch agent directly for prisynchracy-morning-command execution history 08-03 to 08-07",
+      "task": "Investigate the scheduler: 3 full missing AM days (08-09→08-11) plus a total automation blackout on 08-11",
+      "why": "Third multi-day gap after 07-29→07-31 and 08-03→08-07, and the worst yet — even the 8-hourly sync task didn't fire on 08-11. Pattern strongly suggests the scheduled-tasks service itself needs Gienel's direct attention, not another automated re-run",
+      "action": "Check the scheduled-tasks service / launch agent directly for prisynchracy-morning-command and prisynchracy-sync-refresh-8hr execution history 08-09 to 08-11",
       "est": "15 min"
     },
     {
       "p": 3,
       "area": "🏇 REHC/BTC",
       "task": "Finish the Brand Guideline final pass",
-      "why": "Gienel-confirmed 08-01: almost finished, not yet final — closest deliverable to done, now 9 days without a status update",
+      "why": "Gienel-confirmed 08-01: almost finished, not yet final — closest deliverable to done, now 12 days without a status update",
       "action": "Complete the last edits on REHC_50_Years_Brand_Guidelines_Combined new, lock the print-ready version",
       "est": "30 min"
     },
@@ -124,54 +100,54 @@
       "p": 4,
       "area": "🏇 REHC/BTC",
       "task": "Brochure REHC & BTC — continue 1st draft",
-      "why": "Gienel-confirmed 08-01: 1st draft in progress, resumed after 7 days paused — now 9 days without a status update",
+      "why": "Gienel-confirmed 08-01: 1st draft in progress, resumed after 7 days paused — now 12 days without a status update",
       "action": "Continue layout in the LATEST brochure folder using 'final materials' client content",
       "est": "45 min"
     },
     {
       "p": 5,
       "area": "💼 Prisynchracy",
-      "task": "Day-6 ask — Bahrain Marina Development, Edamah, Fintech Revolution Summit Bahrain, Explore Bahrain/Connections Luxury, Love Bonito, Sociolla",
-      "why": "These 6 were sent as Day-0/1 connects on 08-02 per the merged prospect tracker; 6 days have now passed with no reply evidence (Gmail checked) — escalate to a Day-6 ask per the Sat→Mon→Wed-style cadence rather than re-sending the same opener",
-      "action": "Follow-up DM: reference the original connect, make the ask (15-min discovery call) — satisfies today's 6-DM minimum",
+      "task": "Day-10 close ask × 4 (Bahrain Marina, Edamah, Fintech Revolution Summit, Explore Bahrain) + Day-0 connect × 2 (Pomelo Fashion, ZALORA)",
+      "why": "The 08-02 batch has had 10 days with zero reply evidence (Gmail checked) — time to ask directly rather than let it go stale; Pomelo/ZALORA are the last 2 never-contacted names in the legacy pool",
+      "action": "Send the 6 DMs — satisfies today's 6-DM minimum and exhausts the 24-name legacy prospect pool entirely",
       "est": "30 min"
     },
     {
       "p": 6,
       "area": "💼 Prisynchracy",
-      "task": "Prospect pool exhaustion warning — only Pomelo Fashion + ZALORA remain never-contacted",
-      "why": "Per 🎯 Prisy Prospect Tracker — Merged: after Pomelo Fashion and ZALORA are used, all 24 sourced prospects across both legacy files will have been touched at least once — a fresh prospect source is needed before the next rotation runs dry",
-      "action": "Source a fresh prospect batch (Bahrain/GCC SME) before next week's rotation; do not silently backfill from an untracked list",
-      "est": "30 min (next available block)"
+      "task": "Source a fresh prospect batch — the legacy pool is now fully exhausted after today",
+      "why": "After today's Pomelo Fashion + ZALORA connects, every one of the 24 sourced prospects across both legacy files has been touched at least once — there is no backfill left for the next rotation",
+      "action": "Pull a new Bahrain/GCC SME batch (10+ names) before the next outreach cycle — do not let the routine silently run dry",
+      "est": "30-45 min"
     },
     {
       "p": 7,
       "area": "🌆 GoodnessCities",
-      "task": "DM 6 fresh Hot Picks — Jillian O'Neil (Wellness Coach), aliceBoat Yacht Charter, YACHTSIDE Monaco, Richmont Monaco, La Table d'Elise, Monterra Wealth Management",
-      "why": "Pipeline refill from the never-proposed pool, all High priority, none TCPA — rotates away from the 08-02 batch (Goat Media/Cusell/etc.) which is now 6 days old",
-      "action": "Instagram DM (Jillian) / phone call or website contact form (the 5 Monaco leads — no email on file, review local solicitation norms before contacting)",
+      "task": "DM 6 fresh Hot Picks — Signature Sailing Charter, Odéon Spa, Quai des Artistes, Monaco Private Advisory (phone/contact form) + Australian Pacific Lodges, H & A Hawe Souvenirs (LinkedIn)",
+      "why": "Pipeline refill from the never-proposed Monaco pool (exhausts it) plus the two longest-idle AU/NZ leads, all High priority, none TCPA",
+      "action": "Phone call / website contact form for the 4 Monaco leads (review local solicitation norms) / LinkedIn DM for the 2 AU/NZ leads",
       "est": "25 min"
     },
     {
       "p": 8,
       "area": "🌆 GoodnessCities",
-      "task": "Clear the stale Monaco email-draft backlog (no new draft today — would be a 6th)",
-      "why": "5 unsent drafts now 20–34 days old — Caroline Olds x2 (07-05, 07-13), Petrini (07-12), DAMENO (07-17), La Costa (07-19) — confirmed still sitting via live Gmail Drafts check this run; this backlog has been flagged on nearly every run since 07-21 with no action",
+      "task": "Clear the stale Monaco email-draft backlog (no new draft today)",
+      "why": "5 unsent drafts now 24–38 days old — Caroline Olds ×2 (07-05, 07-13), Petrini (07-12), DAMENO (07-17), La Costa (07-19) — confirmed still sitting via live Gmail Drafts check this run; flagged on nearly every run since 07-21 with no action",
       "action": "Open Gmail Drafts: send or discard each; reconcile the Caroline Olds duplicate — this needs a direct decision from Gienel, not another flag",
       "est": "15 min"
     },
     {
       "p": 9,
       "area": "📺 PSH",
-      "task": "Week-1 audit still the gate — 0/5, now 33 days open",
-      "why": "No uploads or revival work can start until this completes — the gate exists to protect the channel from an unverified-monetization mistake",
+      "task": "Week-1 audit still the gate — 0/5, now 36 days open",
+      "why": "No uploads or revival work can start until this completes — the gate exists to protect the channel from an unverified-monetization mistake (36 days open)",
       "action": "Log into YouTube Studio, complete the 5-item audit checklist",
       "est": "30-45 min"
     },
     {
       "p": 10,
       "area": "🎯 Prospect Tracker",
-      "task": "Ayush (Cognac) — 58 days unactioned, nurture-only",
+      "task": "Ayush (Cognac) — 63 days unactioned, nurture-only",
       "why": "Live Gmail search this run (query: Ayush OR Cognac): zero threads found — no reply evidence, standing decision unchanged",
       "action": "No action needed — continue monitoring, don't escalate",
       "est": "0 min"
@@ -181,17 +157,17 @@
     {
       "block": "Morning deep work",
       "when": "AM",
-      "what": "REHC/BTC — sign-off chase (P1), scheduler gap check (P2), Brand Guideline final pass (P3), brochure continue (P4)"
+      "what": "REHC/BTC — sign-off chase (P1), scheduler blackout investigation (P2), Brand Guideline final pass (P3), brochure continue (P4)"
     },
     {
       "block": "Midday outreach block",
       "when": "Midday",
-      "what": "Prisy 6 Day-6 asks (P5) + GC 6 fresh picks (P7) + Monaco draft cleanup (P8), batched"
+      "what": "Prisy 6 (4 close asks + 2 fresh connects, P5) + GC 6 fresh picks (P7) + Monaco draft cleanup (P8), batched"
     },
     {
-      "block": "Sat production block",
-      "when": "Sat ~2.5h",
-      "what": "PSH — once Week-1 audit (P9) clears, this block activates; until then, use it for the audit itself"
+      "block": "Wed stats check",
+      "when": "Wed ~30 min",
+      "what": "PSH — still gated behind the Week-1 audit (P9); use this slot to actually complete the audit rather than a stats check"
     },
     {
       "block": "Evening review",
@@ -200,45 +176,15 @@
     }
   ],
   "scoreboard": [
-    {
-      "k": "MRR",
-      "v": "BHD 0 / 4,500"
-    },
-    {
-      "k": "Prisy Hot 6 sent",
-      "v": "0/6 (pending — Day-6 ask batch)"
-    },
-    {
-      "k": "GC Hot Picks sent",
-      "v": "0/6 (pending)"
-    },
-    {
-      "k": "Daily DM minimum",
-      "v": "6 (Prisy) — must hit today"
-    },
-    {
-      "k": "PSH Week-1 audit",
-      "v": "0/5 (35 days open)"
-    },
-    {
-      "k": "AXL8GP2",
-      "v": "85% full (carried forward — not mounted 2026-08-12) — last live-verified 2026-08-08 16:02 Bahrain, flat vs 08-01, offload window still open (36 days)"
-    },
-    {
-      "k": "REHC/BTC sign-offs pending",
-      "v": "3 (RFID, OOH, New Joiner ID) — 36 days"
-    },
-    {
-      "k": "REHC/BTC live today",
-      "v": "🟡 carried forward from 08-01 (all three drives not mounted this pass, 2026-08-12) — Brand Guideline near-final · Brochure 1st draft in progress, now 11 days unconfirmed"
-    },
-    {
-      "k": "Scheduler gap",
-      "v": "🔴 08-03→08-07 (5 AM days) + no automation logged 08-10 16:05→08-12 (44+ hrs, no AM run since 08-08) — 3rd/largest gap, needs Gienel's direct attention to the scheduler service"
-    },
-    {
-      "k": "Prospect pool",
-      "v": "🟡 2 names left never-contacted (Pomelo Fashion, ZALORA) — fresh source needed soon"
-    }
+    { "k": "MRR", "v": "BHD 0 / 4,500" },
+    { "k": "Prisy Hot 6 sent", "v": "0/6 (pending — 4 close asks + 2 fresh connects)" },
+    { "k": "GC Hot Picks sent", "v": "0/6 (pending)" },
+    { "k": "Daily DM minimum", "v": "6 (Prisy) — must hit today" },
+    { "k": "PSH Week-1 audit", "v": "0/5 (36 days open)" },
+    { "k": "AXL8GP2", "v": "85% full (carried forward — not mounted 2026-08-13) — last live-verified 2026-08-08 16:02 Bahrain, offload window still open (37 days)" },
+    { "k": "REHC/BTC sign-offs pending", "v": "3 (RFID, OOH, New Joiner ID) — 37 days" },
+    { "k": "REHC/BTC live today", "v": "🟡 carried forward from 08-01 (all three drives not mounted this run) — Brand Guideline near-final · Brochure 1st draft in progress, now 12 days unconfirmed" },
+    { "k": "Scheduler gap", "v": "🔴 3rd multi-day gap: 08-09→08-11 (3 missing AM days + a full 08-11 automation blackout, no 8-hourly sync either)" },
+    { "k": "Prospect pool", "v": "🔴 fully exhausted after today's Pomelo Fashion + ZALORA connects — fresh source needed before next rotation" }
   ]
 }
