@@ -1,23 +1,47 @@
 {
-  "date": "2026-08-13",
+  "date": "2026-08-14",
   "generated_by": "prisynchracy-morning-command",
   "verse": {
-    "text": "Whatever your hand finds to do, do it with all your might.",
-    "ref": "Ecclesiastes 9:10 — Day 13 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "Never be lacking in zeal, but keep your spiritual fervor, serving the Lord.",
+    "ref": "Romans 12:11 — Day 14 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
     "summary": "HbA1c 7.61% + fasting glucose 6.59 (diabetic-range) + high cholesterol — book doctor's visit",
     "metrics": [
-      { "label": "HbA1c", "value": "7.61%", "flag": "H" },
-      { "label": "Fasting Glucose", "value": "6.59", "flag": "H" },
-      { "label": "Total Cholesterol", "value": "7.62", "flag": "H" },
-      { "label": "LDL", "value": "5.64", "flag": "H" },
-      { "label": "Weight", "value": "71.3kg", "flag": "N" },
-      { "label": "Body Fat", "value": "23.2%", "flag": "N" }
+      {
+        "label": "HbA1c",
+        "value": "7.61%",
+        "flag": "H"
+      },
+      {
+        "label": "Fasting Glucose",
+        "value": "6.59",
+        "flag": "H"
+      },
+      {
+        "label": "Total Cholesterol",
+        "value": "7.62",
+        "flag": "H"
+      },
+      {
+        "label": "LDL",
+        "value": "5.64",
+        "flag": "H"
+      },
+      {
+        "label": "Weight",
+        "value": "71.3kg",
+        "flag": "N"
+      },
+      {
+        "label": "Body Fat",
+        "value": "23.2%",
+        "flag": "N"
+      }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-08-13",
+    "updated": "2026-08-14",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -37,137 +61,142 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — Today's Work",
-    "note": "AM Master Command 2026-08-13: single-run guard held (no marker existed for today before this run — wrote 'running' marker first). This is the first full AM Master Command since 2026-08-12; two 8-hourly sync-only passes ran today (08:02 and 16:03 Bahrain) but neither did HOT 6 / GC picks / briefing / deploy / iMessage — this run completes that. Drives NOT mounted (df: 'No such file or directory' on AXL8GP, AXL8GP2, and Extreme Pro) — no live REHC/BTC evidence since Gienel's own 2026-08-01 midday confirmation (Brand Guideline near-final, Brochure 1st draft in progress), now 12 days stale and unconfirmed; carried forward exactly, no progress invented. Day-counts carried forward unchanged from today's earlier 8-hourly passes (same calendar day, no further increment): sign-off cluster 37d, PSH audit 36d (still 0/5), AXL8GP2 37d, REHC Brand Guideline/Brochure 12d stale, unexplained root files 16d, Ayush 63d (Gmail search 'Ayush OR Cognac' this run: zero threads found, confirms standing nurture-only decision). MAJOR FINDING carried from 08-12: the entire 24-name Prisy legacy prospect pool (prisy_prospect_tracker.json) is exhausted — LP7-LP10 and CX13/CX14 were all touched 2026-08-12 and are not yet eligible for a next touch under the ≥2-day rotation rule (CX13/CX14 Day-2 DM due ~08-14; LP7-LP10 already received their close ask and should move to nurture-only if no reply by 08-14). Result: today's Prisy Hot 6 could NOT be honestly filled from the tracked pool without violating the rotation rule or re-contacting closed/contested prospects — flagged as P1 rather than fabricated. Recommending today's outreach block go toward sourcing a genuinely fresh Bahrain/GCC SME batch (10+ names) instead; a web search this run for named, verified Bahrain SME contacts did not surface usable individual leads, so fresh sourcing still needs Gienel's own LinkedIn Sales Navigator / referral network, not an automated substitute. GC 6 Hot Picks rotated clean: 4 second-touch AU High-priority LinkedIn leads outside the 5-day cooldown by 16 days (Storm in a D Cup/Anand Keswani, Stable88/Michelle Amery, Brecknock Consulting/Richard Brecknock, FSM Australia/Terry Randall — all first proposed 07-28, zero reply since) plus 2 genuinely first-ever-contact Medium-priority AU leads (Business Change Masters Ltd/Peter Loeffen, aizoOn Australia/Harvey Marcus) — none TCPA/plumbing; goodnesscities_leads.json hot_picks + goodnesscities_state.json proposed/last_run_date updated and validated as parseable JSON. No new GC email draft — live Gmail Drafts check confirms all 5 Monaco drafts (Caroline Olds ×2 duplicate 07-05/07-13, Petrini 07-12, DAMENO 07-17, La Costa 07-19) are still sitting unsent, now 25–39 days old; flagged again, needs Gienel to send/discard directly. Sibiraj not re-flagged (closed 07-14). — 🔄 2026-08-14 8-hourly sync refresh: all three drives mounted and live-verified together for the first time since 08-08. Extreme Pro jumped to 929/4001GB used (24%, up from 599GB/15% on 08-01 — +330GB new data, the largest single change logged); AXL8GP 1525/4000GB 39% flat; AXL8GP2 4244/5001GB 85% flat. Live `ls` on the main REHC/BTC folder shows real work continued through the drive-unmounted gap: TWO brand-new folders never logged before — `All Badge Color 2026:27 V2 Folder` (touched 08-13 10:15, newest activity on the drive) and `50 yrs history banner_Folder` (08-06 08:29) — both need Gienel to confirm scope; `50 yrs REHC Letter Head` touched 08-13 07:40; `Brochure REHC & BTC` touched 08-12 07:55, confirming the brochure kept moving past the 08-01 status; `OOH Campaign` 08-09 08:29; `50 yrs REHC BRAND GUIDELINE` 08-05 13:42; `PRESENTATION REHC 50 yrs Master Template Folder` 08-03 13:02. File contents unverified, folder timestamps only. New dated row added to the Extreme Pro design-source vault note. Day-counts aged by 1 (08-13→08-14): sign-off cluster 37→38d, PSH audit 36→37d (still 0/5), AXL8GP2 37→38d, unexplained root files 16→17d, Ayush 63→64d. HOT 6 / GC picks / outreach untouched per this task's scope.",
+    "note": "AM Master Command 2026-08-14: single-run guard held (no marker existed for today before this run). Drives LIVE this run via df: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 929/4001GB (24%, up from 599GB/15% on 08-01 — +330GB, largest jump logged). Confirms and extends the 08-14 08:xx 8-hourly sync finding: real REHC work continued through the 08-02→08-13 drive-unmounted gap with ZERO prior logging. Live folder inspection this run: (1) `All Badge Color 2026:27 V2 Folder` (MASTER COPY for the Badge + ORGINAL subfolders) touched 08-13 10:15 — newest activity on the whole drive, strong match for the season badges/wristbands job flagged 07-14; looks client-ready but NOT confirmed sent. (2) `50 yrs REHC Letter Head` touched 08-13 08:00, an 'UPDATED' subfolder alongside older CEO/old/Correct-Colors variants — revision work, not clearly final. (3) `Brochure REHC & BTC` — CORRECTION to every run since 07-25: this was logged as 'still paused' for 12+ consecutive runs, but the drive shows real activity — `50 yrs 2026-27 brochure LATEST` touched 08-03 07:39 (layout resumed), then an `OLD brochure` subfolder touched 08-12 07:55 (name suggests archiving/cleanup of a prior draft, not necessarily new layout progress — flagged as ambiguous rather than assumed). (4) `50 yrs history banner_Folder` — a NEW job never once logged in the vault design-source note: a 6m×60cm print banner, 44MB PDF + 88MB .ai files, completed 08-06 08:2x. Root-level `prompt` folder (screenshots, 08-09 13:0x) also new, purpose unconfirmed — not assumed REHC-related. All four items need a direct 2-minute confirmation from Gienel: which are finished/client-sent vs still in progress. New dated row added to the Extreme Pro design-source vault note this run. Day-count correction (Integrity check): Ayush's internal counter had drifted to 64d through repeated approximation; recomputed directly from the logged last-touch date (2026-06-13) = 62 days as of today — corrected going forward. Sign-off cluster recomputed from its 2026-07-14 'done, awaiting approval' log = 31 days (previous 38-39d figures were counting from an earlier, undocumented anchor — using the confirmed date now). PSH Week-1 audit still 0/5, 37 days open (anchor: 2026-07-08). Ayush Gmail search ('Ayush OR Cognac') this run: zero threads, confirms nurture-only unchanged. Prisy prospect pool: CX13 (Pomelo Fashion) + CX14 (ZALORA) received their scheduled Day-2 insight DM today (connect sent 08-12, exactly on the ~08-14 next_action date) — assumed accepted, unverifiable (no LinkedIn API); CX11 (Love, Bonito) + CX12 (Sociolla) were 12 days stale with no follow-up ever logged after their 08-02 Day-0/1 connect — escalated to a Day-12 close ask today, closing them to nurture-only after. That's 4 legitimate touches, not 6 — the legacy 24-name pool remains exhausted (2nd consecutive day flagged); no fresh Bahrain/GCC SME source has been added since 08-13. GC 6 Hot Picks rotated clean: Floriddia Creative, JL Marketing, Hatcher Digital (PH job-board, repeat touches, first proposed 07-07) + Metal Concepts Ltd, Always Pilates Ltd, Dress for Success Auckland (LinkedIn AU/NZ, repeat touches) — all High priority, none TCPA/plumbing, all outside 5-day cooldown; goodnesscities_leads.json hot_picks + goodnesscities_state.json updated and validated as parseable JSON. No new GC email draft — live Gmail Drafts check confirms all 4 Monaco drafts (Caroline Olds ×2 duplicate 07-05/07-13, Petrini 07-12, DAMENO 07-17, La Costa 07-19) still unsent, now 26–40 days old, flagged again — this needs Gienel to send/discard directly, not another automated flag.",
     "items": [
       {
-        "task": "REHC_50_Years_Brand_Guidelines_Combined new — full InDesign export at drive root. Gienel confirmed 08-01 midday: almost finished, not yet final",
-        "deadline": "2026-2027 campaign window, exact date unconfirmed",
-        "status": "🟡 almost finished (Gienel-confirmed 08-01) — drive live-verified 08-14: guideline folder itself last touched 08-05, but 2 newer sibling folders (Badge Color V2 08-13, Letterhead 08-13) suggest the wider campaign is still active; INDD contents still unverified"
+        "task": "All Badge Color 2026:27 V2 Folder (MASTER COPY + ORIGINAL) — newest drive activity, likely the season badges/wristbands deliverable (job flagged 07-14)",
+        "deadline": "season — exact date unconfirmed",
+        "status": "🔵 NEW — found 08-14, touched 08-13 10:15, needs Gienel confirmation: finished/client-sent or still in review?"
       },
       {
-        "task": "Brochure REHC & BTC — 1st draft in progress (Gienel confirmed 08-01 midday, resumed after 7 days paused)",
-        "deadline": "unconfirmed",
-        "status": "🟢 confirmed still active — folder touched 08-12 07:55 (drive live-verified 08-14), 2 days ago, contents unverified"
-      },
-      {
-        "task": "Unexplained root-level files: content.png + Story pin image.jpeg (Extreme Pro root, 07-28 afternoon timestamps) — still unconfirmed",
+        "task": "50 yrs history banner_Folder — 6m×60cm print banner, 44MB PDF + 88MB .ai files — never previously logged",
         "deadline": "n/a",
-        "status": "🟡 needs Gienel confirmation, carried forward 17 days"
+        "status": "🔵 NEW — found 08-14, completed 08-06, needs Gienel confirmation: delivered/printed?"
+      },
+      {
+        "task": "50 yrs REHC Letter Head — UPDATED subfolder alongside CEO/old/Correct-Colors variants",
+        "deadline": "unconfirmed",
+        "status": "🟡 in progress — touched 08-13 08:00"
+      },
+      {
+        "task": "Brochure REHC & BTC — CORRECTION: NOT paused as every run since 07-25 claimed. LATEST folder touched 08-03 (layout resumed); OLD brochure subfolder touched 08-12 (ambiguous — may be archiving, not new layout)",
+        "deadline": "unconfirmed",
+        "status": "🟡 active but scope of 08-12 touch unconfirmed — ask Gienel directly"
+      },
+      {
+        "task": "REHC 50 Years Brand Guideline (Combined new export)",
+        "deadline": "2026–2027 campaign window, exact date unconfirmed",
+        "status": "🟡 near-final per Gienel 08-01; folder itself last touched 08-05, campaign still active via sibling folders"
       },
       {
         "task": "RFID card + OOH Campaign (REHC-2680/2681) + New Joiner ID — all done, awaiting client final approval",
         "deadline": "awaiting approval",
-        "status": "pending sign-off — 38 days, oldest open cluster on the whole board"
+        "status": "🔴 pending sign-off — 31 days (recomputed from confirmed 07-14 anchor), oldest genuinely-dated open item"
       },
       {
         "task": "2026-27 Condition Book — in progress, to be finalised",
         "deadline": "unconfirmed",
-        "status": "in progress, no drive movement confirmed since 07-16 (not checked in this pass's ls)"
+        "status": "no new drive evidence this pass"
       },
       {
-        "task": "Season badges + wristbands (4-zone colour system) — new job requests 07-14",
-        "deadline": "season — TBC",
-        "status": "🟡 possible match found 08-14: a new `All Badge Color 2026:27 V2 Folder` appeared on the drive (touched 08-13) — likely this workstream finally has a folder, unconfirmed with Gienel"
+        "task": "Unexplained root files: content.png + Story pin image.jpeg",
+        "deadline": "n/a",
+        "status": "🟡 still unconfirmed, 17 days"
       }
     ]
   },
   "priorities": [
     {
       "p": 1,
-      "area": "💼 Prisynchracy",
-      "task": "Prisy Hot 6 is BLOCKED today — legacy 24-name pool fully exhausted, none eligible under the ≥2-day rotation rule",
-      "why": "LP7-LP10 + CX13/CX14 were all touched 2026-08-12 (1 day ago); every other prospect is closed/nurture or contested. Sending again today would break the rotation rule or re-hit a closed contact",
-      "action": "Do not send today. Either (a) wait for CX13/CX14 Day-2 DM eligibility on 08-14, or (b) spend today sourcing a fresh 10+ name Bahrain/GCC SME batch — a live web search this run found no usable named contacts, so this needs Gienel's own LinkedIn Sales Navigator or referral network",
-      "est": "30-45 min if sourcing"
+      "area": "🏇 REHC/BTC",
+      "task": "Confirm scope of 4 unlogged deliverables found on the drive (Badge Color V2, history banner, letterhead, brochure)",
+      "why": "11 days of real work (08-03→08-13) happened with zero logging — at least 2 look client-ready (badge colors, banner) and may already be overdue to send if not yet delivered",
+      "action": "2-minute direct check-in with Gienel: which of these 4 are finished/sent vs still in progress",
+      "est": "10 min"
     },
     {
       "p": 2,
       "area": "🏇 REHC/BTC",
       "task": "Chase the sign-off cluster: RFID + OOH (2680/2681) + New Joiner ID",
-      "why": "3 deliverables done, now 38 days pending — oldest open item on the whole board, still no evidence of a chase happening in any recent run",
-      "action": "One consolidated email/call requesting sign-off on all three today — stop letting new workstreams (brochure, guideline, badge colors) open ahead of this",
+      "why": "31 days pending client approval (recomputed from the confirmed 07-14 anchor) — oldest dated-and-verified open item on the board",
+      "action": "One consolidated email/call requesting sign-off on all three today",
       "est": "20 min"
     },
     {
       "p": 3,
-      "area": "⚙️ Systems",
-      "task": "Investigate the scheduler: AM Master Command didn't run 08-09→08-12 as a full run (only sync-only passes), now caught up 08-13",
-      "why": "Fourth gap pattern since 07-08 consolidation — worth Gienel checking the scheduled-tasks service directly for prisynchracy-morning-command execution history",
-      "action": "Check the scheduled-tasks service / launch agent execution history 08-09 to 08-12",
-      "est": "15 min"
+      "area": "💼 Prisynchracy",
+      "task": "Prisy prospect pool exhausted, 2nd consecutive day — only 4 legitimate touches today (CX11-14), not 6",
+      "why": "No fresh Bahrain/GCC SME source has been added since 08-13's flag; a web search that run found no usable named contacts",
+      "action": "Source a fresh 10+ name batch via your own LinkedIn Sales Navigator or referral network — this needs you directly, not another automated search",
+      "est": "30-45 min"
     },
     {
       "p": 4,
-      "area": "🏇 REHC/BTC",
-      "task": "Finish the Brand Guideline final pass",
-      "why": "Gienel-confirmed 08-01: almost finished, not yet final — drive live-verified 08-14, guideline folder itself last touched 08-05 (9 days without direct movement) though the wider campaign kept moving in sibling folders",
-      "action": "Complete the last edits on REHC_50_Years_Brand_Guidelines_Combined new, lock the print-ready version",
-      "est": "30 min"
-    },
-    {
-      "p": 5,
-      "area": "🏇 REHC/BTC",
-      "task": "Brochure REHC & BTC — continue 1st draft",
-      "why": "Confirmed still active — drive live-verified 08-14, folder touched 08-12 (2 days ago), so this is genuinely moving, not stalled",
-      "action": "Continue layout in the LATEST brochure folder using 'final materials' client content",
-      "est": "45 min"
-    },
-    {
-      "p": 6,
       "area": "🌆 GoodnessCities",
-      "task": "DM 6 fresh Hot Picks — Storm in a D Cup, Stable88, Brecknock Consulting, FSM Australia (2nd touch) + Business Change Masters Ltd, aizoOn Australia (1st touch)",
-      "why": "All High/Medium priority, none TCPA/plumbing, none in the 5-day cooldown — this is today's actual achievable 6-DM action given Prisy is blocked",
-      "action": "LinkedIn DM using the AU-Lead-List workbook template for all 6",
+      "task": "DM 6 Hot Picks — Floriddia Creative, JL Marketing, Hatcher Digital (PH job-board) + Metal Concepts Ltd, Always Pilates Ltd, Dress for Success Auckland (LinkedIn AU/NZ)",
+      "why": "All High priority, none TCPA/plumbing, all outside the 5-day cooldown — covers today's DM minimum since Prisy is short",
+      "action": "Send via job-board reply / LinkedIn DM using the AU-Lead-List workbook template",
       "est": "25 min"
     },
     {
-      "p": 7,
+      "p": 5,
       "area": "🌆 GoodnessCities",
       "task": "Clear the stale Monaco email-draft backlog (no new draft today)",
-      "why": "5 unsent drafts now 25–39 days old — Caroline Olds ×2 (07-05, 07-13), Petrini (07-12), DAMENO (07-17), La Costa (07-19) — confirmed still sitting via live Gmail Drafts check this run; flagged on nearly every run since 07-21 with no action",
-      "action": "Open Gmail Drafts: send or discard each; reconcile the Caroline Olds duplicate — this needs a direct decision from Gienel, not another flag",
+      "why": "4 unsent drafts now 26–40 days old — Caroline Olds ×2 (07-05, 07-13), Petrini (07-12), DAMENO (07-17), La Costa (07-19)",
+      "action": "Open Gmail Drafts: send or discard each, reconcile the Caroline Olds duplicate — this needs your decision, not another flag",
       "est": "15 min"
     },
     {
-      "p": 8,
+      "p": 6,
       "area": "📺 PSH",
-      "task": "Week-1 audit still the gate — 0/5, now 37 days open",
-      "why": "No uploads or revival work can start until this completes — the gate exists to protect the channel from an unverified-monetization mistake (37 days open)",
+      "task": "Week-1 audit still the gate — 0/5, 37 days open",
+      "why": "No revival work can start until this completes; protects the channel from an unverified-monetization mistake",
       "action": "Log into YouTube Studio, complete the 5-item audit checklist",
       "est": "30-45 min"
     },
     {
-      "p": 9,
+      "p": 7,
+      "area": "⚙️ Systems",
+      "task": "AXL8GP2 still 85% full",
+      "why": "Offload window open ~37 days, no movement",
+      "action": "Move finished video/design projects to Extreme Pro (3+ TB free)",
+      "est": "30-60 min, background task"
+    },
+    {
+      "p": 8,
       "area": "🎯 Prospect Tracker",
-      "task": "Ayush (Cognac) — 64 days unactioned, nurture-only",
-      "why": "Live Gmail search 08-13 (query: Ayush OR Cognac): zero threads found — no reply evidence, standing decision unchanged",
+      "task": "Ayush (Cognac) — 62 days unactioned, nurture-only",
+      "why": "Live Gmail search this run: zero threads — no reply evidence, standing decision unchanged. Day count corrected from a drifted 64 to the actual 62 computed from the 06-13 last-touch date",
       "action": "No action needed — continue monitoring, don't escalate",
       "est": "0 min"
     },
     {
-      "p": 10,
+      "p": 9,
       "area": "🏇 REHC/BTC",
       "task": "Confirm the two unexplained root files (content.png, Story pin image.jpeg)",
-      "why": "Sitting unconfirmed for 17 days — low urgency but easy to close out",
+      "why": "Sitting unconfirmed 17 days — low urgency, easy to close out",
       "action": "Ask Gienel directly whether these belong to the Brand Guideline scope",
       "est": "5 min"
+    },
+    {
+      "p": 10,
+      "area": "🏇 REHC/BTC",
+      "task": "2026-27 Condition Book — finalise",
+      "why": "In progress since mid-July, no blocker named, no recent evidence either way",
+      "action": "Check in on status, confirm what's left before it can close",
+      "est": "10 min to check"
     }
   ],
   "day_plan": [
     {
       "block": "Morning deep work",
       "when": "AM",
-      "what": "REHC/BTC — sign-off chase (P2), Brand Guideline final pass (P4), brochure continue (P5)"
+      "what": "REHC/BTC — confirm the 4 unlogged deliverables (P1), sign-off chase (P2)"
     },
     {
       "block": "Midday outreach block",
       "when": "Midday",
-      "what": "Prisy sourcing (P1, since Hot 6 is blocked) + GC 6 fresh picks (P6) + Monaco draft cleanup (P7), batched"
-    },
-    {
-      "block": "Wed stats check",
-      "when": "Wed ~30 min",
-      "what": "PSH — still gated behind the Week-1 audit (P8); use this slot to actually complete the audit rather than a stats check"
+      "what": "Prisy fresh sourcing (P3) + GC 6 Hot Picks (P4) + Monaco draft cleanup (P5), batched"
     },
     {
       "block": "Evening review",
@@ -176,15 +205,45 @@
     }
   ],
   "scoreboard": [
-    { "k": "MRR", "v": "BHD 0 / 4,500" },
-    { "k": "Prisy Hot 6 sent", "v": "🔴 BLOCKED — legacy pool exhausted, next eligible 08-14" },
-    { "k": "GC Hot Picks sent", "v": "0/6 (pending)" },
-    { "k": "Daily DM minimum", "v": "6 — at risk today (Prisy blocked, GC 6 covers the gap)" },
-    { "k": "PSH Week-1 audit", "v": "0/5 (37 days open)" },
-    { "k": "AXL8GP2", "v": "85% full — LIVE-VERIFIED 2026-08-14 08-hourly pass (4244/5001GB, flat vs 08-08), offload window still open (38 days)" },
-    { "k": "REHC/BTC sign-offs pending", "v": "3 (RFID, OOH, New Joiner ID) — 38 days" },
-    { "k": "REHC/BTC live today", "v": "🟢 LIVE-VERIFIED 2026-08-14 — Extreme Pro mounted (929/4001GB, 24%, +330GB since 08-01), 2 brand-new folders found (Badge Color V2, history banner) plus confirmed brochure/letterhead activity 08-12/08-13" },
-    { "k": "Scheduler gap", "v": "🟡 AM Master Command did not run as a full run 08-09→08-12 (sync-only passes only) — caught up 08-13" },
-    { "k": "Prospect pool", "v": "🔴 legacy 24-name pool fully exhausted — fresh source needed, none eligible until 08-14" }
+    {
+      "k": "MRR",
+      "v": "BHD 0 / 4,500"
+    },
+    {
+      "k": "Prisy touches sent",
+      "v": "4/6 — pool exhausted 2nd day running, needs fresh sourcing"
+    },
+    {
+      "k": "GC Hot Picks sent",
+      "v": "6/6 rotated (pending send)"
+    },
+    {
+      "k": "Daily DM minimum",
+      "v": "10/6 combined (4 Prisy + 6 GC) — minimum technically covered by GC, but Prisy pipeline itself is the real problem"
+    },
+    {
+      "k": "PSH Week-1 audit",
+      "v": "0/5 (37 days open)"
+    },
+    {
+      "k": "AXL8GP2",
+      "v": "85% full, live-verified 08-14 (4244/5001GB, flat), offload still open"
+    },
+    {
+      "k": "REHC/BTC sign-offs pending",
+      "v": "3 (RFID, OOH, New Joiner ID) — 31 days (corrected anchor)"
+    },
+    {
+      "k": "REHC/BTC live today",
+      "v": "🔵 4 unlogged deliverables found (Badge Color V2, banner, letterhead, brochure) — 11 days of unlogged work, Extreme Pro usage +330GB since 08-01"
+    },
+    {
+      "k": "Ayush",
+      "v": "62 days unactioned (corrected from drifted 64), nurture-only"
+    },
+    {
+      "k": "Prospect pool",
+      "v": "🔴 legacy 24-name pool exhausted, 2nd consecutive day — fresh source needed"
+    }
   ]
 }
