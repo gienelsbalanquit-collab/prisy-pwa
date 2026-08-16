@@ -1,6 +1,6 @@
 {
  "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
- "updated": "2026-08-15",
+ "updated": "2026-08-16",
  "total_real_leads": 245,
  "excluded_fictional_rows": 20,
  "compliance_flags": [
@@ -28,52 +28,52 @@
  "email_ready_count": 4,
  "hot_picks": [
   {
-   "id": 10,
-   "business": "Goat Media",
+   "id": 99,
+   "business": "HOMES Monaco (Sandro Piras)",
    "priority": "High",
-   "segment": "B2B – Job-Board Signal (PH sourced)",
-   "channel": "Message/apply via OnlineJobs.ph job link",
-   "action": "Message/apply via OnlineJobs.ph job link - Goat Media — Actively hiring for 'VA / Appointment Setter / CSM' (Full-Time, budget $700–$800/mo) — signals unmet in-house marketing/creative capacity. Context: Landscapers, contractors, hardscapers; fast-growing. Repeat touch (last proposed 2026-08-02, 13 days ago, no reply)."
+   "segment": "Monaco – Real Estate",
+   "channel": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting",
+   "action": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting - HOMES Monaco (Sandro Piras) — Solo boutique. Sandro IS the brand — personal approach works well. Fresh touch (last proposed 2026-07-24, none in cooldown)."
   },
   {
-   "id": 18,
-   "business": "Cusell Marketing",
-   "priority": "High",
-   "segment": "B2B – Job-Board Signal (PH sourced)",
-   "channel": "Message/apply via OnlineJobs.ph job link",
-   "action": "Message/apply via OnlineJobs.ph job link - Cusell Marketing — Actively hiring for 'Account Manager / Project Lead' (Full-Time, budget $8–$12/hr) — signals unmet in-house marketing/creative capacity. Context: Lead gen, automation, CRM, marketing systems. Repeat touch (last proposed 2026-08-02, 13 days ago, no reply)."
-  },
-  {
-   "id": 7,
-   "business": "HY Systems",
-   "priority": "High",
-   "segment": "B2B – Job-Board Signal (PH sourced)",
-   "channel": "Message/apply via OnlineJobs.ph job link",
-   "action": "Message/apply via OnlineJobs.ph job link - HY Systems — Actively hiring for 'GHL Developer / Web Builder' (Gig, budget $500/project) — signals unmet in-house marketing/creative capacity. Context: $3,500 packages to local trade businesses; white-label builder. Repeat touch (last proposed 2026-08-01, 14 days ago, no reply)."
-  },
-  {
-   "id": 34,
-   "business": "Jocelyn Wright Freelance",
+   "id": 41,
+   "business": "Stretch Marquees & Fabric Structures",
    "priority": "High",
    "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Jocelyn Wright Freelance - Jocey Wright, Owner / Graphic Designer — Creative Manager at Kmart + own freelance biz — needs branding/marketing support. Repeat touch (last proposed 2026-08-02, 13 days ago, no reply)."
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Stretch Marquees & Fabric Structures — Already does marketing + brand management — may need agency support for content/digital Fresh touch (last proposed 2026-07-25, none in cooldown)."
   },
   {
-   "id": 46,
-   "business": "Little Green Healthery",
+   "id": 47,
+   "business": "Grey Lynn Firehouse",
    "priority": "High",
    "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Little Green Healthery - Heidi Tukuafu, Small Business Owner — Health/wellness biz in Auckland — strong fit for GoodnessCities brand values. Repeat touch (last proposed 2026-08-02, 13 days ago, no reply)."
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Grey Lynn Firehouse — F&B owner in Auckland — needs social media + brand content Fresh touch (last proposed 2026-07-25, none in cooldown)."
   },
   {
-   "id": 54,
-   "business": "Call a Cooler Sydney",
+   "id": 22,
+   "business": "Digital Trek",
+   "priority": "High",
+   "segment": "B2B – Job-Board Signal (PH sourced)",
+   "channel": "Message/apply via OnlineJobs.ph job link",
+   "action": "Message/apply via OnlineJobs.ph job link - Digital Trek — Actively hiring for 'Senior SEO Lead + Art Director' (Full-Time/Gig, budget $400–$1,400/mo) — signals unmet in-house marketing/creative capacity. Context: Local businesses; home services & healthcare; revenue-focused Fresh touch (last proposed 2026-07-25, none in cooldown)."
+  },
+  {
+   "id": 53,
+   "business": "Inkd SMP / Conceal Co",
    "priority": "High",
    "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Call a Cooler Sydney - Sean Grant, Entrepreneur / Business Owner — Active biz owner in Sydney — needs digital marketing + social media management. Repeat touch (last proposed 2026-08-02, 13 days ago, no reply)."
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Inkd SMP / Conceal Co — Beauty/cosmetic biz founder — needs brand identity, social media content, website Fresh touch (last proposed 2026-07-25, none in cooldown)."
+  },
+  {
+   "id": 61,
+   "business": "Johnstone De Beer Property / Stretch Marquees",
+   "priority": "High",
+   "segment": "LinkedIn – AU/NZ Business Owners",
+   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Johnstone De Beer Property / Stretch Marquees — Two businesses — property + events; needs brand strategy + digital marketing Fresh touch (last proposed 2026-07-28, none in cooldown)."
   }
  ],
  "leads": [

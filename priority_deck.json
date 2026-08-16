@@ -1,9 +1,9 @@
 {
- "date": "2026-08-15",
+ "date": "2026-08-16",
  "generated_by": "prisynchracy-morning-command",
  "verse": {
-  "text": "He who began a good work in you will carry it on to completion until the day of Christ Jesus.",
-  "ref": "Philippians 1:6 — Day 15 of 31, from 21 Bible/📖 Daily Verse Rotation"
+  "text": "Diligent hands will rule, but laziness ends in forced labor.",
+  "ref": "Proverbs 12:24 — Day 16 of 31, from 21 Bible/📖 Daily Verse Rotation"
  },
  "health": {
   "status": "action needed",
@@ -41,7 +41,7 @@
    }
   ],
   "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-  "updated": "2026-08-15",
+  "updated": "2026-08-16",
   "forecast": {
    "title": "Solution Forecast — plan for the October retest",
    "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,7 +61,7 @@
  },
  "rehc_btc": {
   "title": "REHC & BTC — Today's Work",
-  "note": "AM Master Command 2026-08-15: single-run guard held (no marker existed for today before this run; built on top of two data-only 8-hourly sync passes already logged today at 03:01 and 15:55 Bahrain). Drives NOT mounted this run (AXL8GP/AXL8GP2/Extreme Pro all absent from /Volumes) — same as both earlier passes today, no new live evidence since the 08-14 AM run. Figures carried forward unchanged: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 929/4001GB (24%). REHC/BTC state carried from Gienel's own 08-14 same-day confirmation: Brand Guideline, OOH Campaign (REHC-2680/2681), and season badges (All Badge Color 2026:27 V2 Folder) are all DONE — badges ready for printing, next action is sending to the print vendor. Still open: RFID card + New Joiner ID sign-off (33 days pending), the history banner (completed 08-06, delivery status still unconfirmed), the letterhead revision (touched 08-13, in progress), the brochure's ambiguous 08-12 'OLD brochure' touch (scope unconfirmed), and two unexplained root files (content.png, Story pin image.jpeg — 19 days). Sign-off cluster recomputed from its 2026-07-14 anchor = 33 days. PSH Week-1 audit still 0/5, 39 days open (anchor 2026-07-08), unchanged — no evidence any audit box was ticked. Ayush (Cognac) Gmail search ('Ayush OR Cognac') this run: zero threads found, confirms nurture-only unchanged, now 64 days unactioned (recomputed from the confirmed 2026-06-13 last-touch date). **Prisy prospect pool: 3rd consecutive day fully exhausted** — cross-checked prisy_prospect_tracker.json (single source of truth since 08-02): every legacy prospect (LP1-10, CX1-10) is closed/nurture-only or CONTESTED-do-not-recontact; CX11/CX12 (Love Bonito, Sociolla) closed to nurture after their 08-14 Day-12 close ask; CX13/CX14 (Pomelo Fashion, ZALORA) are not due for their Day-6 ask until ~2026-08-18. Zero eligible names today — no Hot 6 fabricated, flagged plainly instead. This is now Gienel's own sourcing gap (LinkedIn Sales Navigator / referral network); no fresh automated source has been added since 08-13's original flag. GC 6 Hot Picks rotated clean to a fresh 13-14-day-stale batch, none in the 5-day cooldown, none TCPA: Goat Media, Cusell Marketing, HY Systems (PH job-board, all High, last touched 08-01/08-02) + Jocelyn Wright Freelance, Little Green Healthery, Call a Cooler Sydney (LinkedIn AU/NZ, all High, last touched 08-02); goodnesscities_leads.json hot_picks + goodnesscities_state.json last_proposed updated via Python (avoiding the file's unicode-dash fuzzy-match issue) and validated as parseable JSON. No new GC email draft — live Gmail Drafts check confirms all 5 Monaco drafts (Caroline Olds ×2 duplicate 07-05/07-13, Petrini 07-12, DAMENO 07-17, La Costa 07-19) still unsent, now 27–41 days old — needs Gienel to send/discard directly, not another automated flag. **Evening-review gap found:** no evening-review run-state marker exists for 08-10 through 08-14 (last one is evening-2026-08-09.json) — the 9 PM loop appears to have stopped firing 5+ nights running; flagged for Gienel to check the scheduler directly, not assumed as data loss. — 🔄 2026-08-16 8-hourly sync refresh (prisynchracy-sync-refresh-8hr, data-only pass): no 2026-08-16 daily briefing existed at run time, so this pass ran in full. All three drives (AXL8GP, AXL8GP2, Extreme Pro) still not mounted via `df` — no live evidence beyond the 08-14 AM confirmation; REHC/BTC drive check skipped, no progress invented. Figures carried forward unchanged (AXL8GP 39%, AXL8GP2 85%, Extreme Pro 24%). Day-count language aged one day (sign-off cluster 32→33d, PSH audit 38→39d, Ayush 63→64d, unexplained root files 18→19d); HOT 6 / GC picks / priorities identity / outreach untouched per this task's scope.",
+  "note": "AM Master Command 2026-08-16: single-run guard held (no marker existed for today before this run). All three drives (AXL8GP, AXL8GP2, Extreme Pro) not mounted via `df` this run (/Volumes shows only Macintosh HD) — REHC/BTC drive check skipped, no progress invented; state carried forward from Gienel's 2026-08-14 same-day confirmation (Brand Guideline, OOH Campaign, season badges all DONE) and 08-15's unchanged carry-forward. Sign-off cluster (RFID + New Joiner ID) now 33 days pending — oldest unresolved item on the board. History banner (completed 08-06) delivery status still unconfirmed, 10 days. Letterhead revision (touched 08-13 08:00) — no fresher evidence today, drive unmounted. Brochure: LATEST folder resumed layout 08-03, but the 08-12 'OLD brochure' subfolder touch remains ambiguous — scope unconfirmed. Unexplained root files (content.png, Story pin image.jpeg) — 19 days, still unconfirmed. New finding this run: evening-2026-08-15.json run-state is still marked 'running' (heartbeat 2026-08-16 06:14, note: 'long session pause between tool calls, continuing same run') — not 'completed'; unclear whether last night's vault write-back/graphify refresh actually finished, flagged for Gienel to check, not assumed as data loss.",
   "items": [
    {
     "task": "All Badge Color 2026:27 V2 Folder — season badges/wristbands",
@@ -86,15 +86,15 @@
    {
     "task": "50 yrs history banner_Folder — 6m×60cm print banner, completed 08-06",
     "deadline": "n/a",
-    "status": "🔵 still needs Gienel confirmation: delivered/printed?"
+    "status": "🔵 still needs Gienel confirmation: delivered/printed? (10 days)"
    },
    {
     "task": "50 yrs REHC Letter Head — UPDATED subfolder alongside CEO/old/Correct-Colors variants",
     "deadline": "unconfirmed",
-    "status": "🟡 in progress — touched 08-13 08:00"
+    "status": "🟡 in progress — touched 08-13 08:00, no fresher evidence (drive unmounted today)"
    },
    {
-    "task": "Brochure REHC & BTC — LATEST folder touched 08-03 (layout resumed); OLD brochure subfolder touched 08-12 (ambiguous)",
+    "task": "Brochure REHC & BTC — LATEST folder resumed 08-03; OLD brochure subfolder touched 08-12 (ambiguous)",
     "deadline": "unconfirmed",
     "status": "🟡 active but scope of 08-12 touch unconfirmed"
    },
@@ -130,23 +130,23 @@
   {
    "p": 3,
    "area": "💼 Prisynchracy",
-   "task": "Source a fresh Bahrain/GCC SME prospect batch — pool exhausted 3rd consecutive day",
-   "why": "Zero eligible legacy prospects; CX13/14 not due until 08-18; no automated source has worked here",
+   "task": "Source a fresh Bahrain/GCC SME prospect batch — pool exhausted 4th consecutive day",
+   "why": "Zero eligible legacy prospects; CX13/14 not due until 08-18; no automated source has worked here since 08-13",
    "action": "Pull 10+ names from your own LinkedIn Sales Navigator or referral network",
    "est": "30-45 min"
   },
   {
    "p": 4,
    "area": "🌆 GoodnessCities",
-   "task": "DM 6 Hot Picks — Goat Media, Cusell Marketing, HY Systems, Jocelyn Wright Freelance, Little Green Healthery, Call a Cooler Sydney",
-   "why": "All High priority, none TCPA/plumbing, all outside the 5-day cooldown",
-   "action": "Send via job-board reply / LinkedIn DM using the AU-Lead-List workbook template",
+   "task": "DM 6 Hot Picks — HOMES Monaco, Stretch Marquees & Fabric Structures, Grey Lynn Firehouse, Digital Trek, Inkd SMP/Conceal Co, Johnstone De Beer Property",
+   "why": "All High priority, none TCPA/plumbing, none in cooldown (19-23 days since last touch)",
+   "action": "Phone/contact form (HOMES Monaco), LinkedIn DM (4), OnlineJobs.ph reply (Digital Trek)",
    "est": "25 min"
   },
   {
    "p": 5,
    "area": "🏇 REHC/BTC",
-   "task": "Confirm the 3 still-unconfirmed items: history banner, letterhead, brochure scope",
+   "task": "Confirm the 3 still-unconfirmed items: history banner delivery, letterhead status, brochure 08-12 scope",
    "why": "Badge + Brand Guideline + OOH are resolved — these 3 are what's left from the 11-day unlogged surge",
    "action": "2-minute direct check-in with Gienel on each",
    "est": "10 min"
@@ -154,17 +154,17 @@
   {
    "p": 6,
    "area": "🌆 GoodnessCities",
-   "task": "Clear the stale Monaco email-draft backlog (5 drafts)",
-   "why": "Oldest is 41 days old — sitting unsent helps nobody",
+   "task": "Clear the stale Monaco email-draft backlog (5 drafts, 28-42 days old)",
+   "why": "Oldest is 42 days old — sitting unsent helps nobody; live-confirmed still unsent this run",
    "action": "Open Gmail Drafts: send or discard each, reconcile the Caroline Olds duplicate",
    "est": "15 min"
   },
   {
    "p": 7,
    "area": "⚙️ Systems",
-   "task": "Check why the 9 PM evening-review loop hasn't run in 6+ nights (08-10 to 08-15 missing)",
-   "why": "Closed-loop AM/PM cadence is broken — no evening write-back has happened since 08-09",
-   "action": "Check the scheduler service directly",
+   "task": "Check the 08-15 evening-review run — its run-state still shows 'running', not 'completed'",
+   "why": "Heartbeat 06:14 this morning with a 'long pause, continuing same run' note — unclear if last night's vault write-back/graphify refresh actually finished",
+   "action": "Check the scheduler/task directly, close out or restart evening-2026-08-15.json",
    "est": "10 min"
   },
   {
@@ -179,7 +179,7 @@
    "p": 9,
    "area": "⚙️ Systems",
    "task": "AXL8GP2 still 85% full",
-   "why": "Offload window open ~39 days, no movement",
+   "why": "Offload window open ~40 days, no movement",
    "action": "Move finished video/design projects to Extreme Pro",
    "est": "30-60 min"
   },
@@ -187,7 +187,7 @@
    "p": 10,
    "area": "🎯 Prospect Tracker",
    "task": "Ayush (Cognac) — 64 days unactioned, nurture-only",
-   "why": "Zero reply evidence, standing decision unchanged",
+   "why": "Live Gmail search this run: zero threads found, standing decision unchanged",
    "action": "No action needed",
    "est": "0 min"
   }
@@ -196,22 +196,17 @@
   {
    "block": "Morning deep work",
    "when": "AM",
-   "what": "REHC/BTC — print the badges (P1), sign-off chase (P2)"
-  },
-  {
-   "block": "Sat PSH production block",
-   "when": "~2.5 hrs",
-   "what": "Cut 3 Shorts from back catalog + schedule the week's posts (only after Week-1 audit clears — still 0/5, so today's Sat block should go to the audit itself, not new content)"
+   "what": "REHC/BTC — badges to print + sign-off chase"
   },
   {
    "block": "Midday outreach block",
    "when": "Midday",
-   "what": "GC 6 Hot Picks (P4) + Monaco draft cleanup (P6), batched. Prisy sourcing (P3) if time allows."
+   "what": "All DMs batched — GC 6 Hot Picks + Prisy sourcing (pool exhausted, needs your own network)"
   },
   {
    "block": "Evening review",
-   "when": "PM, 10 min",
-   "what": "Confirm DMs sent, check for replies, log progress — and check why this hasn't run since 08-09"
+   "when": "10 min, evening",
+   "what": "Confirm today's sends, check the stuck 08-15 evening-review run"
   }
  ],
  "scoreboard": [
@@ -221,7 +216,7 @@
   },
   {
    "k": "Prisy touches sent",
-   "v": "0/6 — pool exhausted 3rd day running, needs fresh sourcing"
+   "v": "0/6 — pool exhausted 4th consecutive day, needs fresh sourcing"
   },
   {
    "k": "GC Hot Picks sent",
@@ -237,7 +232,7 @@
   },
   {
    "k": "AXL8GP2",
-   "v": "85% full, not verified live 2026-08-16 (drives not mounted, 1st check today), carried forward from 08-14 (4244/5001GB), offload still open"
+   "v": "85% full, not verified live 2026-08-16 (drives not mounted), carried forward from 08-14 (4244/5001GB), offload still open, 40 days"
   },
   {
    "k": "REHC/BTC sign-offs pending",
@@ -245,19 +240,19 @@
   },
   {
    "k": "REHC/BTC live today",
-   "v": "No new drive evidence (drives unmounted, 1st check today) — carried from 08-14 confirmations"
+   "v": "No new drive evidence (drives unmounted) — carried from 08-14 confirmations"
   },
   {
    "k": "Ayush",
-   "v": "64 days unactioned, nurture-only"
+   "v": "64 days unactioned, nurture-only, live Gmail check confirms zero threads"
   },
   {
    "k": "Prospect pool",
-   "v": "🔴 legacy 24-name pool exhausted, 3rd consecutive day — fresh source needed"
+   "v": "🔴 legacy 24-name pool exhausted, 4th consecutive day — fresh source needed"
   },
   {
-   "k": "Evening-review gap",
-   "v": "🔴 no run since 08-09 — 6+ nights missing"
+   "k": "Evening-review",
+   "v": "🔴 08-15 run-state still 'running' (heartbeat 06:14 today) — not confirmed completed"
   }
  ]
 }
