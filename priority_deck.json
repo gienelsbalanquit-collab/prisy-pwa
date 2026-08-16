@@ -61,7 +61,7 @@
  },
  "rehc_btc": {
   "title": "REHC & BTC — Today's Work",
-  "note": "AM Master Command 2026-08-16: single-run guard held (no marker existed for today before this run). All three drives (AXL8GP, AXL8GP2, Extreme Pro) not mounted via `df` this run (/Volumes shows only Macintosh HD) — REHC/BTC drive check skipped, no progress invented; state carried forward from Gienel's 2026-08-14 same-day confirmation (Brand Guideline, OOH Campaign, season badges all DONE) and 08-15's unchanged carry-forward. Sign-off cluster (RFID + New Joiner ID) now 33 days pending — oldest unresolved item on the board. History banner (completed 08-06) delivery status still unconfirmed, 10 days. Letterhead revision (touched 08-13 08:00) — no fresher evidence today, drive unmounted. Brochure: LATEST folder resumed layout 08-03, but the 08-12 'OLD brochure' subfolder touch remains ambiguous — scope unconfirmed. Unexplained root files (content.png, Story pin image.jpeg) — 19 days, still unconfirmed. New finding this run: evening-2026-08-15.json run-state is still marked 'running' (heartbeat 2026-08-16 06:14, note: 'long session pause between tool calls, continuing same run') — not 'completed'; unclear whether last night's vault write-back/graphify refresh actually finished, flagged for Gienel to check, not assumed as data loss.",
+  "note": "AM Master Command 2026-08-16: single-run guard held (no marker existed for today before this run). All three drives (AXL8GP, AXL8GP2, Extreme Pro) not mounted via `df` this run (/Volumes shows only Macintosh HD) — REHC/BTC drive check skipped, no progress invented; state carried forward from Gienel's 2026-08-14 same-day confirmation (Brand Guideline, OOH Campaign, season badges all DONE) and 08-15's unchanged carry-forward. Sign-off cluster (RFID + New Joiner ID) now 33 days pending — oldest unresolved item on the board. History banner (completed 08-06) delivery status still unconfirmed, 10 days. Letterhead revision (touched 08-13 08:00) — no fresher evidence today, drive unmounted. Brochure: LATEST folder resumed layout 08-03, but the 08-12 'OLD brochure' subfolder touch remains ambiguous — scope unconfirmed. Unexplained root files (content.png, Story pin image.jpeg) — 19 days, still unconfirmed. Correction this run: evening-2026-08-15.json run-state is still marked 'running' (started 22:07, heartbeat 06:14) — but the vault's own Active Projects log confirms the 08-15 evening review DID complete at 21:05 Bahrain (scheduler config verified healthy, PSH audit rechecked, findings logged). The 22:07 'running' marker is likely an orphaned duplicate/retry, not evidence the review failed — flagged for Gienel to confirm the scheduler didn't double-fire, not treated as a missed write-back. — 🔄 17:58 Bahrain 8-hourly sync refresh (prisynchracy-sync-refresh-8hr, data-only pass): all three drives (AXL8GP, AXL8GP2, Extreme Pro) confirmed still not mounted via df this pass — no new live evidence, REHC/BTC drive check skipped again, no progress invented. New finding: today's AM Master Command run-state (morning-2026-08-16.json) shows status running with a single heartbeat at 08:05:16 and zero completed stages, over 9 hours stale as of this pass — same stuck-run pattern as the flagged 08-15 evening-review. priority_deck.json already carries today's full Hot 6/GC picks/priorities content (dated 2026-08-16, generated_by prisynchracy-morning-command), so that stage did complete, but no 2026-08-16_Daily-Briefing.md exists on disk and no deploy/iMessage evidence found — the AM run appears to have stalled after writing the deck but before finishing. Flagged for Gienel to check the scheduler/process directly, not assumed as data loss. This sync pass makes no changes to HOT 6, GC picks, or priorities — out of scope for this task.",
   "items": [
    {
     "task": "All Badge Color 2026:27 V2 Folder — season badges/wristbands",
@@ -162,8 +162,8 @@
   {
    "p": 7,
    "area": "⚙️ Systems",
-   "task": "Check the 08-15 evening-review run — its run-state still shows 'running', not 'completed'",
-   "why": "Heartbeat 06:14 this morning with a 'long pause, continuing same run' note — unclear if last night's vault write-back/graphify refresh actually finished",
+   "task": "Check why evening-2026-08-15.json is stuck \"running\" (started 22:07) when the vault confirms the review completed at 21:05",
+   "why": "Likely a duplicate/orphaned run-state, not a failed review — but worth 2 minutes to confirm the scheduler isn't double-firing at 9 PM",
    "action": "Check the scheduler/task directly, close out or restart evening-2026-08-15.json",
    "est": "10 min"
   },
@@ -252,7 +252,7 @@
   },
   {
    "k": "Evening-review",
-   "v": "🔴 08-15 run-state still 'running' (heartbeat 06:14 today) — not confirmed completed"
+   "v": "🟡 evening-2026-08-15.json still \"running\" (started 22:07, heartbeat 06:14) — but vault log confirms the 08-15 evening review DID complete at 21:05; likely an orphaned duplicate marker, not a failed review"
   }
  ]
 }
