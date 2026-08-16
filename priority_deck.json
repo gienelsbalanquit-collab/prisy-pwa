@@ -61,7 +61,7 @@
  },
  "rehc_btc": {
   "title": "REHC & BTC — Today's Work",
-  "note": "AM Master Command 2026-08-15: single-run guard held (no marker existed for today before this run; built on top of two data-only 8-hourly sync passes already logged today at 03:01 and 15:55 Bahrain). Drives NOT mounted this run (AXL8GP/AXL8GP2/Extreme Pro all absent from /Volumes) — same as both earlier passes today, no new live evidence since the 08-14 AM run. Figures carried forward unchanged: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 929/4001GB (24%). REHC/BTC state carried from Gienel's own 08-14 same-day confirmation: Brand Guideline, OOH Campaign (REHC-2680/2681), and season badges (All Badge Color 2026:27 V2 Folder) are all DONE — badges ready for printing, next action is sending to the print vendor. Still open: RFID card + New Joiner ID sign-off (32 days pending), the history banner (completed 08-06, delivery status still unconfirmed), the letterhead revision (touched 08-13, in progress), the brochure's ambiguous 08-12 'OLD brochure' touch (scope unconfirmed), and two unexplained root files (content.png, Story pin image.jpeg — 18 days). Sign-off cluster recomputed from its 2026-07-14 anchor = 32 days. PSH Week-1 audit still 0/5, 38 days open (anchor 2026-07-08), unchanged — no evidence any audit box was ticked. Ayush (Cognac) Gmail search ('Ayush OR Cognac') this run: zero threads found, confirms nurture-only unchanged, now 63 days unactioned (recomputed from the confirmed 2026-06-13 last-touch date). **Prisy prospect pool: 3rd consecutive day fully exhausted** — cross-checked prisy_prospect_tracker.json (single source of truth since 08-02): every legacy prospect (LP1-10, CX1-10) is closed/nurture-only or CONTESTED-do-not-recontact; CX11/CX12 (Love Bonito, Sociolla) closed to nurture after their 08-14 Day-12 close ask; CX13/CX14 (Pomelo Fashion, ZALORA) are not due for their Day-6 ask until ~2026-08-18. Zero eligible names today — no Hot 6 fabricated, flagged plainly instead. This is now Gienel's own sourcing gap (LinkedIn Sales Navigator / referral network); no fresh automated source has been added since 08-13's original flag. GC 6 Hot Picks rotated clean to a fresh 13-14-day-stale batch, none in the 5-day cooldown, none TCPA: Goat Media, Cusell Marketing, HY Systems (PH job-board, all High, last touched 08-01/08-02) + Jocelyn Wright Freelance, Little Green Healthery, Call a Cooler Sydney (LinkedIn AU/NZ, all High, last touched 08-02); goodnesscities_leads.json hot_picks + goodnesscities_state.json last_proposed updated via Python (avoiding the file's unicode-dash fuzzy-match issue) and validated as parseable JSON. No new GC email draft — live Gmail Drafts check confirms all 5 Monaco drafts (Caroline Olds ×2 duplicate 07-05/07-13, Petrini 07-12, DAMENO 07-17, La Costa 07-19) still unsent, now 27–41 days old — needs Gienel to send/discard directly, not another automated flag. **Evening-review gap found:** no evening-review run-state marker exists for 08-10 through 08-14 (last one is evening-2026-08-09.json) — the 9 PM loop appears to have stopped firing 5+ nights running; flagged for Gienel to check the scheduler directly, not assumed as data loss.",
+  "note": "AM Master Command 2026-08-15: single-run guard held (no marker existed for today before this run; built on top of two data-only 8-hourly sync passes already logged today at 03:01 and 15:55 Bahrain). Drives NOT mounted this run (AXL8GP/AXL8GP2/Extreme Pro all absent from /Volumes) — same as both earlier passes today, no new live evidence since the 08-14 AM run. Figures carried forward unchanged: AXL8GP 1525/4000GB (39%), AXL8GP2 4244/5001GB (85%), Extreme Pro 929/4001GB (24%). REHC/BTC state carried from Gienel's own 08-14 same-day confirmation: Brand Guideline, OOH Campaign (REHC-2680/2681), and season badges (All Badge Color 2026:27 V2 Folder) are all DONE — badges ready for printing, next action is sending to the print vendor. Still open: RFID card + New Joiner ID sign-off (33 days pending), the history banner (completed 08-06, delivery status still unconfirmed), the letterhead revision (touched 08-13, in progress), the brochure's ambiguous 08-12 'OLD brochure' touch (scope unconfirmed), and two unexplained root files (content.png, Story pin image.jpeg — 19 days). Sign-off cluster recomputed from its 2026-07-14 anchor = 33 days. PSH Week-1 audit still 0/5, 39 days open (anchor 2026-07-08), unchanged — no evidence any audit box was ticked. Ayush (Cognac) Gmail search ('Ayush OR Cognac') this run: zero threads found, confirms nurture-only unchanged, now 64 days unactioned (recomputed from the confirmed 2026-06-13 last-touch date). **Prisy prospect pool: 3rd consecutive day fully exhausted** — cross-checked prisy_prospect_tracker.json (single source of truth since 08-02): every legacy prospect (LP1-10, CX1-10) is closed/nurture-only or CONTESTED-do-not-recontact; CX11/CX12 (Love Bonito, Sociolla) closed to nurture after their 08-14 Day-12 close ask; CX13/CX14 (Pomelo Fashion, ZALORA) are not due for their Day-6 ask until ~2026-08-18. Zero eligible names today — no Hot 6 fabricated, flagged plainly instead. This is now Gienel's own sourcing gap (LinkedIn Sales Navigator / referral network); no fresh automated source has been added since 08-13's original flag. GC 6 Hot Picks rotated clean to a fresh 13-14-day-stale batch, none in the 5-day cooldown, none TCPA: Goat Media, Cusell Marketing, HY Systems (PH job-board, all High, last touched 08-01/08-02) + Jocelyn Wright Freelance, Little Green Healthery, Call a Cooler Sydney (LinkedIn AU/NZ, all High, last touched 08-02); goodnesscities_leads.json hot_picks + goodnesscities_state.json last_proposed updated via Python (avoiding the file's unicode-dash fuzzy-match issue) and validated as parseable JSON. No new GC email draft — live Gmail Drafts check confirms all 5 Monaco drafts (Caroline Olds ×2 duplicate 07-05/07-13, Petrini 07-12, DAMENO 07-17, La Costa 07-19) still unsent, now 27–41 days old — needs Gienel to send/discard directly, not another automated flag. **Evening-review gap found:** no evening-review run-state marker exists for 08-10 through 08-14 (last one is evening-2026-08-09.json) — the 9 PM loop appears to have stopped firing 5+ nights running; flagged for Gienel to check the scheduler directly, not assumed as data loss. — 🔄 2026-08-16 8-hourly sync refresh (prisynchracy-sync-refresh-8hr, data-only pass): no 2026-08-16 daily briefing existed at run time, so this pass ran in full. All three drives (AXL8GP, AXL8GP2, Extreme Pro) still not mounted via `df` — no live evidence beyond the 08-14 AM confirmation; REHC/BTC drive check skipped, no progress invented. Figures carried forward unchanged (AXL8GP 39%, AXL8GP2 85%, Extreme Pro 24%). Day-count language aged one day (sign-off cluster 32→33d, PSH audit 38→39d, Ayush 63→64d, unexplained root files 18→19d); HOT 6 / GC picks / priorities identity / outreach untouched per this task's scope.",
   "items": [
    {
     "task": "All Badge Color 2026:27 V2 Folder — season badges/wristbands",
@@ -81,7 +81,7 @@
    {
     "task": "RFID card + New Joiner ID — done, awaiting client final approval",
     "deadline": "awaiting approval",
-    "status": "🔴 pending sign-off — 32 days"
+    "status": "🔴 pending sign-off — 33 days"
    },
    {
     "task": "50 yrs history banner_Folder — 6m×60cm print banner, completed 08-06",
@@ -106,7 +106,7 @@
    {
     "task": "Unexplained root files: content.png + Story pin image.jpeg",
     "deadline": "n/a",
-    "status": "🟡 still unconfirmed, 18 days"
+    "status": "🟡 still unconfirmed, 19 days"
    }
   ]
  },
@@ -123,7 +123,7 @@
    "p": 2,
    "area": "🏇 REHC/BTC",
    "task": "Chase remaining sign-off: RFID card + New Joiner ID",
-   "why": "32 days pending client approval — the oldest unresolved item on the whole board",
+   "why": "33 days pending client approval — the oldest unresolved item on the whole board",
    "action": "One consolidated email/call requesting sign-off on both",
    "est": "15 min"
   },
@@ -162,7 +162,7 @@
   {
    "p": 7,
    "area": "⚙️ Systems",
-   "task": "Check why the 9 PM evening-review loop hasn't run in 5+ nights (08-10 to 08-14 missing)",
+   "task": "Check why the 9 PM evening-review loop hasn't run in 6+ nights (08-10 to 08-15 missing)",
    "why": "Closed-loop AM/PM cadence is broken — no evening write-back has happened since 08-09",
    "action": "Check the scheduler service directly",
    "est": "10 min"
@@ -170,7 +170,7 @@
   {
    "p": 8,
    "area": "📺 PSH",
-   "task": "Week-1 audit still the gate — 0/5, 38 days open",
+   "task": "Week-1 audit still the gate — 0/5, 39 days open",
    "why": "No revival work can start until this completes",
    "action": "Log into YouTube Studio, complete the 5-item audit checklist",
    "est": "30-45 min"
@@ -179,14 +179,14 @@
    "p": 9,
    "area": "⚙️ Systems",
    "task": "AXL8GP2 still 85% full",
-   "why": "Offload window open ~38 days, no movement",
+   "why": "Offload window open ~39 days, no movement",
    "action": "Move finished video/design projects to Extreme Pro",
    "est": "30-60 min"
   },
   {
    "p": 10,
    "area": "🎯 Prospect Tracker",
-   "task": "Ayush (Cognac) — 63 days unactioned, nurture-only",
+   "task": "Ayush (Cognac) — 64 days unactioned, nurture-only",
    "why": "Zero reply evidence, standing decision unchanged",
    "action": "No action needed",
    "est": "0 min"
@@ -233,23 +233,23 @@
   },
   {
    "k": "PSH Week-1 audit",
-   "v": "0/5 (38 days open)"
+   "v": "0/5 (39 days open)"
   },
   {
    "k": "AXL8GP2",
-   "v": "85% full, not verified live 2026-08-15 (drives not mounted, 3rd check today), carried forward from 08-14 (4244/5001GB), offload still open"
+   "v": "85% full, not verified live 2026-08-16 (drives not mounted, 1st check today), carried forward from 08-14 (4244/5001GB), offload still open"
   },
   {
    "k": "REHC/BTC sign-offs pending",
-   "v": "2 (RFID, New Joiner ID) — 32 days. Brand Guideline, OOH, and badges (print-ready) confirmed DONE 08-14"
+   "v": "2 (RFID, New Joiner ID) — 33 days. Brand Guideline, OOH, and badges (print-ready) confirmed DONE 08-14"
   },
   {
    "k": "REHC/BTC live today",
-   "v": "No new drive evidence (drives unmounted, 3rd check today) — carried from 08-14 confirmations"
+   "v": "No new drive evidence (drives unmounted, 1st check today) — carried from 08-14 confirmations"
   },
   {
    "k": "Ayush",
-   "v": "63 days unactioned, nurture-only"
+   "v": "64 days unactioned, nurture-only"
   },
   {
    "k": "Prospect pool",
@@ -257,7 +257,7 @@
   },
   {
    "k": "Evening-review gap",
-   "v": "🔴 no run since 08-09 — 5+ nights missing"
+   "v": "🔴 no run since 08-09 — 6+ nights missing"
   }
  ]
 }
