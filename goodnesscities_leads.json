@@ -1,6 +1,6 @@
 {
  "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
- "updated": "2026-08-16",
+ "updated": "2026-08-21",
  "total_real_leads": 245,
  "excluded_fictional_rows": 20,
  "compliance_flags": [
@@ -28,52 +28,52 @@
  "email_ready_count": 4,
  "hot_picks": [
   {
-   "id": 99,
-   "business": "HOMES Monaco (Sandro Piras)",
-   "priority": "High",
-   "segment": "Monaco – Real Estate",
-   "channel": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting",
-   "action": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting - HOMES Monaco (Sandro Piras) — Solo boutique. Sandro IS the brand — personal approach works well. Fresh touch (last proposed 2026-07-24, none in cooldown)."
-  },
-  {
-   "id": 41,
-   "business": "Stretch Marquees & Fabric Structures",
+   "id": 45,
+   "business": "Self-employed",
    "priority": "High",
    "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Stretch Marquees & Fabric Structures — Already does marketing + brand management — may need agency support for content/digital Fresh touch (last proposed 2026-07-25, none in cooldown)."
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Self-employed — Self-identified small biz owner — prime target for marketing services Fresh touch (last proposed well outside cooldown)."
   },
   {
-   "id": 47,
-   "business": "Grey Lynn Firehouse",
+   "id": 31,
+   "business": "THE ICON DEPOT",
    "priority": "High",
    "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Grey Lynn Firehouse — F&B owner in Auckland — needs social media + brand content Fresh touch (last proposed 2026-07-25, none in cooldown)."
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - THE ICON DEPOT — Distribution services; active director Fresh touch (last proposed well outside cooldown)."
   },
   {
-   "id": 22,
-   "business": "Digital Trek",
-   "priority": "High",
-   "segment": "B2B – Job-Board Signal (PH sourced)",
-   "channel": "Message/apply via OnlineJobs.ph job link",
-   "action": "Message/apply via OnlineJobs.ph job link - Digital Trek — Actively hiring for 'Senior SEO Lead + Art Director' (Full-Time/Gig, budget $400–$1,400/mo) — signals unmet in-house marketing/creative capacity. Context: Local businesses; home services & healthcare; revenue-focused Fresh touch (last proposed 2026-07-25, none in cooldown)."
-  },
-  {
-   "id": 53,
-   "business": "Inkd SMP / Conceal Co",
+   "id": 36,
+   "business": "Organic Crew",
    "priority": "High",
    "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Inkd SMP / Conceal Co — Beauty/cosmetic biz founder — needs brand identity, social media content, website Fresh touch (last proposed 2026-07-25, none in cooldown)."
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Organic Crew — Ecommerce owner + senior marketer; 14K followers — perfect for digital marketing pitch Fresh touch (last proposed well outside cooldown)."
   },
   {
-   "id": 61,
-   "business": "Johnstone De Beer Property / Stretch Marquees",
+   "id": 49,
+   "business": "THE BIG POT NURSERY / Conference Design",
    "priority": "High",
    "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Johnstone De Beer Property / Stretch Marquees — Two businesses — property + events; needs brand strategy + digital marketing Fresh touch (last proposed 2026-07-28, none in cooldown)."
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - THE BIG POT NURSERY / Conference Design — Nursery owner + conference mgr — needs seasonal marketing Fresh touch (last proposed well outside cooldown)."
+  },
+  {
+   "id": 48,
+   "business": "Retail Renaissance / HPH Events",
+   "priority": "High",
+   "segment": "LinkedIn – AU/NZ Business Owners",
+   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Retail Renaissance / HPH Events — Retail + events — two businesses; 2nd degree connection Fresh touch (last proposed well outside cooldown)."
+  },
+  {
+   "id": 51,
+   "business": "Seniors@work / Hospitality Solutions",
+   "priority": "High",
+   "segment": "LinkedIn – AU/NZ Business Owners",
+   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Seniors@work / Hospitality Solutions — Two businesses in Auckland — hospitality needs branding, social media, website Fresh touch (last proposed well outside cooldown)."
   }
  ],
  "leads": [
