@@ -1,6 +1,6 @@
 {
  "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
- "updated": "2026-08-21",
+ "updated": "2026-08-22",
  "total_real_leads": 245,
  "excluded_fictional_rows": 20,
  "compliance_flags": [
@@ -28,52 +28,46 @@
  "email_ready_count": 4,
  "hot_picks": [
   {
-   "id": 45,
+   "id": 88,
+   "business": "Online Fitness & Wellness Coach",
+   "priority": "High",
+   "channel": "Instagram DM",
+   "geography": "New York"
+  },
+  {
+   "id": 55,
    "business": "Self-employed",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Self-employed — Self-identified small biz owner — prime target for marketing services Fresh touch (last proposed well outside cooldown)."
+   "geography": "Greater Melbourne Area, Australia"
   },
   {
-   "id": 31,
-   "business": "THE ICON DEPOT",
+   "id": 62,
+   "business": "Turn Key Living Australia",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - THE ICON DEPOT — Distribution services; active director Fresh touch (last proposed well outside cooldown)."
+   "geography": "Perth, WA, Australia"
   },
   {
-   "id": 36,
-   "business": "Organic Crew",
+   "id": 64,
+   "business": "Blygold Oceania / Blygold Queensland",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
    "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Organic Crew — Ecommerce owner + senior marketer; 14K followers — perfect for digital marketing pitch Fresh touch (last proposed well outside cooldown)."
+   "geography": "Greater Brisbane Area, Australia"
   },
   {
-   "id": 49,
-   "business": "THE BIG POT NURSERY / Conference Design",
+   "id": 3,
+   "business": "Ruah Creative House",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
-   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - THE BIG POT NURSERY / Conference Design — Nursery owner + conference mgr — needs seasonal marketing Fresh touch (last proposed well outside cooldown)."
+   "channel": "Message/apply via OnlineJobs.ph job link",
+   "geography": null
   },
   {
-   "id": 48,
-   "business": "Retail Renaissance / HPH Events",
+   "id": 29,
+   "business": "Surge Marketing",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
-   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Retail Renaissance / HPH Events — Retail + events — two businesses; 2nd degree connection Fresh touch (last proposed well outside cooldown)."
-  },
-  {
-   "id": 51,
-   "business": "Seniors@work / Hospitality Solutions",
-   "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
-   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "action": "LinkedIn DM (template already drafted in AU-Lead-List workbook) - Seniors@work / Hospitality Solutions — Two businesses in Auckland — hospitality needs branding, social media, website Fresh touch (last proposed well outside cooldown)."
+   "channel": "Message/apply via OnlineJobs.ph job link",
+   "geography": null
   }
  ],
  "leads": [
