@@ -1,13 +1,13 @@
 {
- "date": "2026-08-22",
- "generated_by": "prisynchracy-morning-command (AM Master Command, 2026-08-22, Saturday)",
+ "date": "2026-09-06",
+ "generated_by": "prisynchracy-morning-command",
  "verse": {
-  "text": "For God has not given us a spirit of fear, but of power and of love and of a sound mind.",
-  "ref": "2 Timothy 1:7 — Day 22 of 31, from 21 Bible/📖 Daily Verse Rotation"
+  "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well.",
+  "ref": "Matthew 6:33 \u2014 Day 6 of 31, from 21 Bible/\ud83d\udcd6 Daily Verse Rotation"
  },
  "health": {
   "status": "action needed",
-  "summary": "HbA1c 7.61% + fasting glucose 6.59 (diabetic-range) + high cholesterol — book doctor's visit",
+  "summary": "HbA1c 7.61% + fasting glucose 6.59 (diabetic-range) + high cholesterol \u2014 book doctor's visit",
   "metrics": [
    {
     "label": "HbA1c",
@@ -40,178 +40,148 @@
     "flag": "N"
    }
   ],
-  "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-  "updated": "2026-08-22",
+  "action": "Book doctor's visit re: glucose + cholesterol \u2014 see \ud83d\udcca Health Trend note",
+  "updated": "2026-09-06",
   "forecast": {
-   "title": "Solution Forecast — plan for the October retest",
+   "title": "Solution Forecast \u2014 plan for the October retest",
    "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
-   "why_wait": "HbA1c reflects your ~3-month average blood glucose — nothing meaningful shows on a retest before then, no matter how well the plan goes.",
+   "why_wait": "HbA1c reflects your ~3-month average blood glucose \u2014 nothing meaningful shows on a retest before then, no matter how well the plan goes.",
    "plan": [
-    "Lift 3–4×/week, not daily — full body or upper/lower split, with rest days so cortisol comes down (unrecovered training raises fasting glucose).",
-    "Walk daily, at least 45 min — moderate cardio on non-lifting days improves insulin sensitivity independent of weight loss (ADA/AHA guidance), effects typically visible in 8–12 weeks.",
-    "Keto: unsaturated fats first — olive oil, avocado, fish, nuts — over saturated (butter, bacon, coconut oil). Your LDL is already 'very high'; the wrong keto can raise it further.",
+    "Lift 3\u20134\u00d7/week, not daily \u2014 full body or upper/lower split, with rest days so cortisol comes down (unrecovered training raises fasting glucose).",
+    "Walk daily, at least 45 min \u2014 moderate cardio on non-lifting days improves insulin sensitivity independent of weight loss (ADA/AHA guidance), effects typically visible in 8\u201312 weeks.",
+    "Keto: unsaturated fats first \u2014 olive oil, avocado, fish, nuts \u2014 over saturated (butter, bacon, coconut oil). Your LDL is already 'very high'; the wrong keto can raise it further.",
     "If keeping the weekly OMAD day, make it a rest day (not a lifting day), and eat protein + fiber first in that meal.",
-    "Sleep 7–8 hrs — already right, keep it.",
-    "Start logging activity + food now — the smart-scale weight trend alone won't explain the October numbers.",
+    "Sleep 7\u20138 hrs \u2014 already right, keep it.",
+    "Start logging activity + food now \u2014 the smart-scale weight trend alone won't explain the October numbers.",
     "Book the doctor visit before October: ask about an OGTT (HbA1c vs. fasting-glucose mismatch), eGFR 83 before ruling metformin in/out, and LFT-monitoring vs. keto-only for the statin question."
    ],
-   "note": "General health information, not a diagnosis or prescription — the doctor visit is the authoritative source.",
+   "note": "General health information, not a diagnosis or prescription \u2014 the doctor visit is the authoritative source.",
    "updated": "2026-07-19"
   }
  },
  "rehc_btc": {
-  "title": "REHC & BTC — 50 Years Campaign",
-  "note": "AM Master Command 2026-08-22 (Saturday). Drives (AXL8GP, AXL8GP2, Extreme Pro) not mounted this run via df — REHC/BTC drive check skipped, no progress invented; state carried forward from Gienel's 2026-08-14 confirmation (Brand Guideline, OOH Campaign, season badges all DONE), no new evidence since 08-16. Sign-off cluster (RFID + New Joiner ID) now 39 days pending — oldest unresolved item on the whole board. History banner (completed 08-06) delivery still unconfirmed, 16 days. Letterhead and brochure unchanged since 08-13/08-12 touches, no fresher evidence (drive unmounted). Separately found: evening-2026-08-21.json is stuck at status \"running\" (started 21:27:29, single heartbeat, empty stages) with no completion evidence — last night's evening review likely did not finish; flagged, not assumed as data loss.",
+  "title": "REHC & BTC \u2014 50 Years Campaign",
+  "note": "23-day drive blind spot (last checked 08-14) closed today: Extreme Pro live at 714/4001GB (18%, oddly lower than 929GB/24% on 08-14, unexplained). Real work happened through the gap \u2014 new REHC Vest and Shirt Folder (Sep 3), RF ID card folder touched Sep 2 (first movement on the sign-off item), new ALL BADGES COLOR FOR PRINT folder (Aug 25, badges likely printed). Brand Guideline/OOH/season badges scope confirmed DONE 08-14.",
   "items": [
    {
-    "task": "All Badge Color 2026:27 V2 Folder — season badges/wristbands",
-    "deadline": "season — exact date unconfirmed",
-    "status": "✅ DONE, ready for printing — confirmed by Gienel 2026-08-14. Next action: send to print vendor (still not confirmed sent)."
+    "task": "Confirm RFID card + New Joiner ID sign-off (folder touched Sep 2, oldest open item)",
+    "deadline": "overdue \u2014 ~54 days pending",
+    "status": "activity found, completion unconfirmed"
    },
    {
-    "task": "REHC 50 Years Brand Guideline (Combined new export)",
-    "deadline": "2026–2027 campaign window",
-    "status": "✅ DONE — confirmed by Gienel 2026-08-14"
-   },
-   {
-    "task": "OOH Campaign (REHC-2680 / REHC-2681 billboard, Bapco screens)",
-    "deadline": "n/a",
-    "status": "✅ DONE — confirmed by Gienel 2026-08-14"
-   },
-   {
-    "task": "RFID card + New Joiner ID — done, awaiting client final approval",
-    "deadline": "awaiting approval",
-    "status": "🔴 pending sign-off — 39 days (oldest open item)"
-   },
-   {
-    "task": "50 yrs history banner_Folder — 6m×60cm print banner, completed 08-06",
-    "deadline": "n/a",
-    "status": "🔵 still needs Gienel confirmation: delivered/printed? (16 days)"
-   },
-   {
-    "task": "50 yrs REHC Letter Head — UPDATED subfolder alongside CEO/old/Correct-Colors variants",
+    "task": "Confirm ALL BADGES COLOR FOR PRINT actually went to print",
     "deadline": "unconfirmed",
-    "status": "🟡 in progress — touched 08-13 08:00, no fresher evidence (drive unmounted today)"
+    "status": "new finding, needs Gienel confirmation"
    },
    {
-    "task": "Brochure REHC & BTC — LATEST folder resumed 08-03; OLD brochure subfolder touched 08-12 (ambiguous)",
-    "deadline": "unconfirmed",
-    "status": "🟡 active but scope of 08-12 touch unconfirmed"
+    "task": "Scope the new REHC Vest and Shirt Folder (newest activity, Sep 3)",
+    "deadline": "unscoped",
+    "status": "brand-new, needs Gienel confirmation"
    },
    {
-    "task": "2026-27 Condition Book — in progress, to be finalised",
-    "deadline": "unconfirmed",
-    "status": "no new drive evidence"
-   },
-   {
-    "task": "Unexplained root files: content.png + Story pin image.jpeg",
-    "deadline": "n/a",
-    "status": "🟡 still unconfirmed, 25 days"
+    "task": "History banner delivery confirmation",
+    "deadline": "unconfirmed \u2014 ~31 days",
+    "status": "no new evidence"
    }
   ]
  },
  "priorities": [
   {
    "p": 1,
-   "area": "🏇 REHC/BTC",
-   "task": "Chase RFID card + New Joiner ID sign-off",
-   "why": "Oldest unresolved item on the whole board — 39 days pending, both are done, just need client approval",
-   "action": "Call or email REHC contact directly asking for sign-off confirmation on both",
-   "est": "20 min"
+   "area": "\ud83c\udfc7 REHC/BTC",
+   "task": "Confirm & close RFID + New Joiner ID sign-off",
+   "why": "Oldest unresolved external deliverable (~54 days); RF ID card folder just touched Sep 2, so it's live and actionable now",
+   "action": "Open the RF ID card folder on Extreme Pro, confirm what changed, get sign-off from REHC contact",
+   "est": "30 min"
   },
   {
    "p": 2,
-   "area": "💼 Prisynchracy",
-   "task": "CX13 (Pomelo Fashion) — Day-6/7 close ask",
-   "why": "One of only two prospects in the entire pool eligible today; overdue 4 days since target 2026-08-18",
-   "action": "Send LinkedIn close-ask DM to David Jou / Casey Liang referencing the 08-14 Day-2 insight DM",
-   "est": "10 min"
+   "area": "\u2699\ufe0f System",
+   "task": "Verify the 8 AM scheduler won't silently die again",
+   "why": "It went dark for 12 days (08-24\u219209-05) with zero error surfaced \u2014 this broke Hot 6, GC picks, deploys, and vault write-back the whole time",
+   "action": "Watch tonight's 9 PM evening-review fire on schedule; check tomorrow's morning marker isn't stuck at \"running\"",
+   "est": "10 min check"
   },
   {
    "p": 3,
-   "area": "💼 Prisynchracy",
-   "task": "CX14 (ZALORA) — Day-6/7 close ask",
-   "why": "Same pool, same overdue window since 2026-08-18",
-   "action": "Send LinkedIn close-ask DM to Achint Setia referencing the 08-14 Day-2 insight DM",
-   "est": "10 min"
+   "area": "\ud83d\udd25 Prisynchracy",
+   "task": "Source fresh Bahrain/GCC prospects \u2014 pool dry 25 days",
+   "why": "MRR still BHD 0/4,500; the entire 24-name legacy pool is exhausted and no automated search has fixed this since 08-13",
+   "action": "Pull 10 new names from LinkedIn Sales Navigator or personal referral network today",
+   "est": "45 min"
   },
   {
    "p": 4,
-   "area": "🌆 GoodnessCities",
-   "task": "Send today's 6 Hot Picks (fresh AU/NZ/US batch)",
-   "why": "Direct revenue action, fresh rotation (all 20–29 days clear of the 5-day cooldown)",
-   "action": "Send outreach to Online Fitness & Wellness Coach (insta), Self-employed/Turn Key Living/Blygold Oceania (LinkedIn DM, AU), Ruah Creative House/Surge Marketing (job-board)",
-   "est": "20 min"
+   "area": "\ud83d\udd25 Prisynchracy",
+   "task": "Send CX13 (Pomelo Fashion) + CX14 (ZALORA) Day-6 close asks",
+   "why": "Due ~08-18, now 19 days overdue \u2014 the only two live names left in the pool",
+   "action": "Send the 2 LinkedIn close-ask messages",
+   "est": "10 min"
   },
   {
    "p": 5,
-   "area": "🌆 GoodnessCities",
-   "task": "Decide on 5 stale Monaco email drafts (send or discard)",
-   "why": "Caroline Olds ×2, Petrini, DAMENO, La Costa drafts have sat unsent ~48 days — no new draft created today to avoid a 6th duplicate",
-   "action": "Open Gmail Drafts, review each, send or delete",
+   "area": "\ud83c\udf06 GoodnessCities",
+   "task": "Send or discard the 4 Monaco email drafts",
+   "why": "Sitting unsent 49\u201363 days \u2014 drafts that never get sent don't convert and keep re-flagging every run",
+   "action": "Open Gmail Drafts, review each, click send or delete",
    "est": "15 min"
   },
   {
    "p": 6,
-   "area": "📺 PSH",
-   "task": "Saturday PSH production block",
-   "why": "Today is Saturday — the scheduled ~2.5h weekly production window per the Portfolio Activation Plan; Week-1 audit still blocks new uploads but back-catalog review/prep can proceed",
-   "action": "Block 2.5h: verify YPP/monetization status in YouTube Studio (Week-1 audit, 0/5) as the prerequisite step before any Shorts cutting",
-   "est": "2.5 hrs"
+   "area": "\ud83c\udf06 GoodnessCities",
+   "task": "Action today's 6 Hot Picks (Caroline Olds, DAMENO, Floriddia Creative, Goat Media, HY Systems, THE ICON DEPOT)",
+   "why": "Keep the daily 6-touch rotation moving",
+   "action": "Send the LinkedIn DMs / job-board messages",
+   "est": "30 min"
   },
   {
    "p": 7,
-   "area": "💼 Prisynchracy",
-   "task": "Source a fresh Bahrain/GCC SME prospect batch",
-   "why": "Legacy 24-name pool has been exhausted since 2026-08-12 (10 days) — this is Gienel's own sourcing gap, no automated fix exists",
-   "action": "Pull 10 new names from LinkedIn Sales Navigator or personal referral network",
-   "est": "30–45 min"
+   "area": "\ud83c\udfc7 REHC/BTC",
+   "task": "Confirm badge print status + scope Vest/Shirt job",
+   "why": "Two new workstreams surfaced during the 23-day blind spot, both unscoped/unconfirmed",
+   "action": "Text or call the REHC contact to confirm badge print status and get the vest/shirt brief",
+   "est": "15 min"
   },
   {
    "p": 8,
-   "area": "🏇 REHC/BTC",
-   "task": "Confirm history banner delivery/print status",
-   "why": "Completed 08-06, still no confirmation it was delivered or printed — 16 days open",
-   "action": "Ask REHC contact whether the banner was received/installed",
-   "est": "5 min"
+   "area": "\ud83d\udcfa PSH",
+   "task": "Complete the Week-1 audit (0/5, 60 days open)",
+   "why": "Blocks the entire dormant-venture queue \u2014 @ peace can't start until this gate opens",
+   "action": "Log into YouTube Studio, check Partner Program / monetization status",
+   "est": "20 min"
   },
   {
    "p": 9,
-   "area": "⚙️ Systems",
-   "task": "Verify last night's evening review actually completed",
-   "why": "evening-2026-08-21.json is stuck at status \"running\" (21:27:29 start, empty stages, no completion) — the 9 PM loop may not have closed the day cleanly",
-   "action": "Check mcp__scheduled-tasks list + confirm tonight's evening review completes end to end",
-   "est": "10 min"
+   "area": "\ud83d\udcbe Systems",
+   "task": "Offload AXL8GP2 (85% full, ~61 days open)",
+   "why": "Running out of headroom; Extreme Pro has 3.3TB free to receive finished projects",
+   "action": "Move one finished video/design project folder from AXL8GP2 to Extreme Pro",
+   "est": "20 min"
   },
   {
    "p": 10,
-   "area": "⚙️ Systems",
-   "task": "AXL8GP2 offload (85% full)",
-   "why": "Lowest urgency but oldest infra item, ~46 days open",
-   "action": "Move finished video/design projects from AXL8GP2 to Extreme Pro (3+ TB free)",
-   "est": "30 min (background copy)"
+   "area": "\ud83e\ude7a Health",
+   "task": "Book the doctor's visit re: HbA1c/glucose/cholesterol",
+   "why": "Still unbooked since 07-17 labs; October retest window is approaching and needs this visit first",
+   "action": "Call and book the appointment",
+   "est": "5 min"
   }
  ],
  "day_plan": [
   {
    "block": "Morning deep work",
    "when": "AM",
-   "what": "REHC/BTC — sign-off cluster chase (P1) + history banner confirmation (P8)"
+   "what": "REHC/BTC \u2014 P1 sign-off chase + P7 badge/vest confirmation"
   },
   {
    "block": "Midday outreach block",
    "when": "Midday",
-   "what": "All DMs batched — CX13/CX14 close asks (P2/P3) + GC 6 Hot Picks (P4) + Monaco draft decisions (P5)"
-  },
-  {
-   "block": "Saturday PSH production",
-   "when": "~2.5 hrs, afternoon",
-   "what": "PSH Week-1 audit (P6) — verify YPP/monetization + strikes in YouTube Studio before any content push"
+   "what": "ALL DMs batched \u2014 P3 sourcing, P4 Prisy close asks, P5 Monaco draft cleanup, P6 GC Hot Picks"
   },
   {
    "block": "Evening review",
    "when": "10 min, evening",
-   "what": "Confirm today's sends, verify tonight's evening-review completes cleanly (P9), log any replies"
+   "what": "Confirm today's sends actually went out; check tonight's scheduled evening-review fires"
   }
  ],
  "scoreboard": [
@@ -221,39 +191,39 @@
   },
   {
    "k": "Prisy touches sent",
-   "v": "0/2 planned (CX13+CX14 close asks) — legacy pool exhausted 10 days, standing sourcing gap"
+   "v": "0/2 planned (CX13+CX14 close asks, 19 days overdue) \u2014 legacy pool exhausted 25 days, standing sourcing gap"
   },
   {
    "k": "GC Hot Picks",
-   "v": "6/6 rotated (fresh AU/NZ/US batch, pending send)"
+   "v": "6/6 rotated (Caroline Olds, DAMENO, Floriddia Creative, Goat Media, HY Systems, THE ICON DEPOT), pending send"
   },
   {
    "k": "Daily DM minimum",
-   "v": "8 planned today (2 Prisy + 6 GC) vs 6 minimum — met on paper, contingent on Gienel actually sending"
+   "v": "8 planned today (2 Prisy + 6 GC) vs 6 minimum \u2014 met on paper, contingent on Gienel actually sending"
   },
   {
    "k": "PSH Week-1 audit",
-   "v": "0/5 (45 days open)"
+   "v": "0/5 (60 days open, zero progress since 07-08)"
   },
   {
    "k": "AXL8GP2",
-   "v": "85% full, not verified live 2026-08-22 (drives not mounted), carried forward from 08-14 (4244/5001GB), offload still open, ~46 days"
+   "v": "85% full, not verified live 2026-09-06 (drive not mounted), carried forward from 08-14, offload ~61 days open"
   },
   {
    "k": "REHC/BTC sign-offs pending",
-   "v": "2 (RFID, New Joiner ID) — 39 days. Brand Guideline, OOH, badges (print-ready) confirmed DONE 08-14"
+   "v": "RFID (activity Sep 2, unconfirmed complete) + New Joiner ID (no activity) \u2014 ~54 days. Brand Guideline/OOH/badges (scope) confirmed DONE 08-14"
   },
   {
    "k": "Ayush",
-   "v": "70 days unactioned, nurture-only, live Gmail check confirms zero threads"
+   "v": "~85 days unactioned, nurture-only, live Gmail check confirms zero threads"
   },
   {
    "k": "Sibiraj",
-   "v": "closed 2026-07-14 — not in active pipeline, not re-flagged"
+   "v": "closed 2026-07-14 \u2014 not in active pipeline, not re-flagged"
   },
   {
-   "k": "Evening review",
-   "v": "⚠️ 2026-08-21 marker stuck at \"running\", no completion evidence — flagged for tonight's run to watch"
+   "k": "Scheduler",
+   "v": "\u26a0\ufe0f 12-day blackout 08-24\u219209-05 (platform-side, config was healthy) \u2014 resolved as of this run, watching tonight's evening-review"
   }
  ]
 }

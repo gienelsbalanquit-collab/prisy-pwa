@@ -1,12 +1,12 @@
 {
- "_purpose": "Tracks which GoodnessCities lead IDs have already been proposed/contacted, so the daily scheduled run rotates fresh names instead of repeating the same ones forever (the exact gap that broke the Prisynchracy prospect list — see MASTER_CONTEXT.md known issues).",
- "last_run_date": "2026-08-22",
+ "_purpose": "Tracks which GoodnessCities lead IDs have already been proposed/contacted, so the daily scheduled run rotates fresh names instead of repeating the same ones forever (the exact gap that broke the Prisynchracy prospect list \u2014 see MASTER_CONTEXT.md known issues).",
+ "last_run_date": "2026-09-06",
  "proposed": {
   "10": {
    "first_proposed": "2026-07-08",
    "status": "proposed",
    "channel": "job_link",
-   "last_proposed": "2026-08-15"
+   "last_proposed": "2026-09-06"
   },
   "18": {
    "first_proposed": "2026-07-06",
@@ -43,13 +43,13 @@
    "status": "proposed",
    "channel": "email",
    "email_draft_id": "r-8063569538279129191",
-   "last_proposed": "2026-07-21"
+   "last_proposed": "2026-09-06"
   },
   "100": {
    "first_proposed": "2026-07-05",
    "status": "proposed",
    "channel": "email",
-   "last_proposed": "2026-07-22",
+   "last_proposed": "2026-09-06",
    "email_draft_id": "r-2665402679433700219"
   },
   "101": {
@@ -75,13 +75,13 @@
    "first_proposed": "2026-07-07",
    "status": "proposed",
    "channel": "Message/apply via OnlineJobs.ph job link",
-   "last_proposed": "2026-08-14"
+   "last_proposed": "2026-09-06"
   },
   "7": {
    "first_proposed": "2026-07-06",
    "status": "proposed",
    "channel": "Message/apply via OnlineJobs.ph job link",
-   "last_proposed": "2026-08-15"
+   "last_proposed": "2026-09-06"
   },
   "46": {
    "first_proposed": "2026-07-06",
@@ -157,7 +157,7 @@
   },
   "31": {
    "first_proposed": "2026-07-05",
-   "last_proposed": "2026-08-21",
+   "last_proposed": "2026-09-06",
    "status": "proposed",
    "channel": "linkedin"
   },
@@ -337,7 +337,7 @@
   }
  },
  "excluded_segments_pending_review": [
-  "US Local Service – Plumbing"
+  "US Local Service \u2013 Plumbing"
  ],
  "excluded_segments_reason": "120 leads, phone/SMS only, TCPA consent review required before any auto-dial or SMS outreach. Do not add to rotation until Gienel confirms review is complete."
 }
