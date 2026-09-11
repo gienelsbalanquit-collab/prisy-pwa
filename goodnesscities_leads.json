@@ -1,6 +1,6 @@
 {
  "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
- "updated": "2026-09-08",
+ "updated": "2026-09-11",
  "total_real_leads": 245,
  "excluded_fictional_rows": 20,
  "compliance_flags": [
@@ -28,46 +28,64 @@
  "email_ready_count": 4,
  "hot_picks": [
   {
-   "id": 42,
-   "business": "Smartbox Mobile Self Storage",
+   "id": 3,
+   "business": "Ruah Creative House",
+   "industry": "Kingdom-first Creative Studio",
    "priority": "High",
-   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "email": null
+   "channel_available": "Job link only",
+   "email": null,
+   "pain_point": "Actively hiring for 'Client Experience + SDR' (Full-Time, budget $550–$700/mo) — signals unmet in-house marketing/creative capacity. Context: Churches, nonprofits, faith-driven leaders; video & content strategy",
+   "solution": "Outbound & client-experience support retainer"
   },
   {
-   "id": 91,
-   "business": "Jillian O'Neil - Wellness Coach",
+   "id": 22,
+   "business": "Digital Trek",
+   "industry": "Performance Digital Marketing Agency",
    "priority": "High",
-   "channel": "Instagram DM",
-   "email": null
+   "channel_available": "Job link only",
+   "email": null,
+   "pain_point": "Actively hiring for 'Senior SEO Lead + Art Director' (Full-Time/Gig, budget $400–$1,400/mo) — signals unmet in-house marketing/creative capacity. Context: Local businesses; home services & healthcare; revenue-focused",
+   "solution": "Brand identity & graphic design retainer (agency alternative to the hire)"
   },
   {
-   "id": 38,
-   "business": "H & A Hawe Souvenirs",
+   "id": 29,
+   "business": "Surge Marketing",
+   "industry": "Performance Marketing Agency",
    "priority": "High",
-   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "email": null
+   "channel_available": "Job link only",
+   "email": null,
+   "pain_point": "Actively hiring for 'Expert Video Editor' (Any, budget $5–$8/hr) — signals unmet in-house marketing/creative capacity. Context: 100+ client accounts; ad campaigns + creative content",
+   "solution": "Video/content production retainer"
   },
   {
-   "id": 57,
-   "business": "Australian Pacific Lodges / Real Estate Downunder",
+   "id": 36,
+   "business": "Organic Crew",
+   "industry": "Solopreneur / Ecommerce Owner",
    "priority": "High",
-   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-   "email": null
+   "channel_available": "LinkedIn only",
+   "email": null,
+   "pain_point": "Ecommerce owner + senior marketer; 14K followers — perfect for digital marketing pitch",
+   "solution": "Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
   },
   {
-   "id": 107,
-   "business": "aliceBoat Yacht Charter",
+   "id": 47,
+   "business": "Grey Lynn Firehouse",
+   "industry": "Food & Beverage Business Owner",
    "priority": "High",
-   "channel": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting",
-   "email": null
+   "channel_available": "LinkedIn only",
+   "email": null,
+   "pain_point": "F&B owner in Auckland — needs social media + brand content",
+   "solution": "Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
   },
   {
-   "id": 108,
-   "business": "YACHTSIDE Monaco",
+   "id": 49,
+   "business": "THE BIG POT NURSERY / Conference Design",
+   "industry": "Small Business Owner / Conference Manager",
    "priority": "High",
-   "channel": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting",
-   "email": null
+   "channel_available": "LinkedIn only",
+   "email": null,
+   "pain_point": "Nursery owner + conference mgr — needs seasonal marketing",
+   "solution": "Brand identity, website, or social media design retainer (per GoodnessCities AU outreach template)"
   }
  ],
  "leads": [
