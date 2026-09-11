@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "generated_by": "prisynchracy-morning-command (Master Daily Command, 2026-09-11 AM Bahrain)",
+  "generated_by": "prisynchracy-morning-command (Master Daily Command, 2026-09-11 AM Bahrain) · data refreshed 2026-09-12 00:10 by prisynchracy-sync-refresh-8hr (drive status + aged day-counts only; picks/prospects untouched)",
   "verse": {
     "text": "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.",
     "ref": "Galatians 6:9 — Day 11 of 31, from 21 Bible/📖 Daily Verse Rotation"
@@ -61,21 +61,21 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — 50 Years Campaign",
-    "note": "2026-09-11 AM Master Command (Friday, Bahrain weekend — REHC actions queue for Sunday 09-13). Desktop Commander live this run, but NO external drives mounted (/Volumes shows Macintosh HD only) — Extreme Pro, AXL8GP, AXL8GP2 all unplugged, so no live df/ls. State carried forward unchanged from the 09-06 live read (Extreme Pro 714/4001GB, 18%; newest work = REHC Vest and Shirt Folder, Sep 3; RFID folder touched Sep 2; ALL BADGES COLOR FOR PRINT, Aug 25). No progress invented. The real open item is not design work — it is the sign-off cluster sitting unconfirmed since 2026-07-14, now 59 days.",
+    "note": "2026-09-12 00:10 sync refresh (Saturday — REHC actions still queue for Sunday 09-13). Desktop Commander live this run; live `df` re-confirms NO external drives mounted (/Volumes shows Macintosh HD only) — Extreme Pro, AXL8GP, AXL8GP2 unplugged 6 days now. State carried forward unchanged from the 09-06 live read (Extreme Pro 714/4001GB, 18%; newest work = REHC Vest and Shirt Folder, Sep 3; RFID folder touched Sep 2; ALL BADGES COLOR FOR PRINT, Aug 25). No progress invented. The real open item is not design work — it is the sign-off cluster sitting unconfirmed since 2026-07-14, now 60 days.",
     "items": [
       {
         "task": "RFID card — chase written sign-off + final print specs (folder touched Sep 2, first movement in weeks; status still unconfirmed)",
-        "deadline": "awaiting client approval — 59 days",
+        "deadline": "awaiting client approval — 60 days",
         "status": "🔴 blocked on client"
       },
       {
         "task": "REHC New Joiner ID (PPTX) — same sign-off cluster, design done",
-        "deadline": "awaiting client approval — 59 days",
+        "deadline": "awaiting client approval — 60 days",
         "status": "🔴 blocked on client"
       },
       {
         "task": "OOH REHC-2680 + REHC-2681 — confirm final approval received",
-        "deadline": "awaiting client approval — 59 days",
+        "deadline": "awaiting client approval — 60 days",
         "status": "🔴 blocked on client"
       },
       {
@@ -151,7 +151,7 @@
       "p": 8,
       "area": "🏇 REHC/BTC",
       "task": "Plug in Extreme Pro before Sunday",
-      "why": "The drive has been unmounted for 5 days. Every REHC status on this deck is carried forward from 09-06, not verified. The longer it stays unplugged the more the briefing drifts from reality.",
+      "why": "The drive has now been unmounted 6 days (re-checked live 2026-09-12 00:10 — still nothing but Macintosh HD). Every REHC status on this deck is carried forward from 09-06, not verified. The longer it stays unplugged the more the briefing drifts from reality.",
       "action": "Physically connect Extreme Pro to the Mac before Sunday's run so tomorrow's drive check is live.",
       "est": "1 min"
     },
@@ -214,7 +214,7 @@
     },
     {
       "k": "REHC sign-off cluster",
-      "v": "🔴 59 days awaiting client approval (RFID + New Joiner ID + OOH)"
+      "v": "🔴 60 days awaiting client approval (RFID + New Joiner ID + OOH)"
     },
     {
       "k": "GC drafts unsent",
@@ -234,7 +234,7 @@
     },
     {
       "k": "Drives",
-      "v": "⚪ none mounted — REHC state carried forward from 09-06"
+      "v": "⚪ none mounted (live df re-checked 2026-09-12 00:10, day 6 unplugged) — REHC state carried forward from 09-06"
     }
   ]
 }
