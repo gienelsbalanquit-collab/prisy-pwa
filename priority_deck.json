@@ -61,7 +61,7 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — 50 Years Campaign",
-    "note": "2026-09-12 12:15 AM Master Command — Extreme Pro MOUNTED and live-read after 6 days unplugged (712/4001GB, 18%). Real work did happen through the blind window: Badges now an orders+print package (for Hollogram.pdf 09-11, REHC Orders Combined-Final.xlsx 09-10, VIP pass .eps + lanyard 09-10), Vest/Shirt active design 09-08→09-09, RFID now has 'for print' files 09-07→09-08. The problem is not output. FOUR jobs created in one Sep-9 session — BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt — have NO brief, NO scope, NO deadline anywhere in the vault. And the sign-off cluster is 60 days unmoved. Design capacity is fine; the intake and the close-out are what is broken.",
+    "note": "2026-09-12 12:15 AM Master Command — Extreme Pro MOUNTED and live-read after 6 days unplugged (712/4001GB, 18%). Real work did happen through the blind window: Badges now an orders+print package (for Hollogram.pdf 09-11, REHC Orders Combined-Final.xlsx 09-10, VIP pass .eps + lanyard 09-10), Vest/Shirt active design 09-08→09-09, RFID now has 'for print' files 09-07→09-08. UPDATE (Gienel-confirmed via chat, same day): badges are proceeding to print in China — no longer just print-ready, actually sent to vendor. Google Drive cross-check (separate real location, not a mirror of Extreme Pro) found more badge/accreditation source material (Accreditation 2026-27.pdf, an earlier Aug-11 Orders Combined.xlsx, BTC proofs Sep 3-9, REHC HIGH COMMITTEE/STAFF badge-content proofs Sep 9-10) plus one genuinely new, previously untracked project: BTC_Brand_Discovery_Questionnaire.docx (Sep 1) — a standalone Bahrain Turf Club brand guideline, separate from REHC's. FOUR jobs created in one Sep-9 session — BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt — still have NO brief, NO scope, NO deadline anywhere in the vault. Sign-off cluster (New Joiner ID + OOH) still 60 days unmoved.",
     "items": [
       {
         "task": "Sign-off cluster — ONE email naming RFID + New Joiner ID + OOH (2680/2681), each with a yes/no ask and a hard date ('confirm by Thu 09-17 or tell me what is blocking'). RFID now has 'for print' files dated 09-08, so this is a print-readiness ask, not a polite nudge.",
@@ -74,14 +74,19 @@
         "status": "🔴 four jobs, zero briefs — new requests keep landing on the drive unscoped"
       },
       {
-        "task": "Confirm the 2026/27 badge order was actually PLACED with the vendor — REHC Orders Combined-Final.xlsx and print-ready VIP/lanyard files exist, but a file is not a purchase order.",
-        "deadline": "Sun 09-13",
-        "status": "🟡 print-ready, vendor status unverified"
+        "task": "2026/27 badges — Gienel-confirmed: proceeding to print in China. No longer a follow-up item.",
+        "deadline": "done",
+        "status": "✅ confirmed sent to print"
       },
       {
         "task": "Brand Guideline (Combined, 09-01) and Brochure (for-print PDF, 08-27) are both sitting on finished-looking exports, idle 10–15 days. Decide: send, or name what is missing.",
         "deadline": "Sun 09-13",
         "status": "🟡 finished-looking, unsent"
+      },
+      {
+        "task": "NEW — BTC_Brand_Discovery_Questionnaire.docx found on Google Drive (Sep 1): a standalone Bahrain Turf Club brand guideline project, separate from REHC's, not yet in the vault's project tracker. Scope + confirm status with Gienel.",
+        "deadline": "unconfirmed — ask Gienel",
+        "status": "🟡 new project surfaced, unscoped in vault"
       }
     ]
   },
