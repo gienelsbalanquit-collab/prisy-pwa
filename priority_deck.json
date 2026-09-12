@@ -1,6 +1,6 @@
 {
   "date": "2026-09-11",
-  "generated_by": "prisynchracy-morning-command (Master Daily Command, 2026-09-11 AM Bahrain) · data refreshed 2026-09-12 00:10 by prisynchracy-sync-refresh-8hr (drive status + aged day-counts only; picks/prospects untouched)",
+  "generated_by": "prisynchracy-morning-command (Master Daily Command, 2026-09-11 AM Bahrain) · data refreshed 2026-09-12 08:05 by prisynchracy-sync-refresh-8hr (aged day-counts only; Desktop Commander UNAVAILABLE this run so no live df/drive read; picks/prospects untouched)",
   "verse": {
     "text": "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.",
     "ref": "Galatians 6:9 — Day 11 of 31, from 21 Bible/📖 Daily Verse Rotation"
@@ -61,7 +61,7 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — 50 Years Campaign",
-    "note": "2026-09-12 00:10 sync refresh (Saturday — REHC actions still queue for Sunday 09-13). Desktop Commander live this run; live `df` re-confirms NO external drives mounted (/Volumes shows Macintosh HD only) — Extreme Pro, AXL8GP, AXL8GP2 unplugged 6 days now. State carried forward unchanged from the 09-06 live read (Extreme Pro 714/4001GB, 18%; newest work = REHC Vest and Shirt Folder, Sep 3; RFID folder touched Sep 2; ALL BADGES COLOR FOR PRINT, Aug 25). No progress invented. The real open item is not design work — it is the sign-off cluster sitting unconfirmed since 2026-07-14, now 60 days.",
+    "note": "2026-09-12 08:05 sync refresh. Desktop Commander FAILED TO CONNECT this run — no live `df`, no live drive listing. Drive status is therefore carried forward from the 2026-09-12 00:10 run (no external drives mounted; day 6 unplugged) and NOT re-verified. Vault cross-check via the Google Drive mirror: the REHC & BTC Design Source note is still last-modified 2026-09-06 — no new work log entry, so nothing new to add. State remains the 09-06 live read (Extreme Pro 714/4001GB, 18%; newest work = REHC Vest and Shirt Folder, Sep 3; RFID folder touched Sep 2; ALL BADGES COLOR FOR PRINT, Aug 25). No progress invented. The real open item is not design work — it is the sign-off cluster unconfirmed since 2026-07-14, now 60 days.",
     "items": [
       {
         "task": "RFID card — chase written sign-off + final print specs (folder touched Sep 2, first movement in weeks; status still unconfirmed)",
@@ -94,7 +94,7 @@
     {
       "p": 1,
       "area": "🏇 REHC/BTC",
-      "task": "Break the 59-day sign-off deadlock — RFID + New Joiner ID + OOH (2680/2681)",
+      "task": "Break the 60-day sign-off deadlock — RFID + New Joiner ID + OOH (2680/2681)",
       "why": "Three finished deliverables have sat 'awaiting client approval' since 2026-07-14. Nothing else in the day job moves until these close, and unbilled finished work is the most expensive kind.",
       "action": "Draft ONE email to the REHC contact listing all three by name, each with a yes/no ask and a date: 'confirm approval by Thu 09-17 or tell me what's blocking.' Friday is the Bahrain weekend — write it today, send Sunday 09-13 first thing.",
       "est": "25 min write, send Sun"
@@ -102,8 +102,8 @@
     {
       "p": 2,
       "area": "🔥 Prisynchracy",
-      "task": "Send the CX13 (Pomelo Fashion) + CX14 (ZALORA) Day-6 close asks — 24 days overdue",
-      "why": "Both had Day-2 insight DMs on 08-14 with the Day-6 ask due 08-18. At 24 days late these are effectively cold; sending today is the last honest attempt before writing them off.",
+      "task": "Send the CX13 (Pomelo Fashion) + CX14 (ZALORA) Day-6 close asks — 25 days overdue",
+      "why": "Both had Day-2 insight DMs on 08-14 with the Day-6 ask due 08-18. At 25 days late these are effectively cold; sending today is the last honest attempt before writing them off.",
       "action": "Open LinkedIn, send CX13 (David Jou / Casey Liang) and CX14 (Achint Setia) a short re-open: acknowledge the gap, restate the one insight, ask for 15 minutes. If no reply by 09-18, mark closed in prisy_prospect_tracker.json.",
       "est": "20 min"
     },
@@ -111,15 +111,15 @@
       "p": 3,
       "area": "🔥 Prisynchracy",
       "task": "Refill the pipeline from the Bahrain trend watchlist — 4 fresh Day-0 connects",
-      "why": "The pipeline has been dry 28 days: every one of the 24 tracked prospects is closed or exhausted except CX13/CX14. Meanwhile 11 never-contacted Bahrain-first names with scores 86-96 and ready-written hooks have been sitting unused in prisy_bahrain_trend_prospect_watchlist_2026.xlsx since April. This is a sourcing gap, not a demand problem.",
+      "why": "The pipeline has been dry 29 days: every one of the 24 tracked prospects is closed or exhausted except CX13/CX14. Meanwhile 11 never-contacted Bahrain-first names with scores 86-96 and ready-written hooks have been sitting unused in prisy_bahrain_trend_prospect_watchlist_2026.xlsx since April. This is a sourcing gap, not a demand problem.",
       "action": "Send LinkedIn connect + hook to Café Ségo (Ségolène Crêtaux, 96), L'AVENUE (Zainab Jamsheer, 94), The Triple B (Favaz Ahmed, 93), DOSE Café Bahrain (Merwyn Castelino, 92). Hooks are pre-written in the xlsx — use them verbatim. Log each in prisy_prospect_tracker.json same day.",
       "est": "30 min"
     },
     {
       "p": 4,
       "area": "🌆 GoodnessCities",
-      "task": "Decide the fate of 5 outreach drafts that have sat unsent for 54-61 days",
-      "why": "Gmail holds 5 GC drafts from 07-05 to 07-19 (Caroline Olds ×2, DAMENO, La Costa Properties Monaco, Petrini) — all written, none sent. The system has been drafting into a void. Either these go out or the GC email motion should stop pretending to be a channel.",
+      "task": "Decide the fate of 5 outreach drafts that have sat unsent for 55-69 days",
+      "why": "Gmail holds 5 GC drafts from 07-05 to 07-19 (Caroline Olds ×2, DAMENO, La Costa Properties Monaco, Petrini) — all written, none sent (55-69 days old — the earlier '54-61' range under-counted the oldest draft). The system has been drafting into a void. Either these go out or the GC email motion should stop pretending to be a channel.",
       "action": "Open Gmail drafts. Send the two strongest as-is (DAMENO, Caroline Olds — the newer one), delete the duplicate Caroline Olds draft, and either send or discard La Costa + Petrini. Then decide: does GC email stay in the daily loop or come off it?",
       "est": "20 min"
     },
@@ -134,10 +134,10 @@
     {
       "p": 6,
       "area": "📺 PSH",
-      "task": "YouTube Studio Week-1 audit — 65 days open, still 0 boxes ticked",
+      "task": "YouTube Studio Week-1 audit — 66 days open, still 0 boxes ticked",
       "why": "PSH is the active dormant-venture slot and the gate is a single hour of checking: YPP/monetization status, strikes, RPM history. 868K subscribers are sitting behind an audit that has never been started. Nothing in PSH can move — and @ peace cannot be queued — until this is done.",
-      "action": "Not today (Friday). Block it into Saturday 09-12's 2.5h production slot: open YouTube Studio, screenshot monetization status + strikes + last-12-month RPM, tick the boxes in the vault PSH note.",
-      "est": "1h (Sat)"
+      "action": "TODAY is Saturday 09-12 — this IS the 2.5h production slot. Open YouTube Studio, screenshot monetization status + strikes + last-12-month RPM, tick the boxes in the vault PSH note. Do the audit BEFORE any content work.",
+      "est": "1h (today)"
     },
     {
       "p": 7,
@@ -151,7 +151,7 @@
       "p": 8,
       "area": "🏇 REHC/BTC",
       "task": "Plug in Extreme Pro before Sunday",
-      "why": "The drive has now been unmounted 6 days (re-checked live 2026-09-12 00:10 — still nothing but Macintosh HD). Every REHC status on this deck is carried forward from 09-06, not verified. The longer it stays unplugged the more the briefing drifts from reality.",
+      "why": "The drive has now been unmounted 6 days. Desktop Commander was unavailable at 08:05 so this could NOT be re-checked live — the last live confirmation was 2026-09-12 00:10. Every REHC status on this deck is carried forward from 09-06, not verified. The longer it stays unplugged the more the briefing drifts from reality.",
       "action": "Physically connect Extreme Pro to the Mac before Sunday's run so tomorrow's drive check is live.",
       "est": "1 min"
     },
@@ -167,7 +167,7 @@
       "p": 10,
       "area": "🩺 Health",
       "task": "Book the doctor's visit — HbA1c 7.61%, fasting glucose 6.59, LDL 5.64",
-      "why": "Open since 2026-07-17, 56 days. Diabetic-range blood sugar does not wait for a convenient week. The vision note says it plainly: the provision plan depends on being physically present.",
+      "why": "Open since 2026-07-17, 57 days. Diabetic-range blood sugar does not wait for a convenient week. The vision note says it plainly: the provision plan depends on being physically present.",
       "action": "Call the clinic Sunday morning and book. One call.",
       "est": "5 min"
     }
@@ -218,7 +218,7 @@
     },
     {
       "k": "GC drafts unsent",
-      "v": "🔴 5 drafts, 54-61 days old — decision due today"
+      "v": "🔴 5 drafts, 55-69 days old — decision overdue"
     },
     {
       "k": "GC Hot Picks",
@@ -226,7 +226,7 @@
     },
     {
       "k": "📺 PSH",
-      "v": "Week-1 audit 0/5 boxes, 65 days open — @ peace stays gated"
+      "v": "Week-1 audit 0/5 boxes, 66 days open — @ peace stays gated (today is the Saturday slot)"
     },
     {
       "k": "Scheduler",
@@ -234,7 +234,7 @@
     },
     {
       "k": "Drives",
-      "v": "⚪ none mounted (live df re-checked 2026-09-12 00:10, day 6 unplugged) — REHC state carried forward from 09-06"
+      "v": "⚪ none mounted — day 6 unplugged. NOT re-verified at 08:05 (Desktop Commander down); last live df was 2026-09-12 00:10. REHC state carried forward from 09-06."
     }
   ]
 }
