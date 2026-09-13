@@ -1,6 +1,6 @@
 {
   "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
-  "updated": "2026-09-12",
+  "updated": "2026-09-13",
   "total_real_leads": 245,
   "excluded_fictional_rows": 20,
   "compliance_flags": [
@@ -28,52 +28,52 @@
   "email_ready_count": 4,
   "hot_picks": [
     {
-      "id": 98,
-      "business": "Caroline Olds Real Estate",
-      "industry": "Real Estate",
+      "id": 101,
+      "business": "La Costa Properties Monaco",
       "priority": "High",
-      "email": "caroline@carolineolds.com",
-      "pain_point": "Independent, English-speaking, personal brand. Very responsive 8AM–10PM."
+      "segment": "Monaco – Real Estate",
+      "channel": "Email via Brevo — verified address found at https://www.lacosta-properties-monaco.com/en/ (footer contact info)",
+      "email": "info@25lcp.com"
     },
     {
-      "id": 100,
-      "business": "DAMENO Monaco Real Estate",
-      "industry": "Real Estate",
+      "id": 102,
+      "business": "Petrini Exclusive Real Estate",
       "priority": "High",
-      "email": "info@dameno.mc",
-      "pain_point": "Independent, open 24/7. Check website quality."
+      "segment": "Monaco – Real Estate",
+      "channel": "Email via Brevo — verified address found at https://www.petrini.mc/en/contact.html (mailto link)",
+      "email": "contact@petrini.mc"
     },
     {
-      "id": 34,
-      "business": "Jocelyn Wright Freelance",
-      "industry": "Owner / Graphic Designer",
+      "id": 1,
+      "business": "Floriddia Creative",
       "priority": "High",
-      "email": null,
-      "pain_point": "Creative Manager at Kmart + own freelance biz — needs branding/marketing support"
+      "segment": "B2B – Job-Board Signal (PH sourced)",
+      "channel": "Message/apply via OnlineJobs.ph job link",
+      "email": null
     },
     {
-      "id": 35,
-      "business": "Metal Concepts Ltd",
-      "industry": "Managing Director / Owner",
+      "id": 7,
+      "business": "HY Systems",
       "priority": "High",
-      "email": null,
-      "pain_point": "Manufacturing; 23K followers; established business"
+      "segment": "B2B – Job-Board Signal (PH sourced)",
+      "channel": "Message/apply via OnlineJobs.ph job link",
+      "email": null
     },
     {
-      "id": 41,
-      "business": "Stretch Marquees & Fabric Structures",
-      "industry": "Co-Owner / Brand Manager",
+      "id": 31,
+      "business": "THE ICON DEPOT",
       "priority": "High",
-      "email": null,
-      "pain_point": "Already does marketing + brand management — may need agency support for content/digital"
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "email": null
     },
     {
-      "id": 46,
-      "business": "Little Green Healthery",
-      "industry": "Small Business Owner",
+      "id": 37,
+      "business": "FEDERATION",
       "priority": "High",
-      "email": null,
-      "pain_point": "Health/wellness biz in Auckland — strong fit for GoodnessCities brand values"
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "email": null
     }
   ],
   "leads": [

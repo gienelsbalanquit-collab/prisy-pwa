@@ -1,9 +1,9 @@
 {
-  "date": "2026-09-12",
-  "generated_by": "prisynchracy-morning-command (AM Master Command, Saturday 2026-09-12 12:15 Bahrain)",
+  "date": "2026-09-13",
+  "generated_by": "prisynchracy-morning-command (Sunday AM Master Command)",
   "verse": {
-    "text": "Commit your way to the LORD; trust in him and he will do this.",
-    "ref": "Psalm 37:5 — Day 12 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "Whatever your hand finds to do, do it with all your might.",
+    "ref": "Ecclesiastes 9:10 — Day 13 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
@@ -41,7 +41,7 @@
       }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-09-12",
+    "updated": "2026-09-13",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,32 +61,32 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — 50 Years Campaign",
-    "note": "2026-09-12 12:15 AM Master Command — Extreme Pro MOUNTED and live-read after 6 days unplugged (712/4001GB, 18%). Real work did happen through the blind window: Badges now an orders+print package (for Hollogram.pdf 09-11, REHC Orders Combined-Final.xlsx 09-10, VIP pass .eps + lanyard 09-10), Vest/Shirt active design 09-08→09-09, RFID now has 'for print' files 09-07→09-08. UPDATE (Gienel-confirmed via chat, same day): badges are proceeding to print in China — no longer just print-ready, actually sent to vendor. Google Drive cross-check (separate real location, not a mirror of Extreme Pro) found more badge/accreditation source material (Accreditation 2026-27.pdf, an earlier Aug-11 Orders Combined.xlsx, BTC proofs Sep 3-9, REHC HIGH COMMITTEE/STAFF badge-content proofs Sep 9-10) plus one genuinely new, previously untracked project: BTC_Brand_Discovery_Questionnaire.docx (Sep 1) — a standalone Bahrain Turf Club brand guideline, separate from REHC's. FOUR jobs created in one Sep-9 session — BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt — still have NO brief, NO scope, NO deadline anywhere in the vault. Sign-off cluster (New Joiner ID + OOH) still 60 days unmoved.",
+    "note": "2026-09-13: all four drives (AXL8GP, AXL8GP2, Extreme Pro, XTRA) NOT mounted this run (df confirms /Volumes = Macintosh HD only) — REHC/BTC state carried forward unchanged from the 2026-09-12 12:12 live read, nothing invented. Badges: CONFIRMED proceeding to print in China (Gienel, 09-12) — closed. Sign-off cluster (RFID + New Joiner ID + OOH 2680/2681) now 61 days awaiting client approval, still the oldest open item; yesterday's plan explicitly said 'send Sun 09-13 08:00' but sending that client email is outside this run's scope (no REHC mailbox connector in this session, and this task is not authorized to send on gienelbalanquit@rehc.gov.bh) — flagged as today's #1 physical action for Gienel himself. Four Sep-9 jobs (BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt) still have zero brief/scope/deadline anywhere in the vault. BTC standalone Brand Discovery Questionnaire (found 09-12 on Google Drive, Sep 1) still unconfirmed with Gienel.",
     "items": [
       {
-        "task": "Sign-off cluster — ONE email naming RFID + New Joiner ID + OOH (2680/2681), each with a yes/no ask and a hard date ('confirm by Thu 09-17 or tell me what is blocking'). RFID now has 'for print' files dated 09-08, so this is a print-readiness ask, not a polite nudge.",
-        "deadline": "write Sat 09-12, send Sun 09-13 08:00",
-        "status": "🔴 60 days unmoved — oldest open item"
+        "task": "Send the sign-off cluster email — ONE email naming RFID + New Joiner ID + OOH (2680/2681), each with a yes/no ask and a hard date. Drafted content ready; Gienel must send from his own REHC mailbox.",
+        "deadline": "today 2026-09-13",
+        "status": "🔴 61 days unmoved — oldest open item, drafted not sent"
       },
       {
-        "task": "Scope the four untracked Sep-9 jobs in the same email: BJF Vest and shirt (new, sibling of REHC Vest — this is TWO garment sets), Season Parade ring, 2026 race schedule, REHC Vest and shirt. Ask for brief + deadline on each.",
-        "deadline": "send Sun 09-13",
-        "status": "🔴 four jobs, zero briefs — new requests keep landing on the drive unscoped"
+        "task": "Scope the four untracked Sep-9 jobs (BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt) — ask for brief + deadline on each, same email as above.",
+        "deadline": "today 2026-09-13",
+        "status": "🔴 four jobs, zero briefs"
       },
       {
-        "task": "2026/27 badges — Gienel-confirmed: proceeding to print in China. No longer a follow-up item.",
-        "deadline": "done",
-        "status": "✅ confirmed sent to print"
-      },
-      {
-        "task": "Brand Guideline (Combined, 09-01) and Brochure (for-print PDF, 08-27) are both sitting on finished-looking exports, idle 10–15 days. Decide: send, or name what is missing.",
-        "deadline": "Sun 09-13",
+        "task": "Brand Guideline (Combined, 09-01) and Brochure (for-print PDF, 08-27) both finished-looking, idle 12-17 days. Decide: send, or name what's missing.",
+        "deadline": "today",
         "status": "🟡 finished-looking, unsent"
       },
       {
-        "task": "NEW — BTC_Brand_Discovery_Questionnaire.docx found on Google Drive (Sep 1): a standalone Bahrain Turf Club brand guideline project, separate from REHC's, not yet in the vault's project tracker. Scope + confirm status with Gienel.",
+        "task": "BTC_Brand_Discovery_Questionnaire.docx (Google Drive, Sep 1) — standalone BTC brand guideline project, still not scoped in the vault tracker.",
         "deadline": "unconfirmed — ask Gienel",
-        "status": "🟡 new project surfaced, unscoped in vault"
+        "status": "🟡 unscoped, 2nd day flagged"
+      },
+      {
+        "task": "2026/27 badges — proceeding to print in China (Gienel-confirmed 09-12).",
+        "deadline": "done",
+        "status": "✅ confirmed sent to print"
       }
     ]
   },
@@ -94,109 +94,99 @@
     {
       "p": 1,
       "area": "🏇 REHC/BTC",
-      "task": "One consolidated sign-off email — RFID + New Joiner ID + OOH, each with a date",
-      "why": "60 days. Three separate polite nudges produced nothing; RFID now has print-ready files, so the ask is concrete instead of procedural.",
-      "action": "Open a blank email, three bullets, one deadline line: 'confirm by Thursday 09-17.' Write it today; send Sunday 08:00 (Bahrain weekend).",
-      "est": "25 min"
+      "task": "Send the sign-off cluster email (RFID + New Joiner ID + OOH 2680/2681) with a hard date ask",
+      "why": "61 days pending, oldest open item on the whole board; yesterday's own plan named today 08:00 as the send date. This run cannot send it (no REHC mailbox connected, not in this task's authorized scope).",
+      "action": "Open gienelbalanquit@rehc.gov.bh, write one email covering all three, name Thu 09-17 as the confirm-by date.",
+      "est": "15 min"
     },
     {
       "p": 2,
       "area": "🏇 REHC/BTC",
-      "task": "Get briefs + deadlines for the 4 untracked Sep-9 jobs",
-      "why": "Four jobs were built on Sep 9 with no scope and no date recorded anywhere. That is how unpaid scope creep starts — and it is a quieter risk than the sign-off backlog.",
-      "action": "Add a second block to the same Sunday email listing BJF Vest, REHC Vest, Season Parade ring, 2026 race schedule — ask for brief + deadline on each.",
-      "est": "10 min (same email)"
+      "task": "Get briefs + deadlines on the 4 unscoped Sep-9 jobs (BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt)",
+      "why": "New work keeps landing on the drive with no scope — same email as P1 can ask for this in one pass.",
+      "action": "Add one paragraph to the P1 email asking for brief + deadline on each of the 4 jobs.",
+      "est": "10 min"
     },
     {
       "p": 3,
       "area": "🔥 Prisynchracy",
-      "task": "6 fresh Bahrain Day-0 connects (Lily Organics, Revive Spa, Withyn, Diyar Al Muharraq, ASK Real Estate, Naseej)",
-      "why": "Saturday is the warm-up-DM slot in the 5-day cadence, and these six are the untouched tier-2 of the Bahrain watchlist (scores 86–91). Meets the 6-DM minimum without re-sending yesterday's four.",
-      "action": "One midday block. Connect + hook line each, then log all six in prisy_prospect_tracker.json before closing the laptop.",
-      "est": "45 min"
+      "task": "Day-2 insight DM — Café Ségo, L'AVENUE Restaurant & Café, The Triple B, DOSE Café Bahrain",
+      "why": "All four were Day-0 connects on 09-11 (Friday); today is exactly Day-2, the scheduled insight-DM touch. Meets 4 of the 6-DM daily minimum.",
+      "action": "Send the pre-written insight hook to each of the 4 via LinkedIn, log the send in prisy_prospect_tracker.json (CX15-18).",
+      "est": "25 min"
     },
     {
       "p": 4,
-      "area": "📺 PSH",
-      "task": "Week-1 AUDIT — YPP/monetization status, strikes, RPM history",
-      "why": "Today IS the Saturday production block, and the audit gate has been open 67 days. 868K subscribers sit behind roughly one hour of checking. Nothing else in PSH may start until this is ticked.",
-      "action": "YouTube Studio → Monetization tab. Screenshot status + strikes + last-12-month RPM. Tick the 5 boxes in the vault PSH note.",
-      "est": "60 min (inside the 2.5h Sat block)"
+      "area": "🔥 Prisynchracy",
+      "task": "Resolve and send CX13 (Pomelo Fashion) + CX14 (ZALORA) Day-6 close asks",
+      "why": "Both are ~30 days overdue — a Day-6 ask due ~08-18 was never confirmed as sent, and this ambiguity has now sat unresolved for 2 days running. Completes the 6-DM minimum.",
+      "action": "Check LinkedIn sent messages for both. If not sent, send today. Either way, log the confirmed date in prisy_prospect_tracker.json.",
+      "est": "10 min"
     },
     {
       "p": 5,
       "area": "🌆 GoodnessCities",
-      "task": "Empty the draft folder — send or delete all 5",
-      "why": "55–69 days old and verified still sitting in Gmail this morning. No sixth draft was created today, deliberately. A channel that only ever produces drafts is not a channel.",
-      "action": "Open Gmail drafts: send DAMENO + newest Caroline Olds, delete the 07-05 Caroline duplicate, send-or-discard La Costa + Petrini. Then decide if GC email stays a channel at all.",
+      "task": "Clear the 5-draft GC email backlog (Caroline Olds ×2, DAMENO, Petrini, La Costa — 56-71 days unsent)",
+      "why": "3rd consecutive day this run has deliberately skipped drafting a 6th email into a folder nobody is reading. The GC email motion is doing nothing until these are sent or discarded.",
+      "action": "Gienel: open Gmail drafts, send or delete each of the 5, decide whether the email channel is worth continuing for GC.",
       "est": "20 min"
     },
     {
       "p": 6,
-      "area": "⚙️ System",
-      "task": "Fix the evening-review cron — it is set to 9 AM, not 9 PM",
-      "why": "ROOT CAUSE FOUND. master-evening-review runs on '0 9 * * *' = 09:04 AM. Its own out-of-window safety gate then rejects it every single day. No evening marker exists since 2026-08-21 — 22 days of a dead closing loop, silently. This is why REHC progress from Sep 7–11 never reached the vault.",
-      "action": "Settings → Scheduled tasks → master-evening-review → change schedule to 21:00 Bahrain. While there: master-command-dispatch-listener says 'every 15 min' but is also on '0 9 * * *' — set it to */15.",
-      "est": "5 min"
+      "area": "🌆 GoodnessCities",
+      "task": "Today's 6 Hot Picks — La Costa Properties, Petrini, Floriddia Creative, HY Systems, THE ICON DEPOT, FEDERATION",
+      "why": "Rotated fresh (none proposed in the last 5 days, none TCPA/plumbing), 2 email-capable per the daily rule.",
+      "action": "Already logged in goodnesscities_leads.json + goodnesscities_state.json this run — no further action needed today beyond P5's backlog decision.",
+      "est": "done"
     },
     {
       "p": 7,
-      "area": "🔥 Prisynchracy",
-      "task": "Verify whether yesterday's CX13 + CX14 close asks actually went out",
-      "why": "The tracker still reads last_touch 2026-08-14 for both. Either they were sent and never logged, or they were never sent — and the system cannot tell the difference. That ambiguity is the whole reason the July history became contradictory.",
-      "action": "Check LinkedIn sent messages. If sent, log the date. If not, send today with the other six and log all eight.",
-      "est": "10 min"
+      "area": "📺 PSH",
+      "task": "PSH Week-1 audit — still 0/5, now 67 days open",
+      "why": "Zero progress since 2026-07-08. Today is Sunday — not the Sat production or Wed stats slot — but the audit itself has no scheduled day and keeps aging regardless.",
+      "action": "5-minute YouTube Studio check: Partner Program status, strikes, RPM — the entire revival is gated behind this.",
+      "est": "5 min"
     },
     {
       "p": 8,
-      "area": "⚙️ System",
-      "task": "AXL8GP2 offload — rare window, both drives mounted right now",
-      "why": "85% full, 67 days open. AXL8GP2 and Extreme Pro (3.3TB free) are BOTH mounted today for the first time in weeks — this exact window is what the task has been waiting for and it closes when the cables come out.",
-      "action": "Drag one finished video/design project folder from AXL8GP2 to Extreme Pro. One is enough to start.",
-      "est": "15 min + copy time"
+      "area": "⚙️ Systems",
+      "task": "AXL8GP2 offload — 68 days open",
+      "why": "Drive is at 85% and not mounted today, so it can't be actioned right now, but the day-count keeps climbing regardless.",
+      "action": "Next time AXL8GP2 + Extreme Pro are both plugged in together, move finished projects across before unplugging again.",
+      "est": "n/a today — drive not mounted"
     },
     {
       "p": 9,
-      "area": "🩺 Health",
-      "task": "Book the doctor's visit — HbA1c 7.61%, glucose 6.59, LDL 5.64",
-      "why": "57 days open. October retest is the meaningful checkpoint and it needs a booked appointment ahead of it, not after.",
-      "action": "Call the clinic Sunday. Ask about OGTT, eGFR 83 before ruling metformin in/out, and the statin question.",
-      "est": "10 min"
+      "area": "🏢 Office",
+      "task": "Confirm scope/status of BTC_Brand_Discovery_Questionnaire.docx (standalone BTC brand guideline, found 09-12)",
+      "why": "A real, dated project sitting on Google Drive since Sep 1 with zero vault record until 2 days ago — still unconfirmed whether it was ever sent to BTC.",
+      "action": "One-line answer from Gienel: sent or not, and is it separate work from the REHC guideline.",
+      "est": "2 min"
     },
     {
       "p": 10,
-      "area": "⚙️ System",
-      "task": "Push the stranded 09-12 sync commit + today's deck",
-      "why": "Repo is 'ahead 1' — the 08:05 sync commit never reached origin. Same failure mode as 09-08, which left the phone five days stale.",
-      "action": "Handled inside this run; confirm 'up to date with origin/main' afterwards.",
-      "est": "automated"
+      "area": "⚙️ Systems",
+      "task": "Task & Decision Tracker — daily review",
+      "why": "Standing housekeeping item on the Active Projects board.",
+      "action": "Skim for stale items during the evening 10-min review.",
+      "est": "10 min"
     }
   ],
   "day_plan": [
     {
       "block": "Morning deep work",
-      "when": "now → 13:30",
-      "what": "REHC: write the one sign-off email (P1) with the four-job scope block (P2). Do not send — Bahrain weekend. Queue for Sunday 08:00."
-    },
-    {
-      "block": "📺 PSH Saturday production block",
-      "when": "13:30 → 16:00 (2.5h)",
-      "what": "FIRST HOUR: Week-1 audit (P4) — monetization, strikes, RPM. Only after the boxes are ticked, cut Shorts from back catalog."
+      "when": "AM",
+      "what": "REHC/BTC — P1 sign-off email + P2 job-scoping ask"
     },
     {
       "block": "Midday outreach block",
-      "when": "16:00 → 16:45",
-      "what": "All DMs batched: 6 fresh Bahrain Day-0 connects (P3) + CX13/CX14 verification (P7). Log every touch in the tracker the same hour."
-    },
-    {
-      "block": "Housekeeping",
-      "when": "16:45 → 17:20",
-      "what": "Empty the GC draft folder (P5). Fix the evening-review cron (P6). Start one AXL8GP2 → Extreme Pro folder move while both drives are still plugged in (P8)."
+      "when": "Midday",
+      "what": "All 6 Prisy DMs batched (P3 + P4) — Café Ségo/L'AVENUE/Triple B/DOSE Day-2 + CX13/CX14 close asks"
     },
     {
       "block": "Evening review",
-      "when": "21:00",
-      "what": "10 min — and check it actually fires tonight, since the cron fix is the test."
+      "when": "10 min, evening",
+      "what": "Check replies, log any that came in, skim Task & Decision Tracker (P10)"
     }
   ],
   "scoreboard": [
@@ -206,43 +196,39 @@
     },
     {
       "k": "Outreach today",
-      "v": "6 fresh Bahrain Day-0 connects — meets the daily minimum; 2 carry-over closes to verify"
+      "v": "4 Day-2 DMs + 2 overdue close asks (CX13/CX14) = 6, meets daily minimum"
     },
     {
       "k": "Drives",
-      "v": "🟢 ALL FOUR live — AXL8GP 39%, AXL8GP2 85%, Extreme Pro 18%, XTRA 8%. First time all four verified together."
-    },
-    {
-      "k": "REHC work found",
-      "v": "🟢 Real progress Sep 7–11 (badges → orders+print, vest/shirt design, RFID print files) — none of it had reached the vault"
-    },
-    {
-      "k": "REHC jobs unscoped",
-      "v": "🔴 4 jobs from one Sep-9 session with no brief, no deadline"
+      "v": "⚪ NONE mounted today — all REHC state carried from 2026-09-12 live read"
     },
     {
       "k": "REHC sign-off cluster",
-      "v": "🔴 61 days awaiting client approval (RFID + New Joiner ID + OOH)"
+      "v": "🔴 61 days awaiting client approval — drafted email not yet sent by Gienel"
+    },
+    {
+      "k": "REHC jobs unscoped",
+      "v": "🔴 4 jobs from one Sep-9 session, still no brief/deadline"
     },
     {
       "k": "GC drafts unsent",
-      "v": "🔴 5 drafts, 55–69 days — verified still sitting in Gmail this morning. No 6th created."
+      "v": "🔴 5 drafts, 56-71 days — 3rd day running no 6th draft created"
     },
     {
       "k": "GC Hot Picks",
-      "v": "6/6 rotated (2 email-capable, 4 rested since mid-August)"
+      "v": "6/6 rotated (2 email-capable: La Costa, Petrini)"
     },
     {
       "k": "📺 PSH",
-      "v": "Week-1 audit 0/5, 67 days open — today is the Saturday slot, @ peace stays gated"
+      "v": "Week-1 audit 0/5, 67 days open — Sunday, no production/stats block scheduled"
     },
     {
-      "k": "Evening review",
-      "v": "🔴 ROOT CAUSE: cron set to 9 AM not 9 PM — dead 22 days, no marker since 08-21"
+      "k": "Sibiraj / Ayush",
+      "v": "Sibiraj closed (07-14, 61 days); Ayush nurture-only, 92 days unactioned"
     },
     {
       "k": "AXL8GP2 offload",
-      "v": "⚠️ 67 days open — but both drives are mounted right now, the window is open today"
+      "v": "⚠️ 68 days open — not mounted today, can't action"
     }
   ]
 }
