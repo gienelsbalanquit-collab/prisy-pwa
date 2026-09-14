@@ -1,6 +1,6 @@
 {
   "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
-  "updated": "2026-09-13",
+  "updated": "2026-09-14",
   "total_real_leads": 245,
   "excluded_fictional_rows": 20,
   "compliance_flags": [
@@ -28,48 +28,48 @@
   "email_ready_count": 4,
   "hot_picks": [
     {
-      "id": 101,
-      "business": "La Costa Properties Monaco",
-      "priority": "High",
-      "segment": "Monaco – Real Estate",
-      "channel": "Email via Brevo — verified address found at https://www.lacosta-properties-monaco.com/en/ (footer contact info)",
-      "email": "info@25lcp.com"
-    },
-    {
-      "id": 102,
-      "business": "Petrini Exclusive Real Estate",
-      "priority": "High",
-      "segment": "Monaco – Real Estate",
-      "channel": "Email via Brevo — verified address found at https://www.petrini.mc/en/contact.html (mailto link)",
-      "email": "contact@petrini.mc"
-    },
-    {
-      "id": 1,
-      "business": "Floriddia Creative",
-      "priority": "High",
-      "segment": "B2B – Job-Board Signal (PH sourced)",
-      "channel": "Message/apply via OnlineJobs.ph job link",
-      "email": null
-    },
-    {
-      "id": 7,
-      "business": "HY Systems",
-      "priority": "High",
-      "segment": "B2B – Job-Board Signal (PH sourced)",
-      "channel": "Message/apply via OnlineJobs.ph job link",
-      "email": null
-    },
-    {
-      "id": 31,
-      "business": "THE ICON DEPOT",
+      "id": 63,
+      "business": "Brecknock Consulting P/L",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
       "email": null
     },
     {
-      "id": 37,
-      "business": "FEDERATION",
+      "id": 60,
+      "business": "Stable88",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "email": null
+    },
+    {
+      "id": 56,
+      "business": "Storm in a D Cup Pty Ltd",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "email": null
+    },
+    {
+      "id": 59,
+      "business": "Dress for Success Auckland",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "email": null
+    },
+    {
+      "id": 58,
+      "business": "Always Pilates Ltd",
+      "priority": "High",
+      "segment": "LinkedIn – AU/NZ Business Owners",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "email": null
+    },
+    {
+      "id": 54,
+      "business": "Call a Cooler Sydney",
       "priority": "High",
       "segment": "LinkedIn – AU/NZ Business Owners",
       "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
