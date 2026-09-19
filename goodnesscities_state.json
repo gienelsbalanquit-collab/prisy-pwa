@@ -1,344 +1,344 @@
 {
-    "_purpose": "Tracks which GoodnessCities lead IDs have already been proposed/contacted, so the daily scheduled run rotates fresh names instead of repeating the same ones forever (the exact gap that broke the Prisynchracy prospect list — see MASTER_CONTEXT.md known issues).",
-    "last_run_date": "2026-09-14",
-    "proposed": {
-        "10": {
-            "first_proposed": "2026-07-08",
-            "status": "proposed",
-            "channel": "job_link",
-            "last_proposed": "2026-09-06"
-        },
-        "18": {
-            "first_proposed": "2026-07-06",
-            "status": "proposed",
-            "channel": "job_link",
-            "last_proposed": "2026-09-07"
-        },
-        "26": {
-            "first_proposed": "2026-07-08",
-            "status": "proposed",
-            "channel": "job_link",
-            "last_proposed": "2026-09-07"
-        },
-        "34": {
-            "first_proposed": "2026-07-06",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-09-12"
-        },
-        "41": {
-            "first_proposed": "2026-07-08",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-09-12"
-        },
-        "47": {
-            "first_proposed": "2026-07-06",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-09-11"
-        },
-        "98": {
-            "first_proposed": "2026-07-05",
-            "status": "proposed",
-            "channel": "email",
-            "email_draft_id": "r-8063569538279129191",
-            "last_proposed": "2026-09-12"
-        },
-        "100": {
-            "first_proposed": "2026-07-05",
-            "status": "proposed",
-            "channel": "email",
-            "last_proposed": "2026-09-12",
-            "email_draft_id": "r-2665402679433700219"
-        },
-        "101": {
-            "first_proposed": "2026-07-05",
-            "status": "proposed",
-            "channel": "email",
-            "last_proposed": "2026-09-13",
-            "email_draft_id": "r-7507793591165494176"
-        },
-        "22": {
-            "first_proposed": "2026-07-08",
-            "status": "proposed",
-            "channel": "job_link",
-            "last_proposed": "2026-09-11"
-        },
-        "55": {
-            "first_proposed": "2026-07-09",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-08-22"
-        },
-        "1": {
-            "first_proposed": "2026-07-07",
-            "status": "proposed",
-            "channel": "Message/apply via OnlineJobs.ph job link",
-            "last_proposed": "2026-09-13"
-        },
-        "7": {
-            "first_proposed": "2026-07-06",
-            "status": "proposed",
-            "channel": "Message/apply via OnlineJobs.ph job link",
-            "last_proposed": "2026-09-13"
-        },
-        "46": {
-            "first_proposed": "2026-07-06",
-            "status": "proposed",
-            "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-            "last_proposed": "2026-09-12"
-        },
-        "102": {
-            "first_proposed": "2026-07-05",
-            "status": "proposed",
-            "channel": "email",
-            "last_proposed": "2026-09-13"
-        },
-        "29": {
-            "first_proposed": "2026-07-12",
-            "last_proposed": "2026-09-11",
-            "status": "proposed",
-            "channel": "job_link"
-        },
-        "32": {
-            "first_proposed": "2026-07-12",
-            "last_proposed": "2026-07-20",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "38": {
-            "first_proposed": "2026-07-09",
-            "last_proposed": "2026-09-08",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "42": {
-            "first_proposed": "2026-07-09",
-            "last_proposed": "2026-09-08",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "49": {
-            "first_proposed": "2026-07-09",
-            "last_proposed": "2026-09-11",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "51": {
-            "first_proposed": "2026-07-09",
-            "last_proposed": "2026-08-21",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "54": {
-            "first_proposed": "2026-07-09",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-09-14"
-        },
-        "45": {
-            "first_proposed": "2026-07-08",
-            "last_proposed": "2026-08-21",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "48": {
-            "first_proposed": "2026-07-08",
-            "last_proposed": "2026-08-21",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "3": {
-            "first_proposed": "2026-07-05",
-            "last_proposed": "2026-09-11",
-            "status": "proposed",
-            "channel": "job_link"
-        },
-        "31": {
-            "first_proposed": "2026-07-05",
-            "last_proposed": "2026-09-13",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "36": {
-            "first_proposed": "2026-07-06",
-            "last_proposed": "2026-09-11",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "37": {
-            "first_proposed": "2026-07-07",
-            "last_proposed": "2026-09-13",
-            "status": "proposed",
-            "channel": "linkedin"
-        },
-        "35": {
-            "first_proposed": "2026-07-07",
-            "status": "proposed",
-            "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-            "last_proposed": "2026-09-12"
-        },
-        "53": {
-            "first_proposed": "2026-07-07",
-            "status": "proposed",
-            "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-            "last_proposed": "2026-08-16"
-        },
-        "57": {
-            "first_proposed": "2026-07-07",
-            "status": "proposed",
-            "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-            "last_proposed": "2026-09-08"
-        },
-        "21": {
-            "first_proposed": "2026-07-07",
-            "status": "proposed",
-            "channel": "job_link",
-            "last_proposed": "2026-09-07"
-        },
-        "99": {
-            "first_proposed": "2026-07-24",
-            "status": "proposed",
-            "channel": "phone/linkedin",
-            "last_proposed": "2026-08-16"
-        },
-        "56": {
-            "first_proposed": "2026-07-24",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-09-14"
-        },
-        "65": {
-            "first_proposed": "2026-08-13",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-08-13"
-        },
-        "67": {
-            "first_proposed": "2026-08-13",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-08-13"
-        },
-        "58": {
-            "first_proposed": "2026-07-24",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-09-14"
-        },
-        "59": {
-            "first_proposed": "2026-07-24",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-09-14"
-        },
-        "88": {
-            "first_proposed": "2026-07-24",
-            "status": "proposed",
-            "channel": "instagram",
-            "last_proposed": "2026-08-22"
-        },
-        "60": {
-            "first_proposed": "2026-07-28",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-09-14"
-        },
-        "61": {
-            "first_proposed": "2026-07-28",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-08-16"
-        },
-        "62": {
-            "first_proposed": "2026-07-28",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-08-22"
-        },
-        "63": {
-            "first_proposed": "2026-07-28",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-09-14"
-        },
-        "64": {
-            "first_proposed": "2026-07-28",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-08-22"
-        },
-        "66": {
-            "first_proposed": "2026-07-28",
-            "status": "proposed",
-            "channel": "linkedin",
-            "last_proposed": "2026-08-13"
-        },
-        "91": {
-            "first_proposed": "2026-08-08",
-            "status": "proposed",
-            "channel": "instagram",
-            "last_proposed": "2026-09-08"
-        },
-        "107": {
-            "first_proposed": "2026-08-08",
-            "status": "proposed",
-            "channel": "phone/website contact form",
-            "last_proposed": "2026-09-08"
-        },
-        "108": {
-            "first_proposed": "2026-08-08",
-            "status": "proposed",
-            "channel": "phone/website contact form",
-            "last_proposed": "2026-09-08"
-        },
-        "112": {
-            "first_proposed": "2026-08-08",
-            "status": "proposed",
-            "channel": "phone/website contact form",
-            "last_proposed": "2026-08-08"
-        },
-        "116": {
-            "first_proposed": "2026-08-08",
-            "status": "proposed",
-            "channel": "phone/website contact form",
-            "last_proposed": "2026-08-08"
-        },
-        "121": {
-            "first_proposed": "2026-08-08",
-            "status": "proposed",
-            "channel": "phone/website contact form",
-            "last_proposed": "2026-08-08"
-        },
-        "109": {
-            "first_proposed": "2026-08-12",
-            "status": "proposed",
-            "channel": "phone/website contact form",
-            "last_proposed": "2026-08-12"
-        },
-        "113": {
-            "first_proposed": "2026-08-12",
-            "status": "proposed",
-            "channel": "phone/website contact form",
-            "last_proposed": "2026-08-12"
-        },
-        "117": {
-            "first_proposed": "2026-08-12",
-            "status": "proposed",
-            "channel": "phone/website contact form",
-            "last_proposed": "2026-08-12"
-        },
-        "122": {
-            "first_proposed": "2026-08-12",
-            "status": "proposed",
-            "channel": "phone/website contact form",
-            "last_proposed": "2026-08-12"
-        }
+  "_purpose": "Tracks which GoodnessCities lead IDs have already been proposed/contacted, so the daily scheduled run rotates fresh names instead of repeating the same ones forever (the exact gap that broke the Prisynchracy prospect list — see MASTER_CONTEXT.md known issues).",
+  "last_run_date": "2026-09-19",
+  "proposed": {
+    "10": {
+      "first_proposed": "2026-07-08",
+      "status": "proposed",
+      "channel": "job_link",
+      "last_proposed": "2026-09-06"
     },
-    "excluded_segments_pending_review": [
-        "US Local Service – Plumbing"
-    ],
-    "excluded_segments_reason": "120 leads, phone/SMS only, TCPA consent review required before any auto-dial or SMS outreach. Do not add to rotation until Gienel confirms review is complete.",
-    "email_draft_note": "2026-09-14: NO new email draft created — 4th consecutive day. Live Gmail list_drafts check confirms 5 GC drafts still unsent, 57-71 days old (La Costa 07-19 [57d], DAMENO 07-17 [59d], Caroline Olds 07-13 [63d], Petrini 07-12 [64d], Caroline Olds 07-05 [71d]). All 4 email-ready leads (Caroline Olds, DAMENO, La Costa, Petrini) are inside the 5-day cooldown (last proposed 09-13). Drafting a 6th email into an unread backlog adds motion, not outcome — see priority_deck.json P6."
+    "18": {
+      "first_proposed": "2026-07-06",
+      "status": "proposed",
+      "channel": "job_link",
+      "last_proposed": "2026-09-07"
+    },
+    "26": {
+      "first_proposed": "2026-07-08",
+      "status": "proposed",
+      "channel": "job_link",
+      "last_proposed": "2026-09-07"
+    },
+    "34": {
+      "first_proposed": "2026-07-06",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-09-12"
+    },
+    "41": {
+      "first_proposed": "2026-07-08",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-09-12"
+    },
+    "47": {
+      "first_proposed": "2026-07-06",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-09-11"
+    },
+    "98": {
+      "first_proposed": "2026-07-05",
+      "status": "proposed",
+      "channel": "email",
+      "email_draft_id": "r-8063569538279129191",
+      "last_proposed": "2026-09-19"
+    },
+    "100": {
+      "first_proposed": "2026-07-05",
+      "status": "proposed",
+      "channel": "email",
+      "last_proposed": "2026-09-19",
+      "email_draft_id": "r-2665402679433700219"
+    },
+    "101": {
+      "first_proposed": "2026-07-05",
+      "status": "proposed",
+      "channel": "email",
+      "last_proposed": "2026-09-13",
+      "email_draft_id": "r-7507793591165494176"
+    },
+    "22": {
+      "first_proposed": "2026-07-08",
+      "status": "proposed",
+      "channel": "job_link",
+      "last_proposed": "2026-09-11"
+    },
+    "55": {
+      "first_proposed": "2026-07-09",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-08-22"
+    },
+    "1": {
+      "first_proposed": "2026-07-07",
+      "status": "proposed",
+      "channel": "Message/apply via OnlineJobs.ph job link",
+      "last_proposed": "2026-09-13"
+    },
+    "7": {
+      "first_proposed": "2026-07-06",
+      "status": "proposed",
+      "channel": "Message/apply via OnlineJobs.ph job link",
+      "last_proposed": "2026-09-13"
+    },
+    "46": {
+      "first_proposed": "2026-07-06",
+      "status": "proposed",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "last_proposed": "2026-09-12"
+    },
+    "102": {
+      "first_proposed": "2026-07-05",
+      "status": "proposed",
+      "channel": "email",
+      "last_proposed": "2026-09-13"
+    },
+    "29": {
+      "first_proposed": "2026-07-12",
+      "last_proposed": "2026-09-11",
+      "status": "proposed",
+      "channel": "job_link"
+    },
+    "32": {
+      "first_proposed": "2026-07-12",
+      "last_proposed": "2026-07-20",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "38": {
+      "first_proposed": "2026-07-09",
+      "last_proposed": "2026-09-08",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "42": {
+      "first_proposed": "2026-07-09",
+      "last_proposed": "2026-09-08",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "49": {
+      "first_proposed": "2026-07-09",
+      "last_proposed": "2026-09-11",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "51": {
+      "first_proposed": "2026-07-09",
+      "last_proposed": "2026-08-21",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "54": {
+      "first_proposed": "2026-07-09",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-09-14"
+    },
+    "45": {
+      "first_proposed": "2026-07-08",
+      "last_proposed": "2026-08-21",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "48": {
+      "first_proposed": "2026-07-08",
+      "last_proposed": "2026-08-21",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "3": {
+      "first_proposed": "2026-07-05",
+      "last_proposed": "2026-09-11",
+      "status": "proposed",
+      "channel": "job_link"
+    },
+    "31": {
+      "first_proposed": "2026-07-05",
+      "last_proposed": "2026-09-13",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "36": {
+      "first_proposed": "2026-07-06",
+      "last_proposed": "2026-09-11",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "37": {
+      "first_proposed": "2026-07-07",
+      "last_proposed": "2026-09-13",
+      "status": "proposed",
+      "channel": "linkedin"
+    },
+    "35": {
+      "first_proposed": "2026-07-07",
+      "status": "proposed",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "last_proposed": "2026-09-12"
+    },
+    "53": {
+      "first_proposed": "2026-07-07",
+      "status": "proposed",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "last_proposed": "2026-08-16"
+    },
+    "57": {
+      "first_proposed": "2026-07-07",
+      "status": "proposed",
+      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "last_proposed": "2026-09-08"
+    },
+    "21": {
+      "first_proposed": "2026-07-07",
+      "status": "proposed",
+      "channel": "job_link",
+      "last_proposed": "2026-09-07"
+    },
+    "99": {
+      "first_proposed": "2026-07-24",
+      "status": "proposed",
+      "channel": "phone/linkedin",
+      "last_proposed": "2026-08-16"
+    },
+    "56": {
+      "first_proposed": "2026-07-24",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-09-14"
+    },
+    "65": {
+      "first_proposed": "2026-08-13",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-08-13"
+    },
+    "67": {
+      "first_proposed": "2026-08-13",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-08-13"
+    },
+    "58": {
+      "first_proposed": "2026-07-24",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-09-14"
+    },
+    "59": {
+      "first_proposed": "2026-07-24",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-09-14"
+    },
+    "88": {
+      "first_proposed": "2026-07-24",
+      "status": "proposed",
+      "channel": "instagram",
+      "last_proposed": "2026-08-22"
+    },
+    "60": {
+      "first_proposed": "2026-07-28",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-09-14"
+    },
+    "61": {
+      "first_proposed": "2026-07-28",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-08-16"
+    },
+    "62": {
+      "first_proposed": "2026-07-28",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-08-22"
+    },
+    "63": {
+      "first_proposed": "2026-07-28",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-09-14"
+    },
+    "64": {
+      "first_proposed": "2026-07-28",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-08-22"
+    },
+    "66": {
+      "first_proposed": "2026-07-28",
+      "status": "proposed",
+      "channel": "linkedin",
+      "last_proposed": "2026-08-13"
+    },
+    "91": {
+      "first_proposed": "2026-08-08",
+      "status": "proposed",
+      "channel": "instagram",
+      "last_proposed": "2026-09-08"
+    },
+    "107": {
+      "first_proposed": "2026-08-08",
+      "status": "proposed",
+      "channel": "phone/website contact form",
+      "last_proposed": "2026-09-08"
+    },
+    "108": {
+      "first_proposed": "2026-08-08",
+      "status": "proposed",
+      "channel": "phone/website contact form",
+      "last_proposed": "2026-09-08"
+    },
+    "112": {
+      "first_proposed": "2026-08-08",
+      "status": "proposed",
+      "channel": "phone/website contact form",
+      "last_proposed": "2026-09-19"
+    },
+    "116": {
+      "first_proposed": "2026-08-08",
+      "status": "proposed",
+      "channel": "phone/website contact form",
+      "last_proposed": "2026-09-19"
+    },
+    "121": {
+      "first_proposed": "2026-08-08",
+      "status": "proposed",
+      "channel": "phone/website contact form",
+      "last_proposed": "2026-09-19"
+    },
+    "109": {
+      "first_proposed": "2026-08-12",
+      "status": "proposed",
+      "channel": "phone/website contact form",
+      "last_proposed": "2026-09-19"
+    },
+    "113": {
+      "first_proposed": "2026-08-12",
+      "status": "proposed",
+      "channel": "phone/website contact form",
+      "last_proposed": "2026-08-12"
+    },
+    "117": {
+      "first_proposed": "2026-08-12",
+      "status": "proposed",
+      "channel": "phone/website contact form",
+      "last_proposed": "2026-08-12"
+    },
+    "122": {
+      "first_proposed": "2026-08-12",
+      "status": "proposed",
+      "channel": "phone/website contact form",
+      "last_proposed": "2026-08-12"
+    }
+  },
+  "excluded_segments_pending_review": [
+    "US Local Service – Plumbing"
+  ],
+  "excluded_segments_reason": "120 leads, phone/SMS only, TCPA consent review required before any auto-dial or SMS outreach. Do not add to rotation until Gienel confirms review is complete.",
+  "email_draft_note": "2026-09-19: NO new email draft created (5th run in a row skipping a new draft, though the 5-day scheduler gap 09-15->09-18 meant cooldown was technically clear today). Reasoned skip, not a cooldown skip: all 4 email-ready leads (Caroline Olds x2 entries, DAMENO, La Costa, Petrini) already have an existing unsent Gmail draft each (62-76 days old as of today) -- see email_draft_id fields. Adding a 6th/7th duplicate draft into an unread backlog adds motion, not outcome. Real action needed from Gienel: open Gmail drafts, send or delete each of the 5, decide if the email channel for GC is worth continuing."
 }

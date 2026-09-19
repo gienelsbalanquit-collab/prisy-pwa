@@ -1,47 +1,23 @@
 {
-  "date": "2026-09-14",
-  "generated_by": "prisynchracy-morning-command (Monday AM Master Command)",
+  "date": "2026-09-19",
+  "generated_by": "prisynchracy-morning-command (Saturday AM Master Command, fired late 18:41 Bahrain, first run since a confirmed 5-day scheduler gap 09-15→09-18)",
   "verse": {
-    "text": "Never be lacking in zeal, but keep your spiritual fervor, serving the Lord.",
-    "ref": "Romans 12:11 — Day 14 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "\"For I know the plans I have for you,\" declares the LORD, \"plans to prosper you and not to harm you, plans to give you hope and a future.\"",
+    "ref": "Jeremiah 29:11 — Day 19 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
     "summary": "HbA1c 7.61% + fasting glucose 6.59 (diabetic-range) + high cholesterol — book doctor's visit",
     "metrics": [
-      {
-        "label": "HbA1c",
-        "value": "7.61%",
-        "flag": "H"
-      },
-      {
-        "label": "Fasting Glucose",
-        "value": "6.59",
-        "flag": "H"
-      },
-      {
-        "label": "Total Cholesterol",
-        "value": "7.62",
-        "flag": "H"
-      },
-      {
-        "label": "LDL",
-        "value": "5.64",
-        "flag": "H"
-      },
-      {
-        "label": "Weight",
-        "value": "71.3kg",
-        "flag": "N"
-      },
-      {
-        "label": "Body Fat",
-        "value": "23.2%",
-        "flag": "N"
-      }
+      { "label": "HbA1c", "value": "7.61%", "flag": "H" },
+      { "label": "Fasting Glucose", "value": "6.59", "flag": "H" },
+      { "label": "Total Cholesterol", "value": "7.62", "flag": "H" },
+      { "label": "LDL", "value": "5.64", "flag": "H" },
+      { "label": "Weight", "value": "71.3kg", "flag": "N" },
+      { "label": "Body Fat", "value": "23.2%", "flag": "N" }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-09-14",
+    "updated": "2026-09-19",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,174 +37,43 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — 50 Years Campaign",
-    "note": "2026-09-14: all four drives (AXL8GP, AXL8GP2, Extreme Pro, XTRA) NOT mounted this run (live df confirms /Volumes = Macintosh HD only) — REHC/BTC state carried forward unchanged from the 2026-09-12 12:12 live read, nothing invented. Badges: CONFIRMED proceeding to print in China (Gienel, 09-12) — closed. Sign-off cluster (RFID + New Joiner ID + OOH 2680/2681) now 62 days awaiting client approval, still the oldest open item on the whole board — flagged again as today's #1 physical action for Gienel (no REHC mailbox connector in this session; not authorized to send on gienelbalanquit@rehc.gov.bh regardless). Four Sep-9 jobs (BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt) still have zero brief/scope/deadline anywhere in the vault — unchanged 6th day running. BTC standalone Brand Discovery Questionnaire (found 09-12 on Google Drive, Sep 1) still unconfirmed with Gienel — 3rd day flagged.",
+    "note": "2026-09-19: all four drives (AXL8GP, AXL8GP2, Extreme Pro, XTRA) NOT mounted this run — REHC/BTC state carried forward unchanged from the 2026-09-12 12:12 live read, nothing invented. Badges CONFIRMED proceeding to print in China (09-12) — closed. Sign-off cluster (RFID + New Joiner ID + OOH 2680/2681) now 67 days awaiting client approval, still the oldest open item on the whole board. Four Sep-9 jobs (BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt) now 10 days with zero brief/scope/deadline. BTC standalone Brand Discovery Questionnaire (found 09-12 on Google Drive, Sep 1) now 8th day unconfirmed with Gienel.",
     "items": [
-      {
-        "task": "Send the sign-off cluster email — ONE email naming RFID + New Joiner ID + OOH (2680/2681), each with a yes/no ask and a hard date.",
-        "deadline": "today 2026-09-14",
-        "status": "🔴 62 days unmoved — oldest open item"
-      },
-      {
-        "task": "Scope the four untracked Sep-9 jobs (BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt) — ask for brief + deadline on each, same email as above.",
-        "deadline": "today 2026-09-14",
-        "status": "🔴 four jobs, zero briefs"
-      },
-      {
-        "task": "Brand Guideline (Combined, 09-01) and Brochure (for-print PDF, 08-27) both finished-looking, idle 13-18 days. Decide: send, or name what's missing.",
-        "deadline": "today",
-        "status": "🟡 finished-looking, unsent"
-      },
-      {
-        "task": "BTC_Brand_Discovery_Questionnaire.docx (Google Drive, Sep 1) — standalone BTC brand guideline project, still not scoped in the vault tracker.",
-        "deadline": "unconfirmed — ask Gienel",
-        "status": "🟡 unscoped, 3rd day flagged"
-      },
-      {
-        "task": "2026/27 badges — proceeding to print in China (Gienel-confirmed 09-12).",
-        "deadline": "done",
-        "status": "✅ confirmed sent to print"
-      }
+      { "task": "Send the sign-off cluster email — ONE email naming RFID + New Joiner ID + OOH (2680/2681), each with a yes/no ask and a hard date.", "deadline": "today 2026-09-19", "status": "🔴 67 days unmoved — oldest open item" },
+      { "task": "Scope the four untracked Sep-9 jobs (BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt) — ask for brief + deadline on each, same email as above.", "deadline": "today 2026-09-19", "status": "🔴 four jobs, zero briefs, 10 days" },
+      { "task": "BTC_Brand_Discovery_Questionnaire.docx (Google Drive, Sep 1) — standalone BTC brand guideline project, still not scoped in the vault tracker.", "deadline": "unconfirmed — ask Gienel", "status": "🟡 unscoped, 8th day flagged" },
+      { "task": "2026/27 badges — proceeding to print in China (Gienel-confirmed 09-12).", "deadline": "done", "status": "✅ confirmed sent to print" }
     ]
   },
   "priorities": [
-    {
-      "p": 1,
-      "area": "🏇 REHC/BTC",
-      "task": "Send the sign-off cluster email (RFID + New Joiner ID + OOH 2680/2681) with a hard date ask",
-      "why": "62 days pending, oldest open item on the whole board. This run cannot send it (no REHC mailbox connected, not in this task's authorized scope).",
-      "action": "Open gienelbalanquit@rehc.gov.bh, write one email covering all three, name a confirm-by date this week.",
-      "est": "15 min"
-    },
-    {
-      "p": 2,
-      "area": "🏇 REHC/BTC",
-      "task": "Get briefs + deadlines on the 4 unscoped Sep-9 jobs (BJF Vest and shirt, Season Parade ring, 2026 race schedule, REHC Vest and shirt)",
-      "why": "New work keeps landing on the drive with no scope; same email as P1 can ask for this in one pass.",
-      "action": "Add one paragraph to the P1 email asking for brief + deadline on each of the 4 jobs.",
-      "est": "10 min"
-    },
-    {
-      "p": 3,
-      "area": "🔥 Prisynchracy",
-      "task": "Resolve + send CX13 (Pomelo Fashion) + CX14 (ZALORA) Day-6 close asks",
-      "why": "Both ~31 days overdue — a Day-6 ask due ~08-18 was never confirmed sent, unresolved 3 days running now.",
-      "action": "Check LinkedIn sent messages for both; send if not sent; log the confirmed date in prisy_prospect_tracker.json.",
-      "est": "10 min"
-    },
-    {
-      "p": 4,
-      "area": "🔥 Prisynchracy",
-      "task": "Day-2 insight DM — Lily Organics BH, Revive Spa and Recovery Center, Withyn, Diyar Al Muharraq (CX19-22)",
-      "why": "All four were Day-0 connects on 09-12; today is exactly Day-2, the scheduled insight-DM touch. Completes the 6-DM daily minimum alongside P3.",
-      "action": "Send the pre-written insight hook to each of the 4 via LinkedIn, log the send in prisy_prospect_tracker.json.",
-      "est": "20 min"
-    },
-    {
-      "p": 5,
-      "area": "🔥 Prisynchracy",
-      "task": "ASK Real Estate + Naseej B.S.C. (CX23-24) also due for Day-2 DM today",
-      "why": "Same 09-12 Day-0 batch as CX19-22 — daily minimum is already met by P3+P4, so these are bonus outreach if time allows, not held past their window.",
-      "action": "Send the same insight hook if time permits after P3/P4; otherwise touch tomorrow (1 day late, acceptable).",
-      "est": "10 min"
-    },
-    {
-      "p": 6,
-      "area": "🌆 GoodnessCities",
-      "task": "Clear the 5-draft GC email backlog (Caroline Olds ×2, DAMENO, Petrini, La Costa — 57-71 days unsent)",
-      "why": "4th consecutive day this run has deliberately skipped drafting a 6th email into a folder nobody is reading — all 4 email-capable leads are in the 5-day cooldown again today.",
-      "action": "Gienel: open Gmail drafts, send or delete each of the 5, decide whether the email channel is worth continuing for GC.",
-      "est": "20 min"
-    },
-    {
-      "p": 7,
-      "area": "🌆 GoodnessCities",
-      "task": "Today's 6 Hot Picks — Brecknock Consulting, Stable88, Storm in a D Cup, Dress for Success Auckland, Always Pilates, Call a Cooler Sydney",
-      "why": "Rotated fresh (30-32 days since last proposed, none in the 5-day cooldown, none TCPA/plumbing). No email-capable lead available today — all 4 email leads still in cooldown from yesterday.",
-      "action": "Already logged in goodnesscities_leads.json + goodnesscities_state.json this run.",
-      "est": "done"
-    },
-    {
-      "p": 8,
-      "area": "📺 PSH",
-      "task": "PSH Week-1 audit — still 0/5, now 68 days open",
-      "why": "Zero progress since 2026-07-08. Monday — not the Sat production or Wed stats slot — but the audit itself has no scheduled day and keeps aging regardless.",
-      "action": "5-minute YouTube Studio check: Partner Program status, strikes, RPM — the entire revival is gated behind this.",
-      "est": "5 min"
-    },
-    {
-      "p": 9,
-      "area": "⚙️ Systems",
-      "task": "AXL8GP2 offload — 69 days open",
-      "why": "Drive is at 85% and not mounted today, so it can't be actioned right now, but the day-count keeps climbing regardless.",
-      "action": "Next time AXL8GP2 + Extreme Pro are both plugged in together, move finished projects across before unplugging again.",
-      "est": "n/a today — drive not mounted"
-    },
-    {
-      "p": 10,
-      "area": "🏢 Office",
-      "task": "Confirm scope/status of BTC_Brand_Discovery_Questionnaire.docx (standalone BTC brand guideline, found 09-12)",
-      "why": "A real, dated project sitting on Google Drive since Sep 1 with zero vault record until 3 days ago — still unconfirmed whether it was ever sent to BTC.",
-      "action": "One-line answer from Gienel: sent or not, and is it separate work from the REHC guideline.",
-      "est": "2 min"
-    }
+    { "p": 1, "area": "🏇 REHC/BTC", "task": "Send the sign-off cluster email (RFID + New Joiner ID + OOH 2680/2681) with a hard date ask", "why": "67 days pending, oldest open item on the whole board.", "action": "Open gienelbalanquit@rehc.gov.bh, write one email covering all three, name a confirm-by date this week.", "est": "15 min" },
+    { "p": 2, "area": "🏇 REHC/BTC", "task": "Get briefs + deadlines on the 4 unscoped Sep-9 jobs", "why": "New work keeps landing on the drive with no scope, now 10 days.", "action": "Add one paragraph to the P1 email asking for brief + deadline on each of the 4 jobs.", "est": "10 min" },
+    { "p": 3, "area": "🏇 REHC/BTC", "task": "Confirm scope/status of BTC_Brand_Discovery_Questionnaire.docx", "why": "Real dated project sitting on Google Drive since Sep 1, 8 days unconfirmed.", "action": "One-line answer: sent or not, separate work from the REHC guideline or not.", "est": "2 min" },
+    { "p": 4, "area": "🔥 Prisynchracy", "task": "Day-6 close ask — Café Ségo, L'AVENUE, Triple B, DOSE Café (CX15–18)", "why": "Due ~09-17, now 2 days late purely from the scheduler gap.", "action": "Send the pre-written close-ask hook via LinkedIn to each, log the send in prisy_prospect_tracker.json.", "est": "20 min" },
+    { "p": 5, "area": "🔥 Prisynchracy", "task": "Day-2 insight DM — Lily Organics BH, Revive Spa and Recovery Center (CX19–20)", "why": "Original 09-12 Day-2 DM never confirmed sent — first real touch.", "action": "Send the insight hook via LinkedIn to each, log the send.", "est": "15 min" },
+    { "p": 6, "area": "🔥 Prisynchracy", "task": "Decide the fate of CX13 (Pomelo Fashion) + CX14 (ZALORA)", "why": "36 days stuck unverifiable whether the Day-6 ask was ever sent.", "action": "Confirm sent, resend once and log it, or close both to nurture today — pick one.", "est": "10 min" },
+    { "p": 7, "area": "🌆 GoodnessCities", "task": "Clear the 5-draft Gmail backlog (Caroline Olds ×2, DAMENO, Petrini, La Costa — 62-76 days unsent)", "why": "No 6th draft was created on purpose today — the real gap is these 5 sitting unread.", "action": "Gienel: open Gmail drafts, send or delete each of the 5, decide whether the email channel is worth continuing for GC.", "est": "20 min" },
+    { "p": 8, "area": "📺 PSH", "task": "PSH Week-1 audit — still 0/5, now 73 days open", "why": "Zero progress since 2026-07-08. The whole revival and the next portfolio gate are blocked behind this.", "action": "5-minute YouTube Studio check: Partner Program status, strikes, RPM — do this before any Saturday production time.", "est": "5 min" },
+    { "p": 9, "area": "⚙️ Systems", "task": "AXL8GP2 offload — 76 days open", "why": "Drive is at 85% and not mounted today, so it can't be actioned right now, but the day-count keeps climbing.", "action": "Next time AXL8GP2 + Extreme Pro are both plugged in together, move finished projects across before unplugging again.", "est": "n/a today — drive not mounted" },
+    { "p": 10, "area": "🔥 Prisynchracy", "task": "Bonus Day-2 DM — Withyn, Diyar Al Muharraq, ASK Real Estate, Naseej (CX21–24)", "why": "Also due since 09-12; daily minimum already met by P4+P5.", "action": "Send if time allows after P4/P5; touching tomorrow is acceptable.", "est": "15 min" }
   ],
   "day_plan": [
-    {
-      "block": "Morning deep work",
-      "when": "AM",
-      "what": "REHC/BTC — P1 sign-off email + P2 job-scoping ask"
-    },
-    {
-      "block": "Midday outreach block",
-      "when": "Midday",
-      "what": "All 6 Prisy DMs batched (P3 + P4) — CX13/CX14 close asks + CX19-22 Day-2 DMs"
-    },
-    {
-      "block": "Evening review",
-      "when": "10 min, evening",
-      "what": "Check replies, log any that came in, skim Task & Decision Tracker (P10)"
-    }
+    { "block": "Morning deep work", "when": "AM", "what": "REHC/BTC — P1 sign-off email + P2 job-scoping ask + P3 BTC questionnaire line" },
+    { "block": "Midday outreach block", "when": "Midday", "what": "All 6 required Prisy DMs batched (P4 + P5) — meets the daily minimum on their own" },
+    { "block": "Saturday PSH note", "when": "Instead of / before the usual 2.5h production block", "what": "5-min Week-1 audit (P8) first — 73 days overdue, gates the whole revival and the next portfolio venture" },
+    { "block": "Evening review", "when": "10 min, evening", "what": "Check replies on P4/P5/P10, log any that came in, skim Task & Decision Tracker" }
   ],
   "scoreboard": [
-    {
-      "k": "MRR",
-      "v": "BHD 0 / 4,500"
-    },
-    {
-      "k": "Outreach today",
-      "v": "2 overdue close asks (CX13/CX14) + 4 Day-2 DMs (CX19-22) = 6, meets daily minimum"
-    },
-    {
-      "k": "Drives",
-      "v": "⚪ NONE mounted today — all REHC state carried from 2026-09-12 live read"
-    },
-    {
-      "k": "REHC sign-off cluster",
-      "v": "🔴 62 days awaiting client approval — drafted, not yet sent"
-    },
-    {
-      "k": "REHC jobs unscoped",
-      "v": "🔴 4 jobs from one Sep-9 session, still no brief/deadline"
-    },
-    {
-      "k": "GC drafts unsent",
-      "v": "🔴 5 drafts, 57-71 days — 4th consecutive day no 6th draft created"
-    },
-    {
-      "k": "GC Hot Picks",
-      "v": "6/6 rotated (0 email-capable today — all 4 in cooldown)"
-    },
-    {
-      "k": "📺 PSH",
-      "v": "Week-1 audit 0/5, 68 days open — Monday, no production/stats block scheduled"
-    },
-    {
-      "k": "Sibiraj / Ayush",
-      "v": "Sibiraj closed (07-14); Ayush nurture-only, 93 days unactioned"
-    },
-    {
-      "k": "AXL8GP2 offload",
-      "v": "⚠️ 69 days open — not mounted today, can't action"
-    }
+    { "k": "MRR", "v": "BHD 0 / 4,500" },
+    { "k": "Outreach today", "v": "6 DMs (P4 close asks + P5 Day-2 DMs) = meets daily minimum" },
+    { "k": "Scheduler", "v": "🔴 5-day gap found this run (09-15 → 09-18, zero runs/briefings)" },
+    { "k": "Drives", "v": "⚪ NONE mounted today — all REHC state carried from 2026-09-12 live read" },
+    { "k": "REHC sign-off cluster", "v": "🔴 67 days awaiting client approval — drafted, not yet sent" },
+    { "k": "REHC jobs unscoped", "v": "🔴 4 jobs from one Sep-9 session, 10 days, still no brief/deadline" },
+    { "k": "GC drafts unsent", "v": "🔴 5 drafts, 62-76 days — no new 6th draft created (reasoned skip, see note)" },
+    { "k": "GC Hot Picks", "v": "6/6 rotated — Caroline Olds, DAMENO, Richmont Monaco, La Table d'Elise, Monterra Wealth Mgmt, Signature Sailing Charter" },
+    { "k": "📺 PSH", "v": "Week-1 audit 0/5, 73 days open — Saturday, no production until audit clears" },
+    { "k": "Sibiraj / Ayush", "v": "Sibiraj closed (07-14); Ayush nurture-only, 98 days unactioned" },
+    { "k": "AXL8GP2 offload", "v": "⚠️ 76 days open — not mounted today, can't action" }
   ]
 }

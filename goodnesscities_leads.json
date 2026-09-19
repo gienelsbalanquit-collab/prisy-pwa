@@ -28,51 +28,51 @@
   "email_ready_count": 4,
   "hot_picks": [
     {
-      "id": 63,
-      "business": "Brecknock Consulting P/L",
+      "id": 98,
+      "business": "Caroline Olds Real Estate",
       "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "segment": "Monaco – Real Estate",
+      "channel": "Email via Brevo — verified address found at https://carolineolds.com/ (mailto link, contact section)",
+      "email": "caroline@carolineolds.com"
+    },
+    {
+      "id": 100,
+      "business": "DAMENO Monaco Real Estate",
+      "priority": "High",
+      "segment": "Monaco – Real Estate",
+      "channel": "Email via Brevo — verified address found at https://dameno.mc/contact (contact page text)",
+      "email": "info@dameno.mc"
+    },
+    {
+      "id": 112,
+      "business": "Richmont Monaco",
+      "priority": "High",
+      "segment": "Monaco – Wellness & Spa",
+      "channel": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting",
       "email": null
     },
     {
-      "id": 60,
-      "business": "Stable88",
+      "id": 116,
+      "business": "La Table d'Elise",
       "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "segment": "Monaco – Restaurant & Dining",
+      "channel": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting",
       "email": null
     },
     {
-      "id": 56,
-      "business": "Storm in a D Cup Pty Ltd",
+      "id": 121,
+      "business": "Monterra Wealth Management",
       "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "segment": "Monaco – Finance & Wealth",
+      "channel": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting",
       "email": null
     },
     {
-      "id": 59,
-      "business": "Dress for Success Auckland",
+      "id": 109,
+      "business": "Signature Sailing Charter",
       "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-      "email": null
-    },
-    {
-      "id": 58,
-      "business": "Always Pilates Ltd",
-      "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-      "email": null
-    },
-    {
-      "id": 54,
-      "business": "Call a Cooler Sydney",
-      "priority": "High",
-      "segment": "LinkedIn – AU/NZ Business Owners",
-      "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
+      "segment": "Monaco – Yachting & Marine",
+      "channel": "Phone call / website contact form (no email on file) — review local solicitation rules before contacting",
       "email": null
     }
   ],
