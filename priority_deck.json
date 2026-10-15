@@ -61,12 +61,12 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — 50 Years Campaign",
-    "note": "2026-10-15 AM: source = Gienel's Oct 4 work tracker (Sep 30 register + Oct 4 Rhona/Union Press WhatsApp) — the newest evidence available; all four drives NOT mounted, no live drive read since 09-12. SEASON OPENS OCT 30 (15 days). Badge arrival estimate Oct 7–10 has passed with no receipt logged. Union Press box sample dispatch unanswered since Oct 4. Race card still has sponsor/editorial placeholders. RFID/New Joiner/OOH approvals 93 days unverified. Full task list in work_tracker.",
+    "note": "2026-10-15 AM: source = Gienel's Oct 4 work tracker (Sep 30 register + Oct 4 Rhona/Union Press WhatsApp) — the newest evidence available; all four drives NOT mounted, no live drive read since 09-12. SEASON OPENS OCT 30 (15 days). Badge arrival estimate Oct 7–10 has passed with no receipt logged. Union Press box sample dispatch unanswered since Oct 4. Race card still has sponsor/editorial placeholders. RFID/New Joiner/OOH approvals 93 days unverified. Full task list in work_tracker. | 2026-10-15 (Gienel status update): badges arrived, all good except Royal (membership number error) and Royal Guest (colour-quality issue), both reprinting in China, Hana added 6 names for extra royal badges; OOH billboards REHC-2680 & REHC-2681 design done, awaiting client final design approval; U-shaped plaques 2026/27 design ready, awaiting complete name list before print via Matah; BTC Racing Season 2026-27 A4 FINAL awaiting 3 more sponsors to finalise artwork.",
     "items": [
       {
         "task": "Badges: confirm received + QC'd, or get courier tracking from the China printer",
         "deadline": "today — arrival est. Oct 7–10 already passed",
-        "status": "🔴 no receipt logged; season opens Oct 30"
+        "status": "🟡 arrived — all good except Royal (membership number error) & Royal Guest (colour-quality issue), both reprinting in China; Hana added 6 names for extra royal badges (Gienel-confirmed 2026-10-15)"
       },
       {
         "task": "Union Press box sample (Rhona): get dispatch date, physical check of pin hole + badge margins, then go-ahead",
@@ -421,8 +421,17 @@
       {
         "task": "Record badge dispatch, receipt, quality check and distribution",
         "deadline": "Oct 7–10, 2026 estimate",
-        "status": "Print progress reported; arrival estimated, not courier-confirmed",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S14/S27",
+        "status": "Arrived — all good except Royal (membership number error) and Royal Guest (colour-quality issue), both reprinting in China; Hana added 6 names for extra royal badges",
+        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S14/S27; Gienel-confirmed status update 2026-10-15 (iMessage)",
+        "completed": true,
+        "area": "REHC/BTC",
+        "owner": "Owner unconfirmed"
+      },
+      {
+        "task": "U-shaped plaques 2026/27 — finalize name list and print via Matah",
+        "deadline": "Not supplied",
+        "status": "Design ready; waiting for the complete name list before print via Matah",
+        "source": "Gienel-confirmed status update 2026-10-15 (iMessage)",
         "completed": false,
         "area": "REHC/BTC",
         "owner": "Owner unconfirmed"
@@ -484,7 +493,7 @@
       {
         "task": "Select OOH sites, obtain formal quotes/specs, confirm bookings and release artwork",
         "deadline": "Proposed Oct 2026–Apr 2027 run",
-        "status": "Campaign proposal exists; installation/booking unverified",
+        "status": "Campaign proposal exists; installation/booking unverified. REHC-2680 & REHC-2681 billboard designs done, awaiting client final design approval (Gienel-confirmed 2026-10-15).",
         "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S30 / items 05, 27",
         "completed": true,
         "area": "REHC/BTC",
@@ -511,7 +520,7 @@
       {
         "task": "Supply approved race card sponsor names, tiers, marks and placements",
         "deadline": "Not supplied",
-        "status": "Principal/platinum/gold logo placeholders remain",
+        "status": "Principal/platinum/gold logo placeholders remain. BTC Racing Season 2026-27 A4 FINAL waiting on 3 more sponsors to finalise artwork (Gienel-confirmed 2026-10-15).",
         "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S23 / item 28",
         "completed": false,
         "area": "REHC/BTC",
