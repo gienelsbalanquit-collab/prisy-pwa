@@ -336,10 +336,10 @@
       "contact": "Sawsan Taher (Owner and Founder)",
       "region": "Bahrain",
       "priority_score": 91,
-      "status": "Day-2 insight DM sent today (original 09-12 Day-2 DM was never confirmed sent -- scheduler gap; this is the first verified touch)",
+      "status": "Re-open close ask recommended 2026-10-15 (Day-6 was due ~09-23, missed in the 25-day scheduler outage; 09-19 'sent' status was never verified)",
       "last_touch": "2026-09-19",
       "last_touch_confidence": "today's AM Master Command run — LinkedIn send is Gienel's manual action per this task's scope, unverifiable via API",
-      "next_action": "Day-6 close ask ~2026-09-23 if no reply"
+      "next_action": "Send re-open DM 2026-10-15; if no reply in 7 days → nurture"
     },
     {
       "id": "CX20",
@@ -348,10 +348,10 @@
       "contact": "Sadeq Al Jadeed (Multi-Brand Owner & Operator)",
       "region": "Bahrain",
       "priority_score": 90,
-      "status": "Day-2 insight DM sent today (original 09-12 Day-2 DM was never confirmed sent -- scheduler gap; this is the first verified touch)",
+      "status": "Re-open close ask recommended 2026-10-15 (Day-6 was due ~09-23, missed in the 25-day scheduler outage; 09-19 'sent' status was never verified)",
       "last_touch": "2026-09-19",
       "last_touch_confidence": "today's AM Master Command run — LinkedIn send is Gienel's manual action per this task's scope, unverifiable via API",
-      "next_action": "Day-6 close ask ~2026-09-23 if no reply"
+      "next_action": "Send re-open DM 2026-10-15; if no reply in 7 days → nurture"
     },
     {
       "id": "CX21",
@@ -360,10 +360,10 @@
       "contact": "Madiha Altaf Azim (Founder)",
       "region": "Bahrain",
       "priority_score": 89,
-      "status": "Day-2 insight DM recommended today (not yet confirmed sent)",
+      "status": "First insight DM recommended 2026-10-15 (Day-2 DM from 09-12 never confirmed sent)",
       "last_touch": "2026-09-12",
       "last_touch_confidence": "logged retroactively 2026-09-13",
-      "next_action": "Day-6 close ask ~2026-09-18 if no reply, after Day-2 DM confirmed sent"
+      "next_action": "Send insight DM 2026-10-15; close ask ~10-21 if no reply"
     },
     {
       "id": "CX22",
@@ -372,10 +372,10 @@
       "contact": "Ahmed Alammadi (CEO)",
       "region": "Bahrain",
       "priority_score": 88,
-      "status": "Day-2 insight DM recommended today (not yet confirmed sent)",
+      "status": "First insight DM recommended 2026-10-15 (Day-2 DM from 09-12 never confirmed sent)",
       "last_touch": "2026-09-12",
       "last_touch_confidence": "logged retroactively 2026-09-13",
-      "next_action": "Day-6 close ask ~2026-09-18 if no reply, after Day-2 DM confirmed sent"
+      "next_action": "Send insight DM 2026-10-15; close ask ~10-21 if no reply"
     },
     {
       "id": "CX23",
@@ -384,10 +384,10 @@
       "contact": "Karim Yazji (CEO); Hussain Husaini (Sales Manager)",
       "region": "Bahrain",
       "priority_score": 87,
-      "status": "Day-2 insight DM also due today — bonus outreach if time allows after CX13/14/19-22",
+      "status": "First insight DM recommended 2026-10-15 (Day-2 DM from 09-12 never confirmed sent)",
       "last_touch": "2026-09-12",
       "last_touch_confidence": "logged retroactively 2026-09-13",
-      "next_action": "Day-2 DM today or tomorrow (1 day late acceptable), then Day-6 ~09-18/19"
+      "next_action": "Send insight DM 2026-10-15; close ask ~10-21 if no reply"
     },
     {
       "id": "CX24",
@@ -396,10 +396,10 @@
       "contact": "Amin Alarrayed (Real Estate Leader)",
       "region": "Bahrain",
       "priority_score": 86,
-      "status": "Day-2 insight DM also due today — bonus outreach if time allows after CX13/14/19-22",
+      "status": "First insight DM recommended 2026-10-15 (Day-2 DM from 09-12 never confirmed sent)",
       "last_touch": "2026-09-12",
       "last_touch_confidence": "logged retroactively 2026-09-13",
-      "next_action": "Day-2 DM today or tomorrow (1 day late acceptable), then Day-6 ~09-18/19"
+      "next_action": "Send insight DM 2026-10-15; close ask ~10-21 if no reply"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-04",
-  "generated_by": "Verified project tracker sync; work evidence Sep 30 register and Oct 4 Rhona WhatsApp. Other sections retain their original dates.",
+  "date": "2026-10-15",
+  "generated_by": "prisynchracy-morning-command (Thursday AM Master Command, 07:34 Bahrain — first AM run since 2026-09-19; 25 scheduled runs 09-20→10-14 never fired)",
   "verse": {
-    "text": "\"For I know the plans I have for you,\" declares the LORD, \"plans to prosper you and not to harm you, plans to give you hope and a future.\"",
-    "ref": "Jeremiah 29:11 — Day 19 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "He who began a good work in you will carry it on to completion until the day of Christ Jesus.",
+    "ref": "Philippians 1:6 — Day 15 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
@@ -41,7 +41,7 @@
       }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-09-19",
+    "updated": "2026-10-15",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,241 +61,32 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — 50 Years Campaign",
-    "note": "2026-10-15 07:34 sentinel (8hr sync): deck dated 2026-10-04 — not rewritten in 11 days; day counts below are ~11 days understated. Drives 0/4 mounted (AXL8GP newly unplugged). Priorities/picks untouched by this pass. | Latest sync Oct 4, 2026 (Asia/Bahrain). Box sample photo received from Rhona / Union Press; physical inspection and dispatch time pending. Badge arrival Oct 7–10 is an estimate. Source: https://chatgpt.com/space/page_bed90335e1d8819189cc315c6bf57bde. Legacy master tracker deleted and excluded. Completion, approval and delivery are distinct.",
+    "note": "2026-10-15 AM: all four drives NOT mounted (/Volumes = Macintosh HD only). No live drive evidence since 2026-09-12 12:12 — 33 days. REHC state carried forward unchanged, nothing invented. Badges confirmed to print in China 09-12 (closed). Sign-off cluster (RFID + New Joiner ID + OOH 2680/2681) now 93 days awaiting client approval. Four Sep-9 jobs now 36 days with no brief/deadline. BTC standalone Brand Discovery Questionnaire 33 days unconfirmed. Racing-season start is close — badge delivery from China is the item to confirm this week.",
     "items": [
       {
-        "task": "Confirm RFID/staff card and new joiner communication approvals; separately verify OOH bookings",
-        "deadline": "Not supplied",
-        "status": "Design files exist; approvals unverified; OOH planning complete does not establish booking",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc)",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Gienel; approvers unnamed"
+        "task": "Send ONE sign-off email: RFID + New Joiner ID + OOH (2680/2681) — yes/no per item + a hard reply date.",
+        "deadline": "today 2026-10-15",
+        "status": "🔴 93 days unmoved — oldest open item"
       },
       {
-        "task": "Confirm BJF garment sample/order scope and deadline",
-        "deadline": "Not supplied",
-        "status": "Artwork exists; order status unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc)",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
+        "task": "Get brief + deadline for the 4 Sep-9 jobs (BJF Vest & shirt, Season Parade ring, 2026 race schedule, REHC Vest & shirt) — same email.",
+        "deadline": "today 2026-10-15",
+        "status": "🔴 36 days unscoped"
       },
       {
-        "task": "Record REHC garment sample order, dispatch, arrival and fit/print approval",
-        "deadline": "Not supplied",
-        "status": "Sample requested through Usman for Pakistan; order/dispatch unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc)",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Usman (sample contact); approval owner unconfirmed"
+        "task": "Confirm badge delivery ETA from the China printer before season opening.",
+        "deadline": "this week",
+        "status": "🟡 sent to print 09-12, delivery unconfirmed"
       },
       {
-        "task": "Reconcile parade/perimeter banner sponsor roster and 2023 footer before release",
-        "deadline": "Not supplied",
-        "status": "2026 filename conflicts with 2023 artwork footer",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc)",
-        "completed": false,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
+        "task": "Confirm status of BTC_Brand_Discovery_Questionnaire.docx (sent to BTC? any answers?).",
+        "deadline": "this week",
+        "status": "🟡 33 days unconfirmed"
       },
       {
-        "task": "Confirm current Racing Office A4 schedule version and changed times",
-        "deadline": "Not supplied",
-        "status": "30 meetings evidenced; times subject to change",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc)",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Racing Office (version); design owner unconfirmed"
-      },
-      {
-        "task": "Confirm questionnaire sent, responses received, and standalone guideline scope",
-        "deadline": "Not supplied",
-        "status": "Unconfirmed",
-        "source": "[Sep 19 deck](https://github.com/gienelsbalanquit-collab/prisy-pwa/blob/main/priority_deck.json)",
-        "completed": true,
-        "area": "BTC",
-        "owner": "Gienel"
-      },
-      {
-        "task": "Verify brochure date corrections applied and obtain print approval",
-        "deadline": "Not supplied",
-        "status": "Latest brochure and for-print PDF evidenced; approval unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc)",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Finalize 2026/27 Condition Book and record approval",
-        "deadline": "Not supplied",
-        "status": "V1 PDF and editable source evidenced; final approval unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc)",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Reconcile lanyards, passes and wristbands with approved access matrix; verify quantities and samples",
-        "deadline": "Not supplied",
-        "status": "Production artwork exists; physical samples/quantities unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc)",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Record badge dispatch, receipt, quality check and distribution",
-        "deadline": "Oct 7–10, 2026 estimate",
-        "status": "Print progress reported; arrival estimated, not courier-confirmed",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S14/S27",
-        "completed": false,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Confirm Return of Mares 2025 cover/year with printer and record print completion/delivery",
-        "deadline": "Not supplied",
-        "status": "Printing underway per user statements recorded in register; filename says 2023",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S31 / item 32",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Obtain actual grandstand location photo, measurements and placement review",
-        "deadline": "Not supplied",
-        "status": "Blocked awaiting location photo",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · item 33",
-        "completed": false,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Map all applicable badge designs to magnets; confirm dimensions, backing and quantities",
-        "deadline": "Not supplied",
-        "status": "38-page face-art PDF exists; magnet construction unspecified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S32 / item 34",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Specify directional wayfinder board location, layout, size, mounting and approval",
-        "deadline": "Not supplied",
-        "status": "Requested; relationship to grandstand wayfinder unconfirmed",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · item 35",
-        "completed": false,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Confirm Owner, Trainer and Official pin specs, quantities, eligibility and supplier proofs",
-        "deadline": "Not supplied",
-        "status": "Three artwork pages; no order confirmation",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S16 / item 17",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Receive and inspect Union Press presentation box sample; resolve pin hole and badge margins, then approve fit and specifications",
-        "deadline": "Sample requested Oct 4; dispatch time unanswered as of 9:32am; no confirmed delivery deadline",
-        "status": "Oct 4 WhatsApp: Rhona supplied sample photo and confirmed lanyard comes out with badge. Gienel flagged pin-hole size and small badge margins, requested box for physical check before go-ahead. Dispatch, receipt and final approval unconfirmed; A/B/C mapping and signed specs not established",
-        "source": "WhatsApp · “Rhona \\| Coodinator” · Oct 4, 8:47–9:32am Bahrain; [Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S17 / item 18",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Gienel (review); Rhona / Union Press (sample coordination, supplier identified by Gienel)"
-      },
-      {
-        "task": "Select OOH sites, obtain formal quotes/specs, confirm bookings and release artwork",
-        "deadline": "Proposed Oct 2026–Apr 2027 run",
-        "status": "Campaign proposal exists; installation/booking unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S30 / items 05, 27",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Obtain current season lighting on/off cue sheet matched to fixtures",
-        "deadline": "Not supplied",
-        "status": "No cue times in reviewed A4/workbook",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S28 / item 29",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Fill and approve race card v3 editorial content, TPD data, Weatherbys copy, QR, visitor/map and fixture fields",
-        "deadline": "Not supplied",
-        "status": "16-page proof contains placeholders; editorial names are not confirmed design owners",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S23 / item 24",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Supply approved race card sponsor names, tiers, marks and placements",
-        "deadline": "Not supplied",
-        "status": "Principal/platinum/gold logo placeholders remain",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S23 / item 28",
-        "completed": false,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Map approved artwork to venue guide surfaces; check dimensions, fixings and print files",
-        "deadline": "Not supplied",
-        "status": "24-page photographic measurement guide; production sign-off needed",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S26 / item 30",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Reconcile all accreditation slides with latest badge art, access matrix, serials and QR workflow",
-        "deadline": "Not supplied",
-        "status": "20-slide layout deck; update to exact approved revision unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S27 / item 31",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Confirm history banner print and delivery status",
-        "deadline": "Not supplied",
-        "status": "6m × 0.6m artwork/print files exist",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S07",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Record stationery/envelope approval and production release",
-        "deadline": "Not supplied",
-        "status": "For-print files exist; approval unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S11",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Record BTC supplier guideline sign-off",
-        "deadline": "Not supplied",
-        "status": "Package exists; sign-off unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S21",
-        "completed": true,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
-      },
-      {
-        "task": "Confirm lamppost and event extension placement",
-        "deadline": "Not supplied",
-        "status": "Concepts and derivatives evidenced; placement unverified",
-        "source": "[Sep 30 register](library-file:fde1_bGliZmlsZV8tamtjczM1UDFYVFk2Z2xZOTJjVktn_FileDrive_400c720ec6dc819187543786a3d598cc) · S06",
-        "completed": false,
-        "area": "REHC/BTC",
-        "owner": "Owner unconfirmed"
+        "task": "Plug in Extreme Pro so the work log can be refreshed — last live read 09-12.",
+        "deadline": "today",
+        "status": "⚪ not mounted"
       }
     ]
   },
@@ -303,143 +94,150 @@
     {
       "p": 1,
       "area": "🏇 REHC/BTC",
-      "task": "Confirm badge dispatch, tracking and receipt plan",
-      "why": "Arrival estimated Oct 7–10; courier confirmation and receipt/QC remain unverified.",
-      "action": "Obtain tracking and arrange receipt and QC; log confirmed delivery.",
-      "est": "Not estimated"
+      "task": "Send the sign-off cluster email (RFID + New Joiner ID + OOH 2680/2681) with a hard reply date",
+      "why": "93 days awaiting approval — the longest-open item on the whole board; every week it sits it becomes harder to close as 'done'.",
+      "action": "Open work mail, one email, three yes/no lines, reply-by date of Thu 22 Oct.",
+      "est": "15 min"
     },
     {
       "p": 2,
       "area": "🏇 REHC/BTC",
-      "task": "Receive and inspect Union Press box sample via Rhona",
-      "why": "Oct 4 photo shows sample; pin hole, badge margins and fit need physical review before go-ahead.",
-      "action": "Confirm dispatch time, inspect badge/lanyard/pin fit and margins, then record corrections or approval.",
-      "est": "Not estimated"
+      "task": "Get briefs + deadlines on the 4 unscoped Sep-9 jobs",
+      "why": "36 days of work on the drive with no brief/deadline — scope creep with no paper trail.",
+      "action": "Add a 4-line 'please confirm brief + date' block to the P1 email.",
+      "est": "10 min"
     },
     {
       "p": 3,
       "area": "🏇 REHC/BTC",
-      "task": "Confirm Return of Mares print completion and delivery",
-      "why": "Printing reported underway Sep 30; 2025 cover conflicts with 2023 filename.",
-      "action": "Verify year/artwork with printer and obtain completion/delivery date.",
-      "est": "Not estimated"
+      "task": "Confirm badge delivery ETA from China + BTC questionnaire status",
+      "why": "Badges went to print 09-12; season opening is near — a late shipment is a hard external deadline.",
+      "action": "One WhatsApp/email to the print contact asking for ship date + tracking.",
+      "est": "10 min"
     },
     {
       "p": 4,
-      "area": "🏇 REHC/BTC",
-      "task": "Unblock season approvals and production inputs",
-      "why": "OOH bookings, racecard content/sponsors and lighting cues remain unverified. Oct 30 season start is register-reported, subject to confirmation.",
-      "action": "Obtain approval decisions, approved sponsor assets, editorial content and Racing Office schedule.",
-      "est": "Not estimated"
+      "area": "🔥 Prisynchracy",
+      "task": "Hot 6 DMs — CX19–CX24 (Lily Organics, Revive Spa, Withyn, Diyar Al Muharraq, ASK Real Estate, Naseej)",
+      "why": "Only 6 non-closed names left in the pipeline; all went cold during the 25-day outage. Meets the 6-DM minimum.",
+      "action": "Open LinkedIn, send the re-open DM to Lily Organics first, then the other five; log each in prisy_prospect_tracker.json.",
+      "est": "30 min"
     },
     {
       "p": 5,
       "area": "🔥 Prisynchracy",
-      "task": "Day-6 close ask — Café Ségo, L'AVENUE, Triple B, DOSE Café (CX15–18)",
-      "why": "Historical Sep 19 evidence; current completion/send status unverified. Due ~09-17, now 2 days late purely from the scheduler gap.",
-      "action": "Send the pre-written close-ask hook via LinkedIn to each, log the send in prisy_prospect_tracker.json.",
-      "est": "20 min"
+      "task": "Source 10 fresh Bahrain SME names (F&B / clinics / professional services)",
+      "why": "Both prospect files are fully used — after today there is nothing left to DM. MRR is BHD 0 / 4,500.",
+      "action": "Open LinkedIn search: 'founder' + 'Bahrain' + 'café OR clinic', save 10 names to the watchlist xlsx.",
+      "est": "40 min"
     },
     {
       "p": 6,
-      "area": "🔥 Prisynchracy",
-      "task": "Day-2 insight DM — Lily Organics BH, Revive Spa and Recovery Center (CX19–20)",
-      "why": "Historical Sep 19 evidence; current completion/send status unverified. Original 09-12 Day-2 DM never confirmed sent — first real touch.",
-      "action": "Send the insight hook via LinkedIn to each, log the send.",
-      "est": "15 min"
+      "area": "⚙️ Systems",
+      "task": "Find out why the 8 AM Master Command missed 25 days (09-20→10-14)",
+      "why": "Third multi-week outage (08-24→09-05, 09-15→09-18, now this). No run = no deck, no recap, no rotation.",
+      "action": "Settings → Scheduled tasks → open prisynchracy-morning-command, check last-run history + whether the Mac was asleep/off at 08:00.",
+      "est": "10 min"
     },
     {
       "p": 7,
-      "area": "🔥 Prisynchracy",
-      "task": "Decide the fate of CX13 (Pomelo Fashion) + CX14 (ZALORA)",
-      "why": "Historical Sep 19 evidence; current completion/send status unverified. 36 days stuck unverifiable whether the Day-6 ask was ever sent.",
-      "action": "Confirm sent, resend once and log it, or close both to nurture today — pick one.",
+      "area": "🌆 GoodnessCities",
+      "task": "Decide the 4 remaining Monaco Gmail drafts (Caroline Olds ×2, Petrini, DAMENO) — send or delete",
+      "why": "90–102 days old. La Costa's draft is already gone (deleted, not sent). Unsent drafts are not outreach.",
+      "action": "Gmail → Drafts → delete the duplicate Caroline Olds (07-05), then send or delete the other three.",
       "est": "10 min"
     },
     {
       "p": 8,
-      "area": "🌆 GoodnessCities",
-      "task": "Clear the 5-draft Gmail backlog (Caroline Olds ×2, DAMENO, Petrini, La Costa — 62-76 days unsent)",
-      "why": "Historical Sep 19 evidence; current completion/send status unverified. No 6th draft was created on purpose today — the real gap is these 5 sitting unread.",
-      "action": "Gienel: open Gmail drafts, send or delete each of the 5, decide whether the email channel is worth continuing for GC.",
-      "est": "20 min"
+      "area": "🩺 Health",
+      "task": "Mid-October retest window is now — book doctor visit + HbA1c/glucose/lipid retest",
+      "why": "Your own forecast plan set the retest for ~mid-Oct; the doctor-visit item has been open since 07-17 (90 days).",
+      "action": "Call the clinic and book the visit + bloods for next week.",
+      "est": "10 min"
     },
     {
       "p": 9,
       "area": "📺 PSH",
-      "task": "PSH Week-1 audit — still 0/5, now 73 days open",
-      "why": "Historical Sep 19 evidence; current completion/send status unverified. Zero progress since 2026-07-08. The whole revival and the next portfolio gate are blocked behind this.",
-      "action": "5-minute YouTube Studio check: Partner Program status, strikes, RPM — do this before any Saturday production time.",
+      "task": "PSH Week-1 audit — still 0/5, 99 days open",
+      "why": "Gates the whole revival and the next dormant venture. Not production day (Thu) — only the audit matters.",
+      "action": "Open YouTube Studio → Monetization tab, screenshot YPP status, tick box 1 in the PSH note.",
       "est": "5 min"
     },
     {
       "p": 10,
       "area": "⚙️ Systems",
-      "task": "AXL8GP2 offload — 76 days open",
-      "why": "Historical Sep 19 evidence; current completion/send status unverified. Drive is at 85% and not mounted today, so it can't be actioned right now, but the day-count keeps climbing.",
-      "action": "Next time AXL8GP2 + Extreme Pro are both plugged in together, move finished projects across before unplugging again.",
-      "est": "n/a today — drive not mounted"
-    },
-    {
-      "p": 11,
-      "area": "🔥 Prisynchracy",
-      "task": "Bonus Day-2 DM — Withyn, Diyar Al Muharraq, ASK Real Estate, Naseej (CX21–24)",
-      "why": "Historical Sep 19 evidence; current completion/send status unverified. Also due since 09-12; daily minimum already met by P4+P5.",
-      "action": "Send if time allows after P4/P5; touching tomorrow is acceptable.",
-      "est": "15 min"
+      "task": "AXL8GP2 offload — 102 days open",
+      "why": "85% full at last read (09-12); not mounted today so it can't be actioned.",
+      "action": "Next time it's plugged in: move one archive folder to AXL8GP.",
+      "est": "30 min (when mounted)"
     }
   ],
   "day_plan": [
     {
-      "block": "Work to finish",
-      "when": "Next work session",
-      "what": "Badge tracking → physical box sample review → Return of Mares printer confirmation → season approval blockers."
+      "block": "Morning deep work",
+      "when": "AM",
+      "what": "REHC/BTC — P1 sign-off email + P2 scoping block + P3 badge ETA (one sitting, ~35 min)"
+    },
+    {
+      "block": "Midday outreach block",
+      "when": "Midday",
+      "what": "P4 Hot 6 DMs batched (meets the 6-DM minimum) + start P5 sourcing"
+    },
+    {
+      "block": "10-min admin",
+      "when": "Afternoon",
+      "what": "P6 scheduler check + P7 Gmail drafts + P8 clinic booking"
+    },
+    {
+      "block": "Evening review",
+      "when": "10 min, evening",
+      "what": "Log DMs sent + replies in prisy_prospect_tracker.json; skim Active Projects"
     }
   ],
   "scoreboard": [
     {
       "k": "MRR",
-      "v": "Historical Sep 19 snapshot: BHD 0 / 4,500"
+      "v": "BHD 0 / 4,500"
     },
     {
       "k": "Outreach today",
-      "v": "Historical Sep 19 snapshot: 6 DMs (P4 close asks + P5 Day-2 DMs) = meets daily minimum"
+      "v": "6 DMs (CX19–24) = meets daily minimum — last pipeline names"
     },
     {
       "k": "Scheduler",
-      "v": "Historical Sep 19 snapshot: 🔴 5-day gap found this run (09-15 → 09-18, zero runs/briefings)"
+      "v": "🔴 25 missed AM runs (09-20→10-14) — first run in 26 days"
     },
     {
       "k": "Drives",
-      "v": "⚪ 0/4 mounted (sentinel 2026-10-15 07:34)"
+      "v": "⚪ 0/4 mounted — no REHC live read in 33 days"
     },
     {
       "k": "REHC sign-off cluster",
-      "v": "Historical Sep 19 snapshot: 🔴 67 days awaiting client approval — drafted, not yet sent"
+      "v": "🔴 93 days awaiting client approval"
     },
     {
       "k": "REHC jobs unscoped",
-      "v": "Historical Sep 19 snapshot: 🔴 4 jobs from one Sep-9 session, 10 days, still no brief/deadline"
+      "v": "🔴 4 Sep-9 jobs, 36 days, no brief/deadline"
     },
     {
       "k": "GC drafts unsent",
-      "v": "Historical Sep 19 snapshot: 🔴 5 drafts, 62-76 days — no new 6th draft created (reasoned skip, see note)"
+      "v": "🔴 4 drafts, 90–102 days (La Costa draft gone)"
     },
     {
       "k": "GC Hot Picks",
-      "v": "Historical Sep 19 snapshot: 6/6 rotated — Caroline Olds, DAMENO, Richmont Monaco, La Table d'Elise, Monterra Wealth Mgmt, Signature Sailing Charter"
+      "v": "6/6 rotated — Odéon Spa, Quai des Artistes, Monaco Private Advisory, FSM Australia, Inkd SMP, Johnstone De Beer"
     },
     {
       "k": "📺 PSH",
-      "v": "Historical Sep 19 snapshot: Week-1 audit 0/5, 73 days open — Saturday, no production until audit clears"
+      "v": "Week-1 audit 0/5, 99 days open"
     },
     {
       "k": "Sibiraj / Ayush",
-      "v": "Historical Sep 19 snapshot: Sibiraj closed (07-14); Ayush nurture-only, 98 days unactioned"
+      "v": "Sibiraj closed (07-14); Ayush nurture-only, 124 days, no reply"
     },
     {
       "k": "AXL8GP2 offload",
-      "v": "Historical Sep 19 snapshot: ⚠️ 76 days open — not mounted today, can't action"
+      "v": "⚠️ 102 days open — not mounted"
     }
   ],
   "work_tracker": {

@@ -1,6 +1,6 @@
 {
   "_purpose": "Tracks which GoodnessCities lead IDs have already been proposed/contacted, so the daily scheduled run rotates fresh names instead of repeating the same ones forever (the exact gap that broke the Prisynchracy prospect list — see MASTER_CONTEXT.md known issues).",
-  "last_run_date": "2026-09-19",
+  "last_run_date": "2026-10-15",
   "proposed": {
     "10": {
       "first_proposed": "2026-07-08",
@@ -183,7 +183,7 @@
       "first_proposed": "2026-07-07",
       "status": "proposed",
       "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
-      "last_proposed": "2026-08-16"
+      "last_proposed": "2026-10-15"
     },
     "57": {
       "first_proposed": "2026-07-07",
@@ -249,7 +249,7 @@
       "first_proposed": "2026-07-28",
       "status": "proposed",
       "channel": "linkedin",
-      "last_proposed": "2026-08-16"
+      "last_proposed": "2026-10-15"
     },
     "62": {
       "first_proposed": "2026-07-28",
@@ -273,7 +273,7 @@
       "first_proposed": "2026-07-28",
       "status": "proposed",
       "channel": "linkedin",
-      "last_proposed": "2026-08-13"
+      "last_proposed": "2026-10-15"
     },
     "91": {
       "first_proposed": "2026-08-08",
@@ -321,24 +321,24 @@
       "first_proposed": "2026-08-12",
       "status": "proposed",
       "channel": "phone/website contact form",
-      "last_proposed": "2026-08-12"
+      "last_proposed": "2026-10-15"
     },
     "117": {
       "first_proposed": "2026-08-12",
       "status": "proposed",
       "channel": "phone/website contact form",
-      "last_proposed": "2026-08-12"
+      "last_proposed": "2026-10-15"
     },
     "122": {
       "first_proposed": "2026-08-12",
       "status": "proposed",
       "channel": "phone/website contact form",
-      "last_proposed": "2026-08-12"
+      "last_proposed": "2026-10-15"
     }
   },
   "excluded_segments_pending_review": [
     "US Local Service – Plumbing"
   ],
   "excluded_segments_reason": "120 leads, phone/SMS only, TCPA consent review required before any auto-dial or SMS outreach. Do not add to rotation until Gienel confirms review is complete.",
-  "email_draft_note": "2026-09-19: NO new email draft created (5th run in a row skipping a new draft, though the 5-day scheduler gap 09-15->09-18 meant cooldown was technically clear today). Reasoned skip, not a cooldown skip: all 4 email-ready leads (Caroline Olds x2 entries, DAMENO, La Costa, Petrini) already have an existing unsent Gmail draft each (62-76 days old as of today) -- see email_draft_id fields. Adding a 6th/7th duplicate draft into an unread backlog adds motion, not outcome. Real action needed from Gienel: open Gmail drafts, send or delete each of the 5, decide if the email channel for GC is worth continuing."
+  "email_draft_note": "2026-10-15: NO new email draft. All 4 email-ready leads already hold an unsent Gmail draft (Caroline Olds x2 07-05/07-13, Petrini 07-12, DAMENO 07-17 — 90-102 days). La Costa's draft r-7507793591165494176 no longer exists and was not sent (likely deleted by Gienel). Adding duplicates into an untouched backlog is motion, not outcome. | prior: 2026-09-19: NO new email draft created (5th run in a row skipping a new draft, though the 5-day scheduler gap 09-15->09-18 meant cooldown was technically clear today). Reasoned skip, not a cooldown skip: all 4 email-ready leads (Caroline Olds x2 entries, DAMENO, La Costa, Petrini) already have an ex"
 }
