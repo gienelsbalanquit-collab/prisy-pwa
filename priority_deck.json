@@ -61,7 +61,7 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — 50 Years Campaign",
-    "note": "Latest sync Oct 4, 2026 (Asia/Bahrain). Box sample photo received from Rhona / Union Press; physical inspection and dispatch time pending. Badge arrival Oct 7–10 is an estimate. Source: https://chatgpt.com/space/page_bed90335e1d8819189cc315c6bf57bde. Legacy master tracker deleted and excluded. Completion, approval and delivery are distinct.",
+    "note": "2026-10-15 07:34 sentinel (8hr sync): deck dated 2026-10-04 — not rewritten in 11 days; day counts below are ~11 days understated. Drives 0/4 mounted (AXL8GP newly unplugged). Priorities/picks untouched by this pass. | Latest sync Oct 4, 2026 (Asia/Bahrain). Box sample photo received from Rhona / Union Press; physical inspection and dispatch time pending. Badge arrival Oct 7–10 is an estimate. Source: https://chatgpt.com/space/page_bed90335e1d8819189cc315c6bf57bde. Legacy master tracker deleted and excluded. Completion, approval and delivery are distinct.",
     "items": [
       {
         "task": "Confirm RFID/staff card and new joiner communication approvals; separately verify OOH bookings",
@@ -411,7 +411,7 @@
     },
     {
       "k": "Drives",
-      "v": "Historical Sep 19 snapshot: ⚪ NONE mounted today — all REHC state carried from 2026-09-12 live read"
+      "v": "⚪ 0/4 mounted (sentinel 2026-10-15 07:34)"
     },
     {
       "k": "REHC sign-off cluster",
