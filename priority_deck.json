@@ -1,6 +1,6 @@
 {
   "date": "2026-10-15",
-  "generated_by": "prisynchracy-morning-command (Thursday AM Master Command, 07:34 Bahrain — first AM run since 2026-09-19; 25 scheduled runs 09-20→10-14 never fired)",
+  "generated_by": "prisynchracy-morning-command (Thursday AM Master Command, 07:34 Bahrain — first AM run since 2026-09-19; 25 scheduled runs 09-20→10-14 never fired) · merged with Gienel's Oct 4 work tracker (restored after an initial overwrite this run)",
   "verse": {
     "text": "He who began a good work in you will carry it on to completion until the day of Christ Jesus.",
     "ref": "Philippians 1:6 — Day 15 of 31, from 21 Bible/📖 Daily Verse Rotation"
@@ -61,32 +61,32 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC — 50 Years Campaign",
-    "note": "2026-10-15 AM: all four drives NOT mounted (/Volumes = Macintosh HD only). No live drive evidence since 2026-09-12 12:12 — 33 days. REHC state carried forward unchanged, nothing invented. Badges confirmed to print in China 09-12 (closed). Sign-off cluster (RFID + New Joiner ID + OOH 2680/2681) now 93 days awaiting client approval. Four Sep-9 jobs now 36 days with no brief/deadline. BTC standalone Brand Discovery Questionnaire 33 days unconfirmed. Racing-season start is close — badge delivery from China is the item to confirm this week.",
+    "note": "2026-10-15 AM: source = Gienel's Oct 4 work tracker (Sep 30 register + Oct 4 Rhona/Union Press WhatsApp) — the newest evidence available; all four drives NOT mounted, no live drive read since 09-12. SEASON OPENS OCT 30 (15 days). Badge arrival estimate Oct 7–10 has passed with no receipt logged. Union Press box sample dispatch unanswered since Oct 4. Race card still has sponsor/editorial placeholders. RFID/New Joiner/OOH approvals 93 days unverified. Full task list in work_tracker.",
     "items": [
       {
-        "task": "Send ONE sign-off email: RFID + New Joiner ID + OOH (2680/2681) — yes/no per item + a hard reply date.",
-        "deadline": "today 2026-10-15",
-        "status": "🔴 93 days unmoved — oldest open item"
+        "task": "Badges: confirm received + QC'd, or get courier tracking from the China printer",
+        "deadline": "today — arrival est. Oct 7–10 already passed",
+        "status": "🔴 no receipt logged; season opens Oct 30"
       },
       {
-        "task": "Get brief + deadline for the 4 Sep-9 jobs (BJF Vest & shirt, Season Parade ring, 2026 race schedule, REHC Vest & shirt) — same email.",
-        "deadline": "today 2026-10-15",
-        "status": "🔴 36 days unscoped"
-      },
-      {
-        "task": "Confirm badge delivery ETA from the China printer before season opening.",
+        "task": "Union Press box sample (Rhona): get dispatch date, physical check of pin hole + badge margins, then go-ahead",
         "deadline": "this week",
-        "status": "🟡 sent to print 09-12, delivery unconfirmed"
+        "status": "🟡 sample photo Oct 4; dispatch unanswered 11 days"
       },
       {
-        "task": "Confirm status of BTC_Brand_Discovery_Questionnaire.docx (sent to BTC? any answers?).",
+        "task": "Race card v3 + season inputs: sponsor names/tiers/logos, editorial placeholders, lighting cue sheet",
+        "deadline": "before Oct 30 opening",
+        "status": "🔴 placeholders remain in 16-page proof"
+      },
+      {
+        "task": "Return of Mares: confirm print completion + delivery, and 2025-vs-2023 cover year with printer",
         "deadline": "this week",
-        "status": "🟡 33 days unconfirmed"
+        "status": "🟡 printing underway per Sep 30 register"
       },
       {
-        "task": "Plug in Extreme Pro so the work log can be refreshed — last live read 09-12.",
+        "task": "Sign-off email: RFID + New Joiner ID approval + OOH bookings (planning ≠ booking)",
         "deadline": "today",
-        "status": "⚪ not mounted"
+        "status": "🔴 93 days unverified"
       }
     ]
   },
@@ -94,29 +94,37 @@
     {
       "p": 1,
       "area": "🏇 REHC/BTC",
-      "task": "Send the sign-off cluster email (RFID + New Joiner ID + OOH 2680/2681) with a hard reply date",
-      "why": "93 days awaiting approval — the longest-open item on the whole board; every week it sits it becomes harder to close as 'done'.",
-      "action": "Open work mail, one email, three yes/no lines, reply-by date of Thu 22 Oct.",
-      "est": "15 min"
+      "task": "Badges — confirm receipt + QC, or chase courier tracking",
+      "why": "Arrival estimate (Oct 7–10) has passed with nothing logged; season opens Oct 30 — 15 days. Hard external deadline.",
+      "action": "Message the China printer contact: 'shipped? tracking no.?' — then log the answer in the work tracker.",
+      "est": "10 min"
     },
     {
       "p": 2,
       "area": "🏇 REHC/BTC",
-      "task": "Get briefs + deadlines on the 4 unscoped Sep-9 jobs",
-      "why": "36 days of work on the drive with no brief/deadline — scope creep with no paper trail.",
-      "action": "Add a 4-line 'please confirm brief + date' block to the P1 email.",
-      "est": "10 min"
+      "task": "Union Press box sample — dispatch date, physical check, go-ahead",
+      "why": "You flagged pin-hole size + small badge margins on Oct 4; no dispatch answer in 11 days, and the box gates badge packing.",
+      "action": "WhatsApp Rhona: ask dispatch time today + confirm margin fix before sample ships.",
+      "est": "5 min"
     },
     {
       "p": 3,
       "area": "🏇 REHC/BTC",
-      "task": "Confirm badge delivery ETA from China + BTC questionnaire status",
-      "why": "Badges went to print 09-12; season opening is near — a late shipment is a hard external deadline.",
-      "action": "One WhatsApp/email to the print contact asking for ship date + tracking.",
-      "est": "10 min"
+      "task": "Race card + season inputs — sponsor names/tiers/logos, editorial placeholders, lighting cue sheet",
+      "why": "16-page race card proof still has placeholders; design can't close until others supply inputs — 15 days to opening.",
+      "action": "One email to Racing Office + sponsorship listing every missing input with a reply-by of Mon 19 Oct.",
+      "est": "20 min"
     },
     {
       "p": 4,
+      "area": "🏇 REHC/BTC",
+      "task": "Sign-off email — RFID + New Joiner ID approval + OOH bookings; confirm Return of Mares delivery",
+      "why": "93 days unverified. OOH planning complete ≠ booked — Oct 2026–Apr 2027 run window is now open.",
+      "action": "Add a second section to the P3 email or send separately: three yes/no lines + Return of Mares print status.",
+      "est": "10 min"
+    },
+    {
+      "p": 5,
       "area": "🔥 Prisynchracy",
       "task": "Hot 6 DMs — CX19–CX24 (Lily Organics, Revive Spa, Withyn, Diyar Al Muharraq, ASK Real Estate, Naseej)",
       "why": "Only 6 non-closed names left in the pipeline; all went cold during the 25-day outage. Meets the 6-DM minimum.",
@@ -124,7 +132,7 @@
       "est": "30 min"
     },
     {
-      "p": 5,
+      "p": 6,
       "area": "🔥 Prisynchracy",
       "task": "Source 10 fresh Bahrain SME names (F&B / clinics / professional services)",
       "why": "Both prospect files are fully used — after today there is nothing left to DM. MRR is BHD 0 / 4,500.",
@@ -132,7 +140,7 @@
       "est": "40 min"
     },
     {
-      "p": 6,
+      "p": 7,
       "area": "⚙️ Systems",
       "task": "Find out why the 8 AM Master Command missed 25 days (09-20→10-14)",
       "why": "Third multi-week outage (08-24→09-05, 09-15→09-18, now this). No run = no deck, no recap, no rotation.",
@@ -140,7 +148,7 @@
       "est": "10 min"
     },
     {
-      "p": 7,
+      "p": 8,
       "area": "🌆 GoodnessCities",
       "task": "Decide the 4 remaining Monaco Gmail drafts (Caroline Olds ×2, Petrini, DAMENO) — send or delete",
       "why": "90–102 days old. La Costa's draft is already gone (deleted, not sent). Unsent drafts are not outreach.",
@@ -148,7 +156,7 @@
       "est": "10 min"
     },
     {
-      "p": 8,
+      "p": 9,
       "area": "🩺 Health",
       "task": "Mid-October retest window is now — book doctor visit + HbA1c/glucose/lipid retest",
       "why": "Your own forecast plan set the retest for ~mid-Oct; the doctor-visit item has been open since 07-17 (90 days).",
@@ -156,42 +164,34 @@
       "est": "10 min"
     },
     {
-      "p": 9,
+      "p": 10,
       "area": "📺 PSH",
       "task": "PSH Week-1 audit — still 0/5, 99 days open",
       "why": "Gates the whole revival and the next dormant venture. Not production day (Thu) — only the audit matters.",
       "action": "Open YouTube Studio → Monetization tab, screenshot YPP status, tick box 1 in the PSH note.",
       "est": "5 min"
-    },
-    {
-      "p": 10,
-      "area": "⚙️ Systems",
-      "task": "AXL8GP2 offload — 102 days open",
-      "why": "85% full at last read (09-12); not mounted today so it can't be actioned.",
-      "action": "Next time it's plugged in: move one archive folder to AXL8GP.",
-      "est": "30 min (when mounted)"
     }
   ],
   "day_plan": [
     {
       "block": "Morning deep work",
       "when": "AM",
-      "what": "REHC/BTC — P1 sign-off email + P2 scoping block + P3 badge ETA (one sitting, ~35 min)"
+      "what": "REHC/BTC P1–P4: printer + Rhona messages first (5 min each), then the race-card inputs + sign-off email — season opens Oct 30"
     },
     {
       "block": "Midday outreach block",
       "when": "Midday",
-      "what": "P4 Hot 6 DMs batched (meets the 6-DM minimum) + start P5 sourcing"
+      "what": "Prisy Hot 6 DMs (CX19–24) batched = 6-DM minimum, then start fresh-name sourcing"
     },
     {
-      "block": "10-min admin",
+      "block": "Afternoon 10-min admin",
       "when": "Afternoon",
-      "what": "P6 scheduler check + P7 Gmail drafts + P8 clinic booking"
+      "what": "Scheduler check + Gmail drafts decision + clinic booking"
     },
     {
       "block": "Evening review",
       "when": "10 min, evening",
-      "what": "Log DMs sent + replies in prisy_prospect_tracker.json; skim Active Projects"
+      "what": "Log DMs/replies in prisy_prospect_tracker.json; update work tracker with badge/sample answers"
     }
   ],
   "scoreboard": [
@@ -213,11 +213,11 @@
     },
     {
       "k": "REHC sign-off cluster",
-      "v": "🔴 93 days awaiting client approval"
+      "v": "🔴 93 days — RFID/New Joiner approvals + OOH bookings unverified"
     },
     {
-      "k": "REHC jobs unscoped",
-      "v": "🔴 4 Sep-9 jobs, 36 days, no brief/deadline"
+      "k": "REHC season",
+      "v": "🔴 Opens Oct 30 — 15 days; badge receipt + race card inputs outstanding"
     },
     {
       "k": "GC drafts unsent",
