@@ -1,0 +1,121 @@
+{
+  "title": "REHC & BTC Daily Workflow Briefing",
+  "date": "2026-10-19",
+  "source": "priority_deck.json (verified live source — do not hand-edit numbers here without updating that file first)",
+  "season_countdown": "10-11 days until Season Opening Day (30 October 2026)",
+  "spoken_summary": "Good morning Gienel. This is your Prisy daily update with Siri. The latest verified priority source is October 19, 2026; today's workflow is not yet verified. These are carry-forward actions: confirm the race card sponsor, editorial and lighting inputs; the recorded reply-by date was October 19. Obtain China shipment tracking for the Royal and Royal Guest badge reprint. Confirm the box artwork and Union Press sample dispatch. Follow up on RFID, New Joiner ID and OOH approvals, the plaque name list and BTC A4 sponsor inputs. Verify the remaining CX19 to CX24 outreach before sending. AI coordination includes Gemini, Codex, Claude, ChatGPT, Manus and Siri. The local briefing files are aligned. Siri uses the chosen Workflow Update message shortcut to request the Master Command. The shared protocol records no installed Gemini cloud automation or Google Tasks sync. Successful delivery from the iPhone remains unverified.",
+  "workflow_status": {
+    "red": [
+      "Race card v5 — inputs unconfirmed in the 2026-10-19 source; reply-by 2026-10-19; current status UNKNOWN",
+      "Sign-off cluster: RFID + New Joiner ID + OOH REHC-2680/2681 approval; U-shaped plaques name list; BTC A4 needs 3 sponsors — 97 days unverified",
+      "Scheduler — no morning runs 10-16 to 10-18"
+    ],
+    "yellow": [
+      "Royal + Royal Guest badge reprint (China) — reprinting, no tracking logged",
+      "Box sample / 'Rex box' artwork (Oct 18) — Rhona dispatch unanswered since Oct 4",
+      "Return of Mares — printing underway per Sep 30 register"
+    ]
+  },
+  "priority_todos": [
+    {
+      "priority": "P1",
+      "area": "REHC/BTC",
+      "task": "Confirm race-card sponsor/editorial/lighting inputs; recorded reply-by was 2026-10-19; completion UNKNOWN",
+      "est": "20 min"
+    },
+    {
+      "priority": "P2",
+      "area": "REHC/BTC",
+      "task": "Royal + Royal Guest reprint: get ship date/tracking from China printer",
+      "est": "10 min"
+    },
+    {
+      "priority": "P3",
+      "area": "REHC/BTC",
+      "task": "Box sample (Oct 18 file): confirm artwork with Union Press, send to Rhona, get dispatch time",
+      "est": "10 min"
+    },
+    {
+      "priority": "P4",
+      "area": "REHC/BTC",
+      "task": "Sign-off email: RFID + New Joiner ID + OOH approval + plaque name-list deadline + BTC A4 sponsors",
+      "est": "10 min"
+    },
+    {
+      "priority": "P5",
+      "area": "Prisynchracy",
+      "task": "Send remaining Hot 6 DMs (CX19-24) - pipeline runs out after today",
+      "est": "30 min"
+    }
+  ],
+  "note": "Replaces an earlier version of this file that claimed A5 invite / badge boxes / racing schedule were DONE and cited a Google Tasks live-sync. Those claims did not match priority_deck.json (the verified source, built from Gienel's own confirmed status updates and live drive reads) and have been corrected 2026-10-20.",
+  "ai_sync": {
+    "updated_at": "2026-10-20T10:59:52+03:00",
+    "requested_by": "Gienel",
+    "daily_update_author": "Gemini created the draft; user confirmed the Prisy 6 AM/Siri workflow on 2026-10-20.",
+    "shared_priority_source": "priority_deck.json",
+    "source_date": "2026-10-19",
+    "health": "PARTIAL",
+    "reason": "Local files aligned; current-day source and cross-tool delivery unverified.",
+    "tools": [
+      {
+        "name": "Gemini / Antigravity",
+        "role": "Daily update author",
+        "status": "USER_CONFIRMED_ROLE",
+        "last_verified_run": null
+      },
+      {
+        "name": "Codex",
+        "role": "Workflow accuracy and local configuration",
+        "status": "LOCAL_CONFIG_ALIGNED",
+        "last_verified_run": "2026-10-20T10:54:32+03:00"
+      },
+      {
+        "name": "Claude / Cowork",
+        "role": "Master Command and shared vault workflow",
+        "status": "VERIFIED_2026-10-20: priority_deck.json confirmed intact at the real 2026-10-19 source (untouched by the fabricated 10-20 claim); prisynchracy-morning-command + prisynchracy-sync-refresh-8hr found DISABLED (enabled:false, last run 10-15) - that's the actual cause of the 10-16..10-18 gap, not a sleep/wake issue; stray duplicate 'priority_deck (1).json' and a false-completed .run-state/morning-2026-10-20.json removed from the PWA folder",
+        "last_verified_run": "2026-10-20T08:10:00Z"
+      },
+      {
+        "name": "ChatGPT",
+        "role": "Ideation and shared context",
+        "status": "CURRENT_SYNC_UNKNOWN",
+        "last_verified_run": null
+      },
+      {
+        "name": "Manus",
+        "role": "Client deliverables from shared briefings",
+        "status": "CURRENT_SYNC_UNKNOWN",
+        "last_verified_run": null
+      },
+      {
+        "name": "Siri",
+        "role": "Chosen Workflow Update message shortcut; voice briefing content prepared",
+        "status": "ROUTE_CONFIRMED_DEVICE_UNVERIFIED",
+        "last_verified_run": null
+      }
+    ],
+    "google_tasks_sync": "NOT_INSTALLED per 2026-10-20 dispatch note",
+    "daily_update_requirements": [
+      "Read the current priority_deck.json and shared vault evidence before generating the daily update.",
+      "Include every tool above, its last verified contribution, blockers, and next action; use UNKNOWN when evidence is absent.",
+      "Generate the notification, priority checklist, and Siri speech from the same dated evidence.",
+      "If source_date differs from today's Bahrain date, announce stale carry-forward evidence before reading priorities.",
+      "Record completion, approvals, Google Tasks sync, and Siri delivery only after verifying evidence.",
+      "Include new tools when Gienel confirms them; never assume this roster proves live connectivity."
+    ],
+    "gemini_cloud_automation": "NOT_INSTALLED per 2026-10-20 dispatch note"
+  },
+  "ai_sync_summary": "AI coordination includes Gemini, Codex, Claude, ChatGPT, Manus and Siri. The local briefing files are aligned. Siri uses the chosen Workflow Update message shortcut to request the Master Command. The shared protocol records no installed Gemini cloud automation or Google Tasks sync. Successful delivery from the iPhone remains unverified.",
+  "siri_dispatch": {
+    "selected_option": "B",
+    "shortcut_name": "Workflow Update",
+    "action": "Send Message",
+    "message": "run master command now",
+    "recipient": "+973 6636 9697",
+    "processor": "master-command-dispatch-listener",
+    "source": "00 Dashboard/🚀 Master Command — Mac Mini & Mobile Dispatch.md, 2026-10-20 decision",
+    "installation_and_delivery": "UNKNOWN — requires verification on Gienel's iPhone",
+    "six_am_schedule": "REQUESTED — not verified installed"
+  }
+}
