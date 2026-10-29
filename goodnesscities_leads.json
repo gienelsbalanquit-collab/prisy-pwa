@@ -1,6 +1,6 @@
 {
  "source": "GoodnessCities_Leads_Clean.csv (uploaded by Gienel, 2026-07-05)",
- "updated": "2026-10-15",
+ "updated": "2026-10-29",
  "total_real_leads": 245,
  "excluded_fictional_rows": 20,
  "compliance_flags": [
@@ -28,51 +28,51 @@
  "email_ready_count": 4,
  "hot_picks": [
   {
-   "id": 99,
-   "business": "HOMES Monaco (Sandro Piras)",
+   "id": 64,
+   "business": "Blygold Oceania / Blygold Queensland",
    "priority": "High",
-   "segment": "Monaco – Real Estate",
-   "channel": null,
+   "segment": "LinkedIn – AU/NZ Business Owners",
+   "channel": "LinkedIn DM (template already drafted in AU-Lead-List workbook)",
    "email": null
   },
   {
-   "id": 45,
-   "business": "Self-employed",
+   "id": 88,
+   "business": "Online Fitness & Wellness Coach",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
-   "channel": null,
+   "segment": "Instagram – Wellness Coaches (NY)",
+   "channel": "Instagram DM",
    "email": null
   },
   {
-   "id": 48,
-   "business": "Retail Renaissance / HPH Events",
+   "id": 10,
+   "business": "Goat Media",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
-   "channel": null,
+   "segment": "B2B – Job-Board Signal (PH sourced)",
+   "channel": "Message/apply via OnlineJobs.ph job link",
    "email": null
   },
   {
-   "id": 51,
-   "business": "Seniors@work / Hospitality Solutions",
+   "id": 18,
+   "business": "Cusell Marketing",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
-   "channel": null,
+   "segment": "B2B – Job-Board Signal (PH sourced)",
+   "channel": "Message/apply via OnlineJobs.ph job link",
    "email": null
   },
   {
-   "id": 55,
-   "business": "Self-employed",
+   "id": 21,
+   "business": "JL Marketing",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
-   "channel": null,
+   "segment": "B2B – Job-Board Signal (PH sourced)",
+   "channel": "Message/apply via OnlineJobs.ph job link",
    "email": null
   },
   {
-   "id": 62,
-   "business": "Turn Key Living Australia",
+   "id": 26,
+   "business": "Hatcher Digital",
    "priority": "High",
-   "segment": "LinkedIn – AU/NZ Business Owners",
-   "channel": null,
+   "segment": "B2B – Job-Board Signal (PH sourced)",
+   "channel": "Message/apply via OnlineJobs.ph job link",
    "email": null
   }
  ],
