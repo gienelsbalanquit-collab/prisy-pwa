@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-29",
-  "generated_by": "prisynchracy-morning-command (Thursday AM Master Command; scheduled 05:00 UTC, fired 12:40 UTC = 15:40 Bahrain) - work_tracker + latest_user_confirmation preserved untouched",
+  "date": "2026-11-10",
+  "generated_by": "Master Scheduler (Mac Mini) from the Google Calendar ledger - first run 2026-11-10",
   "verse": {
-    "text": "Be still, and know that I am God.",
-    "ref": "Psalm 46:10 - Day 29 of 31, from 21 Bible/Daily Verse Rotation"
+    "text": "Do you see someone skilled in their work? They will serve before kings.",
+    "ref": "Proverbs 22:29 — Day 10 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
@@ -41,7 +41,7 @@
       }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-10-29",
+    "updated": "2026-11-10",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,32 +61,32 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC - 50 Years Campaign",
-    "note": "2026-10-29 15:40: Extreme Pro MOUNTED (759/4001 GB, 19%). SEASON OPENS TOMORROW FRI OCT 30. Newest drive work: Oct 29 12:14 'BTC_2nd_Meeting_6_Nov_2026' (INDD/IDML/PDF; 'GPT' subfolder touched 13:53) - BTC 2nd meeting is 6 Nov; Oct 28 'MASTER RACE CARD TEMPLATE' (18:49) + 'Bahrain 301026 English 18.pdf' (08:13) = the Oct 30 race card; Oct 28 13:12 '2026-27 Parade Ring banner v6 56000x1000mm partner logos'. No client sign-off is implied by file times. Royal/Royal Guest reprint, OOH approvals and plaques: no new evidence since Gienel's 10-15 update - confirm, do not assume. Full list in work_tracker.",
+    "note": "2026-11-10 08:00: Extreme Pro mounted on the Mac Mini. Newest drive work: Grandstand sponsor backdrop 700x278cm print files (walls 1-10, 07:34-07:55 today); The Terrace logo options 1-3 (07:36-07:38 today); International Map Directory (06:56 today); Meeting 3 racecard v01 for Fri 13 Nov (last saved Sun 8 Nov 13:35). File times only - no client sign-off is implied.",
     "items": [
       {
-        "task": "Race card for Fri Oct 30 ('Bahrain 301026 English 18.pdf' + MASTER RACE CARD TEMPLATE, Oct 28) - final proof check and print/dispatch confirmation",
-        "deadline": "today - season opens tomorrow",
-        "status": "red - files edited Oct 28; print/handover not confirmed in any file"
+        "task": "Meeting 3 racecard (Fri 13 Nov) - finish v01, font/link check, proof, send to print",
+        "deadline": "before Fri 13 Nov",
+        "status": "red - still v01, last saved 8 Nov"
       },
       {
-        "task": "Parade Ring banner v6 (56000x1000mm, partner logos, Oct 28 13:12) - confirm approved, printed and installation slot before tomorrow",
-        "deadline": "today / tomorrow AM",
-        "status": "red - v6 exists; production + install status unknown"
+        "task": "Grandstand sponsor backdrop 700x278cm (walls 1-10) - final check and send to printer",
+        "deadline": "before 13 Nov (confirm install date)",
+        "status": "yellow - print files finished 10 Nov; sent/approved not confirmed"
       },
       {
-        "task": "Royal + Royal Guest badge reprint (China) - confirm landed; Hana's 6 extra names",
-        "deadline": "before Oct 30 opening",
-        "status": "yellow - last known: reprinting (10-15); no arrival logged"
+        "task": "The Terrace logo - send options 1-3 for selection",
+        "deadline": "none logged",
+        "status": "yellow - options exported 10 Nov; not confirmed sent"
       },
       {
-        "task": "BTC 2nd Meeting 6 Nov deck/document (INDD/PDF Oct 29 12:14) - send draft for review; confirm sponsor inputs",
-        "deadline": "6 Nov (8 days)",
-        "status": "yellow - draft PDF exists; reviewer + inputs not logged"
+        "task": "Directory Signage 2026-27, International Map Directory, A5 ads, 13 Silks",
+        "deadline": "none logged",
+        "status": "yellow - drive activity 9-10 Nov; status unknown"
       },
       {
-        "task": "Sign-off cluster: RFID + New Joiner ID + OOH REHC-2680/2681; U-shaped plaques name list; BTC A4 sponsors",
-        "deadline": "this week",
-        "status": "red - no approval evidence in any file (~110+ days)"
+        "task": "OOH REHC-2680/2681 client approval; U-shaped plaques name list; BTC magazine final artwork",
+        "deadline": "none logged",
+        "status": "yellow - waiting on others since 15 Oct; no new evidence"
       }
     ],
     "user_confirmed_done": [
@@ -100,104 +100,96 @@
     {
       "p": 1,
       "area": "🏇 REHC/BTC",
-      "task": "Race card for tomorrow's season opener: final proof check, then confirm print/handover",
-      "why": "Season opens Fri Oct 30. 'Bahrain 301026 English 18.pdf' and the master template were edited Oct 28 - nothing confirms it is printed. Value 1: Clarity of Intention (one hard deadline first).",
-      "action": "Open the Oct 28 PDF, check names/times/sponsors against the Racing Office list, message the printer/Racing Office: 'confirmed for delivery by when?'",
-      "est": "40 min"
+      "task": "Meeting 3 racecard (race day Fri 13 Nov)",
+      "why": "Hard external deadline; racecard still at v01 (last saved Sun 8 Nov).",
+      "action": "Open 'Meeting 03 - 2026-11-13 - v01 copy.indd', finish pages, font/link check, export proof.",
+      "est": "08:45-10:45"
     },
     {
       "p": 2,
       "area": "🏇 REHC/BTC",
-      "task": "Parade Ring banner v6 (56000x1000mm, partner logos): confirm approved + installed before opening",
-      "why": "v6 saved Oct 28 13:12; a 56 m banner needs a print + install slot - if not already booked it will miss tomorrow.",
-      "action": "Call/WhatsApp the print vendor and facilities: 'banner v6 - print status and install time?'",
-      "est": "15 min"
+      "task": "Grandstand sponsor backdrop 700x278cm - send to printer",
+      "why": "Print files finished this morning; a finished file that is not sent is not delivered.",
+      "action": "Final check of the PRINT.ai (bleed, hi-res sponsor logos), send to printer, get sign-off in writing.",
+      "est": "11:00-12:00"
     },
     {
       "p": 3,
-      "area": "🏇 REHC/BTC",
-      "task": "Royal + Royal Guest badges: confirm they landed; add Hana's 6 names",
-      "why": "Last status 10-15 = reprinting in China; opening is tomorrow.",
-      "action": "WhatsApp the China printer/courier for tracking; ask Hana if the 6 extra names are in.",
-      "est": "10 min"
+      "area": "🔥 Prisynchracy",
+      "task": "Outreach block - 6 DMs minimum",
+      "why": "MRR BHD 0 / 4,500; prospect pool was empty at the last verified check (15 Oct).",
+      "action": "LinkedIn: source 10 Bahrain SME founders, send 6 first-insight DMs. BHD 750 only.",
+      "est": "12:15-12:45"
     },
     {
       "p": 4,
-      "area": "🏇 REHC/BTC",
-      "task": "BTC 2nd Meeting 6 Nov: send the Oct 29 draft PDF for review",
-      "why": "Draft exists (12:07-12:14 today); 8 days left; review loops take days.",
-      "action": "Email the PDF to the BTC reviewer with 'comments by Mon 2 Nov'.",
-      "est": "10 min"
+      "area": "🎨 Other",
+      "task": "The Terrace logo - send 3 options for selection",
+      "why": "Options 1-3 exported this morning and sitting on the drive.",
+      "action": "Send the 3 options with a reply-by date; request brand-approved NBB/Terrace vectors for production.",
+      "est": "13:00-13:30"
     },
     {
       "p": 5,
-      "area": "🔥 Prisynchracy",
-      "task": "Hot 6 DMs - CX19-CX24 (Lily Organics, Revive Spa, Withyn, Diyar Al Muharraq, ASK Real Estate, Naseej)",
-      "why": "Only non-closed names left; none are logged as sent since 09-19. 6-DM minimum. MRR BHD 0/4,500. Value 4: Service.",
-      "action": "Send 6 DMs in one batch (CX19-20 re-open close ask; CX21-24 insight DM); tick each in prisy_prospect_tracker.json.",
-      "est": "30 min"
+      "area": "🏇 REHC/BTC",
+      "task": "Confirm status: Directory Signage, International Map Directory, A5 ads, 13 Silks",
+      "why": "All touched 9-10 Nov with no due date logged.",
+      "action": "Add a due date to each line in the calendar's Master Backlog, or delete the line if done.",
+      "est": "10 min"
     },
     {
       "p": 6,
-      "area": "🔥 Prisynchracy",
-      "task": "Source 10 fresh Bahrain SME names (F&B / clinics / professional services)",
-      "why": "Pool is exhausted after today's 6 - tomorrow has no Hot 6.",
-      "action": "LinkedIn: 'founder' + 'Bahrain' + 'cafe OR clinic'; save 10 names to the watchlist xlsx.",
-      "est": "40 min"
+      "area": "🏇 REHC/BTC",
+      "task": "Chase: OOH REHC-2680/2681 approval, plaques name list, BTC magazine sponsors",
+      "why": "Waiting on others since 15 Oct with no new evidence.",
+      "action": "One message each asking for a date.",
+      "est": "15 min"
     },
     {
       "p": 7,
       "area": "🌆 GoodnessCities",
-      "task": "Decide the 4 unsent Monaco Gmail drafts (Caroline Olds x2, Petrini, DAMENO): send or delete",
-      "why": "~113-125 days unsent; no 5th draft created today.",
-      "action": "Open Gmail drafts, send 1 or delete all 4.",
+      "task": "4 unsent Monaco drafts - send or delete",
+      "why": "Open since July; unsent drafts are not outreach.",
+      "action": "Gmail Drafts: decide each one.",
       "est": "10 min"
     },
     {
       "p": 8,
-      "area": "⚙️ Systems",
-      "task": "Vault write-back gap: Active Projects DONE log has no entry after 2026-10-15",
-      "why": "Trip-wire: evening reviews may not be writing back. Also priority_deck.json was date-stamped 10-29 but still held 10-19 content before this run.",
-      "action": "Check master-evening-review ran last night; verify its Active Projects line.",
+      "area": "🩺 Health",
+      "task": "Book doctor visit + retest",
+      "why": "Retest was planned for mid-October.",
+      "action": "Call the clinic and book.",
       "est": "10 min"
     },
     {
       "p": 9,
-      "area": "🩺 Health",
-      "task": "Book doctor visit + HbA1c/glucose/lipid retest (window is now)",
-      "why": "Retest due ~mid-Oct; visit item still open.",
-      "action": "Call the clinic and book a slot after the opening weekend.",
-      "est": "5 min"
-    },
-    {
-      "p": 10,
       "area": "📺 PSH",
-      "task": "PSH Week-1 audit - 0/5 boxes, ~113 days open",
-      "why": "Gate for all portfolio work; blocked behind the REHC opening this week.",
-      "action": "Sat: 20 min in YouTube Studio - YPP status, strikes, RPM history.",
-      "est": "20 min (Sat)"
+      "task": "Week-1 audit",
+      "why": "Gates the revival and the next venture.",
+      "action": "YouTube Studio, Monetization tab, screenshot the status.",
+      "est": "5 min"
     }
   ],
   "day_plan": [
     {
-      "block": "Morning deep work (late start today)",
-      "when": "Now - 2 h",
-      "what": "REHC/BTC P1-P4: race card proof + printer, banner v6, Royal badges, BTC draft email"
+      "block": "Deep work",
+      "when": "08:45-12:00",
+      "what": "P1 Meeting 3 racecard, then P2 sponsor backdrop to printer"
     },
     {
-      "block": "Midday outreach block",
-      "when": "After REHC",
-      "what": "Hot 6 DMs CX19-24 batched = 6-DM minimum; then 40 min sourcing fresh names"
+      "block": "Outreach",
+      "when": "12:15-12:45",
+      "what": "P3 Prisynchracy - 6 DMs minimum"
     },
     {
-      "block": "Afternoon 10-min admin",
-      "when": "Late PM",
-      "what": "Gmail drafts decision, clinic booking, check evening-review write-back"
+      "block": "Send-outs",
+      "when": "13:00-13:30",
+      "what": "P4 The Terrace logo options"
     },
     {
-      "block": "Evening review",
-      "when": "10 min",
-      "what": "Log DMs in prisy_prospect_tracker.json; note race-card/banner status for tomorrow"
+      "block": "Day close",
+      "when": "15:47",
+      "what": "Automatic: done vs slipped scored, backlog rewritten, one phone notification"
     }
   ],
   "scoreboard": [
@@ -206,40 +198,24 @@
       "v": "BHD 0 / 4,500"
     },
     {
-      "k": "Outreach today",
-      "v": "6 DMs (CX19-24) = meets daily minimum - last pipeline names"
+      "k": "Next race meeting",
+      "v": "Meeting 3 - Fri 13 Nov (racecard at v01)"
     },
     {
-      "k": "REHC season",
-      "v": "🔴 Opens TOMORROW Fri Oct 30 - race card, banner v6, Royal badges to confirm"
+      "k": "Today's blocks",
+      "v": "4 scheduled in Google Calendar"
+    },
+    {
+      "k": "Open backlog",
+      "v": "17 items - newest copy in the calendar's Master Backlog event"
     },
     {
       "k": "Drives",
-      "v": "Extreme Pro LIVE 759/4001 GB (19%); AXL8GP, AXL8GP2 not plugged in"
+      "v": "Extreme Pro mounted on Mac Mini"
     },
     {
-      "k": "REHC sign-off cluster",
-      "v": "🔴 RFID/New Joiner/OOH approvals unverified ~110+ days"
-    },
-    {
-      "k": "GC drafts unsent",
-      "v": "🔴 4 drafts, ~113-125 days"
-    },
-    {
-      "k": "GC Hot Picks",
-      "v": "6/6 rotated (see goodnesscities_leads.json)"
-    },
-    {
-      "k": "📺 PSH",
-      "v": "Week-1 audit 0/5, ~113 days open"
-    },
-    {
-      "k": "Sibiraj / Ayush",
-      "v": "Sibiraj closed (07-14); Ayush nurture-only, ~138 days, no reply evidence"
-    },
-    {
-      "k": "AXL8GP2 offload",
-      "v": "⚠️ ~118 days open - AXL8GP2 not mounted; window closed until plugged in"
+      "k": "Routine host",
+      "v": "Mac Mini (moved from the laptop 2026-11-10)"
     }
   ],
   "work_tracker": {
