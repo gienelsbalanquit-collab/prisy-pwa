@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-10",
-  "generated_by": "Master Scheduler (Mac Mini) from the Google Calendar ledger - first run 2026-11-10",
+  "date": "2026-11-11",
+  "generated_by": "Master Scheduler (Mac Mini) from the Google Calendar ledger",
   "verse": {
-    "text": "Do you see someone skilled in their work? They will serve before kings.",
-    "ref": "Proverbs 22:29 — Day 10 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "Let us not become weary in doing good, for at the proper time we will reap a harvest if we do not give up.",
+    "ref": "Galatians 6:9 — Day 11 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
@@ -41,7 +41,7 @@
       }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,32 +61,32 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC - 50 Years Campaign",
-    "note": "2026-11-10 08:00: Extreme Pro mounted on the Mac Mini. Newest drive work: Grandstand sponsor backdrop 700x278cm print files (walls 1-10, 07:34-07:55 today); The Terrace logo options 1-3 (07:36-07:38 today); International Map Directory (06:56 today); Meeting 3 racecard v01 for Fri 13 Nov (last saved Sun 8 Nov 13:35). File times only - no client sign-off is implied.",
+    "note": "Meeting 3 racecard is due Fri 13 Nov with v01 still in progress, and the Grandstand sponsor backdrop print files (ready 10 Nov) are not yet sent to the printer; both slipped once on 10 Nov. REHC OOH billboards 2680/2681 are waiting on client final approval and the U-shaped plaques are waiting on the name list.",
     "items": [
       {
-        "task": "Meeting 3 racecard (Fri 13 Nov) - finish v01, font/link check, proof, send to print",
-        "deadline": "before Fri 13 Nov",
-        "status": "red - still v01, last saved 8 Nov"
+        "task": "Meeting 3 racecard",
+        "deadline": "Fri 13 Nov",
+        "status": "red - due in 2 days, slips 1, v01 in progress"
       },
       {
-        "task": "Grandstand sponsor backdrop 700x278cm (walls 1-10) - final check and send to printer",
-        "deadline": "before 13 Nov (confirm install date)",
-        "status": "yellow - print files finished 10 Nov; sent/approved not confirmed"
+        "task": "Grandstand sponsor backdrop 700x278cm walls 1-10 to printer",
+        "deadline": "before Fri 13 Nov (unconfirmed)",
+        "status": "red - due within 3 days, slips 1, print files ready 10 Nov but not sent"
       },
       {
-        "task": "The Terrace logo - send options 1-3 for selection",
+        "task": "OOH billboards REHC-2680 / 2681 - client final approval",
         "deadline": "none logged",
-        "status": "yellow - options exported 10 Nov; not confirmed sent"
+        "status": "yellow - waiting on client since 15 Oct, chase"
       },
       {
-        "task": "Directory Signage 2026-27, International Map Directory, A5 ads, 13 Silks",
+        "task": "U-shaped plaques 2026/27 - name list, then print via Matah",
         "deadline": "none logged",
-        "status": "yellow - drive activity 9-10 Nov; status unknown"
+        "status": "yellow - waiting on name list since 15 Oct"
       },
       {
-        "task": "OOH REHC-2680/2681 client approval; U-shaped plaques name list; BTC magazine final artwork",
+        "task": "BTC Racing Season 2026-27 magazine - final artwork",
         "deadline": "none logged",
-        "status": "yellow - waiting on others since 15 Oct; no new evidence"
+        "status": "yellow - open since 15 Oct, was waiting on 3 sponsors, proof 4 Nov"
       }
     ],
     "user_confirmed_done": [
@@ -98,98 +98,111 @@
   },
   "priorities": [
     {
-      "p": 1,
+      "p": "P1",
       "area": "🏇 REHC/BTC",
       "task": "Meeting 3 racecard (race day Fri 13 Nov)",
-      "why": "Hard external deadline; racecard still at v01 (last saved Sun 8 Nov).",
-      "action": "Open 'Meeting 03 - 2026-11-13 - v01 copy.indd', finish pages, font/link check, export proof.",
-      "est": "08:45-10:45"
+      "why": "Hard external deadline: Meeting 3 is Fri 13 Nov (2 days). Yesterday's racecard block was left untouched, so it rolled (slips 1).",
+      "action": "Open \"Meeting 03 - 2026-11-13 - v01 copy.indd\", finish remaining pages (sponsor-logo space on every race in the schedule page, Montserrat only), font/link check, export proof.",
+      "est": "07:30-09:30"
     },
     {
-      "p": 2,
+      "p": "P2",
       "area": "🏇 REHC/BTC",
-      "task": "Grandstand sponsor backdrop 700x278cm - send to printer",
-      "why": "Print files finished this morning; a finished file that is not sent is not delivered.",
-      "action": "Final check of the PRINT.ai (bleed, hi-res sponsor logos), send to printer, get sign-off in writing.",
-      "est": "11:00-12:00"
+      "task": "Grandstand sponsor backdrop 700x278cm to printer",
+      "why": "Print files (walls 1-10) finished 10 Nov but not yet sent; needs to be up before Meeting 3 on Fri 13 Nov. Slipped once.",
+      "action": "Open BTC_Partners_Panel_700x278cm_2Row_1-10_PRINT.ai, check bleed + hi-res sponsor logos, send to printer and get sign-off / install date in writing.",
+      "est": "09:45-10:45"
     },
     {
-      "p": 3,
+      "p": "P3",
       "area": "🔥 Prisynchracy",
-      "task": "Outreach block - 6 DMs minimum",
-      "why": "MRR BHD 0 / 4,500; prospect pool was empty at the last verified check (15 Oct).",
-      "action": "LinkedIn: source 10 Bahrain SME founders, send 6 first-insight DMs. BHD 750 only.",
-      "est": "12:15-12:45"
+      "task": "Outreach block (6 DMs minimum)",
+      "why": "Standing daily block; MRR target BHD 4,500, pool empty at last check. Yesterday's block was left untouched.",
+      "action": "Open LinkedIn, read and reply to the 2 unanswered messages from Ev Lux, then send 6 first-insight DMs to Bahrain SME founders. BHD 750 Entry Sprint only; no payment link before written agreement.",
+      "est": "11:00-11:30"
     },
     {
-      "p": 4,
+      "p": "P4",
       "area": "🎨 Other",
       "task": "The Terrace logo - send 3 options for selection",
-      "why": "Options 1-3 exported this morning and sitting on the drive.",
-      "action": "Send the 3 options with a reply-by date; request brand-approved NBB/Terrace vectors for production.",
-      "est": "13:00-13:30"
+      "why": "Finished work not yet sent: options 1-3 (colour + B&W) exported 10 Nov and still sitting on the drive. Slipped once.",
+      "action": "Attach the 3 options, send to the decision-maker with a reply-by date; flag that the NBB logo and Terrace symbol are traced and request brand-approved vectors.",
+      "est": "11:45-12:15"
     },
     {
-      "p": 5,
-      "area": "🏇 REHC/BTC",
-      "task": "Confirm status: Directory Signage, International Map Directory, A5 ads, 13 Silks",
-      "why": "All touched 9-10 Nov with no due date logged.",
-      "action": "Add a due date to each line in the calendar's Master Backlog, or delete the line if done.",
-      "est": "10 min"
-    },
-    {
-      "p": 6,
-      "area": "🏇 REHC/BTC",
-      "task": "Chase: OOH REHC-2680/2681 approval, plaques name list, BTC magazine sponsors",
-      "why": "Waiting on others since 15 Oct with no new evidence.",
-      "action": "One message each asking for a date.",
-      "est": "15 min"
-    },
-    {
-      "p": 7,
+      "p": "P5",
       "area": "🌆 GoodnessCities",
       "task": "4 unsent Monaco drafts - send or delete",
-      "why": "Open since July; unsent drafts are not outreach.",
-      "action": "Gmail Drafts: decide each one.",
+      "why": "Open since Jul with no due date; a decision, not a project.",
+      "action": "Open the 4 Monaco drafts and decide each one: send or delete.",
       "est": "10 min"
     },
     {
-      "p": 8,
+      "p": "P6",
       "area": "🩺 Health",
       "task": "Book doctor visit + retest",
-      "why": "Retest was planned for mid-October.",
-      "action": "Call the clinic and book.",
+      "why": "Open since Jul; retest was planned mid-Oct.",
+      "action": "Call or book online for the doctor visit and retest, and put the date in the calendar.",
       "est": "10 min"
     },
     {
-      "p": 9,
+      "p": "P7",
       "area": "📺 PSH",
-      "task": "Week-1 audit",
-      "why": "Gates the revival and the next venture.",
-      "action": "YouTube Studio, Monetization tab, screenshot the status.",
-      "est": "5 min"
+      "task": "Week-1 audit (YouTube Studio monetisation check)",
+      "why": "Open since Jul; it gates the revival.",
+      "action": "Open YouTube Studio and run the monetisation check.",
+      "est": "30 min"
+    },
+    {
+      "p": "P8",
+      "area": "🏇 REHC/BTC",
+      "task": "Standalone BTC brand guideline - director questionnaire responses",
+      "why": "Open since Sep; status unknown.",
+      "action": "Check whether the director questionnaire responses came in; confirm the item as done or still open.",
+      "est": "10 min"
+    },
+    {
+      "p": "P9",
+      "area": "🏇 REHC/BTC",
+      "task": "BTC Racing Season 2026-27 magazine - final artwork",
+      "why": "Open since 15 Oct; was waiting on 3 sponsors, proof 4 Nov.",
+      "action": "Check which of the 3 sponsor items are in, then finish the final artwork from the 4 Nov proof.",
+      "est": "60 min"
+    },
+    {
+      "p": "P10",
+      "area": "🏇 REHC/BTC",
+      "task": "OOH billboards REHC-2680 / 2681 - client final approval",
+      "why": "Open since 15 Oct; waiting on client.",
+      "action": "Send a chase message to the client asking for final approval on REHC-2680 and 2681.",
+      "est": "10 min"
     }
   ],
   "day_plan": [
     {
-      "block": "Deep work",
-      "when": "08:45-12:00",
-      "what": "P1 Meeting 3 racecard, then P2 sponsor backdrop to printer"
+      "block": "P1 · BTC - Meeting 3 racecard",
+      "when": "07:30-09:30",
+      "what": "Finish remaining pages of Meeting 03 v01, font/link check, export proof."
     },
     {
-      "block": "Outreach",
-      "when": "12:15-12:45",
-      "what": "P3 Prisynchracy - 6 DMs minimum"
+      "block": "P2 · BTC - Grandstand sponsor backdrop",
+      "when": "09:45-10:45",
+      "what": "Check bleed + logos on the 700x278cm print file, send to printer, get install date in writing."
     },
     {
-      "block": "Send-outs",
-      "when": "13:00-13:30",
-      "what": "P4 The Terrace logo options"
+      "block": "P3 · Prisynchracy - outreach block",
+      "when": "11:00-11:30",
+      "what": "Reply to Ev Lux, then 6 first-insight DMs to Bahrain SME founders."
+    },
+    {
+      "block": "P4 · The Terrace logo",
+      "when": "11:45-12:15",
+      "what": "Send the 3 logo options for selection with a reply-by date; request brand-approved vectors."
     },
     {
       "block": "Day close",
       "when": "15:47",
-      "what": "Automatic: done vs slipped scored, backlog rewritten, one phone notification"
+      "what": "Automatic: done vs slipped scored, backlog rewritten"
     }
   ],
   "scoreboard": [
@@ -199,23 +212,23 @@
     },
     {
       "k": "Next race meeting",
-      "v": "Meeting 3 - Fri 13 Nov (racecard at v01)"
+      "v": "Meeting 3 - Fri 13 Nov"
     },
     {
       "k": "Today's blocks",
-      "v": "4 scheduled in Google Calendar"
+      "v": "4"
     },
     {
       "k": "Open backlog",
-      "v": "17 items - newest copy in the calendar's Master Backlog event"
+      "v": "18"
     },
     {
-      "k": "Drives",
-      "v": "Extreme Pro mounted on Mac Mini"
+      "k": "Slipping",
+      "v": "none"
     },
     {
       "k": "Routine host",
-      "v": "Mac Mini (moved from the laptop 2026-11-10)"
+      "v": "Mac Mini"
     }
   ],
   "work_tracker": {
