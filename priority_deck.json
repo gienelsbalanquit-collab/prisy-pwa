@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "generated_by": "Master Scheduler (Mac Mini) from the Google Calendar ledger",
   "verse": {
-    "text": "Diligent hands will rule, but laziness ends in forced labor.",
-    "ref": "Proverbs 12:24 — Day 16 of 31, from 21 Bible/📖 Daily Verse Rotation"
+    "text": "Unless the LORD builds the house, the builders labor in vain.",
+    "ref": "Psalm 127:1 — Day 17 of 31, from 21 Bible/📖 Daily Verse Rotation"
   },
   "health": {
     "status": "action needed",
@@ -41,7 +41,7 @@
       }
     ],
     "action": "Book doctor's visit re: glucose + cholesterol — see 📊 Health Trend note",
-    "updated": "2026-11-16",
+    "updated": "2026-11-17",
     "forecast": {
       "title": "Solution Forecast — plan for the October retest",
       "retest": "~mid-Oct 2026 (HbA1c + fasting glucose + lipid panel together)",
@@ -61,32 +61,32 @@
   },
   "rehc_btc": {
     "title": "REHC & BTC - 50 Years Campaign",
-    "note": "Meeting 3 race day (Fri 13 Nov) has passed and its racecard line is still open on slip 4 - confirm it was printed/raced; Meeting 4 racecard is assumed due Fri 20 Nov (weekly cadence, unconfirmed). Grandstand backdrop print files have been ready since 10 Nov but were not sent as of 12 Nov; OOH billboards and U-shaped plaques are still waiting on the client.",
+    "note": "Meeting 4 racecard is assumed due Fri 20 Nov (weekly cadence, not confirmed); drive evidence 16 Nov 08:51 shows it almost done, with the indd edited after the last export. Meeting 3 race day (13 Nov) has passed and its line still needs close-out, the Grandstand backdrop print files have been ready since 10 Nov but were not confirmed sent, and OOH billboards REHC-2680/2681 are still waiting on client final approval.",
     "items": [
       {
-        "task": "Meeting 3 racecard - confirm printed/raced, then close the line",
-        "deadline": "Fri 13 Nov (passed)",
-        "status": "red - race day passed, slips 4"
-      },
-      {
-        "task": "Grandstand sponsor backdrop 700x278cm walls 1-10 to printer",
-        "deadline": "before 13 Nov? (passed) - confirm install date",
-        "status": "red - slips 4, print files ready 10 Nov but not sent as of 12 Nov"
-      },
-      {
         "task": "Meeting 4 racecard",
-        "deadline": "Fri 20 Nov (assumed weekly cadence - confirm)",
-        "status": "yellow - due in 4 days, slips 1, scheduled today"
+        "deadline": "Fri 20 Nov (assumed weekly cadence — confirm)",
+        "status": "red — due within 3 days; almost done, re-export needed (indd edited after last export)"
       },
       {
-        "task": "OOH billboards REHC-2680 / 2681 - client final approval",
-        "deadline": "none set",
-        "status": "yellow - waiting on client since 15 Oct, chase"
+        "task": "Meeting 3 racecard — confirm printed/raced, then close the line",
+        "deadline": "Fri 13 Nov (passed)",
+        "status": "red — slips 5, race day passed, close-out not confirmed"
       },
       {
-        "task": "U-shaped plaques 2026/27 - name list, then print via Matah",
-        "deadline": "none set",
-        "status": "yellow - waiting on name list since 15 Oct"
+        "task": "Grandstand sponsor backdrop 700x278cm walls 1-10 → printer",
+        "deadline": "before 13 Nov? (passed) — confirm install date",
+        "status": "red — slips 5, print files ready 10 Nov but not confirmed sent"
+      },
+      {
+        "task": "OOH billboards REHC-2680 / 2681 — client final approval",
+        "deadline": "none logged",
+        "status": "yellow — waiting on client since 15 Oct, chase"
+      },
+      {
+        "task": "U-shaped plaques 2026/27 — name list, then print via Matah",
+        "deadline": "none logged",
+        "status": "yellow — waiting on name list since 15 Oct"
       }
     ],
     "user_confirmed_done": [
@@ -100,104 +100,104 @@
     {
       "p": "P1",
       "area": "🏇 REHC/BTC",
-      "task": "Meeting 4 racecard (+ close out Meeting 3)",
-      "why": "Racecard is P1 in race week; Meeting 4 assumed Fri 20 Nov (confirm). Meeting 3 line is on slip 4 and its 13 Nov race day has passed.",
-      "action": "Confirm Meeting 3 was printed/raced and delete that backlog line. Then duplicate the Meeting 03 final as Meeting 4, add sponsor-logo space on every race in the schedule page, Montserrat only.",
+      "task": "BTC — Meeting 4 racecard (+ close out Meeting 3)",
+      "why": "Racecard is P1 in race week; Meeting 4 assumed Fri 20 Nov (3 days out, confirm). Drive evidence 16 Nov 08:51: almost done, indd edited after last export. Meeting 3 line is on slip 5 and its race day has passed.",
+      "action": "Confirm Meeting 3 was printed/raced and delete that backlog line (2 min). Then open the Meeting 4 racecard .indd, re-export, check sponsor-logo space on every race in the schedule page, Montserrat only, send to print / get sign-off and set the real print cut-off.",
       "est": "07:30-09:00"
     },
     {
       "p": "P2",
       "area": "🏇 REHC/BTC",
-      "task": "Grandstand sponsor backdrop 700x278cm to printer",
-      "why": "Print files (walls 1-10) ready since 10 Nov, still not confirmed sent. Slip 4 - decide and finish.",
-      "action": "Decide: do, delegate or delete. If doing: open BTC_Partners_Panel_700x278cm_2Row_1-10_PRINT.ai, check bleed + hi-res sponsor logos, send to printer and get sign-off / install date in writing.",
+      "task": "BTC — Grandstand sponsor backdrop 700×278cm → printer",
+      "why": "Print files (walls 1-10) ready since 10 Nov, still not confirmed sent. Slip 5 — decide and finish.",
+      "action": "Decide: do it, delegate it, or delete it. If doing: open BTC_Partners_Panel_700x278cm_2Row_1-10_PRINT.ai, check bleed + hi-res sponsor logos, send to printer and get sign-off / install date in writing.",
       "est": "09:15-10:00"
     },
     {
       "p": "P3",
       "area": "🎨 Other",
-      "task": "The Terrace logo - send 3 options for selection",
-      "why": "Finished work not sent - options 1-3 (colour + B&W) exported 10 Nov. Slip 4.",
-      "action": "Decide: do, delegate or delete. If doing: attach the 3 options, send to the decision-maker with a reply-by date; flag that the NBB logo and Terrace symbol are traced and request brand-approved vectors.",
+      "task": "The Terrace logo — send 3 options for selection",
+      "why": "Finished work not sent — options 1-3 (colour + B&W) exported 10 Nov. Slip 5.",
+      "action": "Decide: do it, delegate it, or delete it. If doing: attach the 3 options, send to the decision-maker with a reply-by date; flag that the NBB logo and Terrace symbol are traced and request brand-approved vectors.",
       "est": "10:15-10:45"
     },
     {
       "p": "P4",
       "area": "🔥 Prisynchracy",
-      "task": "Outreach block (6 DMs minimum)",
-      "why": "Standing daily block; MRR BHD 0 / 4,500. Reply line (Ev Lux x2, Vikram Jain x1) is on slip 3.",
-      "action": "Open LinkedIn, reply to Ev Lux and Vikram Jain, then send 6 first-insight DMs to Bahrain SME founders. BHD 750 Entry Sprint only; no payment link before written agreement.",
+      "task": "Prisynchracy — outreach block (6 DMs minimum)",
+      "why": "Standing daily block; MRR BHD 0 / 4,500. Reply line (Ev Lux, Vikram Jain LinkedIn messages) is on slip 4.",
+      "action": "Open LinkedIn, reply to Ev Lux and Vikram Jain (or delete the line), then send 6 first-insight DMs to Bahrain SME founders. BHD 750 Entry Sprint only; no payment link before written agreement.",
       "est": "11:00-11:30"
     },
     {
       "p": "P5",
       "area": "🌆 GoodnessCities",
-      "task": "4 unsent Monaco drafts - send or delete",
-      "why": "Oldest open item on the backlog (since Jul), no due date.",
-      "action": "Open the 4 drafts and decide each one: send or delete.",
+      "task": "4 unsent Monaco drafts — send or delete",
+      "why": "Oldest open item on the backlog (since Jul); it is a decision, not a project.",
+      "action": "Open the 4 Monaco drafts and send or delete each one.",
       "est": "10 min"
     },
     {
       "p": "P6",
       "area": "🩺 Health",
       "task": "Book doctor visit + retest",
-      "why": "Open since Jul; retest was planned for mid-Oct.",
-      "action": "Book the doctor visit and the retest appointment.",
+      "why": "Open since Jul; the retest was planned for mid-Oct.",
+      "action": "Call or book online for the doctor visit and retest, then put the date in the calendar.",
       "est": "10 min"
     },
     {
       "p": "P7",
       "area": "📺 PSH",
       "task": "Week-1 audit (YouTube Studio monetisation check)",
-      "why": "Open since Jul; it gates the revival.",
+      "why": "Open since Jul; it gates the PSH revival.",
       "action": "Open YouTube Studio and run the monetisation check.",
-      "est": "30 min"
+      "est": "20 min"
     },
     {
       "p": "P8",
       "area": "🏇 REHC/BTC",
-      "task": "Standalone BTC brand guideline - director questionnaire responses",
-      "why": "Open since Sep; status unknown.",
-      "action": "Check whether the director questionnaire responses have come in; chase if not.",
+      "task": "Standalone BTC brand guideline — director questionnaire responses",
+      "why": "Open since Sep with status unknown.",
+      "action": "Check whether the director questionnaire responses came in; confirm the line is done or still open.",
       "est": "10 min"
     },
     {
       "p": "P9",
       "area": "🏇 REHC/BTC",
-      "task": "BTC Racing Season 2026-27 magazine - final artwork",
+      "task": "BTC Racing Season 2026-27 magazine — final artwork",
       "why": "Open since 15 Oct; was waiting on 3 sponsors, proof 4 Nov.",
-      "action": "Confirm the 3 sponsor items are in, then finish the final artwork from the 4 Nov proof.",
-      "est": "60 min"
+      "action": "Check which of the 3 sponsors are still outstanding and chase them so the final artwork can close.",
+      "est": "15 min"
     },
     {
       "p": "P10",
       "area": "🏇 REHC/BTC",
-      "task": "OOH billboards REHC-2680 / 2681 - client final approval",
-      "why": "Open since 15 Oct; waiting on client.",
-      "action": "Chase the client for final approval.",
+      "task": "OOH billboards REHC-2680 / 2681 — client final approval",
+      "why": "Waiting on client since 15 Oct.",
+      "action": "Send a short chase to the client for final approval on both billboards.",
       "est": "10 min"
     }
   ],
   "day_plan": [
     {
-      "block": "P1 · BTC - Meeting 4 racecard (+ close out Meeting 3)",
+      "block": "P1 · BTC — Meeting 4 racecard (+ close out Meeting 3)",
       "when": "07:30-09:00",
-      "what": "Confirm Meeting 3 printed/raced and close it; start Meeting 4 racecard from the Meeting 03 final with sponsor-logo space on every race."
+      "what": "Close out Meeting 3 line, re-export Meeting 4 racecard, check sponsor-logo space, send to print / sign-off"
     },
     {
-      "block": "P2 · BTC - Grandstand sponsor backdrop to printer",
+      "block": "P2 · BTC — Grandstand sponsor backdrop → printer",
       "when": "09:15-10:00",
-      "what": "Check bleed + sponsor logos, send walls 1-10 to printer, get sign-off / install date in writing."
+      "what": "Check bleed + sponsor logos, send walls 1-10 to printer, get install date in writing"
     },
     {
-      "block": "P3 · The Terrace logo - send 3 options",
+      "block": "P3 · The Terrace logo — send 3 options",
       "when": "10:15-10:45",
-      "what": "Send the 3 options with a reply-by date; request brand-approved vectors."
+      "what": "Send the 3 options for selection with a reply-by date; request brand-approved vectors"
     },
     {
-      "block": "P4 · Prisynchracy - outreach block",
+      "block": "P4 · Prisynchracy — outreach block",
       "when": "11:00-11:30",
-      "what": "Reply to Ev Lux and Vikram Jain, then 6 first-insight DMs to Bahrain SME founders."
+      "what": "Reply to Ev Lux and Vikram Jain, then 6 first-insight DMs to Bahrain SME founders"
     },
     {
       "block": "Day close",
@@ -212,7 +212,7 @@
     },
     {
       "k": "Next race meeting",
-      "v": "Meeting 4 - Fri 20 Nov (assumed weekly cadence - confirm)"
+      "v": "Meeting 4 — Fri 20 Nov (assumed weekly cadence, confirm)"
     },
     {
       "k": "Today's blocks",
@@ -220,11 +220,11 @@
     },
     {
       "k": "Open backlog",
-      "v": "21"
+      "v": "22"
     },
     {
       "k": "Slipping",
-      "v": "Meeting 3 racecard (4), Grandstand backdrop (4), The Terrace logo (4), Ev Lux / Vikram Jain replies (3)"
+      "v": "Meeting 3 racecard (5), Grandstand backdrop (5), Terrace logo (5), Ev Lux/Vikram reply (4)"
     },
     {
       "k": "Routine host",
